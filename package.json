@@ -1,6 +1,6 @@
 {
   "name": "mole-man",
-  "version": "1.0.0",
+  "version": "1.17.3",
   "private": true,
   "dependencies": {
     "canvasjs": "^1.8.1",
