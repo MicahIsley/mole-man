@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import banjo from './assets/banjokazooie.jpg';
-import bayonetta form './assets/bayonetta.jpg';
+import bayonetta from './assets/bayonetta.jpg';
 import bowser from './assets/bowser.jpg';
 import bowserjr from './assets/bowserjr.jpg';
 import captainfalcon from './assets/captainfalcon.jpg';
