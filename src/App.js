@@ -5,7 +5,7 @@ import bayonetta from './assets/bayonetta.jpg';
 import bowser from './assets/bowser.jpg';
 import bowserjr from './assets/bowserjr.jpg';
 import captainfalcon from './assets/captainfalcon.jpg';
-import chrom form './assets/chrom.jpg';
+import chrom from './assets/chrom.jpg';
 import corrin from './assets/corrin.jpg';
 import donkeykong from './assets/donkeykong.jpg';
 import drmario from './assets/drmario.jpg';
