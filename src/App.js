@@ -166,42 +166,42 @@ const gameData = [
     0: {name: "Micah", character: banjo},
     1: {name: "Doug", character: captainfalcon},
     2: {name: "Tim", character: cloud},
-    3: {name: " " , character: },
+    3: {name: " " , character: ""},
     stage: "Custom",
     date: "Sept 18 2019"
   },{
     0: {name: "Micah", character: darkpit},
     1: {name: "Tim", character: pacman},
     2: {name: "Doug", character: zerosuitsamus},
-    3: {name: "", character: },
+    3: {name: "", character: ""},
     stage: "Peach's Castle",
     date: "Sept 18 2019"
   },{
     0: {name: "Betsy", character: bowser},
     1: {name: "Tim", character: pacman},
     2: {name: "Doug", character: zerosuitsamus},
-    3: {name: "", character: },
+    3: {name: "", character: ""},
     stage: "Battlefield",
     date: "Sept 18 2019"
   },{
     0: {name: "Micah", character: iceclimbers},
     1: {name: "Tim", character: samus},
     2: {name: "Doug", character: toonlink},
-    3: {name: "", character: },
+    3: {name: "", character: ""},
     stage: "Battlefield",
     date: "Sept 18 2019"
   },{
     0: {name: "Tim", character: samus},
     1: {name: "Micah", character: lucario},
     2: {name: "Doug", character: samus},
-    3: {name: "", character: },
+    3: {name: "", character: ""},
     stage: "Battlefield",
     date: "Sept 18 2019"
   },{
     0: {name: "Tim", character: ness},
     1: {name: "Doug", character: marth},
     2: {name: "Micah", character: miiswordfighter},
-    3: {name: "", character: },
+    3: {name: "", character: ""},
     stage: "Battlefield",
     date: "Sept 18 2019"
   }
