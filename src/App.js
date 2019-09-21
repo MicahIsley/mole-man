@@ -17,7 +17,7 @@ import duckhunt from './assets/duckhunt.jpg';
 import falco from './assets/falco.jpg';
 import fox from './assets/fox.jpg';
 import gameandwatch from './assets/gameandwatch.jpg';
-import ganondorf from './assets.ganondorf.jpg';
+import ganondorf from './assets/ganondorf.jpg';
 import greninja from './assets/greninja.jpg';
 import hero from './assets/hero.jpg';
 import iceclimbers from './assets/iceclimbers.jpg';
