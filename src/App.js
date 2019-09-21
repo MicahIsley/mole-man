@@ -6,23 +6,78 @@ import bowser from './assets/bowser.jpg';
 import bowserjr from './assets/bowserjr.jpg';
 import captainfalcon from './assets/captainfalcon.jpg';
 import chrom from './assets/chrom.jpg';
+import cloud from './assets/cloud.jpg';
 import corrin from './assets/corrin.jpg';
+import daisy from './assets/daisy.jpg';
+import darkpit from './assets/darkpit.jpg';
+import diddykong from './assets/diddykong.jpg';
 import donkeykong from './assets/donkeykong.jpg';
 import drmario from './assets/drmario.jpg';
+import duckhunt from './assets/duckhunt.jpg';
+import falco from './assets/falco.jpg';
+import fox from './assets/fox.jpg';
+import gameandwatch from './assets/gameandwatch.jpg';
+import ganondorf from './assets.ganondorf.jpg';
+import greninja from './assets/greninja.jpg';
 import hero from './assets/hero.jpg';
+import iceclimbers from './assets/iceclimbers.jpg';
+import ike from './assets/ike.jpg';
 import incineroar from './assets/incineroar.jpg';
+import inkling from './assets/inkling.jpg';
+import isabell from './assets/isabell.jpg';
+import jigglypuff from './assets/jigglypuff.jpg';
+import joker from './assets/joker.jpg';
+import ken from './assets/ken.jpg';
 import kingdedede from './assets/kingdedede.jpg';
+import kingkrool from './assets/kingkrool.jpg';
 import kirby from './assets/kirby.jpg';
 import link from './assets/link.jpg';
+import littlemac from './assets/littlemac.jpg';
+import lucario from './assets/lucario.jpg';
+import lucas from './assets/lucas.jpg';
+import lucina from './assets/lucina.jpg';
 import luigi from './assets/luigi.png';
+import mario from './assets/mario.jpg';
 import marth from './assets/marth.jpg';
+import megaman from './assets/megaman.jpg';
+import metaknight from './assets/metaknight.jpg';
+import mewtwo from './assets/mewtwo.jpg';
+import miibrawler from './assets/miibrawler.jpg';
+import miigunner from './assets/miigunner.jpg';
+import miiswordfighter from './assets/miiswordfighter.jpg';
 import ness from './assets/ness.jpg';
+import olimar from './assets/olimar.jpg';
 import pacman from './assets/pacman.jpg';
+import palutena from './assets/palutena.jpg';
 import peach from './assets/peach.jpg';
+import pichu from './assets/pichu.jpg';
+import pikachu from './assets/pikachu.jpg';
+import pirahnaplant from './assets/pirahnaplant.jpg';
+import pit from './assets/pit.jpg';
+import pokemontrainer from './assets/pokemontrainer.jpg';
+import richter from './assets/richter.jpg';
 import ridley from './assets/ridley.jpg';
+import rob from './assets/rob.jpg';
+import robin from './assets/robin.jpg';
+import rosalina from './assets/rosalina.jpg';
+import roy from './assets/roy.jpg';
+import ryu from './assets/ryu.jpg';
 import samus from './assets/samus.jpg';
 import sheik from './assets/sheik.jpg';
+import shulk from './assets/shulk.jpg';
+import simon from './assets/simon.jpg';
+import snake from './assets/snake.jpg';
+import sonic from './assets/sonic.jpg';
+import toonlink from './assets/toonlink.jpg';
 import unknown from './assets/unknown.jpg';
+import villager from './assets/villager.jpg';
+import wario from './assets/wario.jpg';
+import wiifittrainer from './assets/wiifittrainer.jpg';
+import wolf from './assets/wolf.jpg';
+import yoshi from './assets/yoshi.jpg';
+import younglink from './assets/younglink.jpg';
+import zelda from './assets/zelda.jpg';
+import zerosuitsamus from './assets/zerosuitsamus.jpg';
 import CanvasJSReact from './assets/canvasjs.react';
 //var CanvasJSReact = require('./assets/canvasjs.react');
 var CanvasJS = CanvasJSReact.CanvasJS;
@@ -107,6 +162,48 @@ const gameData = [
     3: {name: "Zack", character: unknown},
     stage: "Spiral Mountain",
     date: "Sept 11 2019"
+  },{
+    0: {name: "Micah", character: banjo},
+    1: {name: "Doug", character: captainfalcon},
+    2: {name: "Tim", character: cloud},
+    3: {name: " " , character: },
+    stage: "Custom",
+    date: "Sept 18 2019"
+  },{
+    0: {name: "Micah", character: darkpit},
+    1: {name: "Tim", character: pacman},
+    2: {name: "Doug", character: zerosuitsamus},
+    3: {name: "", character: },
+    stage: "Peach's Castle",
+    date: "Sept 18 2019"
+  },{
+    0: {name: "Betsy", character: bowser},
+    1: {name: "Tim", character: pacman},
+    2: {name: "Doug", character: zerosuitsamus},
+    3: {name: "", character: },
+    stage: "Battlefield",
+    date: "Sept 18 2019"
+  },{
+    0: {name: "Micah", character: iceclimbers},
+    1: {name: "Tim", character: samus},
+    2: {name: "Doug", character: toonlink},
+    3: {name: "", character: },
+    stage: "Battlefield",
+    date: "Sept 18 2019"
+  },{
+    0: {name: "Tim", character: samus},
+    1: {name: "Micah", character: lucario},
+    2: {name: "Doug", character: samus},
+    3: {name: "", character: },
+    stage: "Battlefield",
+    date: "Sept 18 2019"
+  },{
+    0: {name: "Tim", character: ness},
+    1: {name: "Doug", character: marth},
+    2: {name: "Micah", character: miiswordfighter},
+    3: {name: "", character: },
+    stage: "Battlefield",
+    date: "Sept 18 2019"
   }
 ];
 
@@ -294,6 +391,7 @@ class Weekly extends React.Component {
   }
   listGames () {
     const numberOfGames = gameData;
+    console.log(gameData);
     const listGames = numberOfGames.map((game, index) => {
       if(game.date === this.state.date) {
         return <Game key={index} id={index} firstPlace={game[0].name} second={game[1].name} third={game[2].name} fourth={game[3].name} character1={game[0].character} character2={game[1].character} character3={game[2].character} character4={game[3].character} />
