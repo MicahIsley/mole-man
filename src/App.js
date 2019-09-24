@@ -14,6 +14,7 @@ import diddykong from './assets/diddykong.jpg';
 import donkeykong from './assets/donkeykong.jpg';
 import drmario from './assets/drmario.jpg';
 import duckhunt from './assets/duckhunt.jpg';
+import empty from './assets/empty.png';
 import falco from './assets/falco.jpg';
 import fox from './assets/fox.jpg';
 import gameandwatch from './assets/gameandwatch.jpg';
@@ -166,42 +167,42 @@ const gameData = [
     0: {name: "Micah", character: banjo},
     1: {name: "Doug", character: captainfalcon},
     2: {name: "Tim", character: cloud},
-    3: {name: " " , character: ""},
+    3: {name: " " , character: empty},
     stage: "Custom",
     date: "Sept 18 2019"
   },{
     0: {name: "Micah", character: darkpit},
     1: {name: "Tim", character: pacman},
     2: {name: "Doug", character: zerosuitsamus},
-    3: {name: "", character: ""},
+    3: {name: "", character: empty},
     stage: "Peach's Castle",
     date: "Sept 18 2019"
   },{
     0: {name: "Betsy", character: bowser},
     1: {name: "Tim", character: pacman},
     2: {name: "Doug", character: zerosuitsamus},
-    3: {name: "", character: ""},
+    3: {name: "", character: empty},
     stage: "Battlefield",
     date: "Sept 18 2019"
   },{
     0: {name: "Micah", character: iceclimbers},
     1: {name: "Tim", character: samus},
     2: {name: "Doug", character: toonlink},
-    3: {name: "", character: ""},
+    3: {name: "", character: empty},
     stage: "Battlefield",
     date: "Sept 18 2019"
   },{
     0: {name: "Tim", character: samus},
     1: {name: "Micah", character: lucario},
     2: {name: "Doug", character: samus},
-    3: {name: "", character: ""},
+    3: {name: "", character: empty},
     stage: "Battlefield",
     date: "Sept 18 2019"
   },{
     0: {name: "Tim", character: ness},
     1: {name: "Doug", character: marth},
     2: {name: "Micah", character: miiswordfighter},
-    3: {name: "", character: ""},
+    3: {name: "", character: empty},
     stage: "Battlefield",
     date: "Sept 18 2019"
   }
@@ -213,6 +214,40 @@ var micah = 0;
 var tim = 0;
 var doug = 0;
 var zack = 0;
+var weeklyWins = [0,0,0,0];
+
+var playerStats = [
+  micah: {
+    mostPlayed: "",
+    averagePlace: "",
+    mostWins: "",
+    kos: 0
+  },
+  tim: {
+    mostPlayed: "",
+    averagePlace: "",
+    mostWins: "",
+    kos: 0
+  },
+  doug: {
+    mostPlayed: "",
+    averagePlace: "",
+    mostWins: "",
+    kos: 0
+  },
+  zack: {
+    mostPlayed: "",
+    averagePlace: "",
+    mostWins: "",
+    kos: 0
+  },
+  besty: {
+    mostPlayed: "",
+    averagePlace: "",
+    mostWins: "",
+    kos: 0
+  }
+];
 
 
 
@@ -234,7 +269,6 @@ class App extends React.Component {
   }
   componentDidMount(){
     for(var i=0; i < gameData.length; i++){
-      console.log(gameData[i]);
       if(gameData[i][0].name === "Micah"){
         micah ++;
       }else if(gameData[i][0].name === "Tim"){
@@ -301,7 +335,7 @@ class App extends React.Component {
           <Tab name="Individual" handleClick={this.goToStats} />
         </div>
         {this.state.weekly ? <Weekly micah={this.state.micah} tim={this.state.tim} doug={this.state.doug} zack={this.state.zack} /> : null }
-        {this.state.overall ? <Overall /> : null }
+        {this.state.overall ? <Overall micah={this.state.micah} tim={this.state.tim} doug={this.state.doug} zack={this.state.zack} /> : null }
         {this.state.stats ? <Stats /> : null }
       </div>
     );
@@ -318,6 +352,7 @@ class Tab extends React.Component {
 
 class Overall extends React.Component {
   render(){
+    var overallWins = [this.props.micah, this.props.tim, this.props.doug, this.props.zack];
     const options = {
       title: {
         text: "Wins"
@@ -334,16 +369,15 @@ class Overall extends React.Component {
       data: [{        
                 type: "column",
                 dataPoints: [
-                    { label: "Micah",  y: 3, color: "#ffc233"  },
-                    { label: "Tim", y: 3, color: "#9228de" },
-                    { label: "Doug", y: 3, color: "#70d115"  },
-                    { label: "Zach",  y: 2, color: "#ff78f1"  }
+                    { label: "Micah",  y: overallWins[0], color: "#ffc233"  },
+                    { label: "Tim", y: overallWins[1], color: "#9228de" },
+                    { label: "Doug", y: overallWins[2], color: "#70d115"  },
+                    { label: "Zack",  y: overallWins[3], color: "#ff78f1"  }
                 ]
        }]
    }
     return (
-      <div>
-        <div className="row">Overall Page</div>
+      <div className="overall">
         <div className="row">
           <div className="col-xs-12">
             <CanvasJSChart options = {options} />
@@ -355,9 +389,61 @@ class Overall extends React.Component {
 }
 
 class Stats extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "Micah",
+      mostPlayed: bowserjr
+    }
+  this.nextName = this.nextName.bind(this);
+  this.previousName = this.previousName.bind(this);
+  }
+  componentDidMount(){
+    for(var i=0; i < gameData.length; i++){
+
+    }
+  }
+  nextName() {
+    var nameArray = ["Micah", "Tim", "Doug", "Zack", "Betsy"];
+    var nameIndex = nameArray.indexOf(this.state.name);
+    if(nameIndex < nameArray.length - 1){
+      var newName = nameIndex + 1;
+      this.setState({
+        name: nameArray[newName]
+      });
+    }
+  }
+  previousName() {
+    var nameArray = ["Micah", "Tim", "Doug", "Zack", "Betsy"];
+    var nameIndex = nameArray.indexOf(this.state.name);
+    if(nameIndex > 0){
+      console.log("nameIndex" + nameIndex);
+      var newName = nameIndex - 1;
+      console.log("newName" + newName);
+      this.setState({
+        name: nameArray[newName]
+      });
+    }
+  }
   render(){
     return (
-      <div>Stats Page</div>
+      <div className="stats">
+        <div>Stats Page</div>
+        <div className="row">
+          <div className="col-xs-offset-4 col-xs-1"><span onClick={this.previousName} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
+          <div className="col-xs-2" id="statsName">{this.state.name}</div>
+          <div className="col-xs-1"><span onClick={this.nextName} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
+        </div>
+        <div className="row">
+          <div className="col-xs-3">Most Played Character</div>
+          <div className="col-xs-3">Average Finish</div>
+          <div className="col-xs-3">Most wins</div>
+          <div className="col-xs-3">KO'S</div>
+        </div>
+        <div className="row">
+          <div className="col-xs-3"><img className="fighterIcon" src={this.state.mostPlayed} alt="mostPlayed" /></div>
+        </div>
+      </div>
     )
   }
 }
@@ -366,32 +452,75 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Sept 11 2019"
+      date: "Sept 11 2019",
+      weeklyWins: [0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
   this.previousDate = this.previousDate.bind(this);
   }
+  componentDidMount() {
+    var newDate = this.state.date;
+    for(var i=0; i < gameData.length; i++){
+        if(gameData[i][0].name === "Micah" && gameData[i].date === newDate){
+          weeklyWins[0] ++;
+        }else if(gameData[i][0].name === "Tim" && gameData[i].date === newDate){
+          weeklyWins[1] ++;
+        }else if(gameData[i][0].name === "Doug" && gameData[i].date === newDate){
+          weeklyWins[2] ++;
+        }else if(gameData[i][0].name === "Zack" && gameData[i].date === newDate){
+          weeklyWins[3] ++;
+        }
+      }
+    this.setState({
+      weeklyWins: weeklyWins
+    })
+  }
   previousDate(){
+    weeklyWins = [0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex > 0){
       var newDate = dates[dateIndex - 1];
+      for(var i=0; i < gameData.length; i++){
+        if(gameData[i][0].name === "Micah" && gameData[i].date === newDate){
+          weeklyWins[0] ++;
+        }else if(gameData[i][0].name === "Tim" && gameData[i].date === newDate){
+          weeklyWins[1] ++;
+        }else if(gameData[i][0].name === "Doug" && gameData[i].date === newDate){
+          weeklyWins[2] ++;
+        }else if(gameData[i][0].name === "Zack" && gameData[i].date === newDate){
+          weeklyWins[3] ++;
+        }
+      }
       this.setState({
-        date: newDate
+        date: newDate,
+        weeklyWins: weeklyWins
       });
     }
   }
   nextDate(){
+    weeklyWins = [0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex < dates.length - 1){
       var newDate = dates[dateIndex + 1];
+      for(var i=0; i < gameData.length; i++){
+        if(gameData[i][0].name === "Micah" && gameData[i].date === newDate){
+          weeklyWins[0] ++;
+        }else if(gameData[i][0].name === "Tim" && gameData[i].date === newDate){
+          weeklyWins[1] ++;
+        }else if(gameData[i][0].name === "Doug" && gameData[i].date === newDate){
+          weeklyWins[2] ++;
+        }else if(gameData[i][0].name === "Zack" && gameData[i].date === newDate){
+          weeklyWins[3] ++;
+        }
+      }
       this.setState({
-        date: newDate
+        date: newDate,
+        weeklyWins: weeklyWins
       });
     }
   }
   listGames () {
     const numberOfGames = gameData;
-    console.log(gameData);
     const listGames = numberOfGames.map((game, index) => {
       if(game.date === this.state.date) {
         return <Game key={index} id={index} firstPlace={game[0].name} second={game[1].name} third={game[2].name} fourth={game[3].name} character1={game[0].character} character2={game[1].character} character3={game[2].character} character4={game[3].character} />
@@ -406,15 +535,15 @@ class Weekly extends React.Component {
     return (
       <div className="rankings">
         <div className="row">
-          <div className="col-xs-offset-2 col-xs-2"><span onClick={this.previousDate} className="glyphicon glyphicon-chevron-left" /></div>
-          <div className="col-xs-4" id="weeklyDate">{this.state.date}</div>
-          <div className="col-xs-2"><span onClick={this.nextDate} className="glyphicon glyphicon-chevron-right" /></div>
+          <div className="col-xs-offset-4 col-xs-1"><span onClick={this.previousDate} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
+          <div className="col-xs-2" id="weeklyDate">{this.state.date}</div>
+          <div className="col-xs-1"><span onClick={this.nextDate} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
         </div>
         <div className="row">
-          <div className="col-xs-3">Micah: {this.props.micah}</div>
-          <div className="col-xs-3">Tim: {this.props.tim}</div>
-          <div className="col-xs-3">Doug: {this.props.doug}</div>
-          <div className="col-xs-3">Zack: {this.props.zack}</div>
+          <div className="col-xs-2 col-xs-offset-2 weeklyName">Micah: {this.state.weeklyWins[0]}</div>
+          <div className="col-xs-2 weeklyName">Tim: {this.state.weeklyWins[1]}</div>
+          <div className="col-xs-2 weeklyName">Doug: {this.state.weeklyWins[2]}</div>
+          <div className="col-xs-2 weeklyName">Zack: {this.state.weeklyWins[3]}</div>
         </div>
         <div className="row">
           {this.listGames()}
@@ -426,7 +555,6 @@ class Weekly extends React.Component {
 
 class Game extends React.Component {
   render(){
-    console.log(this.props);
     return (
       <div className="col-xs-6">
         <div className="row">
