@@ -217,31 +217,31 @@ var zack = 0;
 var weeklyWins = [0,0,0,0];
 
 var playerStats = [
-  micah: {
+ {  name: "Micah",
     mostPlayed: "",
     averagePlace: "",
     mostWins: "",
     kos: 0
   },
-  tim: {
+  { name: "Tim",
     mostPlayed: "",
     averagePlace: "",
     mostWins: "",
     kos: 0
   },
-  doug: {
+  { name: "Doug",
     mostPlayed: "",
     averagePlace: "",
     mostWins: "",
     kos: 0
   },
-  zack: {
+  { name: "Zack",
     mostPlayed: "",
     averagePlace: "",
     mostWins: "",
     kos: 0
   },
-  besty: {
+  { name: "Betsy",
     mostPlayed: "",
     averagePlace: "",
     mostWins: "",
