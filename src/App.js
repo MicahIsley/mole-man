@@ -103,22 +103,22 @@ const gameData = [
   },{
     0: {name: "Micah", character: donkeykong},
     1: {name: "Zack", character: hero},
-    2: {name: "Micah", character: unknown},
+    2: {name: "Doug", character: unknown},
     3: {name: "Tim", character: unknown},
     stage: "Battlefield",
     date: "Sept 11 2019"
   },{
-    0: {name: "Tim", character: samus},
-    1: {name: "Micah", character: ness},
-    2: {name: "Doug", character: link},
-    3: {name: "Zack", character: hero},
+    0: {name: "Tim", character: unknown},
+    1: {name: "Micah", character: unknown},
+    2: {name: "Doug", character: unknown},
+    3: {name: "Zack", character: unknown},
     stage: "Battlefield",
     date: "Sept 11 2019"
   },{
-    0: {name: "Tim", character: bowserjr},
-    1: {name: "Micah", character: ness},
-    2: {name: "Doug", character: link},
-    3: {name: "Zack", character: hero},
+    0: {name: "Tim", character: unknown},
+    1: {name: "Micah", character: unknown},
+    2: {name: "Doug", character: unknown},
+    3: {name: "Zack", character: unknown},
     stage: "Battlefield",
     date: "Sept 11 2019"
   },{
@@ -218,38 +218,36 @@ var weeklyWins = [0,0,0,0];
 
 var playerStats = [
  {  name: "Micah",
-    mostPlayed: "",
-    averagePlace: "",
-    mostWins: "",
+    mostPlayed: [{character: bowserjr, number: 2}, {character: peach, number: 2}, {character: incineroar, number: 2}],
+    averagePlace: 1.6,
+    mostWins: [bowserjr, 2],
     kos: 0
   },
   { name: "Tim",
-    mostPlayed: "",
-    averagePlace: "",
-    mostWins: "",
+    mostPlayed: [{character: samus, number: 5}, {character: ness, number: 4}, {character: pacman, number: 2}],
+    averagePlace: 1.83,
+    mostWins: [samus, 2],
     kos: 0
   },
   { name: "Doug",
-    mostPlayed: "",
-    averagePlace: "",
-    mostWins: "",
+    mostPlayed: [{character: samus, number: 3}, {character: zerosuitsamus, number: 2}],
+    averagePlace: 2.67,
+    mostWins: ["Tie", 1],
     kos: 0
   },
   { name: "Zack",
-    mostPlayed: "",
-    averagePlace: "",
-    mostWins: "",
+    mostPlayed: [{character: drmario, number: 4}, {character: hero, number: 2}],
+    averagePlace: "N/A",
+    mostWins: [drmario, 1],
     kos: 0
   },
   { name: "Betsy",
-    mostPlayed: "",
-    averagePlace: "",
-    mostWins: "",
+    mostPlayed: [{character: bowser, number: 1}],
+    averagePlace: 1,
+    mostWins: [bowser, 1],
     kos: 0
   }
 ];
-
-
 
 class App extends React.Component {
   constructor(props) {
@@ -393,23 +391,40 @@ class Stats extends React.Component {
     super(props);
     this.state = {
       name: "Micah",
-      mostPlayed: bowserjr
+      mostPlayed: []
     }
   this.nextName = this.nextName.bind(this);
   this.previousName = this.previousName.bind(this);
+  this.listMostPlayed = this.listMostPlayed.bind(this);
   }
-  componentDidMount(){
-    for(var i=0; i < gameData.length; i++){
-
+  componentDidMount() {
+    this.setState({
+      mostPlayed: playerStats[0].mostPlayed
+    });
+  }
+  listMostPlayed () {
+    const numberOfMostPlayed = this.state.mostPlayed;
+    console.log(numberOfMostPlayed);
+    const listMostPlayed = numberOfMostPlayed.map((character, index) => {
+      return <MostPlayed key={index} id={index} character={character.character} number={character.number} />
     }
+    );
+    return (
+      <div>{listMostPlayed}</div>
+    )
   }
   nextName() {
     var nameArray = ["Micah", "Tim", "Doug", "Zack", "Betsy"];
     var nameIndex = nameArray.indexOf(this.state.name);
+    var newMostPlayed = [];
+    for(var i = 0; i < playerStats[nameIndex + 1].mostPlayed.length; i ++){
+      newMostPlayed.push(playerStats[nameIndex + 1].mostPlayed[i]);
+    }
     if(nameIndex < nameArray.length - 1){
       var newName = nameIndex + 1;
       this.setState({
-        name: nameArray[newName]
+        name: nameArray[newName],
+        mostPlayed: newMostPlayed
       });
     }
   }
@@ -441,8 +456,23 @@ class Stats extends React.Component {
           <div className="col-xs-3">KO'S</div>
         </div>
         <div className="row">
-          <div className="col-xs-3"><img className="fighterIcon" src={this.state.mostPlayed} alt="mostPlayed" /></div>
+          <div className="col-xs-3">
+            {this.listMostPlayed()}
+          </div>
         </div>
+      </div>
+    )
+  }
+}
+
+class MostPlayed extends React.Component {
+  render() {
+    return (
+      <div className="row">
+        <div className="col-xs-10">
+          <img  className="fighterIcon" src={this.props.character} alt="mostplayed" />
+        </div>
+        <div className="col-xs-2 mostPlayedNum">{this.props.number}</div>
       </div>
     )
   }
