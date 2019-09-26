@@ -10,6 +10,7 @@ import cloud from './assets/cloud.jpg';
 import corrin from './assets/corrin.jpg';
 import daisy from './assets/daisy.jpg';
 import darkpit from './assets/darkpit.jpg';
+import darksamus from './assets/darksamus.jpg';
 import diddykong from './assets/diddykong.jpg';
 import donkeykong from './assets/donkeykong.jpg';
 import drmario from './assets/drmario.jpg';
@@ -205,6 +206,62 @@ const gameData = [
     3: {name: "", character: empty},
     stage: "Battlefield",
     date: "Sept 18 2019"
+  },{
+    0: {name: "Tim", character: darksamus},
+    1: {name: "Zack", character: kingdedede},
+    2: {name: "Micah", character: incineroar},
+    3: {name: "", character: empty},
+    stage: "Spiral Mountain",
+    date: "Sept 25 2019"
+  },{
+    0: {name: "Micah", character: bowserjr},
+    1: {name: "Zack", character: corrin},
+    2: {name: "Tim", character: samus},
+    3: {name: "", character: empty},
+    stage: "Kongo Jungle",
+    date: "Sept 25 2019"
+  },{
+    0: {name: "Zack", character: corrin},
+    1: {name: "Micah", character: bowserjr},
+    2: {name: "Tim", character: samus},
+    3: {name: "", character: empty},
+    stage: "Unknown",
+    date: "Sept 25 2019"
+  },{
+    0: {name: "Zack", character: yoshi},
+    1: {name: "Micah", character: iceclimbers},
+    2: {name: "Tim", character: ness},
+    3: {name: "", character: empty},
+    stage: "Paper Mario",
+    date: "Sept 25 2019"
+  },{
+    0: {name: "Zack", character: yoshi},
+    1: {name: "Tim", character: ness},
+    2: {name: "Micah", character: iceclimbers},
+    3: {name: "", character: empty},
+    stage: "Big Battlefield",
+    date: "Sept 25 2019"
+  },{
+    0: {name: "Tim", character: ness},
+    1: {name: "Zack", character: drmario},
+    2: {name: "Micah", character: peach},
+    3: {name: "", character: empty},
+    stage: "Mario Galaxy",
+    date: "Sept 25 2019"
+  },{
+    0: {name: "Zack", character: hero},
+    1: {name: "Micah", character: peach},
+    2: {name: "Tim", character: pacman},
+    3: {name: "", character: empty},
+    stage: "Final Destination",
+    date: "Sept 25 2019"
+  },{
+    0: {name: "Tim", character: ness},
+    1: {name: "Zack", character: corrin},
+    2: {name: "Micah", character: banjo},
+    3: {name: "", character: empty},
+    stage: "Kalos Pokemon League",
+    date: "Sept 25 2019"
   }
 ];
 
@@ -218,15 +275,15 @@ var weeklyWins = [0,0,0,0];
 
 var playerStats = [
  {  name: "Micah",
-    mostPlayed: [{character: bowserjr, number: 2}, {character: peach, number: 2}, {character: incineroar, number: 2}],
-    averagePlace: 1.6,
-    mostWins: [bowserjr, 2],
+    mostPlayed: [{character: bowserjr, number: 4}, {character: peach, number: 4}, {character: incineroar, number: 3}],
+    averagePlace: 2.08,
+    mostWins: [bowserjr, 3],
     kos: 0
   },
   { name: "Tim",
-    mostPlayed: [{character: samus, number: 5}, {character: ness, number: 4}, {character: pacman, number: 2}],
-    averagePlace: 1.83,
-    mostWins: [samus, 2],
+    mostPlayed: [{character: ness, number: 8}, {character: samus, number: 6}, {character: pacman, number: 3}],
+    averagePlace: 2,
+    mostWins: [ness, 3],
     kos: 0
   },
   { name: "Doug",
@@ -236,9 +293,9 @@ var playerStats = [
     kos: 0
   },
   { name: "Zack",
-    mostPlayed: [{character: drmario, number: 4}, {character: hero, number: 2}],
-    averagePlace: "N/A",
-    mostWins: [drmario, 1],
+    mostPlayed: [{character: drmario, number: 5}, {character: hero, number: 3}, {character: corrin, number: 3}],
+    averagePlace: 1.5,
+    mostWins: ["Tie", 2],
     kos: 0
   },
   { name: "Betsy",
@@ -391,7 +448,9 @@ class Stats extends React.Component {
     super(props);
     this.state = {
       name: "Micah",
-      mostPlayed: []
+      mostPlayed: [],
+      averagePlace: 0,
+      mostWins: 0
     }
   this.nextName = this.nextName.bind(this);
   this.previousName = this.previousName.bind(this);
@@ -399,7 +458,9 @@ class Stats extends React.Component {
   }
   componentDidMount() {
     this.setState({
-      mostPlayed: playerStats[0].mostPlayed
+      mostPlayed: playerStats[0].mostPlayed,
+      averagePlace: playerStats[0].averagePlace,
+      mostWins: playerStats[0].mostWins
     });
   }
   listMostPlayed () {
@@ -417,6 +478,8 @@ class Stats extends React.Component {
     var nameArray = ["Micah", "Tim", "Doug", "Zack", "Betsy"];
     var nameIndex = nameArray.indexOf(this.state.name);
     var newMostPlayed = [];
+    var averagePlace = playerStats[nameIndex + 1].averagePlace;
+    var mostWins = playerStats[nameIndex + 1].mostWins;
     for(var i = 0; i < playerStats[nameIndex + 1].mostPlayed.length; i ++){
       newMostPlayed.push(playerStats[nameIndex + 1].mostPlayed[i]);
     }
@@ -424,7 +487,9 @@ class Stats extends React.Component {
       var newName = nameIndex + 1;
       this.setState({
         name: nameArray[newName],
-        mostPlayed: newMostPlayed
+        mostPlayed: newMostPlayed,
+        averagePlace: averagePlace,
+        mostWins: mostWins
       });
     }
   }
@@ -459,6 +524,8 @@ class Stats extends React.Component {
           <div className="col-xs-3">
             {this.listMostPlayed()}
           </div>
+          <div className="col-xs-3">{this.state.averagePlace}</div>
+          <div className="col-xs-3"><img className="fighterIcon" src={this.state.mostWins[0]} alt="mostWins" />{this.state.mostWins[1]}</div>
         </div>
       </div>
     )
