@@ -166,3 +166,42 @@ html {
   font-family: 'Carter One', cursive;
 }
 
+@media only screen and (max-width: 600px) {
+  .tab {
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .statsFighterIcon {
+    height: 100px;
+  }
+  
+  .weeklyName {
+    font-size: 18px;
+  }
+
+  #averageNumber {
+    font-size: 40px;
+  }
+
+  #firstIcon {
+    height: 100px;
+  }
+
+  #secondIcon {
+    height: 100px;
+    margin-left: 0px;
+  }
+
+  #thirdIcon {
+    height: 100px;
+    margin-left: 0px;
+  }
+
+  .statsTitle {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+}
+

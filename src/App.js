@@ -561,7 +561,7 @@ class MostPlayed extends React.Component {
     }
     return (
       <div className="row">
-        <div className="col-xs-10">
+        <div className="col-xs-9 col-md-10">
           <img  className="statsFighterIcon" id={icon} src={this.props.character} alt="mostplayed" />
         </div>
         <div className="col-xs-2 mostPlayedNum" id={number}>{this.props.number}</div>
@@ -657,15 +657,15 @@ class Weekly extends React.Component {
     return (
       <div className="rankings">
         <div className="row">
-          <div className="col-xs-offset-4 col-xs-1"><span onClick={this.previousDate} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
-          <div className="col-xs-2" id="weeklyDate">{this.state.date}</div>
-          <div className="col-xs-1"><span onClick={this.nextDate} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
+          <div className="col-xs-offset-1 col-xs-1 col-md-offset-4 col-md-1"><span onClick={this.previousDate} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
+          <div className="col-xs-8 col-md-2" id="weeklyDate">{this.state.date}</div>
+          <div className="col-xs-1 col-md-1"><span onClick={this.nextDate} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
         </div>
         <div className="row">
-          <div className="col-xs-2 col-xs-offset-2 weeklyName">Micah: {this.state.weeklyWins[0]}</div>
-          <div className="col-xs-2 weeklyName">Tim: {this.state.weeklyWins[1]}</div>
-          <div className="col-xs-2 weeklyName">Doug: {this.state.weeklyWins[2]}</div>
-          <div className="col-xs-2 weeklyName">Zack: {this.state.weeklyWins[3]}</div>
+          <div className="col-xs-3 col-md-2 col-md-offset-2 weeklyName">Micah: {this.state.weeklyWins[0]}</div>
+          <div className="col-xs-3 col-md-2 weeklyName">Tim: {this.state.weeklyWins[1]}</div>
+          <div className="col-xs-3 col-md-2 weeklyName">Doug: {this.state.weeklyWins[2]}</div>
+          <div className="col-xs-3 col-md-2 weeklyName">Zack: {this.state.weeklyWins[3]}</div>
         </div>
         <div className="row">
           {this.listGames()}
@@ -678,7 +678,7 @@ class Weekly extends React.Component {
 class Game extends React.Component {
   render(){
     return (
-      <div className="col-xs-6 gameRow">
+      <div className="col-xs-12 col-md-6 gameRow">
         <div className="row">
           <div className="col-xs-2 gameNumber">{this.props.id}</div>
           <div className="displayBox col-xs-2">
