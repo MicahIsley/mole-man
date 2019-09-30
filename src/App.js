@@ -408,6 +408,13 @@ class Tab extends React.Component {
 
 class Overall extends React.Component {
   render(){
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 1
+      }
+    };
     var overallWins = [this.props.micah, this.props.tim, this.props.doug, this.props.zack];
     const options = {
       title: {
@@ -439,14 +446,8 @@ class Overall extends React.Component {
             <CanvasJSChart options = {options} />
           </div>
         </div>
-        <div className="row">
-          <YouTube id="G-oVNDaCN5s" onReady={this._onReady} />
-        </div>
       </div>
     )
-  }
-   _onReady(event) {
-    event.target.pauseVideo();
   }
 }
 
