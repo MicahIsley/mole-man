@@ -137,7 +137,7 @@ const gameData = [
     stage: "custom",
     date: "Sept 11 2019"
   },{
-    0: {name: "doug", character: samus},
+    0: {name: "Doug", character: samus},
     1: {name: "Tim", character: ness},
     2: {name: "Zack", character: drmario},
     3: {name: "Micah", character: peach},
@@ -289,13 +289,13 @@ var playerStats = [
   { name: "Doug",
     mostPlayed: [{character: samus, number: 3}, {character: zerosuitsamus, number: 2}],
     averagePlace: 2.67,
-    mostWins: ["Tie", 1],
+    mostWins: [samus, 1],
     kos: 0
   },
   { name: "Zack",
     mostPlayed: [{character: drmario, number: 5}, {character: hero, number: 3}, {character: corrin, number: 3}],
     averagePlace: 1.5,
-    mostWins: ["Tie", 2],
+    mostWins: [yoshi, 2],
     kos: 0
   },
   { name: "Betsy",
@@ -496,36 +496,49 @@ class Stats extends React.Component {
   previousName() {
     var nameArray = ["Micah", "Tim", "Doug", "Zack", "Betsy"];
     var nameIndex = nameArray.indexOf(this.state.name);
+    var newMostPlayed = [];
+    var averagePlace = playerStats[nameIndex - 1].averagePlace;
+    var mostWins = playerStats[nameIndex - 1].mostWins;
+    for(var i = 0; i < playerStats[nameIndex - 1].mostPlayed.length; i ++){
+      newMostPlayed.push(playerStats[nameIndex - 1].mostPlayed[i]);
+    }
     if(nameIndex > 0){
       console.log("nameIndex" + nameIndex);
       var newName = nameIndex - 1;
-      console.log("newName" + newName);
       this.setState({
-        name: nameArray[newName]
+        name: nameArray[newName],
+        mostPlayed: newMostPlayed,
+        averagePlace: averagePlace,
+        mostWins: mostWins
       });
     }
   }
   render(){
     return (
       <div className="stats">
-        <div>Stats Page</div>
         <div className="row">
           <div className="col-xs-offset-4 col-xs-1"><span onClick={this.previousName} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
           <div className="col-xs-2" id="statsName">{this.state.name}</div>
           <div className="col-xs-1"><span onClick={this.nextName} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
         </div>
         <div className="row">
-          <div className="col-xs-3">Most Played Character</div>
-          <div className="col-xs-3">Average Finish</div>
-          <div className="col-xs-3">Most wins</div>
-          <div className="col-xs-3">KO'S</div>
+          <div className="col-xs-4 statsTitle">Most Played Character</div>
+          <div className="col-xs-4 statsTitle">Average Finish</div>
+          <div className="col-xs-4 statsTitle">Most Wins</div>
         </div>
         <div className="row">
-          <div className="col-xs-3">
+          <div className="col-xs-4">
             {this.listMostPlayed()}
           </div>
-          <div className="col-xs-3">{this.state.averagePlace}</div>
-          <div className="col-xs-3"><img className="fighterIcon" src={this.state.mostWins[0]} alt="mostWins" />{this.state.mostWins[1]}</div>
+          <div className="col-xs-4" id="averageNumber">{this.state.averagePlace}</div>
+          <div className="col-xs-4" id="mostWinsNumber">
+            <div className="row">
+              <img className="statsFighterIcon" src={this.state.mostWins[0]} alt="mostWins" />
+            </div>
+            <div className="row">
+              {this.state.mostWins[1]}
+            </div>
+          </div>
         </div>
       </div>
     )
@@ -534,12 +547,24 @@ class Stats extends React.Component {
 
 class MostPlayed extends React.Component {
   render() {
+    var icon;
+    var number;
+    if(this.props.id === 0){
+      icon = "firstIcon";
+      number = "firstNumber";
+    }else if(this.props.id === 1){
+      icon = "secondIcon";
+      number = "secondNumber";
+    }else if(this.props.id === 2){
+      icon = "thirdIcon";
+      number = "thirdNumber";
+    }
     return (
       <div className="row">
         <div className="col-xs-10">
-          <img  className="fighterIcon" src={this.props.character} alt="mostplayed" />
+          <img  className="statsFighterIcon" id={icon} src={this.props.character} alt="mostplayed" />
         </div>
-        <div className="col-xs-2 mostPlayedNum">{this.props.number}</div>
+        <div className="col-xs-2 mostPlayedNum" id={number}>{this.props.number}</div>
       </div>
     )
   }
@@ -653,13 +678,45 @@ class Weekly extends React.Component {
 class Game extends React.Component {
   render(){
     return (
-      <div className="col-xs-6">
+      <div className="col-xs-6 gameRow">
         <div className="row">
-          <div className="gameNumber col-xs-2">{this.props.id + 1}</div>
-          <div className="displayBox col-xs-2"><div className="row">{this.props.firstPlace}</div><div className="row"><img className="fighterIcon" src={this.props.character1} alt="character1" /><div className="place">1</div></div> </div>
-          <div className="displayBox col-xs-2"><div className="row">{this.props.second}</div><div className="row"><img className="fighterIcon" src={this.props.character2} alt="character2" /><div className="place">1</div></div> </div>
-          <div className="displayBox col-xs-2"><div className="row">{this.props.third}</div><div className="row"><img className="fighterIcon" src={this.props.character3} alt="character3" /><div className="place">1</div></div> </div>
-          <div className="displayBox col-xs-2"><div className="row">{this.props.fourth}</div><div className="row"><img className="fighterIcon" src={this.props.character4} alt="character4" /><div className="place">1</div></div> </div>
+          <div className="col-xs-2 gameNumber">{this.props.id}</div>
+          <div className="displayBox col-xs-2">
+            <div className="row">
+              <img className="fighterIcon" src={this.props.character1} alt="character1" />
+              <div className="col-xs-12 playerName">
+                <div className="row">{this.props.firstPlace}</div>
+                <div className="row place">1</div>
+              </div>
+            </div>
+          </div>
+          <div className="displayBox col-xs-2">
+            <div className="row">
+              <img className="fighterIcon" src={this.props.character2} alt="character2" />
+              <div className="col-xs-12 playerName">
+                <div className="row">{this.props.second}</div>
+                <div className="row place">2</div>
+              </div>
+            </div>
+          </div>
+          <div className="displayBox col-xs-2">
+            <div className="row">
+              <img className="fighterIcon" src={this.props.character3} alt="character3" />
+              <div className="col-xs-12 playerName">
+                <div className="row">{this.props.third}</div>
+                <div className="row place">3</div>
+              </div>
+            </div>
+          </div>
+          <div className="displayBox col-xs-2">
+            <div className="row">
+              <img className="fighterIcon" src={this.props.character4} alt="character4" />
+              <div className="playerName">
+                <div className="row">{this.props.fourth}</div>
+                <div className="row place">4</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )
