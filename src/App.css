@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background: #ea4848;
+  background: linear-gradient(to bottom right, red, yellow);
 }
 
 .title {
@@ -9,7 +9,7 @@
 }
 
 html {
-  background: #ea4848;
+  background: linear-gradient(to bottom right, red, yellow);
 }
 
 .arrowButton {
@@ -17,7 +17,7 @@ html {
 }
 
 .rankings {
-  background: #3e3ed0;
+  background: linear-gradient(to right, blue, #0e1171);
   color: white;
   border-color: black;
   border-style: solid;
@@ -26,7 +26,7 @@ html {
 }
 
 .overall {
-  background: #3e3ed0;
+  background: linear-gradient(to right, blue, #0e1171);
   color: white;
   border-color: black;
   border-style: solid;
@@ -35,7 +35,7 @@ html {
 }
 
 .stats {
-  background: #3e3ed0;
+  background: linear-gradient(to right, blue, #0e1171);
   color: white;
   border-color: black;
   border-style: solid;
