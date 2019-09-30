@@ -81,6 +81,7 @@ import younglink from './assets/younglink.jpg';
 import zelda from './assets/zelda.jpg';
 import zerosuitsamus from './assets/zerosuitsamus.jpg';
 import CanvasJSReact from './assets/canvasjs.react';
+import YouTube from 'react-youtube';
 //var CanvasJSReact = require('./assets/canvasjs.react');
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
@@ -438,8 +439,14 @@ class Overall extends React.Component {
             <CanvasJSChart options = {options} />
           </div>
         </div>
+        <div className="row">
+          <YouTube id="G-oVNDaCN5s" onReady={this._onReady} />
+        </div>
       </div>
     )
+  }
+   _onReady(event) {
+    event.target.pauseVideo();
   }
 }
 
