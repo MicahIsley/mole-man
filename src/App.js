@@ -431,7 +431,7 @@ class App extends React.Component {
     for (var i=0; i < x.length; i ++ ){
       x[i].style.background="#0547ff";
     }
-    document.getElementById("Last Week").style.background = "darkblue";
+    document.getElementById("Weekly").style.background = "darkblue";
     this.setState({
       weekly: true,
       overall: false,
@@ -456,7 +456,7 @@ class App extends React.Component {
     for (var i=0; i < x.length; i ++ ){
       x[i].style.background="#0547ff";
     }
-    document.getElementById("Individual").style.background = "darkblue";
+    document.getElementById("Stats").style.background = "darkblue";
     this.setState({
       weekly: false,
       overall: false,
@@ -471,8 +471,8 @@ class App extends React.Component {
         </div>
         <div className="row RankingTabs">
           <Tab name="Overall" handleClick={this.goToOverall} />
-          <Tab name="Last Week" handleClick={this.goToWeekly} />
-          <Tab name="Individual" handleClick={this.goToStats} />
+          <Tab name="Weekly" handleClick={this.goToWeekly} />
+          <Tab name="Stats" handleClick={this.goToStats} />
         </div>
         {this.state.weekly ? <Weekly micah={this.state.micah} tim={this.state.tim} doug={this.state.doug} zack={this.state.zack} /> : null }
         {this.state.overall ? <Overall betsy={this.state.betsy} micah={this.state.micah} tim={this.state.tim} doug={this.state.doug} zack={this.state.zack} /> : null }
@@ -614,12 +614,12 @@ class Stats extends React.Component {
     return (
       <div className="stats">
         <div className="row">
-          <div className="col-xs-offset-4 col-xs-1"><span onClick={this.previousName} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
-          <div className="col-xs-2" id="statsName">{this.state.name}</div>
+          <div className="col-xs-offset-3 col-xs-1"><span onClick={this.previousName} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
+          <div className="col-xs-4" id="statsName">{this.state.name}</div>
           <div className="col-xs-1"><span onClick={this.nextName} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
         </div>
         <div className="row">
-          <div className="col-xs-4 statsTitle">Most Played Character</div>
+          <div className="col-xs-4 statsTitle">Most Played Characters</div>
           <div className="col-xs-4 statsTitle">Average Finish</div>
           <div className="col-xs-4 statsTitle">Most Wins</div>
         </div>
@@ -684,15 +684,15 @@ class Weekly extends React.Component {
   componentDidMount() {
     var newDate = this.state.date;
     for(var i=0; i < gameData.length; i++){
-        if(gameData[i][0].name === "Micah" && gameData[i].date === newDate){
+        if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
           weeklyWins[0] ++;
-        }else if(gameData[i][0].name === "Tim" && gameData[i].date === newDate){
+        }else if(gameData[i][0].name === "Tim" && gameData[i][5].date === newDate){
           weeklyWins[1] ++;
-        }else if(gameData[i][0].name === "Doug" && gameData[i].date === newDate){
+        }else if(gameData[i][0].name === "Doug" && gameData[i][5].date === newDate){
           weeklyWins[2] ++;
-        }else if(gameData[i][0].name === "Zack" && gameData[i].date === newDate){
+        }else if(gameData[i][0].name === "Zack" && gameData[i][5].date === newDate){
           weeklyWins[3] ++;
-        }else if(gameData[i][0].name === "Betsy" && gameData[i].date === newDate){
+        }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date === newDate){
           weeklyWins[4] ++;
         }
       }
@@ -706,14 +706,16 @@ class Weekly extends React.Component {
     if(dateIndex > 0){
       var newDate = dates[dateIndex - 1];
       for(var i=0; i < gameData.length; i++){
-        if(gameData[i][0].name === "Micah" && gameData[i].date === newDate){
+        if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
           weeklyWins[0] ++;
-        }else if(gameData[i][0].name === "Tim" && gameData[i].date === newDate){
+        }else if(gameData[i][0].name === "Tim" && gameData[i][5].date === newDate){
           weeklyWins[1] ++;
-        }else if(gameData[i][0].name === "Doug" && gameData[i].date === newDate){
+        }else if(gameData[i][0].name === "Doug" && gameData[i][5].date === newDate){
           weeklyWins[2] ++;
-        }else if(gameData[i][0].name === "Zack" && gameData[i].date === newDate){
+        }else if(gameData[i][0].name === "Zack" && gameData[i][5].date === newDate){
           weeklyWins[3] ++;
+        }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date === newDate){
+          weeklyWins[4] ++;
         }
       }
       this.setState({
@@ -728,14 +730,16 @@ class Weekly extends React.Component {
     if(dateIndex < dates.length - 1){
       var newDate = dates[dateIndex + 1];
       for(var i=0; i < gameData.length; i++){
-        if(gameData[i][0].name === "Micah" && gameData[i].date === newDate){
+        if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
           weeklyWins[0] ++;
-        }else if(gameData[i][0].name === "Tim" && gameData[i].date === newDate){
+        }else if(gameData[i][0].name === "Tim" && gameData[i][5].date === newDate){
           weeklyWins[1] ++;
-        }else if(gameData[i][0].name === "Doug" && gameData[i].date === newDate){
+        }else if(gameData[i][0].name === "Doug" && gameData[i][5].date === newDate){
           weeklyWins[2] ++;
-        }else if(gameData[i][0].name === "Zack" && gameData[i].date === newDate){
+        }else if(gameData[i][0].name === "Zack" && gameData[i][5].date === newDate){
           weeklyWins[3] ++;
+        }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date === newDate){
+          weeklyWins[4] ++;
         }
       }
       this.setState({
@@ -783,7 +787,7 @@ class Game extends React.Component {
     return (
       <div className="col-xs-12 col-md-6 gameRow">
         <div className="row">
-          <div className="col-xs-2 gameNumber">{this.props.id}</div>
+          <div className="col-xs-2 gameNumber">{this.props.id + 1}</div>
           <div className="displayBox col-xs-2">
             <div className="row">
               <img className="fighterIcon" src={this.props.character1} alt="character1" />
