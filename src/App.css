@@ -126,6 +126,11 @@ html {
   font-family: 'Carter One', cursive;
 }
 
+#totalKos {
+  font-size: 75px;
+  font-family: 'Carter One', cursive;
+}
+
 #mostWinsNumber {
   font-size: 50px;
   padding-top: 40px;
@@ -182,6 +187,10 @@ html {
   }
 
   #averageNumber {
+    font-size: 40px;
+  }
+
+  #totalKos {
     font-size: 40px;
   }
 

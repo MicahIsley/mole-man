@@ -88,222 +88,289 @@ var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 
 const gameData = [
-   {
-    0: {name: "Micah", character: bowserjr},
-    1: {name: "Tim", character: samus},
-    2: {name: "Doug", character: sheik},
-    3: {name: "Zack", character: hero},
-    stage: "Custom",
-    date: "Sept 11 2019"
-  },{
-    0: {name: "Doug", character: banjo},
-    1: {name: "Zack", character: banjo},
-    2: {name: "Micah", character: ridley},
-    3: {name: "Tim", character: unknown},
-    stage: "Custom",
-    date: "Sept 11 2019"
-  },{
-    0: {name: "Micah", character: donkeykong},
-    1: {name: "Zack", character: hero},
-    2: {name: "Doug", character: unknown},
-    3: {name: "Tim", character: unknown},
-    stage: "Battlefield",
-    date: "Sept 11 2019"
-  },{
-    0: {name: "Tim", character: unknown},
-    1: {name: "Micah", character: unknown},
-    2: {name: "Doug", character: unknown},
-    3: {name: "Zack", character: unknown},
-    stage: "Battlefield",
-    date: "Sept 11 2019"
-  },{
-    0: {name: "Tim", character: unknown},
-    1: {name: "Micah", character: unknown},
-    2: {name: "Doug", character: unknown},
-    3: {name: "Zack", character: unknown},
-    stage: "Battlefield",
-    date: "Sept 11 2019"
-  },{
-    0: {name: "Zack", character: unknown},
-    1: {name: "Micah", character: unknown},
-    2: {name: "Doug", character: unknown},
-    3: {name: "Tim", character: unknown},
-    stage: "Battlefield",
-    date: "Sept 11 2019"
-  },{
-    0: {name: "Zack", character: drmario},
-    1: {name: "Tim", character: ness},
-    2: {name: "Micah", character: peach},
-    3: {name: "Doug", character: samus},
-    stage: "custom",
-    date: "Sept 11 2019"
-  },{
-    0: {name: "Doug", character: samus},
-    1: {name: "Tim", character: ness},
-    2: {name: "Zack", character: drmario},
-    3: {name: "Micah", character: peach},
-    stage: "Custom",
-    date: "Sept 11 2019"
-  },{
-    0: {name: "Doug", character: luigi},
-    1: {name: "Zack", character: drmario},
-    2: {name: "Tim", character: ness},
-    3: {name: "Micah", character: incineroar},
-    stage: "Mario Maker",
-    date: "Sept 11 2019"
-  },{
-    0: {name: "Tim", character: samus},
-    1: {name: "Doug", character: kirby},
-    2: {name: "Zack", character: drmario},
-    3: {name: "Micah", character: incineroar},
-    stage: "Corneria",
-    date: "Sept 11 2019"
-  },{
-    0: {name: "Micah", character: bowserjr},
-    1: {name: "Tim", character: samus},
-    2: {name: "Doug", character: unknown},
-    3: {name: "Zack", character: unknown},
-    stage: "Spiral Mountain",
-    date: "Sept 11 2019"
-  },{
-    0: {name: "Micah", character: banjo},
-    1: {name: "Doug", character: captainfalcon},
-    2: {name: "Tim", character: cloud},
-    3: {name: " " , character: empty},
-    stage: "Custom",
-    date: "Sept 18 2019"
-  },{
-    0: {name: "Micah", character: darkpit},
-    1: {name: "Tim", character: pacman},
-    2: {name: "Doug", character: zerosuitsamus},
-    3: {name: "", character: empty},
-    stage: "Peach's Castle",
-    date: "Sept 18 2019"
-  },{
-    0: {name: "Betsy", character: bowser},
-    1: {name: "Tim", character: pacman},
-    2: {name: "Doug", character: zerosuitsamus},
-    3: {name: "", character: empty},
-    stage: "Battlefield",
-    date: "Sept 18 2019"
-  },{
-    0: {name: "Micah", character: iceclimbers},
-    1: {name: "Tim", character: samus},
-    2: {name: "Doug", character: toonlink},
-    3: {name: "", character: empty},
-    stage: "Battlefield",
-    date: "Sept 18 2019"
-  },{
-    0: {name: "Tim", character: samus},
-    1: {name: "Micah", character: lucario},
-    2: {name: "Doug", character: samus},
-    3: {name: "", character: empty},
-    stage: "Battlefield",
-    date: "Sept 18 2019"
-  },{
-    0: {name: "Tim", character: ness},
-    1: {name: "Doug", character: marth},
-    2: {name: "Micah", character: miiswordfighter},
-    3: {name: "", character: empty},
-    stage: "Battlefield",
-    date: "Sept 18 2019"
-  },{
-    0: {name: "Tim", character: darksamus},
-    1: {name: "Zack", character: kingdedede},
-    2: {name: "Micah", character: incineroar},
-    3: {name: "", character: empty},
-    stage: "Spiral Mountain",
-    date: "Sept 25 2019"
-  },{
-    0: {name: "Micah", character: bowserjr},
-    1: {name: "Zack", character: corrin},
-    2: {name: "Tim", character: samus},
-    3: {name: "", character: empty},
-    stage: "Kongo Jungle",
-    date: "Sept 25 2019"
-  },{
-    0: {name: "Zack", character: corrin},
-    1: {name: "Micah", character: bowserjr},
-    2: {name: "Tim", character: samus},
-    3: {name: "", character: empty},
-    stage: "Unknown",
-    date: "Sept 25 2019"
-  },{
-    0: {name: "Zack", character: yoshi},
-    1: {name: "Micah", character: iceclimbers},
-    2: {name: "Tim", character: ness},
-    3: {name: "", character: empty},
-    stage: "Paper Mario",
-    date: "Sept 25 2019"
-  },{
-    0: {name: "Zack", character: yoshi},
-    1: {name: "Tim", character: ness},
-    2: {name: "Micah", character: iceclimbers},
-    3: {name: "", character: empty},
-    stage: "Big Battlefield",
-    date: "Sept 25 2019"
-  },{
-    0: {name: "Tim", character: ness},
-    1: {name: "Zack", character: drmario},
-    2: {name: "Micah", character: peach},
-    3: {name: "", character: empty},
-    stage: "Mario Galaxy",
-    date: "Sept 25 2019"
-  },{
-    0: {name: "Zack", character: hero},
-    1: {name: "Micah", character: peach},
-    2: {name: "Tim", character: pacman},
-    3: {name: "", character: empty},
-    stage: "Final Destination",
-    date: "Sept 25 2019"
-  },{
-    0: {name: "Tim", character: ness},
-    1: {name: "Zack", character: corrin},
-    2: {name: "Micah", character: banjo},
-    3: {name: "", character: empty},
-    stage: "Kalos Pokemon League",
-    date: "Sept 25 2019"
-  }
+   [
+    {name: "Micah", character: bowserjr, kos: 0},
+    {name: "Tim", character: samus, kos: 0},
+    {name: "Doug", character: sheik, kos: 0},
+    {name: "Zack", character: hero, kos: 0},
+    {stage: "Custom"},
+    {date: "Sept 11 2019"}
+  ],[
+    {name: "Doug", character: banjo, kos: 0},
+    {name: "Zack", character: banjo, kos: 0},
+    {name: "Micah", character: ridley, kos: 0},
+    {name: "Tim", character: unknown, kos: 0},
+    {stage: "Custom"},
+    {date: "Sept 11 2019"}
+  ],[
+    {name: "Micah", character: donkeykong, kos: 0},
+    {name: "Zack", character: hero, kos: 0},
+    {name: "Doug", character: unknown, kos: 0},
+    {name: "Tim", character: unknown, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Sept 11 2019"}
+  ],[
+    {name: "Tim", character: unknown, kos: 0},
+    {name: "Micah", character: unknown, kos: 0},
+    {name: "Doug", character: unknown, kos: 0},
+    {name: "Zack", character: unknown, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Sept 11 2019"}
+  ],[
+    {name: "Tim", character: unknown, kos: 0},
+    {name: "Micah", character: unknown, kos: 0},
+    {name: "Doug", character: unknown, kos: 0},
+    {name: "Zack", character: unknown, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Sept 11 2019"}
+  ],[
+    {name: "Zack", character: unknown, kos: 0},
+    {name: "Micah", character: unknown, kos: 0},
+    {name: "Doug", character: unknown, kos: 0},
+    {name: "Tim", character: unknown, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Sept 11 2019"}
+  ],[
+    {name: "Zack", character: drmario, kos: 5},
+    {name: "Tim", character: ness, kos: 4},
+    {name: "Micah", character: peach, kos: 0},
+    {name: "Doug", character: samus, kos: 1},
+    {stage: "custom"},
+    {date: "Sept 11 2019"}
+  ],[
+    {name: "Doug", character: samus, kos: 4},
+    {name: "Tim", character: ness, kos: 2},
+    {name: "Zack", character: drmario, kos: 4},
+    {name: "Micah", character: peach, kos: 1},
+    {stage: "Custom"},
+    {date: "Sept 11 2019"}
+  ],[
+    {name: "Doug", character: luigi, kos: 5},
+    {name: "Zack", character: drmario, kos: 4},
+    {name: "Tim", character: ness, kos: 2},
+    {name: "Micah", character: incineroar, kos: 0},
+    {stage: "Mario Maker"},
+    {date: "Sept 11 2019"}
+  ],[
+    {name: "Tim", character: samus, kos: 6},
+    {name: "Doug", character: kirby, kos: 2},
+    {name: "Zack", character: drmario, kos: 0},
+    {name: "Micah", character: incineroar, kos: 3},
+    {stage: "Corneria"},
+    {date: "Sept 11 2019"}
+  ],[
+    {name: "Micah", character: bowserjr, kos: 0},
+    {name: "Tim", character: samus, kos: 0},
+    {name: "Doug", character: unknown, kos: 0},
+    {name: "Zack", character: unknown, kos: 0},
+    {stage: "Spiral Mountain"},
+    {date: "Sept 11 2019"}
+  ],[
+    {name: "Micah", character: banjo, kos: 4},
+    {name: "Doug", character: captainfalcon, kos: 2},
+    {name: "Tim", character: cloud, kos: 1},
+    {name: " " , character: empty, kos: 0},
+    {stage: "Custom"},
+    {date: "Sept 18 2019"}
+  ],[
+    {name: "Micah", character: darkpit, kos: 0},
+    {name: "Tim", character: pacman, kos: 0},
+    {name: "Doug", character: zerosuitsamus, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Peach's Castle"},
+    {date: "Sept 18 2019"}
+  ],[
+    {name: "Betsy", character: bowser, kos: 4},
+    {name: "Tim", character: pacman, kos: 2},
+    {name: "Doug", character: zerosuitsamus, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Sept 18 2019"}
+  ],[
+    {name: "Micah", character: iceclimbers, kos: 4},
+    {name: "Tim", character: samus, kos: 3},
+    {name: "Doug", character: toonlink, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Sept 18 2019"}
+  ],[
+    {name: "Tim", character: samus, kos: 0},
+    {name: "Micah", character: lucario, kos: 0},
+    {name: "Doug", character: samus, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Sept 18 2019"}
+  ],[
+    {name: "Tim", character: ness, kos: 0},
+    {name: "Doug", character: marth, kos: 0},
+    {name: "Micah", character: miiswordfighter, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Sept 18 2019"}
+  ],[
+    {name: "Tim", character: darksamus, kos: 4},
+    {name: "Zack", character: kingdedede, kos: 4},
+    {name: "Micah", character: incineroar, kos: 0},
+    {name: "", character: empty},
+    {stage: "Spiral Mountain"},
+    {date: "Sept 25 2019"}
+  ],[
+    {name: "Micah", character: bowserjr, kos: 4},
+    {name: "Zack", character: corrin, kos: 2},
+    {name: "Tim", character: samus, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Kongo Jungle"},
+    {date: "Sept 25 2019"}
+  ],[
+    {name: "Zack", character: corrin, kos: 0},
+    {name: "Micah", character: bowserjr, kos: 0},
+    {name: "Tim", character: samus, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Unknown"},
+    {date: "Sept 25 2019"}
+  ],[
+    {name: "Zack", character: yoshi, kos: 3},
+    {name: "Micah", character: iceclimbers, kos: 2},
+    {name: "Tim", character: ness, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Paper Mario"},
+    {date: "Sept 25 2019"}
+  ],[
+    {name: "Zack", character: yoshi, kos: 2},
+    {name: "Tim", character: ness, kos: 4},
+    {name: "Micah", character: iceclimbers, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Big Battlefield"},
+    {date: "Sept 25 2019"}
+  ],[
+    {name: "Tim", character: ness, kos: 3},
+    {name: "Zack", character: drmario, kos: 4},
+    {name: "Micah", character: peach, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Mario Galaxy"},
+    {date: "Sept 25 2019"}
+  ],[
+    {name: "Zack", character: hero, kos: 6},
+    {name: "Micah", character: peach, kos: 1},
+    {name: "Tim", character: pacman, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Final Destination"},
+    {date: "Sept 25 2019"}
+  ],[
+    {name: "Tim", character: ness, kos: 5},
+    {name: "Zack", character: corrin, kos: 2},
+    {name: "Micah", character: banjo, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Kalos Pokemon League"},
+    {date: "Sept 25 2019"}
+  ],[
+    {name: "Micah", character: iceclimbers, kos: 2},
+    {name: "Doug", character: marth, kos: 4},
+    {name: "Tim", character: ness, kos:2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Final Destination"},
+    {date: "Oct 9 2019"}
+  ],[
+    {name: "Doug", character: hero, kos: 4},
+    {name: "Tim", character: ness, kos: 1},
+    {name: "Micah", character: simon, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Yoshi's Island"},
+    {date: "Oct 9 2019"}
+  ],[
+    {name: "Zack", character: corrin, kos: 4},
+    {name: "Tim", character: pacman, kos: 2},
+    {name: "Doug", character: link, kos: 3},
+    {name: "Micah", character: simon, kos: 2},
+    {stage: "Rainbow Cruise"},
+    {date: "Oct 9 2019"}
+  ],[
+    {name: "Zack", character: corrin, kos: 0},
+    {name: "Tim", character: ness, kos: 0},
+    {name: "Doug", character: fox, kos: 0},
+    {name: "Micah", character: bowserjr, kos: 0},
+    {stage: "Rainbow Cruise"},
+    {date: "Oct 9 2019"}
+  ],[
+    {name: "Tim", character: samus, kos: 2},
+    {name: "Zack", character: kingdedede, kos: 4},
+    {name: "Micah", character: bowserjr, kos: 4},
+    {name: "Doug", character: kingkrool, kos: 1},
+    {stage: "Tortimer Island"},
+    {date: "Oct 9 2019"}
+  ],[
+    {name: "Micah", character: banjo, kos: 3},
+    {name: "Tim", character: darksamus, kos: 4},
+    {name: "Doug", character: donkeykong, kos: 2},
+    {name: "Zack", character: roy, kos: 1},
+    {stage: "Balloon Fight"},
+    {date: "Oct 9 2019"}
+  ],[
+    {name: "Micah", character: zelda, kos: 3},
+    {name: "Doug", character: luigi, kos: 3},
+    {name: "Zack", character: roy, kos: 1},
+    {name: "Tim", character: darksamus, kos: 2},
+    {stage: "Custom"},
+    {date: "Oct 9 2019"}
+  ],[
+    {name: "Doug", character: samus, kos: 1},
+    {name: "Zack", character: yoshi, kos: 3},
+    {name: "Micah", character: zelda, kos: 3},
+    {name: "Tim", character: donkeykong, kos: 4},
+    {stage: "Duck Hunt"},
+    {date: "Oct 9 2019"}
+  ],[
+    {name: "Betsy", character: villager, kos: 2},
+    {name: "Zack", character: yoshi, kos: 4},
+    {name: "Doug", character: younglink, kos: 4},
+    {name: "Tim", character: ness, kos: 1},
+    {stage: "Custom"},
+    {date: "Oct 9 2019"}
+  ],[
+    {name: "Zack", character: yoshi, kos: 0},
+    {name: "Tim", character: ness, kos: 0},
+    {name: "Doug", character: pokemontrainer, kos: 0},
+    {name: "Micah", character: incineroar, kos: 0},
+    {stage: ""},
+    {date: "Oct 9 2019"}
+  ]
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019"];
 
 var micah = 0;
 var tim = 0;
 var doug = 0;
 var zack = 0;
-var weeklyWins = [0,0,0,0];
+var betsy = 0;
+var weeklyWins = [0,0,0,0,0];
+var playerkos = [0,0,0,0,0];
 
 var playerStats = [
  {  name: "Micah",
-    mostPlayed: [{character: bowserjr, number: 4}, {character: peach, number: 4}, {character: incineroar, number: 3}],
-    averagePlace: 2.08,
-    mostWins: [bowserjr, 3],
-    kos: 0
+    mostPlayed: [{character: bowserjr, number: 6}, {character: incineroar, number: 4}, {character: iceclimbers, number: 3}],
+    averagePlace: 2.31,
+    mostWins: [bowserjr, 3]
   },
   { name: "Tim",
-    mostPlayed: [{character: ness, number: 8}, {character: samus, number: 6}, {character: pacman, number: 3}],
-    averagePlace: 2,
-    mostWins: [ness, 3],
-    kos: 0
+    mostPlayed: [{character: ness, number: 13}, {character: samus, number: 8}, {character: pacman, number: 4}],
+    averagePlace: 2.25,
+    mostWins: [ness, 3]
   },
   { name: "Doug",
-    mostPlayed: [{character: samus, number: 3}, {character: zerosuitsamus, number: 2}],
-    averagePlace: 2.67,
-    mostWins: [samus, 1],
-    kos: 0
+    mostPlayed: [{character: samus, number: 4}, {character: luigi, number: 2}, {character: marth, number: 2}],
+    averagePlace: 2.63,
+    mostWins: [samus, 2]
   },
   { name: "Zack",
-    mostPlayed: [{character: drmario, number: 5}, {character: hero, number: 3}, {character: corrin, number: 3}],
-    averagePlace: 1.5,
-    mostWins: [yoshi, 2],
-    kos: 0
+    mostPlayed: [{character: drmario, number: 5}, {character: corrin, number: 5}, {character: yoshi, number: 5}],
+    averagePlace: 1.75,
+    mostWins: [corrin, 3]
   },
   { name: "Betsy",
-    mostPlayed: [{character: bowser, number: 1}],
+    mostPlayed: [{character: bowser, number: 1}, {character: villager, number: 1}],
     averagePlace: 1,
-    mostWins: [bowser, 1],
-    kos: 0
+    mostWins: [bowser, 1]
   }
 ];
 
@@ -315,6 +382,7 @@ class App extends React.Component {
       tim: 0,
       doug: 0,
       zack: 0,
+      betsy: 0,
       weekly: false,
       overall: true,
       stats: false
@@ -333,13 +401,29 @@ class App extends React.Component {
         doug ++;
       }else if(gameData[i][0].name === "Zack"){
         zack ++;
+      }else if(gameData[i][0].name === "Betsy"){
+        betsy ++;
+      }
+      for(var j=0; j< 4; j++){
+        if(gameData[i][j].name === "Micah"){
+          playerkos[0] = playerkos[0] + gameData[i][j].kos;
+        }else if(gameData[i][j].name === "Tim"){
+          playerkos[1] = playerkos[1] + gameData[i][j].kos;
+        }else if(gameData[i][j].name === "Doug"){
+          playerkos[2] = playerkos[2] + gameData[i][j].kos;
+        }else if(gameData[i][j].name === "Zack"){
+          playerkos[3] = playerkos[3] + gameData[i][j].kos;
+        }else if(gameData[i][j].name === "Betsy"){
+          playerkos[4] = playerkos[4] + gameData[i][j].kos;
+        }
       }
     }
     this.setState({
       micah: micah,
       tim: tim,
       doug: doug,
-      zack: zack
+      zack: zack,
+      betsy: betsy
     });
   }
   goToWeekly(){
@@ -391,7 +475,7 @@ class App extends React.Component {
           <Tab name="Individual" handleClick={this.goToStats} />
         </div>
         {this.state.weekly ? <Weekly micah={this.state.micah} tim={this.state.tim} doug={this.state.doug} zack={this.state.zack} /> : null }
-        {this.state.overall ? <Overall micah={this.state.micah} tim={this.state.tim} doug={this.state.doug} zack={this.state.zack} /> : null }
+        {this.state.overall ? <Overall betsy={this.state.betsy} micah={this.state.micah} tim={this.state.tim} doug={this.state.doug} zack={this.state.zack} /> : null }
         {this.state.stats ? <Stats /> : null }
       </div>
     );
@@ -415,7 +499,7 @@ class Overall extends React.Component {
         autoplay: 1
       }
     };
-    var overallWins = [this.props.micah, this.props.tim, this.props.doug, this.props.zack];
+    var overallWins = [this.props.micah, this.props.tim, this.props.doug, this.props.zack, this.props.betsy];
     const options = {
       title: {
         text: "Wins"
@@ -435,7 +519,8 @@ class Overall extends React.Component {
                     { label: "Micah",  y: overallWins[0], color: "#ffc233"  },
                     { label: "Tim", y: overallWins[1], color: "#9228de" },
                     { label: "Doug", y: overallWins[2], color: "#70d115"  },
-                    { label: "Zack",  y: overallWins[3], color: "#ff78f1"  }
+                    { label: "Zack",  y: overallWins[3], color: "#ff78f1"  },
+                    { label: "Betsy", y: overallWins[4], color: "red"}
                 ]
        }]
    }
@@ -458,7 +543,8 @@ class Stats extends React.Component {
       name: "Micah",
       mostPlayed: [],
       averagePlace: 0,
-      mostWins: 0
+      mostWins: 0,
+      totalKos: 0
     }
   this.nextName = this.nextName.bind(this);
   this.previousName = this.previousName.bind(this);
@@ -468,7 +554,8 @@ class Stats extends React.Component {
     this.setState({
       mostPlayed: playerStats[0].mostPlayed,
       averagePlace: playerStats[0].averagePlace,
-      mostWins: playerStats[0].mostWins
+      mostWins: playerStats[0].mostWins,
+      totalKos: playerkos[0]
     });
   }
   listMostPlayed () {
@@ -497,7 +584,8 @@ class Stats extends React.Component {
         name: nameArray[newName],
         mostPlayed: newMostPlayed,
         averagePlace: averagePlace,
-        mostWins: mostWins
+        mostWins: mostWins,
+        totalKos: playerkos[newName]
       });
     }
   }
@@ -517,7 +605,8 @@ class Stats extends React.Component {
         name: nameArray[newName],
         mostPlayed: newMostPlayed,
         averagePlace: averagePlace,
-        mostWins: mostWins
+        mostWins: mostWins,
+        totalKos: playerkos[newName]
       });
     }
   }
@@ -538,7 +627,10 @@ class Stats extends React.Component {
           <div className="col-xs-4">
             {this.listMostPlayed()}
           </div>
-          <div className="col-xs-4" id="averageNumber">{this.state.averagePlace}</div>
+          <div className="col-xs-4">
+            <div className="row" id="averageNumber">{this.state.averagePlace}</div>
+            <div className="row" id="totalKos">{this.state.totalKos}</div>
+          </div>
           <div className="col-xs-4" id="mostWinsNumber">
             <div className="row">
               <img className="statsFighterIcon" src={this.state.mostWins[0]} alt="mostWins" />
@@ -583,7 +675,7 @@ class Weekly extends React.Component {
     super(props);
     this.state = {
       date: "Sept 11 2019",
-      weeklyWins: [0,0,0,0]
+      weeklyWins: [0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
   this.previousDate = this.previousDate.bind(this);
@@ -599,6 +691,8 @@ class Weekly extends React.Component {
           weeklyWins[2] ++;
         }else if(gameData[i][0].name === "Zack" && gameData[i].date === newDate){
           weeklyWins[3] ++;
+        }else if(gameData[i][0].name === "Betsy" && gameData[i].date === newDate){
+          weeklyWins[4] ++;
         }
       }
     this.setState({
@@ -652,7 +746,7 @@ class Weekly extends React.Component {
   listGames () {
     const numberOfGames = gameData;
     const listGames = numberOfGames.map((game, index) => {
-      if(game.date === this.state.date) {
+      if(game[5].date === this.state.date) {
         return <Game key={index} id={index} firstPlace={game[0].name} second={game[1].name} third={game[2].name} fourth={game[3].name} character1={game[0].character} character2={game[1].character} character3={game[2].character} character4={game[3].character} />
       }
     }
