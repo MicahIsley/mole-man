@@ -629,6 +629,7 @@ class Stats extends React.Component {
           </div>
           <div className="col-xs-4">
             <div className="row" id="averageNumber">{this.state.averagePlace}</div>
+            <div className="row statsTitle">Total Kos</div>
             <div className="row" id="totalKos">{this.state.totalKos}</div>
           </div>
           <div className="col-xs-4" id="mostWinsNumber">
