@@ -38,7 +38,7 @@ import littlemac from './assets/littlemac.jpg';
 import lucario from './assets/lucario.jpg';
 import lucas from './assets/lucas.jpg';
 import lucina from './assets/lucina.jpg';
-import luigi from './assets/luigi.png';
+import luigi from './assets/luigi.jpg';
 import mario from './assets/mario.jpg';
 import marth from './assets/marth.jpg';
 import megaman from './assets/megaman.jpg';
@@ -465,7 +465,7 @@ class App extends React.Component {
   }
   render(){
     return (
-      <div className="App">
+      <div className="container-fluid App">
         <div className="row title">
           Super Smash Rankings
         </div>
@@ -525,11 +525,9 @@ class Overall extends React.Component {
        }]
    }
     return (
-      <div className="overall">
-        <div className="row">
-          <div className="col-xs-12">
+      <div className="row overall">
+        <div className="col-xs-12">
             <CanvasJSChart options = {options} />
-          </div>
         </div>
       </div>
     )
@@ -612,32 +610,34 @@ class Stats extends React.Component {
   }
   render(){
     return (
-      <div className="stats">
-        <div className="row">
-          <div className="col-xs-offset-3 col-xs-1"><span onClick={this.previousName} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
-          <div className="col-xs-4" id="statsName">{this.state.name}</div>
-          <div className="col-xs-1"><span onClick={this.nextName} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
-        </div>
-        <div className="row">
-          <div className="col-xs-4 statsTitle">Most Played Characters</div>
-          <div className="col-xs-4 statsTitle">Average Finish</div>
-          <div className="col-xs-4 statsTitle">Most Wins</div>
-        </div>
-        <div className="row">
-          <div className="col-xs-4">
-            {this.listMostPlayed()}
+      <div className="row stats">
+        <div className="col-xs-12">
+          <div className="row">
+            <div className="col-xs-offset-3 col-xs-1"><span onClick={this.previousName} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
+            <div className="col-xs-4" id="statsName">{this.state.name}</div>
+            <div className="col-xs-1"><span onClick={this.nextName} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
           </div>
-          <div className="col-xs-4">
-            <div className="row" id="averageNumber">{this.state.averagePlace}</div>
-            <div className="row statsTitle">Total Kos</div>
-            <div className="row" id="totalKos">{this.state.totalKos}</div>
+          <div className="row">
+            <div className="col-xs-4 statsTitle">Most Played Characters</div>
+            <div className="col-xs-4 statsTitle">Average Finish</div>
+            <div className="col-xs-4 statsTitle">Most Wins</div>
           </div>
-          <div className="col-xs-4" id="mostWinsNumber">
-            <div className="row">
-              <img className="statsFighterIcon" src={this.state.mostWins[0]} alt="mostWins" />
+          <div className="row">
+            <div className="col-xs-4">
+              {this.listMostPlayed()}
             </div>
-            <div className="row">
-              {this.state.mostWins[1]}
+            <div className="col-xs-4">
+              <div className="row" id="averageNumber">{this.state.averagePlace}</div>
+              <div className="row statsTitle">Total Kos</div>
+              <div className="row" id="totalKos">{this.state.totalKos}</div>
+            </div>
+            <div className="col-xs-4" id="mostWinsNumber">
+              <div className="row">
+                <img className="statsFighterIcon" src={this.state.mostWins[0]} alt="mostWins" />
+              </div>
+              <div className="row">
+                {this.state.mostWins[1]}
+              </div>
             </div>
           </div>
         </div>
@@ -752,7 +752,7 @@ class Weekly extends React.Component {
     const numberOfGames = gameData;
     const listGames = numberOfGames.map((game, index) => {
       if(game[5].date === this.state.date) {
-        return <Game key={index} id={index} firstPlace={game[0].name} second={game[1].name} third={game[2].name} fourth={game[3].name} character1={game[0].character} character2={game[1].character} character3={game[2].character} character4={game[3].character} />
+        return <Game key={index} id={index} firstPlace={game[0].name} second={game[1].name} third={game[2].name} fourth={game[3].name} character1={game[0].character} character2={game[1].character} character3={game[2].character} character4={game[3].character} firstKos={game[0].kos} secondKos={game[1].kos} thirdKos={game[2].kos} fourthKos={game[3].kos} stage={game[4].stage} />
       }
     }
     );
@@ -762,20 +762,22 @@ class Weekly extends React.Component {
   }
   render(){
     return (
-      <div className="rankings">
-        <div className="row">
-          <div className="col-xs-offset-1 col-xs-1 col-md-offset-4 col-md-1"><span onClick={this.previousDate} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
-          <div className="col-xs-8 col-md-2" id="weeklyDate">{this.state.date}</div>
-          <div className="col-xs-1 col-md-1"><span onClick={this.nextDate} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
-        </div>
-        <div className="row">
-          <div className="col-xs-3 col-md-2 col-md-offset-2 weeklyName">Micah: {this.state.weeklyWins[0]}</div>
-          <div className="col-xs-3 col-md-2 weeklyName">Tim: {this.state.weeklyWins[1]}</div>
-          <div className="col-xs-3 col-md-2 weeklyName">Doug: {this.state.weeklyWins[2]}</div>
-          <div className="col-xs-3 col-md-2 weeklyName">Zack: {this.state.weeklyWins[3]}</div>
-        </div>
-        <div className="row">
-          {this.listGames()}
+      <div className="row rankings">
+        <div className="col-xs-12">
+          <div className="row">
+            <div className="col-xs-offset-1 col-xs-1 col-md-offset-4 col-md-1"><span onClick={this.previousDate} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
+            <div className="col-xs-8 col-md-2" id="weeklyDate">{this.state.date}</div>
+            <div className="col-xs-1 col-md-1"><span onClick={this.nextDate} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
+          </div>
+          <div className="row">
+            <div className="col-xs-3 col-md-2 col-md-offset-2 weeklyName">Micah: {this.state.weeklyWins[0]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">Tim: {this.state.weeklyWins[1]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">Doug: {this.state.weeklyWins[2]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">Zack: {this.state.weeklyWins[3]}</div>
+          </div>
+          <div className="row">
+            {this.listGames()}
+          </div>
         </div>
       </div>
     )
@@ -783,46 +785,105 @@ class Weekly extends React.Component {
 }
 
 class Game extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      fourPlayers: false,
+      gameStats: false
+    }
+  this.openGameStats = this.openGameStats.bind(this);
+  }
+  componentDidMount(){
+    if(this.props.character4 === empty){
+      this.setState({
+        fourPlayers: false
+      });
+    }else{
+      this.setState({
+        fourPlayers:true
+      });
+    }
+  }
+  openGameStats(){
+    if(this.state.gameStats === false){
+      this.setState({
+        gameStats: true
+      });
+    }else{
+      this.setState({
+        gameStats: false
+      });
+    }
+  }
   render(){
     return (
-      <div className="col-xs-12 col-md-6 gameRow">
+      <div className="col-xs-offset-1 col-xs-9 gameRow">
+        <div className="gameUnderline row">
+          <div className="col-xs-12">
+            <div className="row">
+              <div className="col-xs-offset-1 col-xs-1 gameNumber">{this.props.id + 1}</div>
+              <GamePlayer character={this.props.character1} place={this.props.firstPlace} />
+              <GamePlayer character={this.props.character2} place={this.props.second} />
+              <GamePlayer character={this.props.character3} place={this.props.third} />
+              {this.state.fourPlayers ? <GamePlayer character={this.props.character4} place={this.props.fourth} /> : null }
+              <div className="col-xs-1"><span className="downArrow glyphicon glyphicon-chevron-down" onClick={this.openGameStats}></span></div>
+            </div>
+            {this.state.gameStats ? <GameStatsRow fourPlayers={this.state.fourPlayers} firstKos={this.props.firstKos} secondKos={this.props.secondKos} thirdKos={this.props.thirdKos} fourthKos={this.props.fourthKos} stage={this.props.stage} /> : null }
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
+
+class GameStatsRow extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      fourPlayers: false
+    }
+  }
+  componentDidMount(){
+    if(this.props.fourPlayers === false){
+      this.setState({
+        fourPlayers: false
+      });
+    }else{
+      this.setState({
+        fourPlayers: true
+      });
+    }
+  }
+  render() {
+    return (
+      <div className="gameStatsRow row">
+        <div className="col-xs-offset-1 col-xs-1 koTitle">KOs</div>
+        <GameStatsKos numKos={this.props.firstKos} />
+        <GameStatsKos numKos={this.props.secondKos} />
+        <GameStatsKos numKos={this.props.thirdKos} />
+        {this.state.fourPlayers ? <GameStatsKos numKos={this.props.fourthKos} /> : null }
+        <div className="col-xs-2">{this.props.stage}</div>
+      </div>
+    )
+  }
+}
+
+class GameStatsKos extends React.Component {
+  render() {
+    return (
+      <div className="numKos col-xs-2">{this.props.numKos}</div>
+    )
+  }
+}
+
+class GamePlayer extends React.Component {
+  render() {
+    return (
+      <div className="displayBox col-xs-2">
         <div className="row">
-          <div className="col-xs-2 gameNumber">{this.props.id + 1}</div>
-          <div className="displayBox col-xs-2">
-            <div className="row">
-              <img className="fighterIcon" src={this.props.character1} alt="character1" />
-              <div className="col-xs-12 playerName">
-                <div className="row">{this.props.firstPlace}</div>
-                <div className="row place">1</div>
-              </div>
-            </div>
-          </div>
-          <div className="displayBox col-xs-2">
-            <div className="row">
-              <img className="fighterIcon" src={this.props.character2} alt="character2" />
-              <div className="col-xs-12 playerName">
-                <div className="row">{this.props.second}</div>
-                <div className="row place">2</div>
-              </div>
-            </div>
-          </div>
-          <div className="displayBox col-xs-2">
-            <div className="row">
-              <img className="fighterIcon" src={this.props.character3} alt="character3" />
-              <div className="col-xs-12 playerName">
-                <div className="row">{this.props.third}</div>
-                <div className="row place">3</div>
-              </div>
-            </div>
-          </div>
-          <div className="displayBox col-xs-2">
-            <div className="row">
-              <img className="fighterIcon" src={this.props.character4} alt="character4" />
-              <div className="playerName">
-                <div className="row">{this.props.fourth}</div>
-                <div className="row place">4</div>
-              </div>
-            </div>
+          <img className={`fighterIcon ${this.props.place}`}  src={this.props.character} alt="character1" />
+          <div className="col-xs-12 playerName">
+            <div className="row">{this.props.place}</div>
           </div>
         </div>
       </div>

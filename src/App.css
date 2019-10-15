@@ -68,13 +68,35 @@ html {
   margin-top: 12px;
 }
 
+.Micah {
+  border-color: orange;
+}
+
+.Tim {
+  border-color: purple;
+}
+
+.Doug {
+  border-color: green;
+}
+
+.Zack {
+  border-color: red;
+}
+
+.Betsy {
+  border-color: blue;
+}
+
 .displayBox:hover .playerName {
   display: block;
 }
 
 .fighterIcon {
-  height: 70px;
+  height: 100px;
   border-radius: 15px;
+  border-width: 4px;
+  border-style: solid;
 }
 
 .playerName, .displayBox:hover .fighterIcon {
@@ -104,6 +126,12 @@ html {
 
 .gameRow {
   margin-bottom: 3px;
+}
+
+.gameUnderline {
+  border-color: black;
+  border-style: solid;
+  border-width: 0px 3px 3px 0px;
 }
 
 #weeklyDate {
@@ -173,6 +201,20 @@ html {
 #thirdNumber {
   font-size: 50px;
   color: brown;
+  font-family: 'Carter One', cursive;
+}
+
+.downArrow {
+  margin-top: 15px;
+}
+
+.numKos {
+  font-size: 25px;
+  font-family: 'Carter One', cursive;
+}
+
+.koTitle {
+  font-size: 30px;
   font-family: 'Carter One', cursive;
 }
 
