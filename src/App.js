@@ -68,6 +68,7 @@ import samus from './assets/samus.jpg';
 import sheik from './assets/sheik.jpg';
 import shulk from './assets/shulk.jpg';
 import simon from './assets/simon.jpg';
+import smash from './assets/smash.png';
 import snake from './assets/snake.jpg';
 import sonic from './assets/sonic.jpg';
 import toonlink from './assets/toonlink.jpg';
@@ -345,6 +346,7 @@ var zack = 0;
 var betsy = 0;
 var weeklyWins = [0,0,0,0,0];
 var playerkos = [0,0,0,0,0];
+var highKoGames = [0,0,0,0,0];
 
 var playerStats = [
  {  name: "Micah",
@@ -355,22 +357,22 @@ var playerStats = [
   { name: "Tim",
     mostPlayed: [{character: ness, number: 13}, {character: samus, number: 8}, {character: pacman, number: 4}],
     averagePlace: 2.25,
-    mostWins: [ness, 3]
+    mostWins: [ness, 3] 
   },
   { name: "Doug",
     mostPlayed: [{character: samus, number: 4}, {character: luigi, number: 2}, {character: marth, number: 2}],
     averagePlace: 2.63,
-    mostWins: [samus, 2]
+    mostWins: [samus, 2] 
   },
   { name: "Zack",
     mostPlayed: [{character: drmario, number: 5}, {character: corrin, number: 5}, {character: yoshi, number: 5}],
     averagePlace: 1.75,
-    mostWins: [corrin, 3]
+    mostWins: [corrin, 3] 
   },
   { name: "Betsy",
     mostPlayed: [{character: bowser, number: 1}, {character: villager, number: 1}],
     averagePlace: 1,
-    mostWins: [bowser, 1]
+    mostWins: [bowser, 1] 
   }
 ];
 
@@ -385,11 +387,13 @@ class App extends React.Component {
       betsy: 0,
       weekly: false,
       overall: true,
-      stats: false
+      stats: false,
+      videos: false
     }
   this.goToWeekly = this.goToWeekly.bind(this);
   this.goToOverall = this.goToOverall.bind(this);
   this.goToStats = this.goToStats.bind(this);
+  this.goToVideos = this.goToVideos.bind(this);
   }
   componentDidMount(){
     for(var i=0; i < gameData.length; i++){
@@ -407,14 +411,29 @@ class App extends React.Component {
       for(var j=0; j< 4; j++){
         if(gameData[i][j].name === "Micah"){
           playerkos[0] = playerkos[0] + gameData[i][j].kos;
+          if(gameData[i][j].kos >= 4){
+            highKoGames[0] ++;
+          }else{}
         }else if(gameData[i][j].name === "Tim"){
           playerkos[1] = playerkos[1] + gameData[i][j].kos;
+          if(gameData[i][j].kos >= 4){
+            highKoGames[1] ++;
+          }else{}
         }else if(gameData[i][j].name === "Doug"){
           playerkos[2] = playerkos[2] + gameData[i][j].kos;
+          if(gameData[i][j].kos >= 4){
+            highKoGames[2] ++;
+          }else{}
         }else if(gameData[i][j].name === "Zack"){
           playerkos[3] = playerkos[3] + gameData[i][j].kos;
+          if(gameData[i][j].kos >= 4){
+            highKoGames[3] ++;
+          }else{}
         }else if(gameData[i][j].name === "Betsy"){
           playerkos[4] = playerkos[4] + gameData[i][j].kos;
+          if(gameData[i][j].kos >= 4){
+            highKoGames[4] ++;
+          }else{}
         }
       }
     }
@@ -435,7 +454,8 @@ class App extends React.Component {
     this.setState({
       weekly: true,
       overall: false,
-      stats: false
+      stats: false,
+      videos: false
     });
 
   }
@@ -448,7 +468,8 @@ class App extends React.Component {
     this.setState({
       weekly: false,
       overall: true,
-      stats: false
+      stats: false,
+      videos: false
     });
   }
   goToStats(){
@@ -460,13 +481,27 @@ class App extends React.Component {
     this.setState({
       weekly: false,
       overall: false,
-      stats: true
+      stats: true,
+      videos: false
+    });
+  }
+  goToVideos(){
+    const x = document.getElementsByClassName("tab");
+    for (var i=0; i < x.length; i ++ ){
+      x[i].style.background="#0547ff";
+    }
+    this.setState({
+      weekly: false,
+      overall: false,
+      stats: false,
+      videos: true
     });
   }
   render(){
     return (
       <div className="container-fluid App">
         <div className="row title">
+          <img src={smash} alt="logo" id="smashLogo" onClick={this.goToVideos} />
           Super Smash Rankings
         </div>
         <div className="row RankingTabs">
@@ -477,8 +512,33 @@ class App extends React.Component {
         {this.state.weekly ? <Weekly micah={this.state.micah} tim={this.state.tim} doug={this.state.doug} zack={this.state.zack} /> : null }
         {this.state.overall ? <Overall betsy={this.state.betsy} micah={this.state.micah} tim={this.state.tim} doug={this.state.doug} zack={this.state.zack} /> : null }
         {this.state.stats ? <Stats /> : null }
+        {this.state.videos ? <Highlights /> : null }
       </div>
     );
+  }
+}
+
+class Highlights extends React.Component {
+  render(){
+    return(
+      <div className="row">
+        <div className="col-xs-12">
+          <div className="row">
+            <div>Highlights</div>
+          </div>
+          <div className="row">
+            <iframe src='https://www.youtube.com/embed/G-oVNDaCN5s'
+              frameBorder='0'
+              allow='autoplay; encrypted-media'
+              allowFullScreen
+              title='video'
+              height="300"
+              width="500"
+            />
+          </div>
+        </div>
+      </div>
+    )
   }
 }
 
@@ -492,13 +552,6 @@ class Tab extends React.Component {
 
 class Overall extends React.Component {
   render(){
-    const opts = {
-      height: '390',
-      width: '640',
-      playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 1
-      }
-    };
     var overallWins = [this.props.micah, this.props.tim, this.props.doug, this.props.zack, this.props.betsy];
     const options = {
       title: {
@@ -542,7 +595,8 @@ class Stats extends React.Component {
       mostPlayed: [],
       averagePlace: 0,
       mostWins: 0,
-      totalKos: 0
+      totalKos: 0,
+      highKoGames: 0
     }
   this.nextName = this.nextName.bind(this);
   this.previousName = this.previousName.bind(this);
@@ -553,7 +607,8 @@ class Stats extends React.Component {
       mostPlayed: playerStats[0].mostPlayed,
       averagePlace: playerStats[0].averagePlace,
       mostWins: playerStats[0].mostWins,
-      totalKos: playerkos[0]
+      totalKos: playerkos[0],
+      highKoGames: highKoGames[0]
     });
   }
   listMostPlayed () {
@@ -583,7 +638,8 @@ class Stats extends React.Component {
         mostPlayed: newMostPlayed,
         averagePlace: averagePlace,
         mostWins: mostWins,
-        totalKos: playerkos[newName]
+        totalKos: playerkos[newName],
+        highKoGames: highKoGames[newName]
       });
     }
   }
@@ -604,7 +660,8 @@ class Stats extends React.Component {
         mostPlayed: newMostPlayed,
         averagePlace: averagePlace,
         mostWins: mostWins,
-        totalKos: playerkos[newName]
+        totalKos: playerkos[newName],
+        highKoGames: highKoGames[newName]
       });
     }
   }
@@ -619,7 +676,7 @@ class Stats extends React.Component {
           </div>
           <div className="row">
             <div className="col-xs-4 statsTitle">Most Played Characters</div>
-            <div className="col-xs-4 statsTitle">Average Finish</div>
+            <div className="col-xs-4 statsTitle">Average Place</div>
             <div className="col-xs-4 statsTitle">Most Wins</div>
           </div>
           <div className="row">
@@ -630,6 +687,8 @@ class Stats extends React.Component {
               <div className="row" id="averageNumber">{this.state.averagePlace}</div>
               <div className="row statsTitle">Total Kos</div>
               <div className="row" id="totalKos">{this.state.totalKos}</div>
+              <div className="row statsTitle">4+ KO Games</div>
+              <div className="row" id="averageKos">{this.state.highKoGames}</div>
             </div>
             <div className="col-xs-4" id="mostWinsNumber">
               <div className="row">
@@ -805,6 +864,7 @@ class Game extends React.Component {
     }
   }
   openGameStats(){
+    console.log(this.state.gameStats);
     if(this.state.gameStats === false){
       this.setState({
         gameStats: true
@@ -817,11 +877,11 @@ class Game extends React.Component {
   }
   render(){
     return (
-      <div className="col-xs-offset-1 col-xs-9 gameRow">
+      <div className="col-xs-12 col-md-offset-1 col-md-9 gameRow">
         <div className="gameUnderline row">
           <div className="col-xs-12">
             <div className="row">
-              <div className="col-xs-offset-1 col-xs-1 gameNumber">{this.props.id + 1}</div>
+              <div className="col-xs-1 col-md-offset-1 col-md-1 gameNumber">{this.props.id + 1}</div>
               <GamePlayer character={this.props.character1} place={this.props.firstPlace} />
               <GamePlayer character={this.props.character2} place={this.props.second} />
               <GamePlayer character={this.props.character3} place={this.props.third} />
@@ -857,12 +917,12 @@ class GameStatsRow extends React.Component {
   render() {
     return (
       <div className="gameStatsRow row">
-        <div className="col-xs-offset-1 col-xs-1 koTitle">KOs</div>
+        <div className="col-xs-1 col-md-offset-1 col-md-1 koTitle">KOs</div>
         <GameStatsKos numKos={this.props.firstKos} />
         <GameStatsKos numKos={this.props.secondKos} />
         <GameStatsKos numKos={this.props.thirdKos} />
         {this.state.fourPlayers ? <GameStatsKos numKos={this.props.fourthKos} /> : null }
-        <div className="col-xs-2">{this.props.stage}</div>
+        <div className="col-xs-2 stageName">{this.props.stage}</div>
       </div>
     )
   }
