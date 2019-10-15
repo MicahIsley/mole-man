@@ -303,6 +303,10 @@ html {
     margin-bottom: 0px;
   }
 
+  .downArrow {
+    margin-top: 15px;
+  }
+
   .stageName {
     font-size: 12px;
   }

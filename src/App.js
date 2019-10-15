@@ -881,7 +881,7 @@ class Game extends React.Component {
         <div className="gameUnderline row">
           <div className="col-xs-12">
             <div className="row">
-              <div className="col-xs-1 col-md-offset-1 col-md-1 gameNumber">{this.props.id + 1}</div>
+              <div className="col-xs-2 col-md-offset-1 col-md-1 gameNumber">{this.props.id + 1}</div>
               <GamePlayer character={this.props.character1} place={this.props.firstPlace} />
               <GamePlayer character={this.props.character2} place={this.props.second} />
               <GamePlayer character={this.props.character3} place={this.props.third} />
