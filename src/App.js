@@ -334,10 +334,73 @@ const gameData = [
     {name: "Micah", character: incineroar, kos: 0},
     {stage: ""},
     {date: "Oct 9 2019"}
+  ],[
+    {name: "Zack", character: samus, kos: 2},
+    {name: "Tim", character: pacman, kos: 2},
+    {name: "Micah", character: ken, kos: 2},
+    {name: "Doug", character: sheik, kos: 3},
+    {stage: "Odessy"},
+    {date: "Oct 16 2019"}
+  ],[
+    {name: "Micah", character: ridley, kos: 4},
+    {name: "Zack", character: samus, kos: 1},
+    {name: "Tim", character: pacman, kos: 3},
+    {name: "Doug", character: ike, kos: 3},
+    {stage: "Pokemon Stadium"},
+    {date: "Oct 16 2019"}
+  ],[
+    {name: "Zack", character: hero, kos: 4},
+    {name: "Tim", character: daisy, kos: 2},
+    {name: "Doug", character: younglink, kos: 5},
+    {name: "Micah", character: wiifittrainer, kos: 0},
+    {stage: "Town & City"},
+    {date: "Oct 16 2019"}
+  ],[
+    {name: "Zack", character: roy, kos: 0},
+    {name: "Doug", character: marth, kos: 0},
+    {name: "Micah", character: iceclimbers, kos: 0},
+    {name: "Tim", character: jigglypuff, kos: 0},
+    {stage: "Onett"},
+    {date: "Oct 16 2019"}
+  ],[
+    {name: "Micah", character: iceclimbers, kos: 3},
+    {name: "Zack", character: roy, kos: 4},
+    {name: "Tim", character: ness, kos: 3},
+    {name: "Doug", character: samus, kos: 0},
+    {stage: "Custom"},
+    {date: "Oct 16 2019"}
+  ],[
+    {name: "Doug", character: samus, kos: 4},
+    {name: "Micah", character: zelda, kos: 3},
+    {name: "Tim", character: ness, kos: 3},
+    {name: "Zack", character: drmario, kos: 0},
+    {stage: "Magicant"},
+    {date: "Oct 16 2019"}
+  ],[
+    {name: "Doug", character: joker, kos: 5},
+    {name: "Micah", character: peach, kos: 2},
+    {name: "Zack", character: drmario, kos: 2},
+    {name: "Tim", character: ness, kos: 2},
+    {stage: "Mario Kart"},
+    {date: "Oct 16 2019"}
+  ],[
+    {name: "Micah", character: isabell, kos: 5},
+    {name: "Zack", character: drmario, kos: 4},
+    {name: "Tim", character: ness, kos: 0},
+    {name: "Doug", character: kirby, kos: 1},
+    {stage: "Great Bay"},
+    {date: "Oct 16 2019"}
+  ],[
+    {name: "Zack", character: corrin, kos: 5},
+    {name: "Micah", character: ken, kos: 2},
+    {name: "Doug", character: lucario, kos: 3},
+    {name: "Tim", character: ness, kos: 1},
+    {stage: "Dream Land"},
+    {date: "Oct 16 2019"}
   ]
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019"];
 
 var micah = 0;
 var tim = 0;
@@ -350,24 +413,24 @@ var highKoGames = [0,0,0,0,0];
 
 var playerStats = [
  {  name: "Micah",
-    mostPlayed: [{character: bowserjr, number: 6}, {character: incineroar, number: 4}, {character: iceclimbers, number: 3}],
-    averagePlace: 2.31,
-    mostWins: [bowserjr, 3]
+    mostPlayed: [{character: bowserjr, number: 6}, {character: iceclimbers, number: 6}, {character: peach, number: 4}],
+    averagePlace: 2.23,
+    mostWins: [iceclimbers, 3]
   },
   { name: "Tim",
-    mostPlayed: [{character: ness, number: 13}, {character: samus, number: 8}, {character: pacman, number: 4}],
-    averagePlace: 2.25,
+    mostPlayed: [{character: ness, number: 18}, {character: samus, number: 8}, {character: pacman, number: 6}],
+    averagePlace: 2.48,
     mostWins: [ness, 3] 
   },
   { name: "Doug",
-    mostPlayed: [{character: samus, number: 4}, {character: luigi, number: 2}, {character: marth, number: 2}],
-    averagePlace: 2.63,
-    mostWins: [samus, 2] 
+    mostPlayed: [{character: samus, number: 6}, {character: marth, number: 3}, {character: younglink, number: 2}],
+    averagePlace: 2.72,
+    mostWins: [samus, 3] 
   },
   { name: "Zack",
-    mostPlayed: [{character: drmario, number: 5}, {character: corrin, number: 5}, {character: yoshi, number: 5}],
-    averagePlace: 1.75,
-    mostWins: [corrin, 3] 
+    mostPlayed: [{character: drmario, number: 8}, {character: corrin, number: 6}, {character: yoshi, number: 5}],
+    averagePlace: 1.8,
+    mostWins: [corrin, 4] 
   },
   { name: "Betsy",
     mostPlayed: [{character: bowser, number: 1}, {character: villager, number: 1}],
