@@ -599,6 +599,26 @@ class Highlights extends React.Component {
               width="500"
             />
           </div>
+          <div className="row">
+            <iframe src='https://www.youtube.com/embed/ClMwEsnz0fc'
+              frameBorder='0'
+              allow='autoplay; encrypted-media'
+              allowFullScreen
+              title='video'
+              height="300"
+              width="500"
+            />
+          </div>
+          <div className="row">
+            <iframe src='https://www.youtube.com/embed/kGVfhXYA9Vw'
+              frameBorder='0'
+              allow='autoplay; encrypted-media'
+              allowFullScreen
+              title='video'
+              height="300"
+              width="500"
+            />
+          </div>
         </div>
       </div>
     )
