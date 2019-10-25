@@ -397,10 +397,80 @@ const gameData = [
     {name: "Tim", character: ness, kos: 1},
     {stage: "Dream Land"},
     {date: "Oct 16 2019"}
+  ],[
+    {name: "Tim", character: ness kos: 5},
+    {name: "Zack" , character: lucas kos: 0},
+    {name: "Micah", character: bowserjr kos: 3},
+    {name: "", character: empty kos: 0},
+    {stage: "Mario Galaxy"},
+    {date: "Oct 23 2019"}
+  ],[
+    {name: "Zack", character: yoshi kos: 4},
+    {name: "Tim", character: darksamus kos: 1},
+    {name: "Micah", character: zelda kos: 3},
+    {name: "", character: empty kos: 0},
+    {stage: "Super Happy Tree"},
+    {date: "Oct 23 2019"}
+  ],[
+    {name: "Micah", character: zelda kos: 4},
+    {name: "Zack", character: yoshi kos: 1},
+    {name: "Tim", character: pacman kos: 3},
+    {name: "", character: empty kos: 0},
+    {stage: "Coliseum"},
+    {date: "Oct 23 2019"}
+  ],[
+    {name: "Zack", character: drmario kos: 4},
+    {name: "Tim", character: pacman kos: 3},
+    {name: "Micah", character: simon kos: 1},
+    {name: "", character: empty kos: 0},
+    {stage: "Yoshi's Island"},
+    {date: "Oct 23 2019"}
+  ],[
+    {name: "Micah", character: incineroar kos:},
+    {name: "Tim", character: donkeykong kos:},
+    {name: "Zack", character: drmario kos:},
+    {name: "", character: empty kos: 0},
+    {stage: "Peach's Castle"},
+    {date: "Oct 23 2019"}
+  ],[
+    {name: "Tim", character: samus kos: 5},
+    {name: "Zack", character: bowser kos: 1},
+    {name: "Micah", character: isabell kos: 1},
+    {name: "", character: empty kos: 0},
+    {stage: "Skyloft"},
+    {date: "Oct 23 2019"}
+  ],[
+    {name: "Tim", character: samus kos: 2},
+    {name: "Zack", character: bowser kos: 4},
+    {name: "Micah", character: peach kos: 1},
+    {name: "", character: empty kos: 0},
+    {stage: "Luigi's Mansion"},
+    {date: "Oct 23 2019"}
+  ],[
+    {name: "Zack", character: corrin kos: 5},
+    {name: "Tim", character: donkeykong kos: 0},
+    {name: "Micah", character: peach kos: 2},
+    {name: "", character: empty kos: 0},
+    {stage: "Final Destination"},
+    {date: "Oct 23 2019"}
+  ],[
+    {name: "Zack", character: hero kos: 2},
+    {name: "Tim", character: darksamus kos: 3},
+    {name: "Micah", character: ken kos: 2},
+    {name: "", character: empty kos: 0},
+    {stage: "Town and City"},
+    {date: "Oct 23 2019"}
+  ],[
+    {name: "Zack", character: hero kos: 6},
+    {name: "Tim", character: darksamus kos: 1},
+    {name: "Micah", character: ken kos: 1},
+    {name: "", character: kos: 0},
+    {stage: "Fourside"},
+    {date: "Oct 23 2019"}
   ]
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019"];
 
 var micah = 0;
 var tim = 0;
@@ -413,14 +483,14 @@ var highKoGames = [0,0,0,0,0];
 
 var playerStats = [
  {  name: "Micah",
-    mostPlayed: [{character: bowserjr, number: 6}, {character: iceclimbers, number: 6}, {character: peach, number: 4}],
-    averagePlace: 2.23,
-    mostWins: [iceclimbers, 3]
+    mostPlayed: [{character: bowserjr, number: 7}, {character: iceclimbers, number: 6}, {character: peach, number: 6}],
+    averagePlace: 2.32,
+    mostWins: [bowserjr, 3]
   },
   { name: "Tim",
-    mostPlayed: [{character: ness, number: 18}, {character: samus, number: 8}, {character: pacman, number: 6}],
-    averagePlace: 2.48,
-    mostWins: [ness, 3] 
+    mostPlayed: [{character: ness, number: 19}, {character: samus, number: 10}, {character: pacman, number: 8}],
+    averagePlace: 2.33,
+    mostWins: [samus, 4] 
   },
   { name: "Doug",
     mostPlayed: [{character: samus, number: 6}, {character: marth, number: 3}, {character: younglink, number: 2}],
@@ -428,9 +498,9 @@ var playerStats = [
     mostWins: [samus, 3] 
   },
   { name: "Zack",
-    mostPlayed: [{character: drmario, number: 8}, {character: corrin, number: 6}, {character: yoshi, number: 5}],
-    averagePlace: 1.8,
-    mostWins: [corrin, 4] 
+    mostPlayed: [{character: drmario, number: 10}, {character: corrin, number: 7}, {character: yoshi, number: 7}],
+    averagePlace: 1.74,
+    mostWins: [corrin, 5] 
   },
   { name: "Betsy",
     mostPlayed: [{character: bowser, number: 1}, {character: villager, number: 1}],
