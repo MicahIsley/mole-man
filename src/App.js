@@ -398,73 +398,73 @@ const gameData = [
     {stage: "Dream Land"},
     {date: "Oct 16 2019"}
   ],[
-    {name: "Tim", character: ness kos: 5},
-    {name: "Zack" , character: lucas kos: 0},
-    {name: "Micah", character: bowserjr kos: 3},
-    {name: "", character: empty kos: 0},
+    {name: "Tim", character: ness, kos: 5},
+    {name: "Zack", character: lucas, kos: 0},
+    {name: "Micah", character: bowserjr, kos: 3},
+    {name: "", character: empty, kos: 0},
     {stage: "Mario Galaxy"},
     {date: "Oct 23 2019"}
   ],[
-    {name: "Zack", character: yoshi kos: 4},
-    {name: "Tim", character: darksamus kos: 1},
-    {name: "Micah", character: zelda kos: 3},
-    {name: "", character: empty kos: 0},
+    {name: "Zack", character: yoshi, kos: 4},
+    {name: "Tim", character: darksamus, kos: 1},
+    {name: "Micah", character: zelda, kos: 3},
+    {name: "", character: empty, kos: 0},
     {stage: "Super Happy Tree"},
     {date: "Oct 23 2019"}
   ],[
-    {name: "Micah", character: zelda kos: 4},
-    {name: "Zack", character: yoshi kos: 1},
-    {name: "Tim", character: pacman kos: 3},
-    {name: "", character: empty kos: 0},
+    {name: "Micah", character: zelda, kos: 4},
+    {name: "Zack", character: yoshi, kos: 1},
+    {name: "Tim", character: pacman, kos: 3},
+    {name: "", character: empty, kos: 0},
     {stage: "Coliseum"},
     {date: "Oct 23 2019"}
   ],[
-    {name: "Zack", character: drmario kos: 4},
-    {name: "Tim", character: pacman kos: 3},
-    {name: "Micah", character: simon kos: 1},
-    {name: "", character: empty kos: 0},
+    {name: "Zack", character: drmario, kos: 4},
+    {name: "Tim", character: pacman, kos: 3},
+    {name: "Micah", character: simon, kos: 1},
+    {name: "", character: empty, kos: 0},
     {stage: "Yoshi's Island"},
     {date: "Oct 23 2019"}
   ],[
-    {name: "Micah", character: incineroar kos:},
-    {name: "Tim", character: donkeykong kos:},
-    {name: "Zack", character: drmario kos:},
-    {name: "", character: empty kos: 0},
+    {name: "Micah", character: incineroar, kos:0},
+    {name: "Tim", character: donkeykong, kos:0},
+    {name: "Zack", character: drmario, kos:0},
+    {name: "", character: empty, kos: 0},
     {stage: "Peach's Castle"},
     {date: "Oct 23 2019"}
   ],[
-    {name: "Tim", character: samus kos: 5},
-    {name: "Zack", character: bowser kos: 1},
-    {name: "Micah", character: isabell kos: 1},
-    {name: "", character: empty kos: 0},
+    {name: "Tim", character: samus, kos: 5},
+    {name: "Zack", character: bowser, kos: 1},
+    {name: "Micah", character: isabell, kos: 1},
+    {name: "", character: empty, kos: 0},
     {stage: "Skyloft"},
     {date: "Oct 23 2019"}
   ],[
-    {name: "Tim", character: samus kos: 2},
-    {name: "Zack", character: bowser kos: 4},
-    {name: "Micah", character: peach kos: 1},
-    {name: "", character: empty kos: 0},
+    {name: "Tim", character: samus, kos: 2},
+    {name: "Zack", character: bowser, kos: 4},
+    {name: "Micah", character: peach, kos: 1},
+    {name: "", character: empty, kos: 0},
     {stage: "Luigi's Mansion"},
     {date: "Oct 23 2019"}
   ],[
-    {name: "Zack", character: corrin kos: 5},
-    {name: "Tim", character: donkeykong kos: 0},
-    {name: "Micah", character: peach kos: 2},
-    {name: "", character: empty kos: 0},
+    {name: "Zack", character: corrin, kos: 5},
+    {name: "Tim", character: donkeykong, kos: 0},
+    {name: "Micah", character: peach, kos: 2},
+    {name: "", character: empty, kos: 0},
     {stage: "Final Destination"},
     {date: "Oct 23 2019"}
   ],[
-    {name: "Zack", character: hero kos: 2},
-    {name: "Tim", character: darksamus kos: 3},
-    {name: "Micah", character: ken kos: 2},
-    {name: "", character: empty kos: 0},
+    {name: "Zack", character: hero, kos: 2},
+    {name: "Tim", character: darksamus, kos: 3},
+    {name: "Micah", character: ken, kos: 2},
+    {name: "", character: empty, kos: 0},
     {stage: "Town and City"},
     {date: "Oct 23 2019"}
   ],[
-    {name: "Zack", character: hero kos: 6},
-    {name: "Tim", character: darksamus kos: 1},
-    {name: "Micah", character: ken kos: 1},
-    {name: "", character: kos: 0},
+    {name: "Zack", character: hero, kos: 6},
+    {name: "Tim", character: darksamus, kos: 1},
+    {name: "Micah", character: ken, kos: 1},
+    {name: "", character: empty, kos: 0},
     {stage: "Fourside"},
     {date: "Oct 23 2019"}
   ]
