@@ -71,6 +71,7 @@ import simon from './assets/simon.jpg';
 import smash from './assets/smash.png';
 import snake from './assets/snake.jpg';
 import sonic from './assets/sonic.jpg';
+import terry from './assets/terry.png';
 import toonlink from './assets/toonlink.jpg';
 import unknown from './assets/unknown.jpg';
 import villager from './assets/villager.jpg';
@@ -467,10 +468,45 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Fourside"},
     {date: "Oct 23 2019"}
+  ],[
+    {name: "Micah", character: bowserjr , kos: 3},
+    {name: "Doug", character: terry, kos: 4},
+    {name: "Zack", character: yoshi, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Kongo Jungle"},
+    {date: "Dec 4 2019"}
+  ],[
+    {name: "Zack", character: roy, kos: 2},
+    {name: "Micah", character: peach, kos: 1},
+    {name: "Doug", character: hero, kos: 4},
+    {name: "", character: empty, kos: 0},
+    {stage: "Smashville"},
+    {date: "Dec 4 2019"}
+  ],[
+    {name: "Betsy", character: bowser, kos: 4},
+    {name: "Doug", character: joker, kos: 3},
+    {name: "Zack", character: roy, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Rainbow Cruise"},
+    {date: "Dec 4 2019"}
+  ],[
+    {name: "Micah", character: incineroar, kos: 4},
+    {name: "Zack", character: roy, kos: 3},
+    {name: "Doug", character: diddykong, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Duck Hunt"},
+    {date: "Dec 4 2019"}
+  ],[
+    {name: "Doug", character: samus, kos: 6},
+    {name: "Zack", character: corrin, kos: 1},
+    {name: "Micah", character: iceclimbers, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Peach's Castle"},
+    {date: "Dec 4 2019"}
   ]
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019"];
 
 var micah = 0;
 var tim = 0;
@@ -483,9 +519,9 @@ var highKoGames = [0,0,0,0,0];
 
 var playerStats = [
  {  name: "Micah",
-    mostPlayed: [{character: bowserjr, number: 7}, {character: iceclimbers, number: 6}, {character: peach, number: 6}],
-    averagePlace: 2.32,
-    mostWins: [bowserjr, 3]
+    mostPlayed: [{character: bowserjr, number: 8}, {character: iceclimbers, number: 7}, {character: peach, number: 7}],
+    averagePlace: 2.27,
+    mostWins: [bowserjr, 4]
   },
   { name: "Tim",
     mostPlayed: [{character: ness, number: 19}, {character: samus, number: 10}, {character: pacman, number: 8}],
@@ -493,19 +529,19 @@ var playerStats = [
     mostWins: [samus, 4] 
   },
   { name: "Doug",
-    mostPlayed: [{character: samus, number: 6}, {character: marth, number: 3}, {character: younglink, number: 2}],
-    averagePlace: 2.72,
-    mostWins: [samus, 3] 
+    mostPlayed: [{character: samus, number: 7}, {character: marth, number: 3}, {character: joker, number: 2}],
+    averagePlace: 2.63,
+    mostWins: [samus, 4] 
   },
   { name: "Zack",
-    mostPlayed: [{character: drmario, number: 10}, {character: corrin, number: 7}, {character: yoshi, number: 7}],
-    averagePlace: 1.74,
+    mostPlayed: [{character: drmario, number: 10}, {character: corrin, number: 8}, {character: yoshi, number: 8}],
+    averagePlace: 1.8,
     mostWins: [corrin, 5] 
   },
   { name: "Betsy",
-    mostPlayed: [{character: bowser, number: 1}, {character: villager, number: 1}],
+    mostPlayed: [{character: bowser, number: 2}, {character: villager, number: 1}],
     averagePlace: 1,
-    mostWins: [bowser, 1] 
+    mostWins: [bowser, 2] 
   }
 ];
 
