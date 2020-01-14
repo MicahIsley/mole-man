@@ -577,6 +577,8 @@ var tim = 0;
 var doug = 0;
 var zack = 0;
 var betsy = 0;
+var fourP = [0,0,0,0,0];
+var threeP = [0,0,0,0,0];
 var weeklyWins = [0,0,0,0,0];
 var playerkos = [0,0,0,0,0];
 var highKoGames = [0,0,0,0,0];
@@ -613,13 +615,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      micah: 0,
-      tim: 0,
-      doug: 0,
-      zack: 0,
-      betsy: 0,
-      weekly: false,
-      overall: true,
+      threeP: [0,0,0,0,0],
+      fourP: [0,0,0,0,0],
+      weekly: true,
+      overall: false,
       stats: false,
       videos: false
     }
@@ -630,17 +629,31 @@ class App extends React.Component {
   }
   componentDidMount(){
     for(var i=0; i < gameData.length; i++){
-      if(gameData[i][0].name === "Micah"){
-        micah ++;
-      }else if(gameData[i][0].name === "Tim"){
-        tim ++;
-      }else if(gameData[i][0].name === "Doug"){
-        doug ++;
-      }else if(gameData[i][0].name === "Zack"){
-        zack ++;
-      }else if(gameData[i][0].name === "Betsy"){
-        betsy ++;
-      }
+      if(gameData[i][3].character === empty){
+        if(gameData[i][0].name === "Micah"){
+            threeP[0] ++;
+        }else if(gameData[i][0].name === "Tim"){
+            threeP[1] ++;
+        }else if(gameData[i][0].name === "Doug"){
+            threeP[2] ++;
+        }else if(gameData[i][0].name === "Zack"){
+            threeP[3] ++;
+        }else if(gameData[i][0].name === "Betsy"){
+            threeP[4] ++;
+        }
+    }else{
+        if(gameData[i][0].name === "Micah"){
+            fourP[0] ++;
+        }else if(gameData[i][0].name === "Tim"){
+            fourP[1] ++;
+        }else if(gameData[i][0].name === "Doug"){
+            fourP[2] ++;
+        }else if(gameData[i][0].name === "Zack"){
+            fourP[3] ++;
+        }else if(gameData[i][0].name === "Betsy"){
+            fourP[4] ++;
+        }
+    }
       for(var j=0; j< 4; j++){
         if(gameData[i][j].name === "Micah"){
           playerkos[0] = playerkos[0] + gameData[i][j].kos;
@@ -671,11 +684,8 @@ class App extends React.Component {
       }
     }
     this.setState({
-      micah: micah,
-      tim: tim,
-      doug: doug,
-      zack: zack,
-      betsy: betsy
+      threeP: [threeP[0], threeP[1], threeP[2], threeP[3], threeP[4]],
+      fourP: [fourP[0], fourP[1], fourP[2], fourP[3], fourP[4]]
     });
   }
   goToWeekly(){
@@ -742,8 +752,8 @@ class App extends React.Component {
           <Tab name="Weekly" handleClick={this.goToWeekly} />
           <Tab name="Stats" handleClick={this.goToStats} />
         </div>
-        {this.state.weekly ? <Weekly micah={this.state.micah} tim={this.state.tim} doug={this.state.doug} zack={this.state.zack} /> : null }
-        {this.state.overall ? <Overall betsy={this.state.betsy} micah={this.state.micah} tim={this.state.tim} doug={this.state.doug} zack={this.state.zack} /> : null }
+        {this.state.weekly ? <Weekly /> : null }
+        {this.state.overall ? <Overall threeP={this.state.threeP} fourP={this.state.fourP} betsy={this.state.betsy} /> : null }
         {this.state.stats ? <Stats /> : null }
         {this.state.videos ? <Highlights /> : null }
       </div>
@@ -804,11 +814,45 @@ class Tab extends React.Component {
 }
 
 class Overall extends React.Component {
+    constructor(props) {
+    super(props);
+        this.state = {
+            graphName: null,
+            graphStats: []
+        }
+    this.changeGraphClick = this.changeGraphClick.bind(this);
+    }
+  componentDidMount(){
+    console.log(this.props);
+    var graphStats = [this.props.threeP[0] + this.props.fourP[0], this.props.threeP[1] + this.props.fourP[1], this.props.threeP[2] + this.props.fourP[2], this.props.threeP[3] + this.props.fourP[3], this.props.threeP[4] + this.props.fourP[4]];
+    this.setState({
+        graphName: "Overall Wins",
+        graphStats: graphStats
+    });
+    console.log(this.state.graphStats);
+  }
+  changeGraphClick(){
+    var graphStats;
+    var graphName;
+    if(this.state.graphName === "Overall Wins"){
+        graphStats = [this.props.threeP[0], this.props.threeP[1], this.props.threeP[2], this.props.threeP[3], this.props.threeP[4]];
+        graphName = "3-Player Wins";
+    }else if(this.state.graphName === "3-Player Wins"){
+        graphStats = [this.props.fourP[0], this.props.fourP[1], this.props.fourP[2], this.props.fourP[3], this.props.fourP[4]];
+        graphName = "4-Player Wins";
+    }else if(this.state.graphName === "4-Player Wins"){
+        graphStats = [this.props.threeP[0] + this.props.fourP[0], this.props.threeP[1] + this.props.fourP[1], this.props.threeP[2] + this.props.fourP[2], this.props.threeP[3] + this.props.fourP[3], this.props.threeP[4] + this.props.fourP[4]];
+        graphName = "Overall Wins"
+    }
+    this.setState({
+        graphName: graphName,
+        graphStats: graphStats
+    });
+  }
   render(){
-    var overallWins = [this.props.micah, this.props.tim, this.props.doug, this.props.zack, this.props.betsy];
     const options = {
       title: {
-        text: "Wins"
+        text: this.state.graphName
       },
       axisY:{
         gridThickness: 0,
@@ -822,20 +866,25 @@ class Overall extends React.Component {
       data: [{        
                 type: "column",
                 dataPoints: [
-                    { label: "Micah",  y: overallWins[0], color: "#ffc233"  },
-                    { label: "Tim", y: overallWins[1], color: "#9228de" },
-                    { label: "Doug", y: overallWins[2], color: "#70d115"  },
-                    { label: "Zack",  y: overallWins[3], color: "#ff78f1"  },
-                    { label: "Betsy", y: overallWins[4], color: "red"}
+                    { label: "Micah",  y: this.state.graphStats[0], color: "#ffc233"  },
+                    { label: "Tim", y: this.state.graphStats[1], color: "#9228de" },
+                    { label: "Doug", y: this.state.graphStats[2], color: "#70d115"  },
+                    { label: "Zack",  y: this.state.graphStats[3], color: "#ff78f1"  },
+                    { label: "Betsy", y: this.state.graphStats[4], color: "red"}
                 ]
        }]
    }
     return (
-      <div className="row overall">
         <div className="col-xs-12">
-            <CanvasJSChart options = {options} />
+            <div className="row">
+                <div className="col-xs-offset-4 col-xs-4" id="changeGraph" onClick={this.changeGraphClick}>Change Graph</div>
+            </div>
+            <div className="row overall">
+                <div className="col-xs-12">
+                    <CanvasJSChart options = {options} />
+                </div>
+            </div>
         </div>
-      </div>
     )
   }
 }
