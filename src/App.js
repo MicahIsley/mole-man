@@ -97,7 +97,7 @@ const gameData = [
     {name: "Zack", character: hero, kos: 0},
     {stage: "Custom"},
     {date: "Sept 11 2019"}
-  ],[
+  ],/*[
     {name: "Doug", character: banjo, kos: 0},
     {name: "Zack", character: banjo, kos: 0},
     {name: "Micah", character: ridley, kos: 0},
@@ -132,7 +132,7 @@ const gameData = [
     {name: "Tim", character: unknown, kos: 0},
     {stage: "Battlefield"},
     {date: "Sept 11 2019"}
-  ],[
+  ],*/[
     {name: "Zack", character: drmario, kos: 5},
     {name: "Tim", character: ness, kos: 4},
     {name: "Micah", character: peach, kos: 0},
@@ -566,24 +566,89 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: ""},
     {date: "Dec 18 2019"}
+  ],[
+    {name: "Zack", character: corrin, kos: 4},
+    {name: "Doug", character: terry, kos: 4},
+    {name: "Micah", character: bowserjr, kos: 2},
+    {name: "Tim", character: ness, kos: 0},
+    {stage: "Pilot Wings"},
+    {date: "Jan 16 2020"}
+  ],[
+    {name: "Zack", character: kirby, kos: 5},
+    {name: "Tim", character: pacman, kos: 4},
+    {name: "Doug", character: joker, kos: 1},
+    {name: "Micah", character: peach, kos: 1},
+    {stage: "Final Destination"},
+    {date: "Jan 16 2020"}
+  ],[
+    {name: "Zack", character: kirby, kos: 6},
+    {name: "Doug", character: samus, kos: 3},
+    {name: "Micah", character: incineroar, kos: 2},
+    {name: "Tim", character: pacman, kos: 0},
+    {stage: "Super Happy Tree"},
+    {date: "Jan 16 2020"}
+  ],[
+    {name: "Micah", character: iceclimbers, kos: 5},
+    {name: "Tim", character: darksamus, kos: 1},
+    {name: "Doug", character: luigi, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Custom"},
+    {date: "Jan 16 2020"}
+  ],[
+    {name: "Zack", character: yoshi, kos: 4},
+    {name: "Tim", character: samus, kos: 1},
+    {name: "Doug", character: marth, kos: 5},
+    {name: "Micah", character: simon, kos: 1},
+    {stage: "Battlefield"},
+    {date: "Jan 16 2020"}
+  ],[
+    {name: "Micah", character: inkling, kos: 4},
+    {name: "Tim", character: samus, kos: 3},
+    {name: "Zack", character: yoshi, kos: 3},
+    {name: "Doug", character: pirahnaplant, kos: 1},
+    {stage: "Duck Hunt"},
+    {date: "Jan 16 2020"}
+  ],[
+    {name: "Micah", character: terry, kos: 4},
+    {name: "Zack", character: hero, kos: 4},
+    {name: "Doug", character: toonlink, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Jan 16 2020"}
+  ],[
+    {name: "Micah", character: zelda, kos: 2},
+    {name: "Doug", character: donkeykong, kos: 5},
+    {name: "Zack", character: peach, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Super Mario Galaxy"},
+    {date: "Jan 16 2020"}
+  ],[
+    {name: "Micah", character: wiifittrainer, kos: 3},
+    {name: "Doug", character: zerosuitsamus, kos: 4},
+    {name: "Zack", character: pokemontrainer, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Pokemon Stadium 2"},
+    {date: "Jan 16 2020"}
   ]
 
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020"];
 
-var micah = 0;
-var tim = 0;
-var doug = 0;
-var zack = 0;
-var betsy = 0;
 var fourP = [0,0,0,0,0];
 var threeP = [0,0,0,0,0];
 var weeklyWins = [0,0,0,0,0];
 var playerkos = [0,0,0,0,0];
 var highKoGames = [0,0,0,0,0];
+var micahCharacters = [];
+var timCharacters = [];
+var dougCharacters = [];
+var zackCharacters = [];
+var betsyCharacters = [];
+var mostPlayed = [];
+var mostWins;
 
-var playerStats = [
+var playerStats2019 = [
  {  name: "Micah",
     mostPlayed: [{character: bowserjr, number: 10}, {character: incineroar, number: 8}, {character: peach, number: 8}],
     averagePlace: 2.33,
@@ -611,6 +676,62 @@ var playerStats = [
   }
 ];
 
+var playerStats2020 = [
+  { name: "Micah",
+    mostPlayed: [{character: inkling, number: 1}, {character: terry, number: 1}, {character: wiifittrainer, number: 1}],
+    averagePlace: 2.11,
+    mostWins: [inkling, 1]
+  },
+  { name: "Tim",
+    mostPlayed: [{character: pacman, number: 2}, {character: samus, number: 2}, {character: darksamus, number: 1}],
+    averagePlace: 2.67,
+    mostWins: [] 
+  },
+  { name: "Doug",
+    mostPlayed: [{character: zerosuitsamus, number: 1}, {character: donkeykong, number: 1}, {character: marth, number: 1}],
+    averagePlace: 2.67,
+    mostWins: [] 
+  },
+  { name: "Zack",
+    mostPlayed: [{character: kirby, number: 2}, {character: yoshi, number: 2}, {character: pokemontrainer, number: 1}],
+    averagePlace: 1.88,
+    mostWins: [kirby, 2] 
+  },
+  { name: "Betsy",
+    mostPlayed: [],
+    averagePlace: 0,
+    mostWins: [] 
+  }
+];
+
+var playerStatsOverall = [
+  { name: "Micah",
+    mostPlayed: [{character: bowserjr, number: 11}, {character: incineroar, number: 9}, {character: peach, number: 9}],
+    averagePlace: 2.33,
+    mostWins: [incineroar, 4]
+  },
+  { name: "Tim",
+    mostPlayed: [{character: ness, number: 24}, {character: samus, number: 14}, {character: pacman, number: 12}],
+    averagePlace: 2.23,
+    mostWins: [ness, 7] 
+  },
+  { name: "Doug",
+    mostPlayed: [{character: samus, number: 9}, {character: zerosuitsamus, number: 4}, {character: joker, number: 4}],
+    averagePlace: 2.66,
+    mostWins: [samus, 4] 
+  },
+  { name: "Zack",
+    mostPlayed: [{character: yoshi, number: 11}, {character: drmario, number: 10}, {character: hero, number: 9}],
+    averagePlace: 1.87,
+    mostWins: [corrin, 6] 
+  },
+  { name: "Betsy",
+    mostPlayed: [{character: bowser, number: 2}, {character: villager, number: 1}],
+    averagePlace: 1,
+    mostWins: [bowser, 2] 
+  }
+];
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -629,53 +750,113 @@ class App extends React.Component {
   }
   componentDidMount(){
     for(var i=0; i < gameData.length; i++){
-      if(gameData[i][3].character === empty){
-        if(gameData[i][0].name === "Micah"){
-            threeP[0] ++;
-        }else if(gameData[i][0].name === "Tim"){
-            threeP[1] ++;
-        }else if(gameData[i][0].name === "Doug"){
-            threeP[2] ++;
-        }else if(gameData[i][0].name === "Zack"){
-            threeP[3] ++;
-        }else if(gameData[i][0].name === "Betsy"){
-            threeP[4] ++;
+        if(gameData[i][3].character === empty){
+            if(gameData[i][0].name === "Micah"){
+                threeP[0] ++;
+            }else if(gameData[i][0].name === "Tim"){
+                threeP[1] ++;
+            }else if(gameData[i][0].name === "Doug"){
+                threeP[2] ++;
+            }else if(gameData[i][0].name === "Zack"){
+                threeP[3] ++;
+            }else if(gameData[i][0].name === "Betsy"){
+                threeP[4] ++;
+            }
+        }else{
+            if(gameData[i][0].name === "Micah"){
+                fourP[0] ++;
+            }else if(gameData[i][0].name === "Tim"){
+                fourP[1] ++;
+            }else if(gameData[i][0].name === "Doug"){
+                fourP[2] ++;
+            }else if(gameData[i][0].name === "Zack"){
+                fourP[3] ++;
+            }else if(gameData[i][0].name === "Betsy"){
+                fourP[4] ++;
+            }
         }
-    }else{
-        if(gameData[i][0].name === "Micah"){
-            fourP[0] ++;
-        }else if(gameData[i][0].name === "Tim"){
-            fourP[1] ++;
-        }else if(gameData[i][0].name === "Doug"){
-            fourP[2] ++;
-        }else if(gameData[i][0].name === "Zack"){
-            fourP[3] ++;
-        }else if(gameData[i][0].name === "Betsy"){
-            fourP[4] ++;
-        }
-    }
       for(var j=0; j< 4; j++){
         if(gameData[i][j].name === "Micah"){
-          playerkos[0] = playerkos[0] + gameData[i][j].kos;
-          if(gameData[i][j].kos >= 4){
-            highKoGames[0] ++;
-          }else{}
+            var existingCharacter = false;
+            for(var k=0; k < micahCharacters.length; k++){
+                if(micahCharacters[k].character === gameData[i][j].character){
+                    existingCharacter = true;
+                }else{}
+            }
+            if(existingCharacter === false){
+                micahCharacters.push({character: gameData[i][j].character, number: 1});
+            }else{
+                var a = micahCharacters.findIndex(x => x.character === gameData[i][j].character);
+                micahCharacters[a].number ++;
+            }
+            playerkos[0] = playerkos[0] + gameData[i][j].kos;
+            if(gameData[i][j].kos >= 4){
+              highKoGames[0] ++;
+            }else{}
         }else if(gameData[i][j].name === "Tim"){
+          var existingCharacter = false;
+            for(var k=0; k < timCharacters.length; k++){
+                if(timCharacters[k].character === gameData[i][j].character){
+                    existingCharacter = true;
+                }else{}
+            }
+            if(existingCharacter === false){
+                timCharacters.push({character: gameData[i][j].character, number: 1});
+            }else{
+                var a = timCharacters.findIndex(x => x.character === gameData[i][j].character);
+                timCharacters[a].number ++;
+            }
           playerkos[1] = playerkos[1] + gameData[i][j].kos;
           if(gameData[i][j].kos >= 4){
             highKoGames[1] ++;
           }else{}
         }else if(gameData[i][j].name === "Doug"){
+          var existingCharacter = false;
+            for(var k=0; k < dougCharacters.length; k++){
+                if(dougCharacters[k].character === gameData[i][j].character){
+                    existingCharacter = true;
+                }else{}
+            }
+            if(existingCharacter === false){
+                dougCharacters.push({character: gameData[i][j].character, number: 1});
+            }else{
+                var a = dougCharacters.findIndex(x => x.character === gameData[i][j].character);
+                dougCharacters[a].number ++;
+            }
           playerkos[2] = playerkos[2] + gameData[i][j].kos;
           if(gameData[i][j].kos >= 4){
             highKoGames[2] ++;
           }else{}
         }else if(gameData[i][j].name === "Zack"){
+          var existingCharacter = false;
+            for(var k=0; k < zackCharacters.length; k++){
+                if(zackCharacters[k].character === gameData[i][j].character){
+                    existingCharacter = true;
+                }else{}
+            }
+            if(existingCharacter === false){
+                zackCharacters.push({character: gameData[i][j].character, number: 1});
+            }else{
+                var a = zackCharacters.findIndex(x => x.character === gameData[i][j].character);
+                zackCharacters[a].number ++;
+            }
           playerkos[3] = playerkos[3] + gameData[i][j].kos;
           if(gameData[i][j].kos >= 4){
             highKoGames[3] ++;
           }else{}
         }else if(gameData[i][j].name === "Betsy"){
+          var existingCharacter = false;
+            for(var k=0; k < betsyCharacters.length; k++){
+                if(betsyCharacters[k].character === gameData[i][j].character){
+                    existingCharacter = true;
+                }else{}
+            }
+            if(existingCharacter === false){
+                betsyCharacters.push({character: gameData[i][j].character, number: 1});
+            }else{
+                var a = betsyCharacters.findIndex(x => x.character === gameData[i][j].character);
+                betsyCharacters[a].number ++;
+            }
           playerkos[4] = playerkos[4] + gameData[i][j].kos;
           if(gameData[i][j].kos >= 4){
             highKoGames[4] ++;
@@ -893,7 +1074,7 @@ class Stats extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Micah",
+      name: "micah",
       mostPlayed: [],
       averagePlace: 0,
       mostWins: 0,
@@ -905,17 +1086,24 @@ class Stats extends React.Component {
   this.listMostPlayed = this.listMostPlayed.bind(this);
   }
   componentDidMount() {
+    micahCharacters.sort(function(a, b){
+        if(a.number < b.number) { return 1; }
+        if(a.number > b.number) { return -1; }
+        return 0;
+    });
+    for(var i=0; i<3; i++){
+        mostPlayed.push(micahCharacters[i]);
+    }
     this.setState({
-      mostPlayed: playerStats[0].mostPlayed,
-      averagePlace: playerStats[0].averagePlace,
-      mostWins: playerStats[0].mostWins,
+      mostPlayed: mostPlayed,
+      averagePlace: playerStats2019[0].averagePlace,
+      mostWins: playerStats2019[0].mostWins,
       totalKos: playerkos[0],
       highKoGames: highKoGames[0]
     });
   }
   listMostPlayed () {
     const numberOfMostPlayed = this.state.mostPlayed;
-    console.log(numberOfMostPlayed);
     const listMostPlayed = numberOfMostPlayed.map((character, index) => {
       return <MostPlayed key={index} id={index} character={character.character} number={character.number} />
     }
@@ -925,19 +1113,29 @@ class Stats extends React.Component {
     )
   }
   nextName() {
-    var nameArray = ["Micah", "Tim", "Doug", "Zack", "Betsy"];
+    var nameArray = ["micah", "tim", "doug", "zack", "betsy"];
     var nameIndex = nameArray.indexOf(this.state.name);
-    var newMostPlayed = [];
-    var averagePlace = playerStats[nameIndex + 1].averagePlace;
-    var mostWins = playerStats[nameIndex + 1].mostWins;
-    for(var i = 0; i < playerStats[nameIndex + 1].mostPlayed.length; i ++){
-      newMostPlayed.push(playerStats[nameIndex + 1].mostPlayed[i]);
+    var averagePlace = playerStats2019[nameIndex + 1].averagePlace;
+    var mostWins = playerStats2019[nameIndex + 1].mostWins;
+    var playerArray = eval(nameArray[nameIndex + 1] + "Characters");
+    playerArray.sort(function(a, b){
+        if(a.number < b.number) { return 1; }
+        if(a.number > b.number) { return -1; }
+        return 0;
+    });
+    mostPlayed = [];
+    for(var i=0; i<3; i++){
+        if(playerArray[i] === undefined){
+            mostPlayed.push({character: empty, number: null});
+        }else{
+            mostPlayed.push(playerArray[i]);
+        }
     }
     if(nameIndex < nameArray.length - 1){
       var newName = nameIndex + 1;
       this.setState({
         name: nameArray[newName],
-        mostPlayed: newMostPlayed,
+        mostPlayed: mostPlayed,
         averagePlace: averagePlace,
         mostWins: mostWins,
         totalKos: playerkos[newName],
@@ -946,20 +1144,30 @@ class Stats extends React.Component {
     }
   }
   previousName() {
-    var nameArray = ["Micah", "Tim", "Doug", "Zack", "Betsy"];
+    var nameArray = ["micah", "tim", "doug", "zack", "betsy"];
     var nameIndex = nameArray.indexOf(this.state.name);
-    var newMostPlayed = [];
-    var averagePlace = playerStats[nameIndex - 1].averagePlace;
-    var mostWins = playerStats[nameIndex - 1].mostWins;
-    for(var i = 0; i < playerStats[nameIndex - 1].mostPlayed.length; i ++){
-      newMostPlayed.push(playerStats[nameIndex - 1].mostPlayed[i]);
+    var averagePlace = playerStats2019[nameIndex - 1].averagePlace;
+    var mostWins = playerStats2019[nameIndex - 1].mostWins;
+    var playerArray = eval(nameArray[nameIndex - 1] + "Characters");
+    playerArray.sort(function(a, b){
+        if(a.number < b.number) { return 1; }
+        if(a.number > b.number) { return -1; }
+        return 0;
+    });
+    mostPlayed = [];
+    for(var i=0; i<3; i++){
+        if(playerArray[i] === undefined){
+            mostPlayed.push({character: empty, number: null});
+        }else{
+            mostPlayed.push(playerArray[i]);
+        }
     }
     if(nameIndex > 0){
       console.log("nameIndex" + nameIndex);
       var newName = nameIndex - 1;
       this.setState({
         name: nameArray[newName],
-        mostPlayed: newMostPlayed,
+        mostPlayed: mostPlayed,
         averagePlace: averagePlace,
         mostWins: mostWins,
         totalKos: playerkos[newName],
@@ -1036,7 +1244,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Sept 11 2019",
+      date: "Jan 16 2020",
       weeklyWins: [0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
