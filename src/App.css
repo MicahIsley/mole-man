@@ -21,6 +21,15 @@ html {
   font-family: 'Carter One', cursive;
 }
 
+.changeYear {
+  color: white;
+  background: black;
+  font-size: 26px;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-family: 'Carter One', cursive;
+}
+
 .arrowButton {
   margin-top: 5px;
   font-size: 30px;
