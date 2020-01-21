@@ -640,8 +640,10 @@ var threeP19 = [0,0,0,0,0];
 var fourP20 = [0,0,0,0,0];
 var threeP20 = [0,0,0,0,0];
 var weeklyWins = [0,0,0,0,0];
-var playerkos = [0,0,0,0,0];
-var highKoGames = [0,0,0,0,0];
+var playerkos19 = [0,0,0,0,0];
+var playerkos20 = [0,0,0,0,0];
+var highKoGames19 = [0,0,0,0,0];
+var highKoGames20 = [0,0,0,0,0];
 var micahCharacters = [];
 var timCharacters = [];
 var dougCharacters = [];
@@ -659,8 +661,13 @@ var zackCharacters20 = [];
 var betsyCharacters20 = [];
 var mostPlayed = [];
 var mostWins;
-var gamesPlayed = [0,0,0,0,0];
-var gamePlace = [0,0,0,0,0];
+var averagePlace;
+var highKoGames;
+var totalKos;
+var gamesPlayed19 = [0,0,0,0,0];
+var gamesPlayed20 = [0,0,0,0,0];
+var gamePlace19 = [0,0,0,0,0];
+var gamePlace20 = [0,0,0,0,0];
 
 class App extends React.Component {
   constructor(props) {
@@ -751,8 +758,6 @@ class App extends React.Component {
         }
       for(var j=0; j< 4; j++){
         if(gameData[i][j].name === "Micah"){
-            gamesPlayed[0] ++;
-            gamePlace[0] = gamePlace[0] + (j + 1);
             var existingCharacter = false;
             for(var k=0; k < micahCharacters.length; k++){
                 if(micahCharacters[k].character === gameData[i][j].character){
@@ -774,6 +779,12 @@ class App extends React.Component {
                 micahCharacters[a].number ++;
             }
             if(year === "2019"){
+                gamesPlayed19[0] ++;
+                gamePlace19[0] = gamePlace19[0] + (j + 1);
+                playerkos19[0] = playerkos19[0] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames19[0] ++;
+                }else{}
                 var existingCharacter19 = false;
                 for(var k=0; k < micahCharacters19.length; k++){
                     if(micahCharacters19[k].character === gameData[i][j].character){
@@ -794,6 +805,12 @@ class App extends React.Component {
                     micahCharacters19[a].number ++;
                 }
             }else{
+                gamesPlayed20[0] ++;
+                gamePlace20[0] = gamePlace20[0] + (j + 1);
+                playerkos20[0] = playerkos20[0] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames20[0] ++;
+                }else{}
                 var existingCharacter20 = false;
                 for(var k=0; k < micahCharacters20.length; k++){
                     if(micahCharacters20[k].character === gameData[i][j].character){
@@ -814,13 +831,7 @@ class App extends React.Component {
                     micahCharacters20[a].number ++;
                 }
             }
-            playerkos[0] = playerkos[0] + gameData[i][j].kos;
-            if(gameData[i][j].kos >= 4){
-              highKoGames[0] ++;
-            }else{}
         }else if(gameData[i][j].name === "Tim"){
-            gamesPlayed[1] ++;
-            gamePlace[1] = gamePlace[1] + (j + 1);
           var existingCharacter = false;
             for(var k=0; k < timCharacters.length; k++){
                 if(timCharacters[k].character === gameData[i][j].character){
@@ -841,6 +852,12 @@ class App extends React.Component {
                 timCharacters[a].number ++;
             }
             if(year === "2019"){
+                gamesPlayed19[1] ++;
+                gamePlace19[1] = gamePlace19[1] + (j + 1);
+                playerkos19[1] = playerkos19[1] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames19[1] ++;
+                }else{}
                 var existingCharacter19 = false;
                 for(var k=0; k < timCharacters19.length; k++){
                     if(timCharacters19[k].character === gameData[i][j].character){
@@ -861,6 +878,12 @@ class App extends React.Component {
                     timCharacters19[a].number ++;
                 }
             }else{
+                gamesPlayed20[1] ++;
+                gamePlace20[1] = gamePlace20[1] + (j + 1);
+                playerkos20[1] = playerkos20[1] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames20[1] ++;
+                }else{}
                 var existingCharacter20 = false;
                 for(var k=0; k < timCharacters20.length; k++){
                     if(timCharacters20[k].character === gameData[i][j].character){
@@ -881,13 +904,7 @@ class App extends React.Component {
                     timCharacters20[a].number ++;
                 }
             }
-          playerkos[1] = playerkos[1] + gameData[i][j].kos;
-          if(gameData[i][j].kos >= 4){
-            highKoGames[1] ++;
-          }else{}
         }else if(gameData[i][j].name === "Doug"){
-            gamesPlayed[2] ++;
-            gamePlace[2] = gamePlace[2] + (j + 1);
           var existingCharacter = false;
             for(var k=0; k < dougCharacters.length; k++){
                 if(dougCharacters[k].character === gameData[i][j].character){
@@ -908,6 +925,12 @@ class App extends React.Component {
                 dougCharacters[a].number ++;
             }
             if(year === "2019"){
+                gamesPlayed19[2] ++;
+                gamePlace19[2] = gamePlace19[2] + (j + 1);
+                playerkos19[2] = playerkos19[2] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames19[2] ++;
+                }else{}
                 var existingCharacter19 = false;
                 for(var k=0; k < dougCharacters19.length; k++){
                     if(dougCharacters19[k].character === gameData[i][j].character){
@@ -928,6 +951,12 @@ class App extends React.Component {
                     dougCharacters19[a].number ++;
                 }
             }else{
+                gamesPlayed20[2] ++;
+                gamePlace20[2] = gamePlace20[2] + (j + 1);
+                playerkos20[2] = playerkos20[2] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames20[2] ++;
+                }else{}
                 var existingCharacter20 = false;
                 for(var k=0; k < dougCharacters20.length; k++){
                     if(dougCharacters20[k].character === gameData[i][j].character){
@@ -948,13 +977,7 @@ class App extends React.Component {
                     dougCharacters20[a].number ++;
                 }
             }
-          playerkos[2] = playerkos[2] + gameData[i][j].kos;
-          if(gameData[i][j].kos >= 4){
-            highKoGames[2] ++;
-          }else{}
         }else if(gameData[i][j].name === "Zack"){
-            gamesPlayed[3] ++;
-            gamePlace[3] = gamePlace[3] + (j + 1);
           var existingCharacter = false;
             for(var k=0; k < zackCharacters.length; k++){
                 if(zackCharacters[k].character === gameData[i][j].character){
@@ -975,6 +998,12 @@ class App extends React.Component {
                 zackCharacters[a].number ++;
             }
             if(year === "2019"){
+                gamesPlayed19[3] ++;
+                gamePlace19[3] = gamePlace19[3] + (j + 1);
+                playerkos19[3] = playerkos19[3] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames19[3] ++;
+                }else{}
                 var existingCharacter19 = false;
                 for(var k=0; k < zackCharacters19.length; k++){
                     if(zackCharacters19[k].character === gameData[i][j].character){
@@ -995,6 +1024,12 @@ class App extends React.Component {
                     zackCharacters19[a].number ++;
                 }
             }else{
+                gamesPlayed20[3] ++;
+                gamePlace20[3] = gamePlace20[3] + (j + 1);
+                playerkos20[3] = playerkos20[3] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames20[3] ++;
+                }else{}
                 var existingCharacter20 = false;
                 for(var k=0; k < zackCharacters20.length; k++){
                     if(zackCharacters20[k].character === gameData[i][j].character){
@@ -1017,13 +1052,7 @@ class App extends React.Component {
                     zackCharacters20[a].number ++;
                 }
             }
-          playerkos[3] = playerkos[3] + gameData[i][j].kos;
-          if(gameData[i][j].kos >= 4){
-            highKoGames[3] ++;
-          }else{}
         }else if(gameData[i][j].name === "Betsy"){
-            gamesPlayed[4] ++;
-            gamePlace[4] = gamePlace[4] + (j + 1);
           var existingCharacter = false;
             for(var k=0; k < betsyCharacters.length; k++){
                 if(betsyCharacters[k].character === gameData[i][j].character){
@@ -1044,6 +1073,12 @@ class App extends React.Component {
                 betsyCharacters[a].number ++;
             }
             if(year === "2019"){
+                gamesPlayed19[4] ++;
+                gamePlace19[4] = gamePlace19[4] + (j + 1);
+                playerkos19[4] = playerkos19[4] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames19[4] ++;
+                }else{}
                 var existingCharacter19 = false;
                 for(var k=0; k < betsyCharacters19.length; k++){
                     if(betsyCharacters19[k].character === gameData[i][j].character){
@@ -1064,6 +1099,12 @@ class App extends React.Component {
                     betsyCharacters19[a].number ++;
                 }
             }else{
+                gamesPlayed20[4] ++;
+                gamePlace20[4] = gamePlace20[4] + (j + 1);
+                playerkos20[4] = playerkos20[4] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames20[4] ++;
+                }else{}
                 var existingCharacter20 = false;
                 for(var k=0; k < betsyCharacters20.length; k++){
                     if(betsyCharacters20[k].character === gameData[i][j].character){
@@ -1084,10 +1125,6 @@ class App extends React.Component {
                     betsyCharacters20[a].number ++;
                 }
             }
-          playerkos[4] = playerkos[4] + gameData[i][j].kos;
-          if(gameData[i][j].kos >= 4){
-            highKoGames[4] ++;
-          }else{}
         }
       }
     }
@@ -1372,9 +1409,6 @@ class Stats extends React.Component {
   this.changeStatsYear = this.changeStatsYear.bind(this);
   }
   componentDidMount() {
-    console.log(zackCharacters);
-    console.log(zackCharacters19);
-    console.log(zackCharacters20);
     micahCharacters.sort(function(a, b){
         if(a.number < b.number) { return 1; }
         if(a.number > b.number) { return -1; }
@@ -1389,13 +1423,15 @@ class Stats extends React.Component {
         return 0;
     });
     mostWins = [micahCharacters[0].character, micahCharacters[0].wins];
-    var averagePlace = (gamePlace[0]/gamesPlayed[0]).toFixed(2);
+    averagePlace = ((gamePlace19[0] + gamePlace20[0])/(gamesPlayed19[0] + gamesPlayed20[0])).toFixed(2);
+    totalKos = playerkos19[0] + playerkos20[0];
+    highKoGames = highKoGames19[0] + highKoGames20[0];
     this.setState({
       mostPlayed: mostPlayed,
       averagePlace: averagePlace,
       mostWins: mostWins,
-      totalKos: playerkos[0],
-      highKoGames: highKoGames[0]
+      totalKos: totalKos,
+      highKoGames: highKoGames
     });
   }
   listMostPlayed () {
@@ -1431,6 +1467,9 @@ class Stats extends React.Component {
                 return 0;
             });
         mostWins = [playerCharacters19[0].character, playerCharacters19[0].wins];
+        averagePlace = (gamePlace19[0]/gamesPlayed19[0]).toFixed(2);
+        totalKos = playerkos19[0];
+        highKoGames = highKoGames19[0]; 
     }else if(this.state.year === "2019"){
         statsYear = "2020";
         playerCharacters20.sort(function(a, b){
@@ -1447,6 +1486,9 @@ class Stats extends React.Component {
                 return 0;
             });
         mostWins = [playerCharacters20[0].character, playerCharacters20[0].wins];
+        averagePlace = (gamePlace20[0]/gamesPlayed20[0]).toFixed(2);
+        totalKos = playerkos20[0];
+        highKoGames = highKoGames20[0];
     }else if(this.state.year === "2020"){
         statsYear = "Overall";
         playerCharacters.sort(function(a, b){
@@ -1463,11 +1505,17 @@ class Stats extends React.Component {
                 return 0;
             });
         mostWins = [playerCharacters[0].character, playerCharacters[0].wins];
+        averagePlace = ((gamePlace19[0] + gamePlace20[0])/(gamesPlayed19[0] + gamesPlayed20[0])).toFixed(2);
+        totalKos = playerkos19[0] + playerkos20[0];
+        highKoGames = highKoGames19[0] + highKoGames20[0];
     }
     this.setState({
         year: statsYear,
         mostPlayed: mostPlayed,
-        mostWins: mostWins
+        mostWins: mostWins,
+        averagePlace: averagePlace,
+        highKoGames: highKoGames,
+        totalKos: totalKos
     });
   }
   nextName() {
@@ -1497,6 +1545,9 @@ class Stats extends React.Component {
             return 0;
         });
         mostWins = [playerArray[0].character, playerArray[0].wins];
+        averagePlace = ((gamePlace19[nameIndex + 1] + gamePlace20[nameIndex + 1])/(gamesPlayed19[nameIndex + 1] + gamesPlayed20[nameIndex + 1])).toFixed(2);
+        totalKos = playerkos19[nameIndex + 1] + playerkos20[nameIndex + 1];
+        highKoGames = highKoGames19[nameIndex + 1] + highKoGames20[nameIndex + 1];
     }else if(this.state.year === "2019"){
         playerArray19.sort(function(a, b){
             if(a.number < b.number) { return 1; }
@@ -1516,6 +1567,9 @@ class Stats extends React.Component {
             return 0;
         });
         mostWins = [playerArray19[0].character, playerArray19[0].wins];
+        averagePlace = (gamePlace19[nameIndex + 1]/gamesPlayed19[nameIndex + 1]).toFixed(2);
+        totalKos = playerkos19[nameIndex + 1];
+        highKoGames = highKoGames19[nameIndex + 1];
     }else if(this.state.year === "2020"){
         playerArray20.sort(function(a, b){
             if(a.number < b.number) { return 1; }
@@ -1535,8 +1589,10 @@ class Stats extends React.Component {
             return 0;
         });
         mostWins = [playerArray20[0].character, playerArray20[0].wins];
+        averagePlace = (gamePlace20[nameIndex + 1]/gamesPlayed20[nameIndex + 1]).toFixed(2);
+        totalKos = playerkos20[nameIndex + 1];
+        highKoGames = highKoGames20[nameIndex + 1];
     }
-    var averagePlace = (gamePlace[nameIndex + 1]/gamesPlayed[nameIndex + 1]).toFixed(2);
     if(nameIndex < nameArray.length - 1){
       var newName = nameIndex + 1;
       this.setState({
@@ -1544,8 +1600,8 @@ class Stats extends React.Component {
         mostPlayed: mostPlayed,
         averagePlace: averagePlace,
         mostWins: mostWins,
-        totalKos: playerkos[newName],
-        highKoGames: highKoGames[newName]
+        totalKos: totalKos,
+        highKoGames: highKoGames
       });
     }
   }
@@ -1553,27 +1609,77 @@ class Stats extends React.Component {
     var nameArray = ["micah", "tim", "doug", "zack", "betsy"];
     var nameIndex = nameArray.indexOf(this.state.name);
     var playerArray = eval(nameArray[nameIndex - 1] + "Characters");
-    playerArray.sort(function(a, b){
-        if(a.number < b.number) { return 1; }
-        if(a.number > b.number) { return -1; }
-        return 0;
-    });
+    var playerArray19 = eval(nameArray[nameIndex - 1] + "Characters19");
+    var playerArray20 = eval(nameArray[nameIndex - 1] + "Characters20");
     mostPlayed = [];
-    for(var i=0; i<3; i++){
-        if(playerArray[i] === undefined){
-            mostPlayed.push({character: empty, number: null});
-        }else{
-            mostPlayed.push(playerArray[i]);
-        }
-    }
-    playerArray.sort(function(a, b){
-        if(a.wins < b.wins) { return 1; }
-        if(a.wins > b.wins) { return -1; }
-        return 0;
-    });
     mostWins = 0;
-    mostWins = [playerArray[0].character, playerArray[0].wins];
-    var averagePlace = (gamePlace[nameIndex - 1]/gamesPlayed[nameIndex - 1]).toFixed(2);
+    if(this.state.year === "Overall"){
+        playerArray.sort(function(a, b){
+            if(a.number < b.number) { return 1; }
+            if(a.number > b.number) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerArray[i] === undefined){
+                mostPlayed.push({character: empty, number: null});
+            }else{
+                mostPlayed.push(playerArray[i]);
+            }
+        }
+        playerArray.sort(function(a, b){
+            if(a.wins < b.wins) { return 1; }
+            if(a.wins > b.wins) { return -1; }
+            return 0;
+        });
+        mostWins = [playerArray[0].character, playerArray[0].wins];
+        averagePlace = ((gamePlace19[nameIndex - 1] + gamePlace20[nameIndex - 1])/(gamesPlayed19[nameIndex - 1] + gamesPlayed20[nameIndex - 1])).toFixed(2);
+        totalKos = playerkos19[nameIndex - 1] + playerkos20[nameIndex - 1];
+        highKoGames = highKoGames19[nameIndex - 1] + highKoGames20[nameIndex - 1];
+    }else if(this.state.year === "2019"){
+        playerArray19.sort(function(a, b){
+            if(a.number < b.number) { return 1; }
+            if(a.number > b.number) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerArray19[i] === undefined){
+                mostPlayed.push({character: empty, number: null});
+            }else{
+                mostPlayed.push(playerArray19[i]);
+            }
+        }
+        playerArray19.sort(function(a, b){
+            if(a.wins < b.wins) { return 1; }
+            if(a.wins > b.wins) { return -1; }
+            return 0;
+        });
+        mostWins = [playerArray19[0].character, playerArray19[0].wins];
+        averagePlace = (gamePlace19[nameIndex - 1]/gamesPlayed19[nameIndex - 1]).toFixed(2);
+        totalKos = playerkos19[nameIndex - 1];
+        highKoGames = highKoGames19[nameIndex - 1];
+    }else if(this.state.year === "2020"){
+        playerArray20.sort(function(a, b){
+            if(a.number < b.number) { return 1; }
+            if(a.number > b.number) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerArray20[i] === undefined){
+                mostPlayed.push({character: empty, number: null});
+            }else{
+                mostPlayed.push(playerArray20[i]);
+            }
+        }
+        playerArray20.sort(function(a, b){
+            if(a.wins < b.wins) { return 1; }
+            if(a.wins > b.wins) { return -1; }
+            return 0;
+        });
+        mostWins = [playerArray20[0].character, playerArray20[0].wins];
+        averagePlace = (gamePlace20[nameIndex - 1]/gamesPlayed20[nameIndex - 1]).toFixed(2);
+        totalKos = playerkos20[nameIndex - 1];
+        highKoGames = highKoGames20[nameIndex - 1];
+    }
     if(nameIndex > 0){
       console.log("nameIndex" + nameIndex);
       var newName = nameIndex - 1;
@@ -1582,8 +1688,8 @@ class Stats extends React.Component {
         mostPlayed: mostPlayed,
         averagePlace: averagePlace,
         mostWins: mostWins,
-        totalKos: playerkos[newName],
-        highKoGames: highKoGames[newName]
+        totalKos: totalKos,
+        highKoGames: highKoGames
       });
     }
   }
