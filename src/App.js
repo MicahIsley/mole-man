@@ -629,11 +629,88 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Pokemon Stadium 2"},
     {date: "Jan 16 2020"}
+  ],[
+    {name: "Doug", character: samus, kos: 5},
+    {name: "Zack", character: miigunner, kos: 1},
+    {name: "Micah", character: terry, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Momento"},
+    {date: "Jan 22 2020"}
+  ],[
+    {name: "Micah", character: inkling, kos: 4},
+    {name: "Zack", character: miibrawler, kos: 2},
+    {name: "Doug", character: corrin, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Pokemon Stadium 2"},
+    {date: "Jan 22 2020"}
+  ],[
+    {name: "Micah", character: inkling, kos: 3},
+    {name: "Doug", character: littlemac, kos: 4},
+    {name: "Zack", character: miibrawler, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Smashville"},
+    {date: "Jan 22 2020"}
+  ],[
+    {name: "Micah", character: darkpit, kos: 5},
+    {name: "Zack", character: kirby, kos: 3},
+    {name: "Doug", character: rosalina, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Jan 22 2020"}
+  ],[
+    {name: "Zack", character: kirby, kos: 3},
+    {name: "Doug", character: zerosuitsamus, kos: 4},
+    {name: "Micah", character: mewtwo, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Corneria"},
+    {date: "Jan 22 2020"}
+  ],[
+    {name: "Micah", character: wiifittrainer, kos: 5},
+    {name: "Zack", character: kirby, kos: 3},
+    {name: "Doug", character: younglink, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Custom"},
+    {date: "Jan 22 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 3},
+    {name: "Doug", character: luigi, kos: 2},
+    {name: "Micah", character: simon, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "King of Fighters Stadium"},
+    {date: "Jan 22 2020"}
+  ],[
+    {name: "Zack", character: hero, kos: 3},
+    {name: "Doug", character: roy, kos: 4},
+    {name: "Micah", character: iceclimbers, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Jan 22 2020"}
+  ],[
+    {name: "Doug", character: pokemontrainer, kos: 6},
+    {name: "Micah", character: olimar, kos: 0},
+    {name: "Zack", character: hero, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Yoshi's Island"},
+    {date: "Jan 22 2020"}
+  ],[
+    {name: "Zack", character: yoshi, kos: 3},
+    {name: "Betsy", character: villager, kos: 3},
+    {name: "Doug", character: sonic, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Yoshi's Island"},
+    {date: "Jan 22 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 3},
+    {name: "Doug", character: captainfalcon, kos: 4},
+    {name: "Micah", character: incineroar, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Jan 22 2020"}
   ]
 
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020"];
 
 var fourP19 = [0,0,0,0,0];
 var threeP19 = [0,0,0,0,0];
@@ -1301,13 +1378,22 @@ class Overall extends React.Component {
         graphName = "4-Player Wins";
     }else if(this.state.graphName === "4-Player Wins"){
         if(this.state.graphYear === "Overall"){
+            graphStats = [playerkos19[0] + playerkos20[0], playerkos19[1] + playerkos20[1], playerkos19[2] + playerkos20[2], playerkos19[3] + playerkos20[3], playerkos19[4] + playerkos20[4]];
+        }else if(this.state.graphYear === "2019"){
+            graphStats = [playerkos19[0], playerkos19[1], playerkos19[2], playerkos19[3], playerkos19[4]];
+        }else if(this.state.graphYear === "2020"){
+            graphStats = [playerkos20[0], playerkos20[1], playerkos20[2], playerkos20[3], playerkos20[4]];
+        }
+        graphName = "Total Kos"
+    }else if(this.state.graphName === "Total Kos"){
+        if(this.state.graphYear === "Overall"){
             graphStats = [this.props.threeP19[0] + this.props.fourP19[0] + this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP19[1] + this.props.fourP19[1] + this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP19[2] + this.props.fourP19[2] + this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP19[3] + this.props.fourP19[3] + this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP19[4] + this.props.fourP19[4] + this.props.threeP20[4] + this.props.fourP20[4]];
         }else if(this.state.graphYear === "2019"){
             graphStats = [this.props.threeP19[0] + this.props.fourP19[0], this.props.threeP19[1] + this.props.fourP19[1], this.props.threeP19[2] + this.props.fourP19[2], this.props.threeP19[3] + this.props.fourP19[3], this.props.threeP19[4] + this.props.fourP19[4]];
         }else if(this.state.graphYear === "2020"){
             graphStats = [this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP20[4] + this.props.fourP20[4]];
         }
-        graphName = "Overall Wins"
+        graphName = "Overall Wins";
     }
     this.setState({
         graphName: graphName,
@@ -1324,6 +1410,8 @@ class Overall extends React.Component {
             graphStats = [this.props.threeP19[0], this.props.threeP19[1], this.props.threeP19[2], this.props.threeP19[3], this.props.threeP19[4]];
         }else if(this.state.graphName === "4-Player Wins"){
             graphStats = [this.props.fourP19[0], this.props.fourP19[1], this.props.fourP19[2], this.props.fourP19[3], this.props.fourP19[4]];
+        }else if(this.state.graphName === "Total Kos"){
+            graphStats = [playerkos19[0], playerkos19[1], playerkos19[2], playerkos19[3], playerkos19[4]];
         }
         graphYear = "2019";
     }else if(this.state.graphYear === "2019"){
@@ -1333,6 +1421,8 @@ class Overall extends React.Component {
             graphStats = [this.props.threeP20[0], this.props.threeP20[1], this.props.threeP20[2], this.props.threeP20[3], this.props.threeP20[4]];
         }else if(this.state.graphName === "4-Player Wins"){
             graphStats = [this.props.fourP20[0], this.props.fourP20[1], this.props.fourP20[2], this.props.fourP20[3], this.props.fourP20[4]];
+        }else if(this.state.graphName === "Total Kos"){
+            graphStats = [playerkos20[0], playerkos20[1], playerkos20[2], playerkos20[3], playerkos20[4]];
         }
         graphYear = "2020";
     }else if(this.state.graphYear === "2020"){
@@ -1342,6 +1432,8 @@ class Overall extends React.Component {
             graphStats = [this.props.threeP19[0] + this.props.threeP20[0], this.props.threeP19[1] + this.props.threeP20[1], this.props.threeP19[2] + this.props.threeP20[2], this.props.threeP19[3] + this.props.threeP20[3], this.props.threeP19[4] + this.props.threeP20[4]];
         }else if(this.state.graphName === "4-Player Wins"){
             graphStats = [this.props.fourP19[0] + this.props.fourP20[0], this.props.fourP19[1] + this.props.fourP20[1], this.props.fourP19[2] + this.props.fourP20[2], this.props.fourP19[3] + this.props.fourP20[3], this.props.fourP19[4] + this.props.fourP20[4]];
+        }else if(this.state.graphName === "Total Kos"){
+            graphStats = [playerkos19[0] + playerkos20[0], playerkos19[1] + playerkos20[1], playerkos19[2] + playerkos20[2], playerkos19[3] + playerkos20[3], playerkos19[4] + playerkos20[4]];
         }
         graphYear = "Overall"
     }
@@ -1763,7 +1855,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Jan 16 2020",
+      date: "Jan 22 2020",
       weeklyWins: [0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
