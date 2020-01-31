@@ -4,6 +4,7 @@ import banjo from './assets/banjokazooie.jpg';
 import bayonetta from './assets/bayonetta.jpg';
 import bowser from './assets/bowser.jpg';
 import bowserjr from './assets/bowserjr.jpg';
+import byleth from './assets/byleth.jpg';
 import captainfalcon from './assets/captainfalcon.jpg';
 import chrom from './assets/chrom.jpg';
 import cloud from './assets/cloud.jpg';
@@ -706,11 +707,88 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
     {date: "Jan 22 2020"}
+  ],[
+    {name: "Doug", character: byleth, kos: 2},
+    {name: "Zack", character: miigunner, kos: 3},
+    {name: "Micah", character: diddykong, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Midgar"},
+    {date: "Jan 30 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 1},
+    {name: "Doug", character: byleth, kos: 4},
+    {name: "Micah", character: zelda, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Midgar"},
+    {date: "Jan 30 2020"}
+  ],[
+    {name: "Zack", character: byleth, kos: 5},
+    {name: "Micah", character: incineroar, kos: 3},
+    {name: "Doug", character: littlemac, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Peach's Castle"},
+    {date: "Jan 30 2020"}
+  ],[
+    {name: "Doug", character: captainfalcon, kos: 3},
+    {name: "Micah", character: incineroar, kos: 4},
+    {name: "Zack", character: byleth, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Pokemon Stadium"},
+    {date: "Jan 30 2020"}
+  ],[
+    {name: "Micah", character: bowserjr, kos: 4},
+    {name: "Zack", character: yoshi, kos: 4},
+    {name: "Doug", character: marth, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Pokemon Stadium"},
+    {date: "Jan 30 2020"}
+  ],[
+    {name: "Zack", character: drmario, kos: 5},
+    {name: "Doug", character: samus, kos: 3},
+    {name: "Micah", character: wiifittrainer, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Corneria"},
+    {date: "Jan 30 2020"}
+  ],[
+    {name: "Micah", character: wiifittrainer, kos: 5},
+    {name: "Doug", character: link, kos: 3},
+    {name: "Zack", character: drmario, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Dream Land"},
+    {date: "Jan 30 2020"}
+  ],[
+    {name: "Micah", character: terry, kos: 4},
+    {name: "Doug", character: pokemontrainer, kos: 1},
+    {name: "Zack", character: kingdedede, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Delfino Plaza"},
+    {date: "Jan 30 2020"}
+  ],[
+    {name: "Zack", character: corrin, kos: 4},
+    {name: "Doug", character: zerosuitsamus, kos: 0},
+    {name: "Micah", character: peach, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Custom"},
+    {date: "Jan 30 2020"}
+  ],[
+    {name: "Micah", character: byleth, kos: 5},
+    {name: "Doug", character: joker, kos: 3},
+    {name: "Zack", character: corrin, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Mario Galaxy"},
+    {date: "Jan 30 2020"}
+  ],[
+    {name: "Zack", character: hero, kos: 3},
+    {name: "Micah", character: lucario, kos: 3},
+    {name: "Doug", character: terry, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "3D Land"},
+    {date: "Jan 30 2020"}
   ]
 
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020"];
 
 var fourP19 = [0,0,0,0,0];
 var threeP19 = [0,0,0,0,0];
@@ -1543,6 +1621,18 @@ class Stats extends React.Component {
     var playerCharacters = eval(this.state.name + "Characters");
     var playerCharacters19 = eval(this.state.name + "Characters19");
     var playerCharacters20 = eval(this.state.name + "Characters20");
+    var playerNumber;
+    if(this.state.name === "micah"){
+        playerNumber = 0;
+    }else if(this.state.name === "tim"){
+        playerNumber = 1;
+    }else if(this.state.name === "doug"){
+        playerNumber = 2;
+    }else if(this.state.name === "zack"){
+        playerNumber = 3;
+    }else if(this.state.name === "betsy"){
+        playerNumber = 4;
+    }
     if(this.state.year === "Overall"){
         statsYear = "2019";
         playerCharacters19.sort(function(a, b){
@@ -1559,9 +1649,9 @@ class Stats extends React.Component {
                 return 0;
             });
         mostWins = [playerCharacters19[0].character, playerCharacters19[0].wins];
-        averagePlace = (gamePlace19[0]/gamesPlayed19[0]).toFixed(2);
-        totalKos = playerkos19[0];
-        highKoGames = highKoGames19[0]; 
+        averagePlace = (gamePlace19[playerNumber]/gamesPlayed19[playerNumber]).toFixed(2);
+        totalKos = playerkos19[playerNumber];
+        highKoGames = highKoGames19[playerNumber]; 
     }else if(this.state.year === "2019"){
         statsYear = "2020";
         playerCharacters20.sort(function(a, b){
@@ -1578,9 +1668,9 @@ class Stats extends React.Component {
                 return 0;
             });
         mostWins = [playerCharacters20[0].character, playerCharacters20[0].wins];
-        averagePlace = (gamePlace20[0]/gamesPlayed20[0]).toFixed(2);
-        totalKos = playerkos20[0];
-        highKoGames = highKoGames20[0];
+        averagePlace = (gamePlace20[playerNumber]/gamesPlayed20[playerNumber]).toFixed(2);
+        totalKos = playerkos20[playerNumber];
+        highKoGames = highKoGames20[playerNumber];
     }else if(this.state.year === "2020"){
         statsYear = "Overall";
         playerCharacters.sort(function(a, b){
@@ -1597,9 +1687,9 @@ class Stats extends React.Component {
                 return 0;
             });
         mostWins = [playerCharacters[0].character, playerCharacters[0].wins];
-        averagePlace = ((gamePlace19[0] + gamePlace20[0])/(gamesPlayed19[0] + gamesPlayed20[0])).toFixed(2);
-        totalKos = playerkos19[0] + playerkos20[0];
-        highKoGames = highKoGames19[0] + highKoGames20[0];
+        averagePlace = ((gamePlace19[playerNumber] + gamePlace20[playerNumber])/(gamesPlayed19[playerNumber] + gamesPlayed20[playerNumber])).toFixed(2);
+        totalKos = playerkos19[playerNumber] + playerkos20[playerNumber];
+        highKoGames = highKoGames19[playerNumber] + highKoGames20[playerNumber];
     }
     this.setState({
         year: statsYear,
@@ -1855,7 +1945,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Jan 22 2020",
+      date: "Jan 30 2020",
       weeklyWins: [0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
