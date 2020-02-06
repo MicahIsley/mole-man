@@ -784,11 +784,116 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "3D Land"},
     {date: "Jan 30 2020"}
+  ],[
+    {name: "Doug", character: duckhunt, kos: 2},
+    {name: "Zack", character: hero, kos: 5},
+    {name: "Micah", character: peach, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Micah", character: inkling, kos: 2},
+    {name: "Zack", character: hero, kos: 4},
+    {name: "Doug", character: banjo, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Town and City"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Micah", character: rob, kos: 3},
+    {name: "Zack", character: hero, kos: 4},
+    {name: "Doug", character: simon, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Kongo Jungle"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Zack", character: drmario, kos: 5},
+    {name: "Micah", character: incineroar, kos: 2},
+    {name: "Doug", character: byleth, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Micah", character: pirahnaplant, kos: 3},
+    {name: "Doug", character: younglink, kos: 4},
+    {name: "Zack", character: drmario, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Princess Peach's Castle"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Micah", character: wiifittrainer, kos: 3},
+    {name: "Zack", character: samus, kos: 3},
+    {name: "Doug", character: younglink, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Bridge of Eldin"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Micah", character: byleth, kos: 4},
+    {name: "Zack", character: samus, kos: 3},
+    {name: "Doug", character: ike, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "New Donk City Hall"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Zack", character: samus, kos: 5},
+    {name: "Doug", character: roy, kos: 2},
+    {name: "Micah", character: iceclimbers, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Mario Galaxy"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Zack", character: samus, kos: 2},
+    {name: "Doug", character: samus, kos: 3},
+    {name: "Micah", character: bowserjr, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Final Destination"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Micah", character: bowserjr, kos: 4},
+    {name: "Zack", character: miigunner, kos: 4},
+    {name: "Doug", character: captainfalcon, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Garreg Mack Monestary"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 5},
+    {name: "Micah", character: zelda, kos: 1},
+    {name: "Doug", character: duckhunt, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Green Greens"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 3},
+    {name: "Doug", character: duckhunt, kos: 3},
+    {name: "Micah", character: zelda, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "King of Fighters Stadium"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Micah", character: terry, kos: 4},
+    {name: "Zack", character: corrin, kos: 3},
+    {name: "Doug", character: kirby, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Spiral Mountain"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Zack", character: yoshi, kos: 3},
+    {name: "Doug", character: ryu, kos: 1},
+    {name: "Micah", character: pikachu, kos: 4},
+    {name: "", character: empty, kos: 0},
+    {stage: "Onett"},
+    {date: "Feb 5 2020"}
+  ],[
+    {name: "Zack", character: kirby, kos: 3},
+    {name: "Doug", character: luigi, kos: 2},
+    {name: "Micah", character: incineroar, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Big Battlefield"},
+    {date: "Feb 5 2020"}
   ]
 
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020"];
 
 var fourP19 = [0,0,0,0,0];
 var threeP19 = [0,0,0,0,0];
@@ -919,7 +1024,6 @@ class App extends React.Component {
                     existingCharacter = true;
                 }else{}
                 if(micahCharacters[k].character === gameData[i][0].character && gameData[i][0].name === "Micah"){
-                    console.log("overall win");
                     micahCharacters[k].wins ++;
                 }else{}
             }
@@ -1191,13 +1295,11 @@ class App extends React.Component {
                         existingCharacter20 = true;
                     }else{}
                     if(zackCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "Zack"){
-                        console.log(zackCharacters20[k].character);
                         zackCharacters20[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        console.log("push" + gameData[i][j].character);
                         zackCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1});
                     }else{
                         zackCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0});
@@ -1863,7 +1965,6 @@ class Stats extends React.Component {
         highKoGames = highKoGames20[nameIndex - 1];
     }
     if(nameIndex > 0){
-      console.log("nameIndex" + nameIndex);
       var newName = nameIndex - 1;
       this.setState({
         name: nameArray[newName],
@@ -1945,7 +2046,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Jan 30 2020",
+      date: "Feb 5 2020",
       weeklyWins: [0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
@@ -2075,7 +2176,6 @@ class Game extends React.Component {
     }
   }
   openGameStats(){
-    console.log(this.state.gameStats);
     if(this.state.gameStats === false){
       this.setState({
         gameStats: true
