@@ -77,7 +77,7 @@ import toonlink from './assets/toonlink.jpg';
 import unknown from './assets/unknown.jpg';
 import villager from './assets/villager.jpg';
 import wario from './assets/wario.jpg';
-import wiifittrainer from './assets/wiifittrainer.jpg';
+import wiifittrainer from './assets/wiifittrainer.png';
 import wolf from './assets/wolf.jpg';
 import yoshi from './assets/yoshi.jpg';
 import younglink from './assets/younglink.jpg';
@@ -928,6 +928,12 @@ var gamesPlayed19 = [0,0,0,0,0];
 var gamesPlayed20 = [0,0,0,0,0];
 var gamePlace19 = [0,0,0,0,0];
 var gamePlace20 = [0,0,0,0,0];
+var fighterStatsMicah = {games: 0, wins: 0, place: 0, kos: 0};
+var fighterStatsTim = {games: 0, wins: 0, place: 0, kos: 0};
+var fighterStatsDoug = {games: 0, wins: 0, place: 0, kos: 0};
+var fighterStatsZack = {games: 0, wins: 0, place: 0, kos: 0};
+var fighterStatsBetsy = {games: 0, wins: 0, place: 0, kos: 0};
+
 
 class App extends React.Component {
   constructor(props) {
@@ -937,15 +943,17 @@ class App extends React.Component {
       fourP19: [0,0,0,0,0],
       threeP20: [0,0,0,0,0],
       fourP20: [0,0,0,0,0],
-      weekly: true,
+      weekly: false,
       overall: false,
       stats: false,
-      videos: false
+      videos: false,
+      fighters: true
     }
   this.goToWeekly = this.goToWeekly.bind(this);
   this.goToOverall = this.goToOverall.bind(this);
   this.goToStats = this.goToStats.bind(this);
   this.goToVideos = this.goToVideos.bind(this);
+  this.goToFighters = this.goToFighters.bind(this);
   }
   componentDidMount(){
     for(var i=0; i < gameData.length; i++){
@@ -1402,7 +1410,8 @@ class App extends React.Component {
       weekly: true,
       overall: false,
       stats: false,
-      videos: false
+      videos: false,
+      fighters: false
     });
 
   }
@@ -1416,7 +1425,8 @@ class App extends React.Component {
       weekly: false,
       overall: true,
       stats: false,
-      videos: false
+      videos: false,
+      fighters: false
     });
   }
   goToStats(){
@@ -1429,7 +1439,8 @@ class App extends React.Component {
       weekly: false,
       overall: false,
       stats: true,
-      videos: false
+      videos: false,
+      fighters: false
     });
   }
   goToVideos(){
@@ -1441,7 +1452,21 @@ class App extends React.Component {
       weekly: false,
       overall: false,
       stats: false,
-      videos: true
+      videos: true,
+      fighters: false
+    });
+  }
+  goToFighters(){
+    const x = document.getElementsByClassName("tab");
+    for (var i=0; i < x.length; i ++ ){
+      x[i].style.background="#0547ff";
+    }
+    this.setState({
+      weekly: false,
+      overall: false,
+      stats: false,
+      videos: false,
+      fighters: true
     });
   }
   render(){
@@ -1460,6 +1485,7 @@ class App extends React.Component {
         {this.state.overall ? <Overall threeP19={this.state.threeP19} fourP19={this.state.fourP19} threeP20={this.state.threeP20} fourP20={this.state.fourP20} betsy={this.state.betsy} /> : null }
         {this.state.stats ? <Stats /> : null }
         {this.state.videos ? <Highlights /> : null }
+        {this.state.fighters ? <Fighters /> : null }
       </div>
     );
   }
@@ -2260,6 +2286,99 @@ class GamePlayer extends React.Component {
       </div>
     )
   }
+}
+
+class Fighters extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          fighterStats: [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy],
+          fighterName: " "
+        }
+    this.findFighterData = this.findFighterData.bind(this);
+    }   
+    findFighterData(){
+        fighterStatsMicah = {games: 0, wins: 0, place: 0, kos: 0};
+        fighterStatsTim = {games: 0, wins: 0, place: 0, kos: 0};
+        fighterStatsDoug = {games: 0, wins: 0, place: 0, kos: 0};
+        fighterStatsZack = {games: 0, wins: 0, place: 0, kos: 0};
+        fighterStatsBetsy = {games: 0, wins: 0, place: 0, kos: 0};
+        var fighter = document.getElementById("fighterName").value;
+        for(var i=0; i < gameData.length; i++){
+            for(var j=0; j< 4; j++){
+                var imageString = gameData[i][j].character.toString();
+                var splitString = imageString.split("/");
+                var splitAgain = splitString[3].split(".");
+                var splitName = splitAgain[0];
+                if(splitName === fighter){
+                    var playerFighterArray = eval("fighterStats" + gameData[i][j].name);
+                    playerFighterArray.games ++;
+                    if(j === 0){
+                        playerFighterArray.wins ++;
+                    }else{}
+                    playerFighterArray.place = playerFighterArray.place + (j+1);
+                    playerFighterArray.kos = playerFighterArray.kos + gameData[i][j].kos;
+                }else{}
+            }
+        }
+        this.setState({
+            fighterName: fighter,
+            fighterStats: [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy]
+        }, () => {
+            console.log(this.state);
+        });
+    }
+    render() {
+        return (
+            <div className="row">
+                <div className="col-xs-12">
+                    <div className="row">Fighter Stats</div>
+                    <div className="row">
+                        <div className="col-xs-offset-4 col-xs-4">
+                            <input type="text" id="fighterName"></input>
+                        </div>
+                        <div className="col-xs-2" id="selectButton" onClick={this.findFighterData}>Select</div>
+                    </div>
+                    <div className="row">{this.state.fighterName}</div>
+                    <div className="row">
+                        <div className="col-xs-2">Micah</div>
+                        <div className="col-xs-2">{this.state.fighterStats[0].games}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[0].wins}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[0].place}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[0].kos}</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-xs-2">Tim</div>
+                        <div className="col-xs-2">{this.state.fighterStats[1].games}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[1].wins}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[1].place}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[1].kos}</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-xs-2">Doug</div>
+                        <div className="col-xs-2">{this.state.fighterStats[2].games}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[2].wins}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[2].place}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[2].kos}</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-xs-2">Zack</div>
+                        <div className="col-xs-2">{this.state.fighterStats[3].games}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[3].wins}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[3].place}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[3].kos}</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-xs-2">Betsy</div>
+                        <div className="col-xs-2">{this.state.fighterStats[4].games}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[4].wins}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[4].place}</div>
+                        <div className="col-xs-2">{this.state.fighterStats[4].kos}</div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default App;
