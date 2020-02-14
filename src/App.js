@@ -889,11 +889,67 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Big Battlefield"},
     {date: "Feb 5 2020"}
+  ],[
+    {name: "Tim", character: samus, kos: 1},
+    {name: "Zack", character: drmario, kos: 3},
+    {name: "Micah", character: sonic, kos: 4},
+    {name: "", character: empty, kos: 0},
+    {stage: "Norfair"},
+    {date: "Feb 13 2020"}
+  ],[
+    {name: "Micah", character: simon, kos: 1},
+    {name: "Tim", character: samus, kos: 3},
+    {name: "Zack", character: drmario, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Mushroomy Kingdom"},
+    {date: "Feb 13 2020"}
+  ],[
+    {name: "Micah", character: byleth, kos: 5},
+    {name: "Zack", character: samus, kos: 2},
+    {name: "Tim", character: darksamus, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Garreg Mack Monestary"},
+    {date: "Feb 13 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 4},
+    {name: "Tim", character: pacman, kos: 3},
+    {name: "Micah", character: cloud, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Port Town Aero Drive"},
+    {date: "Feb 13 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 3},
+    {name: "Tim", character: pacman, kos: 2},
+    {name: "Micah", character: cloud, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Green Greens"},
+    {date: "Feb 13 2020"}
+  ],[
+    {name: "Tim", character: ness, kos: 5},
+    {name: "Micah", character: peach, kos: 2},
+    {name: "Zack", character: miigunner, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Great Bay"},
+    {date: "Feb 13 2020"}
+  ],[
+    {name: "Micah", character: terry, kos: 3},
+    {name: "Tim", character: ness, kos: 2},
+    {name: "Zack", character: kirby, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Final Destination"},
+    {date: "Feb 13 2020"}
+  ],[
+    {name: "Zack", character: hero, kos: 1},
+    {name: "Micah", character: lucario, kos: 4},
+    {name: "Tim", character: pacman, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Custom"},
+    {date: "Feb 13 2020"}
   ]
 
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020"];
 
 var fourP19 = [0,0,0,0,0];
 var threeP19 = [0,0,0,0,0];
@@ -943,11 +999,11 @@ class App extends React.Component {
       fourP19: [0,0,0,0,0],
       threeP20: [0,0,0,0,0],
       fourP20: [0,0,0,0,0],
-      weekly: false,
+      weekly: true,
       overall: false,
       stats: false,
       videos: false,
-      fighters: true
+      fighters: false
     }
   this.goToWeekly = this.goToWeekly.bind(this);
   this.goToOverall = this.goToOverall.bind(this);
@@ -1323,7 +1379,7 @@ class App extends React.Component {
                 if(betsyCharacters[k].character === gameData[i][j].character){
                     existingCharacter = true;
                 }else{}
-                if(betsyCharacters[k].character === gameData[i][0].character && gameData[i][0].name === "betsy"){
+                if(betsyCharacters[k].character === gameData[i][0].character && gameData[i][0].name === "Betsy"){
                     betsyCharacters[k].wins ++;
                 }else{}
             }
@@ -1349,7 +1405,7 @@ class App extends React.Component {
                     if(betsyCharacters19[k].character === gameData[i][j].character){
                         existingCharacter19 = true;
                     }else{}
-                    if(betsyCharacters19[k].character === gameData[i][0].character && gameData[i][0].name === "betsy"){
+                    if(betsyCharacters19[k].character === gameData[i][0].character && gameData[i][0].name === "Betsy"){
                         betsyCharacters19[k].wins ++;
                     }else{}
                 }
@@ -1375,7 +1431,7 @@ class App extends React.Component {
                     if(betsyCharacters20[k].character === gameData[i][j].character){
                         existingCharacter20 = true;
                     }else{}
-                    if(betsyCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "betsy"){
+                    if(betsyCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "Betsy"){
                         betsyCharacters20[k].wins ++;
                     }else{}
                 }
@@ -1734,6 +1790,7 @@ class Stats extends React.Component {
   }
   listMostPlayed () {
     const numberOfMostPlayed = this.state.mostPlayed;
+    console.log(numberOfMostPlayed);
     const listMostPlayed = numberOfMostPlayed.map((character, index) => {
       return <MostPlayed key={index} id={index} character={character.character} number={character.number} />
     }
@@ -1743,6 +1800,7 @@ class Stats extends React.Component {
     )
   }
   changeStatsYear() {
+    console.log(betsyCharacters);
     var statsYear;
     var mostPlayed = [];
     var mostWins;
@@ -1769,7 +1827,11 @@ class Stats extends React.Component {
             return 0;
         });
         for(var i=0; i<3; i++){
-            mostPlayed.push(playerCharacters19[i]);
+            if(playerCharacters19[i] === undefined){
+                mostPlayed.push({character: empty, number: null});
+            }else{
+                mostPlayed.push(playerCharacters19[i]);
+            }
         }
         playerCharacters19.sort(function(a, b){
             if(a.wins < b.wins) { return 1; }
@@ -1788,7 +1850,11 @@ class Stats extends React.Component {
             return 0;
         });
         for(var i=0; i<3; i++){
-            mostPlayed.push(playerCharacters20[i]);
+            if(playerCharacters20[i] === undefined){
+                mostPlayed.push({character: empty, number: null});
+            }else{
+                mostPlayed.push(playerCharacters20[i]);
+            }
         }
         playerCharacters20.sort(function(a, b){
             if(a.wins < b.wins) { return 1; }
@@ -1807,7 +1873,11 @@ class Stats extends React.Component {
             return 0;
         });
         for(var i=0; i<3; i++){
-            mostPlayed.push(playerCharacters[i]);
+            if(playerCharacters[i] === undefined){
+                mostPlayed.push({character: empty, number: null});
+            }else{
+                mostPlayed.push(playerCharacters[i]);
+            }
         }
         playerCharacters.sort(function(a, b){
             if(a.wins < b.wins) { return 1; }
@@ -2072,7 +2142,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Feb 5 2020",
+      date: "Feb 13 2020",
       weeklyWins: [0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
