@@ -1732,8 +1732,8 @@ class Overall extends React.Component {
     return (
         <div className="col-xs-12">
             <div className="row">
-                <div className="col-xs-offset-4 col-xs-4" id="changeGraph" onClick={this.changeGraphClick}>Change Graph</div>
-                <div className="col-xs-offset-2 col-xs-2 changeYear" onClick={this.changeYearClick}>{this.state.graphYear}</div>
+                <div className="col-xs-6 col-md-offset-4 col-md-4" id="changeGraph" onClick={this.changeGraphClick}>Change Graph</div>
+                <div className="col-xs-6 col-md-offset-2 col-md-2 changeYear" onClick={this.changeYearClick}>{this.state.graphYear}</div>
             </div>
             <div className="row overall">
                 <div className="col-xs-12">
@@ -2080,7 +2080,7 @@ class Stats extends React.Component {
             <div className="col-xs-offset-3 col-xs-1"><span onClick={this.previousName} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
             <div className="col-xs-4" id="statsName">{this.state.name}</div>
             <div className="col-xs-1"><span onClick={this.nextName} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
-            <div className="col-xs-offset-1 col-xs-2 changeYear" onClick={this.changeStatsYear}>{this.state.year}</div>
+            <div className="col-xs-6 col-md-offset-1 col-md-2 changeYear" onClick={this.changeStatsYear}>{this.state.year}</div>
           </div>
           <div className="row">
             <div className="col-xs-4 statsTitle">Most Played Characters</div>
