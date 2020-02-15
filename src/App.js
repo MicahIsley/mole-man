@@ -1093,13 +1093,14 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    micahCharacters.push({character: gameData[i][j].character, number: 1, wins: 1});
+                    micahCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                 }else{
-                    micahCharacters.push({character: gameData[i][j].character, number: 1, wins: 0});
+                    micahCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                 }
             }else{
                 var a = micahCharacters.findIndex(x => x.character === gameData[i][j].character);
                 micahCharacters[a].number ++;
+                micahCharacters[a].kos = micahCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === "2019"){
                 gamesPlayed19[0] ++;
@@ -1119,13 +1120,14 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        micahCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1});
+                        micahCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                     }else{
-                        micahCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0});
+                        micahCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                     }
                 }else{
                     var a = micahCharacters19.findIndex(x => x.character === gameData[i][j].character);
                     micahCharacters19[a].number ++;
+                    micahCharacters19[a].kos = micahCharacters19[a].kos + gameData[i][j].kos;
                 }
             }else{
                 gamesPlayed20[0] ++;
@@ -1145,13 +1147,14 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        micahCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1});
+                        micahCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                     }else{
-                        micahCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0});
+                        micahCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                     }
                 }else{
                     var a = micahCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     micahCharacters20[a].number ++;
+                    micahCharacters20[a].kos = micahCharacters20[a].kos + gameData[i][j].kos;
                 }
             }
         }else if(gameData[i][j].name === "Tim"){
@@ -1166,13 +1169,14 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    timCharacters.push({character: gameData[i][j].character, number: 1, wins: 1});
+                    timCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                 }else{
-                    timCharacters.push({character: gameData[i][j].character, number: 1, wins: 0});
+                    timCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                 }
             }else{
                 var a = timCharacters.findIndex(x => x.character === gameData[i][j].character);
                 timCharacters[a].number ++;
+                timCharacters[a].kos = timCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === "2019"){
                 gamesPlayed19[1] ++;
@@ -1192,13 +1196,14 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        timCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1});
+                        timCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                     }else{
-                        timCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0});
+                        timCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                     }
                 }else{
                     var a = timCharacters19.findIndex(x => x.character === gameData[i][j].character);
                     timCharacters19[a].number ++;
+                    timCharacters19[a].kos = timCharacters19[a].kos + gameData[i][j].kos;
                 }
             }else{
                 gamesPlayed20[1] ++;
@@ -1218,13 +1223,14 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        timCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1});
+                        timCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                     }else{
-                        timCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0});
+                        timCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                     }
                 }else{
                     var a = timCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     timCharacters20[a].number ++;
+                    timCharacters20[a].kos = timCharacters20[a].kos + gameData[i][j].kos;
                 }
             }
         }else if(gameData[i][j].name === "Doug"){
@@ -1239,13 +1245,14 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    dougCharacters.push({character: gameData[i][j].character, number: 1, wins: 1});
+                    dougCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                 }else{
-                    dougCharacters.push({character: gameData[i][j].character, number: 1, wins: 0});
+                    dougCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                 }
             }else{
                 var a = dougCharacters.findIndex(x => x.character === gameData[i][j].character);
                 dougCharacters[a].number ++;
+                dougCharacters[a].kos = dougCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === "2019"){
                 gamesPlayed19[2] ++;
@@ -1265,13 +1272,14 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        dougCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1});
+                        dougCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                     }else{
-                        dougCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0});
+                        dougCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                     }
                 }else{
                     var a = dougCharacters19.findIndex(x => x.character === gameData[i][j].character);
                     dougCharacters19[a].number ++;
+                    dougCharacters19[a].kos = dougCharacters19[a].kos + gameData[i][j].kos;
                 }
             }else{
                 gamesPlayed20[2] ++;
@@ -1291,13 +1299,14 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        dougCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1});
+                        dougCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                     }else{
-                        dougCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0});
+                        dougCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                     }
                 }else{
                     var a = dougCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     dougCharacters20[a].number ++;
+                    dougCharacters20[a].kos = dougCharacters20[a].kos + gameData[i][j].kos;
                 }
             }
         }else if(gameData[i][j].name === "Zack"){
@@ -1312,13 +1321,14 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    zackCharacters.push({character: gameData[i][j].character, number: 1, wins: 1});
+                    zackCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                 }else{
-                    zackCharacters.push({character: gameData[i][j].character, number: 1, wins: 0});
+                    zackCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                 }
             }else{
                 var a = zackCharacters.findIndex(x => x.character === gameData[i][j].character);
                 zackCharacters[a].number ++;
+                zackCharacters[a].kos = zackCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === "2019"){
                 gamesPlayed19[3] ++;
@@ -1338,13 +1348,14 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        zackCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1});
+                        zackCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                     }else{
-                        zackCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0});
+                        zackCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                     }
                 }else{
                     var a = zackCharacters19.findIndex(x => x.character === gameData[i][j].character);
                     zackCharacters19[a].number ++;
+                    zackCharacters19[a].kos = zackCharacters19[a].kos + gameData[i][j].kos;
                 }
             }else{
                 gamesPlayed20[3] ++;
@@ -1364,13 +1375,14 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        zackCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1});
+                        zackCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                     }else{
-                        zackCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0});
+                        zackCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                     }
                 }else{
                     var a = zackCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     zackCharacters20[a].number ++;
+                    zackCharacters20[a].kos = zackCharacters20[a].kos + gameData[i][j].kos;
                 }
             }
         }else if(gameData[i][j].name === "Betsy"){
@@ -1385,13 +1397,14 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    betsyCharacters.push({character: gameData[i][j].character, number: 1, wins: 1});
+                    betsyCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                 }else{
-                    betsyCharacters.push({character: gameData[i][j].character, number: 1, wins: 0});
+                    betsyCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                 }
             }else{
                 var a = betsyCharacters.findIndex(x => x.character === gameData[i][j].character);
                 betsyCharacters[a].number ++;
+                betsyCharacters[a].kos = betsyCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === "2019"){
                 gamesPlayed19[4] ++;
@@ -1411,13 +1424,14 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        betsyCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1});
+                        betsyCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                     }else{
-                        betsyCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0});
+                        betsyCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                     }
                 }else{
                     var a = betsyCharacters19.findIndex(x => x.character === gameData[i][j].character);
                     betsyCharacters19[a].number ++;
+                    betsyCharacters19[a].kos = betsyCharacters19[a].kos + gameData[i][j].kos;
                 }
             }else{
                 gamesPlayed20[4] ++;
@@ -1437,13 +1451,14 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        betsyCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1});
+                        betsyCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
                     }else{
-                        betsyCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0});
+                        betsyCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
                     }
                 }else{
                     var a = betsyCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     betsyCharacters20[a].number ++;
+                    betsyCharacters20[a].kos = betsyCharacters20[a].kos + gameData[i][j].kos;
                 }
             }
         }
@@ -1536,6 +1551,7 @@ class App extends React.Component {
           <Tab name="Overall" handleClick={this.goToOverall} />
           <Tab name="Weekly" handleClick={this.goToWeekly} />
           <Tab name="Stats" handleClick={this.goToStats} />
+          <Tab name="Fighters" handleClick={this.goToFighters} />
         </div>
         {this.state.weekly ? <Weekly /> : null }
         {this.state.overall ? <Overall threeP19={this.state.threeP19} fourP19={this.state.fourP19} threeP20={this.state.threeP20} fourP20={this.state.fourP20} betsy={this.state.betsy} /> : null }
@@ -1753,7 +1769,7 @@ class Stats extends React.Component {
       mostPlayed: [],
       averagePlace: 0,
       mostWins: [],
-      totalKos: 0,
+      totalKos: [],
       highKoGames: 0,
       year: "Overall"
     }
@@ -1763,6 +1779,16 @@ class Stats extends React.Component {
   this.changeStatsYear = this.changeStatsYear.bind(this);
   }
   componentDidMount() {
+    var playerStatsArrays = [micahCharacters, micahCharacters19, micahCharacters20, timCharacters, timCharacters19, timCharacters20, dougCharacters, dougCharacters19, dougCharacters20, zackCharacters, zackCharacters19, zackCharacters20, betsyCharacters, betsyCharacters19, betsyCharacters20];
+    for(var i=0; i<playerStatsArrays.length; i++){
+        for(var j=0; j<playerStatsArrays[i].length; j++){
+            var avgKos = (playerStatsArrays[i][j].kos/playerStatsArrays[i][j].number).toFixed(2);
+            playerStatsArrays[i][j].kos = avgKos;
+        }
+    }
+    mostPlayed = [];
+    mostWins = [];
+    totalKos = [];
     micahCharacters.sort(function(a, b){
         if(a.number < b.number) { return 1; }
         if(a.number > b.number) { return -1; }
@@ -1776,9 +1802,18 @@ class Stats extends React.Component {
         if(a.wins > b.wins) { return -1; }
         return 0;
     });
-    mostWins = [micahCharacters[0].character, micahCharacters[0].wins];
+    for(var i=0; i<3; i++){
+        mostWins.push(micahCharacters[i]);
+    }
+    micahCharacters.sort(function(a, b){
+        if(a.kos < b.kos) { return 1; }
+        if(a.kos > b.kos) { return -1; }
+        return 0;
+    });
+    for(var i=0; i<3; i++){
+        totalKos.push(micahCharacters[i]);
+    }
     averagePlace = ((gamePlace19[0] + gamePlace20[0])/(gamesPlayed19[0] + gamesPlayed20[0])).toFixed(2);
-    totalKos = playerkos19[0] + playerkos20[0];
     highKoGames = highKoGames19[0] + highKoGames20[0];
     this.setState({
       mostPlayed: mostPlayed,
@@ -1788,22 +1823,41 @@ class Stats extends React.Component {
       highKoGames: highKoGames
     });
   }
-  listMostPlayed () {
+  listMostPlayed() {
     const numberOfMostPlayed = this.state.mostPlayed;
+    console.log("listmostplayed");
     console.log(numberOfMostPlayed);
     const listMostPlayed = numberOfMostPlayed.map((character, index) => {
       return <MostPlayed key={index} id={index} character={character.character} number={character.number} />
-    }
-    );
+    });
     return (
       <div>{listMostPlayed}</div>
+    )
+  }
+  listMostWins() {
+    const numberOfMostWins = this.state.mostWins;
+    const listMostWins = numberOfMostWins.map((character, index) => {
+      return <MostPlayed key={index} id={index} character={character.character} number={character.wins} />
+    });
+    return (
+      <div>{listMostWins}</div>
+    )
+  }
+  listMostKos() {
+    const numberOfMostKos = this.state.totalKos;
+    const listMostKos = numberOfMostKos.map((character, index) => {
+      return <MostPlayed key={index} id={index} character={character.character} number={character.kos} />
+    });
+    return (
+      <div>{listMostKos}</div>
     )
   }
   changeStatsYear() {
     console.log(betsyCharacters);
     var statsYear;
-    var mostPlayed = [];
-    var mostWins;
+    mostPlayed = [];
+    mostWins = [];
+    totalKos = [];
     var playerCharacters = eval(this.state.name + "Characters");
     var playerCharacters19 = eval(this.state.name + "Characters19");
     var playerCharacters20 = eval(this.state.name + "Characters20");
@@ -1838,9 +1892,26 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
                 return 0;
             });
-        mostWins = [playerCharacters19[0].character, playerCharacters19[0].wins];
+        for(var i=0; i<3; i++){
+            if(playerCharacters19[i] === undefined){
+                mostWins.push({character: empty, number: null});
+            }else{
+                mostWins.push(playerCharacters19[i]);
+            }
+        }
+        playerCharacters19.sort(function(a, b){
+            if(a.kos < b.kos) { return 1; }
+            if(a.kos > b.kos) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerCharacters19[i] === undefined){
+                totalKos.push({character: empty, number: null});
+            }else{
+                totalKos.push(playerCharacters19[i]);
+            }
+        }
         averagePlace = (gamePlace19[playerNumber]/gamesPlayed19[playerNumber]).toFixed(2);
-        totalKos = playerkos19[playerNumber];
         highKoGames = highKoGames19[playerNumber]; 
     }else if(this.state.year === "2019"){
         statsYear = "2020";
@@ -1861,9 +1932,26 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
                 return 0;
             });
-        mostWins = [playerCharacters20[0].character, playerCharacters20[0].wins];
+        for(var i=0; i<3; i++){
+            if(playerCharacters20[i] === undefined){
+                mostWins.push({character: empty, number: null});
+            }else{
+                mostWins.push(playerCharacters20[i]);
+            }
+        }
+        playerCharacters20.sort(function(a, b){
+            if(a.kos < b.kos) { return 1; }
+            if(a.kos > b.kos) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerCharacters20[i] === undefined){
+                totalKos.push({character: empty, number: null});
+            }else{
+                totalKos.push(playerCharacters20[i]);
+            }
+        }
         averagePlace = (gamePlace20[playerNumber]/gamesPlayed20[playerNumber]).toFixed(2);
-        totalKos = playerkos20[playerNumber];
         highKoGames = highKoGames20[playerNumber];
     }else if(this.state.year === "2020"){
         statsYear = "Overall";
@@ -1884,9 +1972,26 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
                 return 0;
             });
-        mostWins = [playerCharacters[0].character, playerCharacters[0].wins];
+        for(var i=0; i<3; i++){
+            if(playerCharacters[i] === undefined){
+                mostWins.push({character: empty, number: null});
+            }else{
+                mostWins.push(playerCharacters[i]);
+            }
+        }
+        playerCharacters.sort(function(a, b){
+            if(a.kos < b.kos) { return 1; }
+            if(a.kos > b.kos) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerCharacters[i] === undefined){
+                totalKos.push({character: empty, number: null});
+            }else{
+                totalKos.push(playerCharacters[i]);
+            }
+        }
         averagePlace = ((gamePlace19[playerNumber] + gamePlace20[playerNumber])/(gamesPlayed19[playerNumber] + gamesPlayed20[playerNumber])).toFixed(2);
-        totalKos = playerkos19[playerNumber] + playerkos20[playerNumber];
         highKoGames = highKoGames19[playerNumber] + highKoGames20[playerNumber];
     }
     this.setState({
@@ -1905,7 +2010,8 @@ class Stats extends React.Component {
     var playerArray19 = eval(nameArray[nameIndex + 1] + "Characters19");
     var playerArray20 = eval(nameArray[nameIndex + 1] + "Characters20");
     mostPlayed = [];
-    mostWins = 0;
+    mostWins = [];
+    totalKos = [];
     if(this.state.year === "Overall"){
         playerArray.sort(function(a, b){
             if(a.number < b.number) { return 1; }
@@ -1924,9 +2030,26 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        mostWins = [playerArray[0].character, playerArray[0].wins];
+        for(var i=0; i<3; i++){
+            if(playerArray[i] === undefined){
+                mostWins.push({character: empty, number: null});
+            }else{
+                mostWins.push(playerArray[i]);
+            }
+        }
+        playerArray.sort(function(a, b){
+            if(a.kos < b.kos) { return 1; }
+            if(a.kos > b.kos) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerArray[i] === undefined){
+                totalKos.push({character: empty, number: null});
+            }else{
+                totalKos.push(playerArray[i]);
+            }
+        }
         averagePlace = ((gamePlace19[nameIndex + 1] + gamePlace20[nameIndex + 1])/(gamesPlayed19[nameIndex + 1] + gamesPlayed20[nameIndex + 1])).toFixed(2);
-        totalKos = playerkos19[nameIndex + 1] + playerkos20[nameIndex + 1];
         highKoGames = highKoGames19[nameIndex + 1] + highKoGames20[nameIndex + 1];
     }else if(this.state.year === "2019"){
         playerArray19.sort(function(a, b){
@@ -1946,9 +2069,26 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        mostWins = [playerArray19[0].character, playerArray19[0].wins];
+        for(var i=0; i<3; i++){
+            if(playerArray19[i] === undefined){
+                mostWins.push({character: empty, number: null});
+            }else{
+                mostWins.push(playerArray19[i]);
+            }
+        }
+        playerArray19.sort(function(a, b){
+            if(a.kos < b.kos) { return 1; }
+            if(a.kos > b.kos) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerArray19[i] === undefined){
+                totalKos.push({character: empty, number: null});
+            }else{
+                totalKos.push(playerArray19[i]);
+            }
+        }
         averagePlace = (gamePlace19[nameIndex + 1]/gamesPlayed19[nameIndex + 1]).toFixed(2);
-        totalKos = playerkos19[nameIndex + 1];
         highKoGames = highKoGames19[nameIndex + 1];
     }else if(this.state.year === "2020"){
         playerArray20.sort(function(a, b){
@@ -1968,9 +2108,26 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        mostWins = [playerArray20[0].character, playerArray20[0].wins];
+        for(var i=0; i<3; i++){
+            if(playerArray20[i] === undefined){
+                mostWins.push({character: empty, number: null});
+            }else{
+                mostWins.push(playerArray20[i]);
+            }
+        }
+        playerArray20.sort(function(a, b){
+            if(a.kos < b.kos) { return 1; }
+            if(a.kos > b.kos) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerArray20[i] === undefined){
+                totalKos.push({character: empty, number: null});
+            }else{
+                totalKos.push(playerArray20[i]);
+            }
+        }
         averagePlace = (gamePlace20[nameIndex + 1]/gamesPlayed20[nameIndex + 1]).toFixed(2);
-        totalKos = playerkos20[nameIndex + 1];
         highKoGames = highKoGames20[nameIndex + 1];
     }
     if(nameIndex < nameArray.length - 1){
@@ -1992,7 +2149,8 @@ class Stats extends React.Component {
     var playerArray19 = eval(nameArray[nameIndex - 1] + "Characters19");
     var playerArray20 = eval(nameArray[nameIndex - 1] + "Characters20");
     mostPlayed = [];
-    mostWins = 0;
+    mostWins = [];
+    totalKos = [];
     if(this.state.year === "Overall"){
         playerArray.sort(function(a, b){
             if(a.number < b.number) { return 1; }
@@ -2011,9 +2169,26 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        mostWins = [playerArray[0].character, playerArray[0].wins];
+        for(var i=0; i<3; i++){
+            if(playerArray[i] === undefined){
+                mostWins.push({character: empty, number: null});
+            }else{
+                mostWins.push(playerArray[i]);
+            }
+        }
+        playerArray.sort(function(a, b){
+            if(a.kos < b.kos) { return 1; }
+            if(a.kos > b.kos) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerArray[i] === undefined){
+                totalKos.push({character: empty, number: null});
+            }else{
+                totalKos.push(playerArray[i]);
+            }
+        }
         averagePlace = ((gamePlace19[nameIndex - 1] + gamePlace20[nameIndex - 1])/(gamesPlayed19[nameIndex - 1] + gamesPlayed20[nameIndex - 1])).toFixed(2);
-        totalKos = playerkos19[nameIndex - 1] + playerkos20[nameIndex - 1];
         highKoGames = highKoGames19[nameIndex - 1] + highKoGames20[nameIndex - 1];
     }else if(this.state.year === "2019"){
         playerArray19.sort(function(a, b){
@@ -2033,9 +2208,26 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        mostWins = [playerArray19[0].character, playerArray19[0].wins];
+        for(var i=0; i<3; i++){
+            if(playerArray19[i] === undefined){
+                mostWins.push({character: empty, number: null});
+            }else{
+                mostWins.push(playerArray19[i]);
+            }
+        }
+        playerArray19.sort(function(a, b){
+            if(a.kos < b.kos) { return 1; }
+            if(a.kos > b.kos) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerArray19[i] === undefined){
+                totalKos.push({character: empty, number: null});
+            }else{
+                totalKos.push(playerArray19[i]);
+            }
+        }
         averagePlace = (gamePlace19[nameIndex - 1]/gamesPlayed19[nameIndex - 1]).toFixed(2);
-        totalKos = playerkos19[nameIndex - 1];
         highKoGames = highKoGames19[nameIndex - 1];
     }else if(this.state.year === "2020"){
         playerArray20.sort(function(a, b){
@@ -2055,9 +2247,26 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        mostWins = [playerArray20[0].character, playerArray20[0].wins];
+        for(var i=0; i<3; i++){
+            if(playerArray20[i] === undefined){
+                mostWins.push({character: empty, number: null});
+            }else{
+                mostWins.push(playerArray20[i]);
+            }
+        }
+        playerArray20.sort(function(a, b){
+            if(a.kos < b.kos) { return 1; }
+            if(a.kos > b.kos) { return -1; }
+            return 0;
+        });
+        for(var i=0; i<3; i++){
+            if(playerArray20[i] === undefined){
+                totalKos.push({character: empty, number: null});
+            }else{
+                totalKos.push(playerArray20[i]);
+            }
+        }
         averagePlace = (gamePlace20[nameIndex - 1]/gamesPlayed20[nameIndex - 1]).toFixed(2);
-        totalKos = playerkos20[nameIndex - 1];
         highKoGames = highKoGames20[nameIndex - 1];
     }
     if(nameIndex > 0){
@@ -2083,8 +2292,12 @@ class Stats extends React.Component {
             <div className="col-xs-6 col-md-offset-1 col-md-2 changeYear" onClick={this.changeStatsYear}>{this.state.year}</div>
           </div>
           <div className="row">
+            <div className="col-xs-6">Average Place</div>
+            <div className="col-xs-6">{this.state.averagePlace}</div>
+          </div>
+          <div className="row">
             <div className="col-xs-4 statsTitle">Most Played Characters</div>
-            <div className="col-xs-4 statsTitle">Average Place</div>
+            <div className="col-xs-4 statsTitle">Average Kos</div>
             <div className="col-xs-4 statsTitle">Most Wins</div>
           </div>
           <div className="row">
@@ -2092,19 +2305,10 @@ class Stats extends React.Component {
               {this.listMostPlayed()}
             </div>
             <div className="col-xs-4">
-              <div className="row" id="averageNumber">{this.state.averagePlace}</div>
-              <div className="row statsTitle">Total Kos</div>
-              <div className="row" id="totalKos">{this.state.totalKos}</div>
-              <div className="row statsTitle">4+ KO Games</div>
-              <div className="row" id="averageKos">{this.state.highKoGames}</div>
+                {this.listMostKos()}
             </div>
             <div className="col-xs-4" id="mostWinsNumber">
-              <div className="row">
-                <img className="statsFighterIcon" src={this.state.mostWins[0]} alt="mostWins" />
-              </div>
-              <div className="row">
-                {this.state.mostWins[1]}
-              </div>
+              {this.listMostWins()}
             </div>
           </div>
         </div>
@@ -2150,6 +2354,7 @@ class Weekly extends React.Component {
   }
   componentDidMount() {
     var newDate = this.state.date;
+    weeklyWins = [0,0,0,0,0];
     for(var i=0; i < gameData.length; i++){
         if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
           weeklyWins[0] ++;
@@ -2168,7 +2373,7 @@ class Weekly extends React.Component {
     })
   }
   previousDate(){
-    weeklyWins = [0,0,0,0];
+    weeklyWins = [0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex > 0){
       var newDate = dates[dateIndex - 1];
@@ -2192,7 +2397,7 @@ class Weekly extends React.Component {
     }
   }
   nextDate(){
-    weeklyWins = [0,0,0,0];
+    weeklyWins = [0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex < dates.length - 1){
       var newDate = dates[dateIndex + 1];
@@ -2363,7 +2568,8 @@ class Fighters extends React.Component {
         super(props);
         this.state = {
           fighterStats: [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy],
-          fighterName: " "
+          fighterName: " ",
+          fighterImage: empty
         }
     this.findFighterData = this.findFighterData.bind(this);
     }   
@@ -2373,7 +2579,8 @@ class Fighters extends React.Component {
         fighterStatsDoug = {games: 0, wins: 0, place: 0, kos: 0};
         fighterStatsZack = {games: 0, wins: 0, place: 0, kos: 0};
         fighterStatsBetsy = {games: 0, wins: 0, place: 0, kos: 0};
-        var fighter = document.getElementById("fighterName").value;
+        var fighter = (document.getElementById("fighterName").value).replace(/\s/g, '').toLowerCase();
+        var fighterImage;
         for(var i=0; i < gameData.length; i++){
             for(var j=0; j< 4; j++){
                 var imageString = gameData[i][j].character.toString();
@@ -2382,6 +2589,7 @@ class Fighters extends React.Component {
                 var splitName = splitAgain[0];
                 if(splitName === fighter){
                     var playerFighterArray = eval("fighterStats" + gameData[i][j].name);
+                    fighterImage = gameData[i][j].character;
                     playerFighterArray.games ++;
                     if(j === 0){
                         playerFighterArray.wins ++;
@@ -2391,9 +2599,21 @@ class Fighters extends React.Component {
                 }else{}
             }
         }
+        var fighterData = [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy];
+        for(var i=0; i<5; i++){
+            var averagePlace = (fighterData[i].place/fighterData[i].games).toFixed(2);
+            var averageKos = (fighterData[i].kos/fighterData[i].games).toFixed(2);
+            if(fighterData[i].games === 0){
+                averagePlace = 0;
+                averageKos = 0;
+            }
+            fighterData[i].place = averagePlace;
+            fighterData[i].kos = averageKos;
+        }
         this.setState({
             fighterName: fighter,
-            fighterStats: [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy]
+            fighterStats: fighterData,
+            fighterImage: fighterImage
         }, () => {
             console.log(this.state);
         });
@@ -2402,48 +2622,56 @@ class Fighters extends React.Component {
         return (
             <div className="row">
                 <div className="col-xs-12">
-                    <div className="row">Fighter Stats</div>
+                    <div className="row" id="mainFighterStatsTitle">Fighter Stats</div>
                     <div className="row">
                         <div className="col-xs-offset-4 col-xs-4">
                             <input type="text" id="fighterName"></input>
                         </div>
                         <div className="col-xs-2" id="selectButton" onClick={this.findFighterData}>Select</div>
                     </div>
-                    <div className="row">{this.state.fighterName}</div>
                     <div className="row">
-                        <div className="col-xs-2">Micah</div>
-                        <div className="col-xs-2">{this.state.fighterStats[0].games}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[0].wins}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[0].place}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[0].kos}</div>
+                        <img src={this.state.fighterImage} id="fighterImage" />
+                    </div>
+                    <div class="row">
+                        <div className="col-xs-offset-2 col-xs-2 fighterStatsTitle">Games Played</div>
+                        <div className="col-xs-2 fighterStatsTitle">Wins</div>
+                        <div className="col-xs-2 fighterStatsTitle">Average Place</div>
+                        <div className="col-xs-2 fighterStatsTitle">Kos Per Game</div>
+                    </div>
+                    <div className="row playerRow">
+                        <div className="col-xs-2 fighterStatsPlayer">Micah</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[0].games}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[0].wins}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[0].place}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[0].kos}</div>
+                    </div>
+                    <div className="row playerRow">
+                        <div className="col-xs-2 fighterStatsPlayer">Tim</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[1].games}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[1].wins}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[1].place}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[1].kos}</div>
+                    </div>
+                    <div className="row playerRow">
+                        <div className="col-xs-2 fighterStatsPlayer">Doug</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[2].games}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[2].wins}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[2].place}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[2].kos}</div>
+                    </div>
+                    <div className="row playerRow">
+                        <div className="col-xs-2 fighterStatsPlayer">Zack</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[3].games}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[3].wins}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[3].place}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[3].kos}</div>
                     </div>
                     <div className="row">
-                        <div className="col-xs-2">Tim</div>
-                        <div className="col-xs-2">{this.state.fighterStats[1].games}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[1].wins}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[1].place}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[1].kos}</div>
-                    </div>
-                    <div className="row">
-                        <div className="col-xs-2">Doug</div>
-                        <div className="col-xs-2">{this.state.fighterStats[2].games}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[2].wins}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[2].place}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[2].kos}</div>
-                    </div>
-                    <div className="row">
-                        <div className="col-xs-2">Zack</div>
-                        <div className="col-xs-2">{this.state.fighterStats[3].games}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[3].wins}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[3].place}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[3].kos}</div>
-                    </div>
-                    <div className="row">
-                        <div className="col-xs-2">Betsy</div>
-                        <div className="col-xs-2">{this.state.fighterStats[4].games}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[4].wins}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[4].place}</div>
-                        <div className="col-xs-2">{this.state.fighterStats[4].kos}</div>
+                        <div className="col-xs-2 fighterStatsPlayer">Betsy</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[4].games}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[4].wins}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[4].place}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[4].kos}</div>
                     </div>
                 </div>
             </div>
