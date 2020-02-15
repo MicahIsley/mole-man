@@ -1464,6 +1464,13 @@ class App extends React.Component {
         }
       }
     }
+    var playerStatsArrays = [micahCharacters, micahCharacters19, micahCharacters20, timCharacters, timCharacters19, timCharacters20, dougCharacters, dougCharacters19, dougCharacters20, zackCharacters, zackCharacters19, zackCharacters20, betsyCharacters, betsyCharacters19, betsyCharacters20];
+    for(var i=0; i<playerStatsArrays.length; i++){
+        for(var j=0; j<playerStatsArrays[i].length; j++){
+            var avgKos = (playerStatsArrays[i][j].kos/playerStatsArrays[i][j].number).toFixed(2);
+            playerStatsArrays[i][j].kos = avgKos;
+        }
+    }
     this.setState({
       threeP19: [threeP19[0], threeP19[1], threeP19[2], threeP19[3], threeP19[4]],
       fourP19: [fourP19[0], fourP19[1], fourP19[2], fourP19[3], fourP19[4]],
@@ -1779,13 +1786,6 @@ class Stats extends React.Component {
   this.changeStatsYear = this.changeStatsYear.bind(this);
   }
   componentDidMount() {
-    var playerStatsArrays = [micahCharacters, micahCharacters19, micahCharacters20, timCharacters, timCharacters19, timCharacters20, dougCharacters, dougCharacters19, dougCharacters20, zackCharacters, zackCharacters19, zackCharacters20, betsyCharacters, betsyCharacters19, betsyCharacters20];
-    for(var i=0; i<playerStatsArrays.length; i++){
-        for(var j=0; j<playerStatsArrays[i].length; j++){
-            var avgKos = (playerStatsArrays[i][j].kos/playerStatsArrays[i][j].number).toFixed(2);
-            playerStatsArrays[i][j].kos = avgKos;
-        }
-    }
     mostPlayed = [];
     mostWins = [];
     totalKos = [];
