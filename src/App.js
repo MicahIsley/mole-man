@@ -945,11 +945,74 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Custom"},
     {date: "Feb 13 2020"}
+  ],[
+    {name: "Micah", character: zelda, kos: 4},
+    {name: "Doug", character: joker, kos: 2},
+    {name: "Tim", character: pacman, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Town & City"},
+    {date: "Feb 19 2020"}
+  ],[
+    {name: "Micah", character: ridley, kos: 4},
+    {name: "Doug", character: byleth, kos: 3},
+    {name: "Tim", character: samus, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Lylat Cruise"},
+    {date: "Feb 19 2020"}
+  ],[
+    {name: "Doug", character: samus, kos: 2},
+    {name: "Tim", character: samus, kos: 3},
+    {name: "Micah", character: incineroar, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Find Mii"},
+    {date: "Feb 19 2020"}
+  ],[
+    {name: "Tim", character: darksamus, kos: 4},
+    {name: "Micah", character: darkpit, kos: 4},
+    {name: "Doug", character: marth, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Final Destination"},
+    {date: "Feb 19 2020"}
+  ],[
+    {name: "Tim", character: darksamus, kos: 5},
+    {name: "Doug", character: captainfalcon, kos: 1},
+    {name: "Micah", character: peach, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Mushroom Kingdom"},
+    {date: "Feb 19 2020"}
+  ],[
+    {name: "Doug", character: link, kos: 3},
+    {name: "Tim", character: ness, kos: 2},
+    {name: "Micah", character: peach, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Delfino Plaza"},
+    {date: "Feb 19 2020"}
+  ],[
+    {name: "Micah", character: simon, kos: 5},
+    {name: "Tim", character: ness, kos: 2},
+    {name: "Doug", character: younglink, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Final Destination"},
+    {date: "Feb 19 2020"}
+  ],[
+    {name: "Micah", character: terry, kos: 3},
+    {name: "Tim", character: ness, kos: 4},
+    {name: "Doug", character: toonlink, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Custom"},
+    {date: "Feb 19 2020"}
+  ],[
+    {name: "Micah", character: donkeykong, kos: 4},
+    {name: "Tim", character: ness, kos: 2},
+    {name: "Doug", character: diddykong, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Final Destination"},
+    {date: "Feb 19 2020"}
   ]
 
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020"];
 
 var fourP19 = [0,0,0,0,0];
 var threeP19 = [0,0,0,0,0];
@@ -2346,7 +2409,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Feb 13 2020",
+      date: "Feb 19 2020",
       weeklyWins: [0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
