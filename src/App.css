@@ -12,6 +12,11 @@ html {
   background: linear-gradient(to bottom right, red, yellow);
 }
 
+#averagePlaceTitle {
+  font-family: 'Carter One', cursive;
+  font-size: 24px;
+}
+
 #changeGraph {
   color: white;
   background: black;

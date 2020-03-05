@@ -1008,11 +1008,74 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Final Destination"},
     {date: "Feb 19 2020"}
+  ],[
+    {name: "Micah", character: wiifittrainer, kos: 2},
+    {name: "Zack", character: kingdedede, kos: 5},
+    {name: "Tim", character: gameandwatch, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "King of Fighters Stadium"},
+    {date: "Mar 4 2020"}
+  ],[
+    {name: "Tim", character: pacman, kos: 3},
+    {name: "Zack", character: hero, kos: 1},
+    {name: "Micah", character: byleth, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Rainbow Cruise"},
+    {date: "Mar 4 2020"}
+  ],[
+    {name: "Micah", character: isabell, kos: 3},
+    {name: "Tim", character: pacman, kos: 4},
+    {name: "Zack", character: hero, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Spiral Mountain"},
+    {date: "Mar 4 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 0},
+    {name: "Tim", character: darksamus, kos: 0},
+    {name: "Micah", character: simon, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Pilot Wings"},
+    {date: "Mar 4 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 1},
+    {name: "Tim", character: darksamus, kos: 3},
+    {name: "Micah", character: mewtwo, kos: 4},
+    {name: "", character: empty, kos: 0},
+    {stage: "New Donk City Hall"},
+    {date: "Mar 4 2020"}
+  ],[
+    {name: "Micah", character: incineroar, kos: 6},
+    {name: "Zack", character: bowser, kos: 1},
+    {name: "Tim", character: yoshi, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Yggdrasil's Altar"},
+    {date: "Mar 4 2020"}
+  ],[
+    {name: "Tim", character: pacman, kos: 1},
+    {name: "Micah", character: pirahnaplant, kos: 4},
+    {name: "Zack", character: corrin, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Mushroom Kingdom II"},
+    {date: "Mar 4 2020"}
+  ],[
+    {name: "Micah", character: zelda, kos: 3},
+    {name: "Zack", character: kirby, kos: 2},
+    {name: "Tim", character: samus, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Mario Circuit"},
+    {date: "Mar 4 2020"}
+  ],[
+    {name: "Betsy", character: lucas, kos: 3},
+    {name: "Tim", character: darksamus, kos: 2},
+    {name: "Zack", character: kirby, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Hyrule Castle"},
+    {date: "Mar 4 2020"}
   ]
 
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020", "Mar 4 2020"];
 
 var fourP19 = [0,0,0,0,0];
 var threeP19 = [0,0,0,0,0];
@@ -2350,13 +2413,13 @@ class Stats extends React.Component {
         <div className="col-xs-12">
           <div className="row">
             <div className="col-xs-offset-3 col-xs-1"><span onClick={this.previousName} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
-            <div className="col-xs-4" id="statsName">{this.state.name}</div>
+            <div className="col-xs-4" id="statsName">{this.state.name.charAt(0).toUpperCase() + this.state.name.slice(1)}</div>
             <div className="col-xs-1"><span onClick={this.nextName} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
             <div className="col-xs-6 col-md-offset-1 col-md-2 changeYear" onClick={this.changeStatsYear}>{this.state.year}</div>
           </div>
-          <div className="row">
-            <div className="col-xs-6">Average Place</div>
-            <div className="col-xs-6">{this.state.averagePlace}</div>
+          <div className="row" id="averagePlaceTitle">
+            <div className="col-xs-offset-4 col-xs-2">Average Place</div>
+            <div className="col-xs-2">{this.state.averagePlace}</div>
           </div>
           <div className="row">
             <div className="col-xs-4 statsTitle">Most Played Characters</div>
@@ -2409,7 +2472,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Feb 19 2020",
+      date: "Mar 4 2020",
       weeklyWins: [0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
