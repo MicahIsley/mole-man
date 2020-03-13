@@ -1159,6 +1159,10 @@ var threeP19 = [0,0,0,0,0];
 var fourP20 = [0,0,0,0,0];
 var threeP20 = [0,0,0,0,0];
 var weeklyWins = [0,0,0,0,0];
+var weeklyPlace = [0,0,0,0,0];
+var weeklyKos = [0,0,0,0,0];
+var weeklyGames = [0,0,0,0,0];
+var weeklyAvg = [0,0,0,0,0];
 var playerkos19 = [0,0,0,0,0];
 var playerkos20 = [0,0,0,0,0];
 var highKoGames19 = [0,0,0,0,0];
@@ -2550,7 +2554,9 @@ class Weekly extends React.Component {
     super(props);
     this.state = {
       date: "Mar 12 2020",
-      weeklyWins: [0,0,0,0,0]
+      weeklyWins: [0,0,0,0,0],
+      weeklyKos: [0,0,0,0,0],
+      weeklyAvg: [0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
   this.previousDate = this.previousDate.bind(this);
@@ -2558,7 +2564,34 @@ class Weekly extends React.Component {
   componentDidMount() {
     var newDate = this.state.date;
     weeklyWins = [0,0,0,0,0];
+    weeklyKos = [0,0,0,0,0];
+    weeklyGames = [0,0,0,0,0];
+    weeklyPlace = [0,0,0,0,0];
+    weeklyAvg = [0,0,0,0,0];
     for(var i=0; i < gameData.length; i++){
+        for(var j=0; j < 4; j++){
+            if(gameData[i][j].name === "Micah" && gameData[i][5].date === newDate){
+                weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
+                weeklyGames[0] ++;
+                weeklyPlace[0] = weeklyPlace[0] + (j + 1);
+            }else if(gameData[i][j].name === "Tim" && gameData[i][5].date === newDate){
+                weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
+                weeklyGames[1] ++;
+                weeklyPlace[1] = weeklyPlace[1] + (j + 1);
+            }else if(gameData[i][j].name === "Doug" && gameData[i][5].date === newDate){
+                weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
+                weeklyGames[2] ++;
+                weeklyPlace[2] = weeklyPlace[2] + (j + 1);
+            }else if(gameData[i][j].name === "Zack" && gameData[i][5].date === newDate){
+                weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
+                weeklyGames[3] ++;
+                weeklyPlace[3] = weeklyPlace[3] + (j + 1);
+            }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date === newDate){
+                weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
+                weeklyGames[4] ++;
+                weeklyPlace[4] = weeklyPlace[4] + (j + 1);
+            }
+        }
         if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
           weeklyWins[0] ++;
         }else if(gameData[i][0].name === "Tim" && gameData[i][5].date === newDate){
@@ -2570,17 +2603,50 @@ class Weekly extends React.Component {
         }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date === newDate){
           weeklyWins[4] ++;
         }
-      }
+    }
+    for(var i=0; i < 5; i++){
+        weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
+        weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+    }
     this.setState({
-      weeklyWins: weeklyWins
-    })
+      weeklyWins: weeklyWins,
+      weeklyAvg: weeklyAvg,
+      weeklyKos: weeklyKos
+    });
   }
   previousDate(){
     weeklyWins = [0,0,0,0,0];
+    weeklyKos = [0,0,0,0,0];
+    weeklyGames = [0,0,0,0,0];
+    weeklyPlace = [0,0,0,0,0];
+    weeklyAvg = [0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex > 0){
       var newDate = dates[dateIndex - 1];
       for(var i=0; i < gameData.length; i++){
+        for(var j=0; j < 4; j++){
+            if(gameData[i][j].name === "Micah" && gameData[i][5].date === newDate){
+                weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
+                weeklyGames[0] ++;
+                weeklyPlace[0] = weeklyPlace[0] + (j + 1);
+            }else if(gameData[i][j].name === "Tim" && gameData[i][5].date === newDate){
+                weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
+                weeklyGames[1] ++;
+                weeklyPlace[1] = weeklyPlace[1] + (j + 1);
+            }else if(gameData[i][j].name === "Doug" && gameData[i][5].date === newDate){
+                weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
+                weeklyGames[2] ++;
+                weeklyPlace[2] = weeklyPlace[2] + (j + 1);
+            }else if(gameData[i][j].name === "Zack" && gameData[i][5].date === newDate){
+                weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
+                weeklyGames[3] ++;
+                weeklyPlace[3] = weeklyPlace[3] + (j + 1);
+            }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date === newDate){
+                weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
+                weeklyGames[4] ++;
+                weeklyPlace[4] = weeklyPlace[4] + (j + 1);
+            }
+        }
         if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
           weeklyWins[0] ++;
         }else if(gameData[i][0].name === "Tim" && gameData[i][5].date === newDate){
@@ -2592,19 +2658,51 @@ class Weekly extends React.Component {
         }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date === newDate){
           weeklyWins[4] ++;
         }
-      }
-      this.setState({
-        date: newDate,
-        weeklyWins: weeklyWins
-      });
+    }
+    for(var i=0; i < 5; i++){
+        weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
+        weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+    }
+    this.setState({
+      weeklyWins: weeklyWins,
+      weeklyAvg: weeklyAvg,
+      weeklyKos: weeklyKos
+    });
     }
   }
   nextDate(){
     weeklyWins = [0,0,0,0,0];
+    weeklyKos = [0,0,0,0,0];
+    weeklyGames = [0,0,0,0,0];
+    weeklyPlace = [0,0,0,0,0];
+    weeklyAvg = [0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex < dates.length - 1){
       var newDate = dates[dateIndex + 1];
       for(var i=0; i < gameData.length; i++){
+        for(var j=0; j < 4; j++){
+            if(gameData[i][j].name === "Micah" && gameData[i][5].date === newDate){
+                weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
+                weeklyGames[0] ++;
+                weeklyPlace[0] = weeklyPlace[0] + (j + 1);
+            }else if(gameData[i][j].name === "Tim" && gameData[i][5].date === newDate){
+                weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
+                weeklyGames[1] ++;
+                weeklyPlace[1] = weeklyPlace[1] + (j + 1);
+            }else if(gameData[i][j].name === "Doug" && gameData[i][5].date === newDate){
+                weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
+                weeklyGames[2] ++;
+                weeklyPlace[2] = weeklyPlace[2] + (j + 1);
+            }else if(gameData[i][j].name === "Zack" && gameData[i][5].date === newDate){
+                weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
+                weeklyGames[3] ++;
+                weeklyPlace[3] = weeklyPlace[3] + (j + 1);
+            }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date === newDate){
+                weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
+                weeklyGames[4] ++;
+                weeklyPlace[4] = weeklyPlace[4] + (j + 1);
+            }
+        }
         if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
           weeklyWins[0] ++;
         }else if(gameData[i][0].name === "Tim" && gameData[i][5].date === newDate){
@@ -2617,10 +2715,15 @@ class Weekly extends React.Component {
           weeklyWins[4] ++;
         }
       }
-      this.setState({
-        date: newDate,
-        weeklyWins: weeklyWins
-      });
+    for(var i=0; i < 5; i++){
+        weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
+        weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+    }
+    this.setState({
+      weeklyWins: weeklyWins,
+      weeklyAvg: weeklyAvg,
+      weeklyKos: weeklyKos
+    });
     }
   }
   listGames () {
@@ -2645,10 +2748,31 @@ class Weekly extends React.Component {
             <div className="col-xs-1 col-md-1"><span onClick={this.nextDate} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
           </div>
           <div className="row">
-            <div className="col-xs-3 col-md-2 col-md-offset-2 weeklyName">Micah: {this.state.weeklyWins[0]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">Tim: {this.state.weeklyWins[1]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">Doug: {this.state.weeklyWins[2]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">Zack: {this.state.weeklyWins[3]}</div>
+            <div className="col-xs-3 col-md-offset-2 col-md-2 weeklyName">Micah</div>
+            <div className="col-xs-3 col-md-2 weeklyName">Tim</div>
+            <div className="col-xs-3 col-md-2 weeklyName">Doug</div>
+            <div className="col-xs-3 col-md-2 weeklyName">Zack</div>
+          </div>
+          <div className="row">
+            <div className="col-md-2 weeklyName">Wins</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyWins[0]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyWins[1]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyWins[2]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyWins[3]}</div>
+          </div>
+          <div className="row">
+            <div className="col-md-2 weeklyName">Avg Place</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyAvg[0]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyAvg[1]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyAvg[2]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyAvg[3]}</div>
+          </div>
+          <div className="row">
+            <div className="col-md-2 weeklyName">Avg Kos</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyKos[0]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyKos[1]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyKos[2]}</div>
+            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyKos[3]}</div>
           </div>
           <div className="row">
             {this.listGames()}
