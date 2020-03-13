@@ -1071,11 +1071,88 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Hyrule Castle"},
     {date: "Mar 4 2020"}
+  ],[
+    {name: "Zack", character: lucario, kos: 4},
+    {name: "Micah", character: sonic, kos: 2},
+    {name: "Doug", character: jigglypuff, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Mar 12 2020"}
+  ],[
+    {name: "Micah", character: wiifittrainer, kos: 3},
+    {name: "Tim", character: darksamus, kos: 3},
+    {name: "Doug", character: joker, kos: 4},
+    {name: "Zack", character: mewtwo, kos: 1},
+    {stage: "Norfair"},
+    {date: "Mar 12 2020"}
+  ],[
+    {name: "Micah", character: pirahnaplant, kos: 4},
+    {name: "Zack", character: corrin, kos: 4},
+    {name: "Tim", character: samus, kos: 2},
+    {name: "Doug", character: captainfalcon, kos: 1},
+    {stage: "Garden of Hope"},
+    {date: "Mar 12 2020"}
+  ],[
+    {name: "Zack", character: yoshi, kos: 4},
+    {name: "Tim", character: samus, kos: 2},
+    {name: "Doug", character: pokemontrainer, kos: 3},
+    {name: "Micah", character: rosalina, kos: 2},
+    {stage: "Jungle Japes"},
+    {date: "Mar 12 2020"}
+  ],[
+    {name: "Doug", character: byleth, kos: 3},
+    {name: "Zack", character: marth, kos: 3},
+    {name: "Tim", character: darksamus, kos: 2},
+    {name: "Micah", character: ridley, kos: 3},
+    {stage: "Smashville"},
+    {date: "Mar 12 2020"}
+  ],[
+    {name: "Tim", character: ness, kos: 4},
+    {name: "Doug", character: zerosuitsamus, kos: 4},
+    {name: "Zack", character: bayonetta, kos: 3},
+    {name: "Micah", character: isabell, kos: 0},
+    {stage: "Corneria"},
+    {date: "Mar 12 2020"}
+  ],[
+    {name: "Zack", character: toonlink, kos: 4},
+    {name: "Doug", character: younglink, kos: 3},
+    {name: "Micah", character: bowserjr, kos: 2},
+    {name: "Tim", character: darksamus, kos: 2},
+    {stage: "Hyrule Castle"},
+    {date: "Mar 12 2020"}
+  ],[
+    {name: "Tim", character: pacman, kos: 4},
+    {name: "Zack", character: snake, kos: 5},
+    {name: "Micah", character: terry, kos: 2},
+    {name: "Doug", character: luigi, kos: 0},
+    {stage: "Green Greens"},
+    {date: "Mar 12 2020"}
+  ],[
+    {name: "Tim", character: pacman, kos: 4},
+    {name: "Micah", character: incineroar, kos: 7},
+    {name: "Zack", character: mario, kos: 0},
+    {name: "Doug", character: sheik, kos: 0},
+    {stage: "Reset Bomb Fortress"},
+    {date: "Mar 12 2020"}
+  ],[
+    {name: "Tim", character: miiswordfighter, kos: 4},
+    {name: "Micah", character: incineroar, kos: 5},
+    {name: "Zack", character: cloud, kos: 0},
+    {name: "Doug", character: roy, kos: 2},
+    {stage: "King of Fighters Stadium"},
+    {date: "Mar 12 2020"}
+  ],[
+    {name: "Micah", character: iceclimbers, kos: 3},
+    {name: "Zack", character: shulk, kos: 4},
+    {name: "Tim", character: gameandwatch, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Port Aero Town Drive"},
+    {date: "Mar 12 2020"}
   ]
 
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020", "Mar 4 2020"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020", "Mar 4 2020", "Mar 12 2020"];
 
 var fourP19 = [0,0,0,0,0];
 var threeP19 = [0,0,0,0,0];
@@ -2472,7 +2549,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Mar 4 2020",
+      date: "Mar 12 2020",
       weeklyWins: [0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
