@@ -2605,10 +2605,13 @@ class Weekly extends React.Component {
         }
     }
     for(var i=0; i < 5; i++){
-        weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
-        weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+        if(weeklyGames[i] > 0){
+            weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
+            weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+        }else{}
     }
     this.setState({
+      date: newDate,
       weeklyWins: weeklyWins,
       weeklyAvg: weeklyAvg,
       weeklyKos: weeklyKos
@@ -2660,13 +2663,16 @@ class Weekly extends React.Component {
         }
     }
     for(var i=0; i < 5; i++){
-        weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
-        weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+        if(weeklyGames[i] > 0){
+            weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
+            weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+        }else{}
     }
     this.setState({
-      weeklyWins: weeklyWins,
-      weeklyAvg: weeklyAvg,
-      weeklyKos: weeklyKos
+        date: newDate,
+        weeklyWins: weeklyWins,
+        weeklyAvg: weeklyAvg,
+        weeklyKos: weeklyKos
     });
     }
   }
@@ -2716,10 +2722,13 @@ class Weekly extends React.Component {
         }
       }
     for(var i=0; i < 5; i++){
-        weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
-        weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+        if(weeklyGames[i] > 0){
+            weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
+            weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+        }else{}
     }
     this.setState({
+      date: newDate,
       weeklyWins: weeklyWins,
       weeklyAvg: weeklyAvg,
       weeklyKos: weeklyKos
