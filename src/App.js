@@ -1148,64 +1148,159 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Port Aero Town Drive"},
     {date: "Mar 12 2020"}
+  ],[
+    {name: "Micah", character: peach, kos: 3},
+    {name: "Zack", character: snake, kos: 3},
+    {name: "Tim", character: pacman, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Tim", character: pacman, kos: 4},
+    {name: "Micah", character: isabell, kos: 3},
+    {name: "Zack", character: miibrawler, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Custom"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Zack", character: miibrawler, kos: 5},
+    {name: "Micah", character: sonic, kos: 2},
+    {name: "Tim", character: yoshi, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Tortimer Island"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Micah", character: incineroar, kos: 3},
+    {name: "Tim", character: darksamus, kos: 2},
+    {name: "Zack", character: wario, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Green Hill Zone"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Micah", character: wiifittrainer, kos: 5},
+    {name: "Zack", character: wario, kos: 3},
+    {name: "Tim", character: darksamus, kos: 3},
+    {name: "James", character: gameandwatch, kos: 0},
+    {stage: "Gerudo Valley"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Zack", character: wario, kos: 4},
+    {name: "Tim", character: ness, kos: 4},
+    {name: "James", character: megaman, kos: 1},
+    {name: "Micah", character: ridley, kos: 2},
+    {stage: "Kalos Pokemon League"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Tim", character: pacman, kos: 3},
+    {name: "James", character: duckhunt, kos: 2},
+    {name: "Zack", character: hero, kos: 4},
+    {name: "Micah", character: bowserjr, kos: 2},
+    {stage: "Corneria"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Zack", character: hero, kos: 7},
+    {name: "Micah", character: terry, kos: 3},
+    {name: "Tim", character: pacman, kos: 1},
+    {name: "James", character: drmario, kos: 0},
+    {stage: "Green Greens"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Tim", character: ness, kos: 6},
+    {name: "Zack", character: snake, kos: 3},
+    {name: "James", character: miiswordfighter, kos: 2},
+    {name: "Micah", character: iceclimbers, kos: 0},
+    {stage: "Kongo Jungle"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Tim", character: samus, kos: 9},
+    {name: "Zack", character: snake, kos: 1},
+    {name: "James", character: gameandwatch, kos: 0},
+    {name: "Micah", character: lucario, kos: 1},
+    {stage: "Hanenbow"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Micah", character: inkling, kos: 3},
+    {name: "Zack", character: snake, kos: 2},
+    {name: "James", character: littlemac, kos: 4},
+    {name: "Tim", character: miigunner, kos: 1},
+    {stage: "Hyrule Castle"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 5},
+    {name: "Micah", character: byleth, kos: 2},
+    {name: "James", character: mario, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Pokemon Stadium"},
+    {date: "Mar 18 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 5},
+    {name: "Micah", character: peach, kos: 2},
+    {name: "James", character: megaman, kos: 0},
+    {name: "", character: empty, kos: 0},
+    {stage: "Smashville"},
+    {date: "Mar 18 2020"}
   ]
 
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020", "Mar 4 2020", "Mar 12 2020"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020", "Mar 4 2020", "Mar 12 2020", "Mar 18 2020"];
 
-var fourP19 = [0,0,0,0,0];
-var threeP19 = [0,0,0,0,0];
-var fourP20 = [0,0,0,0,0];
-var threeP20 = [0,0,0,0,0];
-var weeklyWins = [0,0,0,0,0];
-var weeklyPlace = [0,0,0,0,0];
-var weeklyKos = [0,0,0,0,0];
-var weeklyGames = [0,0,0,0,0];
-var weeklyAvg = [0,0,0,0,0];
-var playerkos19 = [0,0,0,0,0];
-var playerkos20 = [0,0,0,0,0];
-var highKoGames19 = [0,0,0,0,0];
-var highKoGames20 = [0,0,0,0,0];
+var fourP19 = [0,0,0,0,0,0];
+var threeP19 = [0,0,0,0,0,0];
+var fourP20 = [0,0,0,0,0,0];
+var threeP20 = [0,0,0,0,0,0];
+var weeklyWins = [0,0,0,0,0,0];
+var weeklyPlace = [0,0,0,0,0,0];
+var weeklyKos = [0,0,0,0,0,0];
+var weeklyGames = [0,0,0,0,0,0];
+var weeklyAvg = [0,0,0,0,0,0];
+var playerkos19 = [0,0,0,0,0,0];
+var playerkos20 = [0,0,0,0,0,0];
+var highKoGames19 = [0,0,0,0,0,0];
+var highKoGames20 = [0,0,0,0,0,0];
 var micahCharacters = [];
 var timCharacters = [];
 var dougCharacters = [];
 var zackCharacters = [];
 var betsyCharacters = [];
+var jamesCharacters = [];
 var micahCharacters19 = [];
 var timCharacters19 = [];
 var dougCharacters19 = [];
 var zackCharacters19 = [];
 var betsyCharacters19 = [];
+var jamesCharacters19 = [];
 var micahCharacters20 = [];
 var timCharacters20 = [];
 var dougCharacters20 = [];
 var zackCharacters20 = [];
 var betsyCharacters20 = [];
+var jamesCharacters20 = [];
 var mostPlayed = [];
 var mostWins;
 var averagePlace;
 var highKoGames;
 var totalKos;
-var gamesPlayed19 = [0,0,0,0,0];
-var gamesPlayed20 = [0,0,0,0,0];
-var gamePlace19 = [0,0,0,0,0];
-var gamePlace20 = [0,0,0,0,0];
+var gamesPlayed19 = [0,0,0,0,0,0];
+var gamesPlayed20 = [0,0,0,0,0,0];
+var gamePlace19 = [0,0,0,0,0,0];
+var gamePlace20 = [0,0,0,0,0,0];
 var fighterStatsMicah = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsTim = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsDoug = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsZack = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsBetsy = {games: 0, wins: 0, place: 0, kos: 0};
+var fighterStatsJames = {games: 0, wins: 0, place: 0, kos: 0};
 
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      threeP19: [0,0,0,0,0],
-      fourP19: [0,0,0,0,0],
-      threeP20: [0,0,0,0,0],
-      fourP20: [0,0,0,0,0],
+      threeP19: [0,0,0,0,0,0],
+      fourP19: [0,0,0,0,0,0],
+      threeP20: [0,0,0,0,0,0],
+      fourP20: [0,0,0,0,0,0],
       weekly: true,
       overall: false,
       stats: false,
@@ -1253,6 +1348,12 @@ class App extends React.Component {
                 }else{
                     threeP20[4] ++;
                 }
+            }else if(gameData[i][0].name === "James"){
+                if(year === "2019"){
+                    threeP19[5] ++;
+                }else{
+                    threeP20[5] ++;
+                }
             }
         }else{
             if(gameData[i][0].name === "Micah"){
@@ -1284,6 +1385,12 @@ class App extends React.Component {
                     fourP19[4] ++;
                 }else{
                     fourP20[4] ++;
+                }
+            }else if(gameData[i][0].name === "James"){
+                if(year === "2019"){
+                    fourP19[5] ++;
+                }else{
+                    fourP20[5] ++;
                 }
             }
         }
@@ -1668,10 +1775,86 @@ class App extends React.Component {
                     betsyCharacters20[a].kos = betsyCharacters20[a].kos + gameData[i][j].kos;
                 }
             }
+        }else if(gameData[i][j].name === "James"){
+          var existingCharacter = false;
+            for(var k=0; k < jamesCharacters.length; k++){
+                if(jamesCharacters[k].character === gameData[i][j].character){
+                    existingCharacter = true;
+                }else{}
+                if(jamesCharacters[k].character === gameData[i][0].character && gameData[i][0].name === "James"){
+                    jamesCharacters[k].wins ++;
+                }else{}
+            }
+            if(existingCharacter === false){
+                if(gameData[i][j].character === gameData[i][0].character){
+                    jamesCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                }else{
+                    jamesCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                }
+            }else{
+                var a = jamesCharacters.findIndex(x => x.character === gameData[i][j].character);
+                jamesCharacters[a].number ++;
+                jamesCharacters[a].kos = jamesCharacters[a].kos + gameData[i][j].kos;
+            }
+            if(year === "2019"){
+                gamesPlayed19[5] ++;
+                gamePlace19[5] = gamePlace19[5] + (j + 1);
+                playerkos19[5] = playerkos19[5] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames19[5] ++;
+                }else{}
+                var existingCharacter19 = false;
+                for(var k=0; k < jamesCharacters19.length; k++){
+                    if(jamesCharacters19[k].character === gameData[i][j].character){
+                        existingCharacter19 = true;
+                    }else{}
+                    if(jamesCharacters19[k].character === gameData[i][0].character && gameData[i][0].name === "James"){
+                        jamesCharacters19[k].wins ++;
+                    }else{}
+                }
+                if(existingCharacter19 === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        jamesCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        jamesCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = jamesCharacters19.findIndex(x => x.character === gameData[i][j].character);
+                    jamesCharacters19[a].number ++;
+                    jamesCharacters19[a].kos = jamesCharacters19[a].kos + gameData[i][j].kos;
+                }
+            }else{
+                gamesPlayed20[5] ++;
+                gamePlace20[5] = gamePlace20[5] + (j + 1);
+                playerkos20[5] = playerkos20[5] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4){
+                  highKoGames20[5] ++;
+                }else{}
+                var existingCharacter20 = false;
+                for(var k=0; k < jamesCharacters20.length; k++){
+                    if(jamesCharacters20[k].character === gameData[i][j].character){
+                        existingCharacter20 = true;
+                    }else{}
+                    if(jamesCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "James"){
+                        jamesCharacters20[k].wins ++;
+                    }else{}
+                }
+                if(existingCharacter20 === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        jamesCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        jamesCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = jamesCharacters20.findIndex(x => x.character === gameData[i][j].character);
+                    jamesCharacters20[a].number ++;
+                    jamesCharacters20[a].kos = jamesCharacters20[a].kos + gameData[i][j].kos;
+                }
+            }
         }
       }
     }
-    var playerStatsArrays = [micahCharacters, micahCharacters19, micahCharacters20, timCharacters, timCharacters19, timCharacters20, dougCharacters, dougCharacters19, dougCharacters20, zackCharacters, zackCharacters19, zackCharacters20, betsyCharacters, betsyCharacters19, betsyCharacters20];
+    var playerStatsArrays = [micahCharacters, micahCharacters19, micahCharacters20, timCharacters, timCharacters19, timCharacters20, dougCharacters, dougCharacters19, dougCharacters20, zackCharacters, zackCharacters19, zackCharacters20, betsyCharacters, betsyCharacters19, betsyCharacters20, jamesCharacters, jamesCharacters19, jamesCharacters20];
     for(var i=0; i<playerStatsArrays.length; i++){
         for(var j=0; j<playerStatsArrays[i].length; j++){
             var avgKos = (playerStatsArrays[i][j].kos/playerStatsArrays[i][j].number).toFixed(2);
@@ -1679,10 +1862,10 @@ class App extends React.Component {
         }
     }
     this.setState({
-      threeP19: [threeP19[0], threeP19[1], threeP19[2], threeP19[3], threeP19[4]],
-      fourP19: [fourP19[0], fourP19[1], fourP19[2], fourP19[3], fourP19[4]],
-      threeP20: [threeP20[0], threeP20[1], threeP20[2], threeP20[3], threeP20[4]],
-      fourP20: [fourP20[0], fourP20[1], fourP20[2], fourP20[3], fourP20[4]]
+      threeP19: [threeP19[0], threeP19[1], threeP19[2], threeP19[3], threeP19[4], threeP19[5]],
+      fourP19: [fourP19[0], fourP19[1], fourP19[2], fourP19[3], fourP19[4], fourP19[5]],
+      threeP20: [threeP20[0], threeP20[1], threeP20[2], threeP20[3], threeP20[4], threeP20[5]],
+      fourP20: [fourP20[0], fourP20[1], fourP20[2], fourP20[3], fourP20[4], fourP20[5]]
     });
   }
   goToWeekly(){
@@ -1841,7 +2024,7 @@ class Overall extends React.Component {
     this.changeYearClick = this.changeYearClick.bind(this);
     }
   componentDidMount(){
-    var graphStats = [this.props.threeP19[0] + this.props.fourP19[0] + this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP19[1] + this.props.fourP19[1] + this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP19[2] + this.props.fourP19[2] + this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP19[3] + this.props.fourP19[3] + this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP19[4] + this.props.fourP19[4] + this.props.threeP20[4] + this.props.fourP20[4]];
+    var graphStats = [this.props.threeP19[0] + this.props.fourP19[0] + this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP19[1] + this.props.fourP19[1] + this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP19[2] + this.props.fourP19[2] + this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP19[3] + this.props.fourP19[3] + this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP19[4] + this.props.fourP19[4] + this.props.threeP20[4] + this.props.fourP20[4], this.props.threeP19[5] + this.props.fourP19[5] + this.props.threeP20[5] + this.props.fourP20[5]];
     this.setState({
         graphName: "Overall Wins",
         graphStats: graphStats
@@ -1852,38 +2035,38 @@ class Overall extends React.Component {
     var graphName;
     if(this.state.graphName === "Overall Wins"){
         if(this.state.graphYear === "Overall"){
-            graphStats = [this.props.threeP19[0] + this.props.threeP20[0], this.props.threeP19[1] + this.props.threeP20[1], this.props.threeP19[2] + this.props.threeP20[2], this.props.threeP19[3] + this.props.threeP20[3], this.props.threeP19[4] + this.props.threeP20[4]];
+            graphStats = [this.props.threeP19[0] + this.props.threeP20[0], this.props.threeP19[1] + this.props.threeP20[1], this.props.threeP19[2] + this.props.threeP20[2], this.props.threeP19[3] + this.props.threeP20[3], this.props.threeP19[4] + this.props.threeP20[4], this.props.threeP19[5] + this.props.threeP20[5]];
         }else if(this.state.graphYear === "2019"){
-            graphStats = [this.props.threeP19[0], this.props.threeP19[1], this.props.threeP19[2], this.props.threeP19[3], this.props.threeP19[4]]; 
+            graphStats = [this.props.threeP19[0], this.props.threeP19[1], this.props.threeP19[2], this.props.threeP19[3], this.props.threeP19[4], this.props.threeP19[5]]; 
         }else if(this.state.graphYear === "2020"){
-            graphStats = [this.props.threeP20[0], this.props.threeP20[1], this.props.threeP20[2], this.props.threeP20[3], this.props.threeP20[4]];
+            graphStats = [this.props.threeP20[0], this.props.threeP20[1], this.props.threeP20[2], this.props.threeP20[3], this.props.threeP20[4], this.props.threeP20[5]];
         }
         graphName = "3-Player Wins";
     }else if(this.state.graphName === "3-Player Wins"){
         if(this.state.graphYear === "Overall"){
-            graphStats = [this.props.fourP19[0] + this.props.fourP20[0], this.props.fourP19[1] + this.props.fourP20[1], this.props.fourP19[2] + this.props.fourP20[2], this.props.fourP19[3] + this.props.fourP20[3], this.props.fourP19[4] + this.props.fourP20[4]];
+            graphStats = [this.props.fourP19[0] + this.props.fourP20[0], this.props.fourP19[1] + this.props.fourP20[1], this.props.fourP19[2] + this.props.fourP20[2], this.props.fourP19[3] + this.props.fourP20[3], this.props.fourP19[4] + this.props.fourP20[4], this.props.fourP19[5] + this.props.fourP20[5]];
         }else if(this.state.graphYear === "2019"){
-            graphStats = [this.props.fourP19[0], this.props.fourP19[1], this.props.fourP19[2], this.props.fourP19[3], this.props.fourP19[4]];
+            graphStats = [this.props.fourP19[0], this.props.fourP19[1], this.props.fourP19[2], this.props.fourP19[3], this.props.fourP19[4], this.props.fourP19[5]];
         }else if(this.state.graphYear === "2020"){
-            graphStats = [this.props.fourP20[0], this.props.fourP20[1], this.props.fourP20[2], this.props.fourP20[3], this.props.fourP20[4]];
+            graphStats = [this.props.fourP20[0], this.props.fourP20[1], this.props.fourP20[2], this.props.fourP20[3], this.props.fourP20[4], this.props.fourP20[5]];
         }
         graphName = "4-Player Wins";
     }else if(this.state.graphName === "4-Player Wins"){
         if(this.state.graphYear === "Overall"){
-            graphStats = [playerkos19[0] + playerkos20[0], playerkos19[1] + playerkos20[1], playerkos19[2] + playerkos20[2], playerkos19[3] + playerkos20[3], playerkos19[4] + playerkos20[4]];
+            graphStats = [playerkos19[0] + playerkos20[0], playerkos19[1] + playerkos20[1], playerkos19[2] + playerkos20[2], playerkos19[3] + playerkos20[3], playerkos19[4] + playerkos20[4], playerkos19[5] + playerkos20[5]];
         }else if(this.state.graphYear === "2019"){
-            graphStats = [playerkos19[0], playerkos19[1], playerkos19[2], playerkos19[3], playerkos19[4]];
+            graphStats = [playerkos19[0], playerkos19[1], playerkos19[2], playerkos19[3], playerkos19[4], playerkos19[5]];
         }else if(this.state.graphYear === "2020"){
-            graphStats = [playerkos20[0], playerkos20[1], playerkos20[2], playerkos20[3], playerkos20[4]];
+            graphStats = [playerkos20[0], playerkos20[1], playerkos20[2], playerkos20[3], playerkos20[4], playerkos20[5]];
         }
         graphName = "Total Kos"
     }else if(this.state.graphName === "Total Kos"){
         if(this.state.graphYear === "Overall"){
-            graphStats = [this.props.threeP19[0] + this.props.fourP19[0] + this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP19[1] + this.props.fourP19[1] + this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP19[2] + this.props.fourP19[2] + this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP19[3] + this.props.fourP19[3] + this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP19[4] + this.props.fourP19[4] + this.props.threeP20[4] + this.props.fourP20[4]];
+            graphStats = [this.props.threeP19[0] + this.props.fourP19[0] + this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP19[1] + this.props.fourP19[1] + this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP19[2] + this.props.fourP19[2] + this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP19[3] + this.props.fourP19[3] + this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP19[4] + this.props.fourP19[4] + this.props.threeP20[4] + this.props.fourP20[4], this.props.threeP19[5] + this.props.fourP19[5] + this.props.threeP20[5] + this.props.fourP20[5]];
         }else if(this.state.graphYear === "2019"){
-            graphStats = [this.props.threeP19[0] + this.props.fourP19[0], this.props.threeP19[1] + this.props.fourP19[1], this.props.threeP19[2] + this.props.fourP19[2], this.props.threeP19[3] + this.props.fourP19[3], this.props.threeP19[4] + this.props.fourP19[4]];
+            graphStats = [this.props.threeP19[0] + this.props.fourP19[0], this.props.threeP19[1] + this.props.fourP19[1], this.props.threeP19[2] + this.props.fourP19[2], this.props.threeP19[3] + this.props.fourP19[3], this.props.threeP19[4] + this.props.fourP19[4], this.props.threeP19[5] + this.props.fourP19[5]];
         }else if(this.state.graphYear === "2020"){
-            graphStats = [this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP20[4] + this.props.fourP20[4]];
+            graphStats = [this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP20[4] + this.props.fourP20[4], this.props.threeP20[5] + this.props.fourP20[5]];
         }
         graphName = "Overall Wins";
     }
@@ -1897,35 +2080,35 @@ class Overall extends React.Component {
     var graphYear;
     if(this.state.graphYear === "Overall"){
         if(this.state.graphName === "Overall Wins"){
-            graphStats = [this.props.threeP19[0] + this.props.fourP19[0], this.props.threeP19[1] + this.props.fourP19[1], this.props.threeP19[2] + this.props.fourP19[2], this.props.threeP19[3] + this.props.fourP19[3], this.props.threeP19[4] + this.props.fourP19[4]];
+            graphStats = [this.props.threeP19[0] + this.props.fourP19[0], this.props.threeP19[1] + this.props.fourP19[1], this.props.threeP19[2] + this.props.fourP19[2], this.props.threeP19[3] + this.props.fourP19[3], this.props.threeP19[4] + this.props.fourP19[4], this.props.threeP19[5] + this.props.fourP19[5]];
         }else if(this.state.graphName === "3-Player Wins"){
-            graphStats = [this.props.threeP19[0], this.props.threeP19[1], this.props.threeP19[2], this.props.threeP19[3], this.props.threeP19[4]];
+            graphStats = [this.props.threeP19[0], this.props.threeP19[1], this.props.threeP19[2], this.props.threeP19[3], this.props.threeP19[4], this.props.threeP19[5]];
         }else if(this.state.graphName === "4-Player Wins"){
-            graphStats = [this.props.fourP19[0], this.props.fourP19[1], this.props.fourP19[2], this.props.fourP19[3], this.props.fourP19[4]];
+            graphStats = [this.props.fourP19[0], this.props.fourP19[1], this.props.fourP19[2], this.props.fourP19[3], this.props.fourP19[4], this.props.fourP19[5]];
         }else if(this.state.graphName === "Total Kos"){
-            graphStats = [playerkos19[0], playerkos19[1], playerkos19[2], playerkos19[3], playerkos19[4]];
+            graphStats = [playerkos19[0], playerkos19[1], playerkos19[2], playerkos19[3], playerkos19[4], playerkos19[5]];
         }
         graphYear = "2019";
     }else if(this.state.graphYear === "2019"){
         if(this.state.graphName === "Overall Wins"){
-            graphStats = [this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP20[4] + this.props.fourP20[4]];
+            graphStats = [this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP20[4] + this.props.fourP20[4], this.props.threeP20[5] + this.props.fourP20[5]];
         }else if(this.state.graphName === "3-Player Wins"){
-            graphStats = [this.props.threeP20[0], this.props.threeP20[1], this.props.threeP20[2], this.props.threeP20[3], this.props.threeP20[4]];
+            graphStats = [this.props.threeP20[0], this.props.threeP20[1], this.props.threeP20[2], this.props.threeP20[3], this.props.threeP20[4], this.props.threeP20[5]];
         }else if(this.state.graphName === "4-Player Wins"){
-            graphStats = [this.props.fourP20[0], this.props.fourP20[1], this.props.fourP20[2], this.props.fourP20[3], this.props.fourP20[4]];
+            graphStats = [this.props.fourP20[0], this.props.fourP20[1], this.props.fourP20[2], this.props.fourP20[3], this.props.fourP20[4], this.props.fourP20[5]];
         }else if(this.state.graphName === "Total Kos"){
-            graphStats = [playerkos20[0], playerkos20[1], playerkos20[2], playerkos20[3], playerkos20[4]];
+            graphStats = [playerkos20[0], playerkos20[1], playerkos20[2], playerkos20[3], playerkos20[4], playerkos20[5]];
         }
         graphYear = "2020";
     }else if(this.state.graphYear === "2020"){
         if(this.state.graphName === "Overall Wins"){
-            graphStats = [this.props.threeP19[0] + this.props.fourP19[0] + this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP19[1] + this.props.fourP19[1] + this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP19[2] + this.props.fourP19[2] + this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP19[3] + this.props.fourP19[3] + this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP19[4] + this.props.fourP19[4] + this.props.threeP20[4] + this.props.fourP20[4]];
+            graphStats = [this.props.threeP19[0] + this.props.fourP19[0] + this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP19[1] + this.props.fourP19[1] + this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP19[2] + this.props.fourP19[2] + this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP19[3] + this.props.fourP19[3] + this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP19[4] + this.props.fourP19[4] + this.props.threeP20[4] + this.props.fourP20[4], this.props.threeP19[5] + this.props.fourP19[5] + this.props.threeP20[5] + this.props.fourP20[5]];
         }else if(this.state.graphName === "3-Player Wins"){
-            graphStats = [this.props.threeP19[0] + this.props.threeP20[0], this.props.threeP19[1] + this.props.threeP20[1], this.props.threeP19[2] + this.props.threeP20[2], this.props.threeP19[3] + this.props.threeP20[3], this.props.threeP19[4] + this.props.threeP20[4]];
+            graphStats = [this.props.threeP19[0] + this.props.threeP20[0], this.props.threeP19[1] + this.props.threeP20[1], this.props.threeP19[2] + this.props.threeP20[2], this.props.threeP19[3] + this.props.threeP20[3], this.props.threeP19[4] + this.props.threeP20[4], this.props.threeP19[5] + this.props.threeP20[5]];
         }else if(this.state.graphName === "4-Player Wins"){
-            graphStats = [this.props.fourP19[0] + this.props.fourP20[0], this.props.fourP19[1] + this.props.fourP20[1], this.props.fourP19[2] + this.props.fourP20[2], this.props.fourP19[3] + this.props.fourP20[3], this.props.fourP19[4] + this.props.fourP20[4]];
+            graphStats = [this.props.fourP19[0] + this.props.fourP20[0], this.props.fourP19[1] + this.props.fourP20[1], this.props.fourP19[2] + this.props.fourP20[2], this.props.fourP19[3] + this.props.fourP20[3], this.props.fourP19[4] + this.props.fourP20[4], this.props.fourP19[5] + this.props.fourP20[5]];
         }else if(this.state.graphName === "Total Kos"){
-            graphStats = [playerkos19[0] + playerkos20[0], playerkos19[1] + playerkos20[1], playerkos19[2] + playerkos20[2], playerkos19[3] + playerkos20[3], playerkos19[4] + playerkos20[4]];
+            graphStats = [playerkos19[0] + playerkos20[0], playerkos19[1] + playerkos20[1], playerkos19[2] + playerkos20[2], playerkos19[3] + playerkos20[3], playerkos19[4] + playerkos20[4], playerkos19[5] + playerkos20[5]];
         }
         graphYear = "Overall"
     }
@@ -1955,7 +2138,8 @@ class Overall extends React.Component {
                     { label: "Tim", y: this.state.graphStats[1], color: "#9228de" },
                     { label: "Doug", y: this.state.graphStats[2], color: "#70d115"  },
                     { label: "Zack",  y: this.state.graphStats[3], color: "#ff78f1"  },
-                    { label: "Betsy", y: this.state.graphStats[4], color: "red"}
+                    { label: "Betsy", y: this.state.graphStats[4], color: "red"}, 
+                    { label: "James", y: this.state.graphStats[5], color: "gold"}
                 ]
        }]
    }
@@ -2060,7 +2244,6 @@ class Stats extends React.Component {
     )
   }
   changeStatsYear() {
-    console.log(betsyCharacters);
     var statsYear;
     mostPlayed = [];
     mostWins = [];
@@ -2079,6 +2262,8 @@ class Stats extends React.Component {
         playerNumber = 3;
     }else if(this.state.name === "betsy"){
         playerNumber = 4;
+    }else if(this.state.name === "james"){
+        playerNumber = 5;
     }
     if(this.state.year === "Overall"){
         statsYear = "2019";
@@ -2211,7 +2396,7 @@ class Stats extends React.Component {
     });
   }
   nextName() {
-    var nameArray = ["micah", "tim", "doug", "zack", "betsy"];
+    var nameArray = ["micah", "tim", "doug", "zack", "betsy", "james"];
     var nameIndex = nameArray.indexOf(this.state.name);
     var playerArray = eval(nameArray[nameIndex + 1] + "Characters");
     var playerArray19 = eval(nameArray[nameIndex + 1] + "Characters19");
@@ -2350,7 +2535,7 @@ class Stats extends React.Component {
     }
   }
   previousName() {
-    var nameArray = ["micah", "tim", "doug", "zack", "betsy"];
+    var nameArray = ["micah", "tim", "doug", "zack", "betsy", "james"];
     var nameIndex = nameArray.indexOf(this.state.name);
     var playerArray = eval(nameArray[nameIndex - 1] + "Characters");
     var playerArray19 = eval(nameArray[nameIndex - 1] + "Characters19");
@@ -2553,21 +2738,21 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Mar 12 2020",
-      weeklyWins: [0,0,0,0,0],
-      weeklyKos: [0,0,0,0,0],
-      weeklyAvg: [0,0,0,0,0]
+      date: "Mar 18 2020",
+      weeklyWins: [0,0,0,0,0,0],
+      weeklyKos: [0,0,0,0,0,0],
+      weeklyAvg: [0,0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
   this.previousDate = this.previousDate.bind(this);
   }
   componentDidMount() {
     var newDate = this.state.date;
-    weeklyWins = [0,0,0,0,0];
-    weeklyKos = [0,0,0,0,0];
-    weeklyGames = [0,0,0,0,0];
-    weeklyPlace = [0,0,0,0,0];
-    weeklyAvg = [0,0,0,0,0];
+    weeklyWins = [0,0,0,0,0,0];
+    weeklyKos = [0,0,0,0,0,0];
+    weeklyGames = [0,0,0,0,0,0];
+    weeklyPlace = [0,0,0,0,0,0];
+    weeklyAvg = [0,0,0,0,0,0];
     for(var i=0; i < gameData.length; i++){
         for(var j=0; j < 4; j++){
             if(gameData[i][j].name === "Micah" && gameData[i][5].date === newDate){
@@ -2590,6 +2775,10 @@ class Weekly extends React.Component {
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
+            }else if(gameData[i][j].name === "James" && gameData[i][5].date === newDate){
+                weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
+                weeklyGames[5] ++;
+                weeklyPlace[5] = weeklyPlace[5] + (j + 1);
             }
         }
         if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
@@ -2602,9 +2791,11 @@ class Weekly extends React.Component {
           weeklyWins[3] ++;
         }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date === newDate){
           weeklyWins[4] ++;
+        }else if(gameData[i][0].name === "James" && gameData[i][5].date === newDate){
+          weeklyWins[5] ++;
         }
     }
-    for(var i=0; i < 5; i++){
+    for(var i=0; i < 6; i++){
         if(weeklyGames[i] > 0){
             weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
             weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
@@ -2618,11 +2809,11 @@ class Weekly extends React.Component {
     });
   }
   previousDate(){
-    weeklyWins = [0,0,0,0,0];
-    weeklyKos = [0,0,0,0,0];
-    weeklyGames = [0,0,0,0,0];
-    weeklyPlace = [0,0,0,0,0];
-    weeklyAvg = [0,0,0,0,0];
+    weeklyWins = [0,0,0,0,0,0];
+    weeklyKos = [0,0,0,0,0,0];
+    weeklyGames = [0,0,0,0,0,0];
+    weeklyPlace = [0,0,0,0,0,0];
+    weeklyAvg = [0,0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex > 0){
       var newDate = dates[dateIndex - 1];
@@ -2648,6 +2839,10 @@ class Weekly extends React.Component {
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
+            }else if(gameData[i][j].name === "James" && gameData[i][5].date === newDate){
+                weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
+                weeklyGames[5] ++;
+                weeklyPlace[5] = weeklyPlace[5] + (j + 1);
             }
         }
         if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
@@ -2660,9 +2855,11 @@ class Weekly extends React.Component {
           weeklyWins[3] ++;
         }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date === newDate){
           weeklyWins[4] ++;
+        }else if(gameData[i][0].name === "James" && gameData[i][5].date === newDate){
+          weeklyWins[5] ++;
         }
     }
-    for(var i=0; i < 5; i++){
+    for(var i=0; i < 6; i++){
         if(weeklyGames[i] > 0){
             weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
             weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
@@ -2677,11 +2874,11 @@ class Weekly extends React.Component {
     }
   }
   nextDate(){
-    weeklyWins = [0,0,0,0,0];
-    weeklyKos = [0,0,0,0,0];
-    weeklyGames = [0,0,0,0,0];
-    weeklyPlace = [0,0,0,0,0];
-    weeklyAvg = [0,0,0,0,0];
+    weeklyWins = [0,0,0,0,0,0];
+    weeklyKos = [0,0,0,0,0,0];
+    weeklyGames = [0,0,0,0,0,0];
+    weeklyPlace = [0,0,0,0,0,0];
+    weeklyAvg = [0,0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex < dates.length - 1){
       var newDate = dates[dateIndex + 1];
@@ -2707,6 +2904,10 @@ class Weekly extends React.Component {
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
+            }else if(gameData[i][j].name === "James" && gameData[i][5].date === newDate){
+                weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
+                weeklyGames[5] ++;
+                weeklyPlace[5] = weeklyPlace[5] + (j + 1);
             }
         }
         if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
@@ -2719,9 +2920,11 @@ class Weekly extends React.Component {
           weeklyWins[3] ++;
         }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date === newDate){
           weeklyWins[4] ++;
+        }else if(gameData[i][0].name === "James" && gameData[i][5].date === newDate){
+          weeklyWins[5] ++;
         }
       }
-    for(var i=0; i < 5; i++){
+    for(var i=0; i < 6; i++){
         if(weeklyGames[i] > 0){
             weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
             weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
@@ -2757,31 +2960,39 @@ class Weekly extends React.Component {
             <div className="col-xs-1 col-md-1"><span onClick={this.nextDate} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
           </div>
           <div className="row">
-            <div className="col-xs-3 col-md-offset-2 col-md-2 weeklyName">Micah</div>
-            <div className="col-xs-3 col-md-2 weeklyName">Tim</div>
-            <div className="col-xs-3 col-md-2 weeklyName">Doug</div>
-            <div className="col-xs-3 col-md-2 weeklyName">Zack</div>
+            <div className="col-xs-3 col-md-offset-2 col-md-1 weeklyName">Micah</div>
+            <div className="col-xs-2 col-md-1 weeklyName">Tim</div>
+            <div className="col-xs-2 col-md-1 weeklyName">Doug</div>
+            <div className="col-xs-2 col-md-1 weeklyName">Zack</div>
+            <div className="col-xs-2 col-md-1 weeklyName">James</div>
+            <div className="col-xs-2 col-md-1 weeklyName">Betsy</div>
           </div>
           <div className="row">
             <div className="col-md-2 weeklyName">Wins</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyWins[0]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyWins[1]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyWins[2]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyWins[3]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyWins[0]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyWins[1]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyWins[2]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyWins[3]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyWins[5]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyWins[4]}</div>
           </div>
           <div className="row">
             <div className="col-md-2 weeklyName">Avg Place</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyAvg[0]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyAvg[1]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyAvg[2]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyAvg[3]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyAvg[0]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyAvg[1]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyAvg[2]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyAvg[3]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyAvg[5]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyAvg[4]}</div>
           </div>
           <div className="row">
             <div className="col-md-2 weeklyName">Avg Kos</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyKos[0]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyKos[1]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyKos[2]}</div>
-            <div className="col-xs-3 col-md-2 weeklyName">{this.state.weeklyKos[3]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyKos[0]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyKos[1]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyKos[2]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyKos[3]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyKos[5]}</div>
+            <div className="col-xs-2 col-md-1 weeklyName">{this.state.weeklyKos[4]}</div>
           </div>
           <div className="row">
             {this.listGames()}
@@ -2903,7 +3114,7 @@ class Fighters extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          fighterStats: [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy],
+          fighterStats: [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy, fighterStatsJames],
           fighterName: " ",
           fighterImage: empty
         }
@@ -2915,6 +3126,7 @@ class Fighters extends React.Component {
         fighterStatsDoug = {games: 0, wins: 0, place: 0, kos: 0};
         fighterStatsZack = {games: 0, wins: 0, place: 0, kos: 0};
         fighterStatsBetsy = {games: 0, wins: 0, place: 0, kos: 0};
+        fighterStatsJames = {games: 0, wins: 0, place: 0, kos: 0};
         var fighter = (document.getElementById("fighterName").value).replace(/\s/g, '').toLowerCase();
         var fighterImage;
         for(var i=0; i < gameData.length; i++){
@@ -2935,7 +3147,7 @@ class Fighters extends React.Component {
                 }else{}
             }
         }
-        var fighterData = [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy];
+        var fighterData = [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy, fighterStatsJames];
         for(var i=0; i<5; i++){
             var averagePlace = (fighterData[i].place/fighterData[i].games).toFixed(2);
             var averageKos = (fighterData[i].kos/fighterData[i].games).toFixed(2);
@@ -3002,12 +3214,19 @@ class Fighters extends React.Component {
                         <div className="col-xs-2 statsNumber">{this.state.fighterStats[3].place}</div>
                         <div className="col-xs-2 statsNumber">{this.state.fighterStats[3].kos}</div>
                     </div>
-                    <div className="row">
+                    <div className="row playerRow">
                         <div className="col-xs-2 fighterStatsPlayer">Betsy</div>
                         <div className="col-xs-2 statsNumber">{this.state.fighterStats[4].games}</div>
                         <div className="col-xs-2 statsNumber">{this.state.fighterStats[4].wins}</div>
                         <div className="col-xs-2 statsNumber">{this.state.fighterStats[4].place}</div>
                         <div className="col-xs-2 statsNumber">{this.state.fighterStats[4].kos}</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-xs-2 fighterStatsPlayer">James</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[5].games}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[5].wins}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[5].place}</div>
+                        <div className="col-xs-2 statsNumber">{this.state.fighterStats[5].kos}</div>
                     </div>
                 </div>
             </div>
