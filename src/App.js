@@ -1239,11 +1239,94 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Smashville"},
     {date: "Mar 18 2020"}
+  ],[
+    {name: "Micah", character: peach, kos: 4},
+    {name: "Doug", character: byleth, kos: 2},
+    {name: "Tim", character: ness, kos: 4},
+    {name: "Zack", character: richter, kos: 1},
+    {stage: "Jungle Japes"},
+    {date: "Mar 26 2020"}
+  ],[
+    {name: "Tim", character: ness, kos: 4},
+    {name: "Doug", character: ryu, kos: 2},
+    {name: "Micah", character: isabell, kos: 4},
+    {name: "Zack", character: richter, kos: 1},
+    {stage: "King of Fighters Stadium"},
+    {date: "Mar 26 2020"}
+  ],[
+    {name: "Zack", character: kingdedede, kos: 2},
+    {name: "Tim", character: samus, kos: 2},
+    {name: "Craig", character: donkeykong, kos: 2},
+    {name: "Doug", character: joker, kos: 2},
+    {stage: "Mushroom Kingdom U"},
+    {date: "Mar 26 2020"}
+  ],[
+    {name: "Micah", character: wiifittrainer, kos: 6},
+    {name: "Tim", character: samus, kos: 2},
+    {name: "Zack", character: kingdedede, kos: 1},
+    {name: "Craig", character: donkeykong, kos: 2},
+    {stage: "Find Mii"},
+    {date: "Mar 26 2020"}
+  ],[
+    {name: "Tim", character: pacman, kos: 5},
+    {name: "Zack", character: kingdedede, kos: 3},
+    {name: "Doug", character: younglink, kos: 0},
+    {name: "Micah", character: incineroar, kos: 3},
+    {stage: "Yohsi's Island(Melee)"},
+    {date: "Mar 26 2020"}
+  ],[
+    {name: "Zack", character: miigunner, kos: 2},
+    {name: "Craig", character: ganondorf, kos: 4},
+    {name: "Doug", character: samus, kos: 4},
+    {name: "Micah", character: bowserjr, kos: 1},
+    {stage: "Hyrule Castle"},
+    {date: "Mar 26 2020"}
+  ],[
+    {name: "Zack", character: hero, kos: 4},
+    {name: "Craig", character: link, kos: 4},
+    {name: "Micah", character: darkpit, kos: 3},
+    {name: "Tim", character: pacman, kos: 0},
+    {stage: "Battlefield"},
+    {date: "Mar 26 2020"}
+  ],[
+    {name: "Micah", character: zelda, kos: 3},
+    {name: "Tim", character: darksamus, kos: 2},
+    {name: "Craig", character: donkeykong, kos: 4},
+    {name: "Zack", character: kirby, kos: 2},
+    {stage: "Big Battlefield"},
+    {date: "Mar 26 2020"}
+  ],[
+    {name: "Zack", character: kirby, kos: 4},
+    {name: "Micah", character: banjo, kos: 4},
+    {name: "Craig", character: donkeykong, kos: 1},
+    {name: "Tim", character: darksamus, kos: 2},
+    {stage: "Peach's Castle"},
+    {date: "Mar 26 2020"}
+  ],[
+    {name: "Craig", character: pikachu, kos: 5},
+    {name: "Tim", character: rob, kos: 1},
+    {name: "Micah", character: roy, kos: 2},
+    {name: "Zack", character: richter, kos: 1},
+    {stage: "Custom"},
+    {date: "Mar 26 2020"}
+  ],[
+    {name: "Betsy", character: pokemontrainer, kos: 3},
+    {name: "Craig", character: pikachu, kos: 5},
+    {name: "Zack", character: wario, kos: 1},
+    {name: "Tim", character: drmario, kos: 2},
+    {stage: "Custom"},
+    {date: "Mar 26 2020"}
+  ],[
+    {name: "Betsy", character: duckhunt, kos: 3},
+    {name: "Craig", character: pikachu, kos: 2},
+    {name: "Zack", character: wario, kos: 5},
+    {name: "Tim", character: jigglypuff, kos: 0},
+    {stage: "Yggdrasil's Altar"},
+    {date: "Mar 26 2020"}
   ]
-
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020", "Mar 4 2020", "Mar 12 2020", "Mar 18 2020"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020", "Mar 4 2020", "Mar 12 2020", "Mar 18 2020", "Mar 26 2020"];
 
 var fourP19 = [0,0,0,0,0,0];
 var threeP19 = [0,0,0,0,0,0];
@@ -2738,7 +2821,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Mar 18 2020",
+      date: "Mar 26 2020",
       weeklyWins: [0,0,0,0,0,0],
       weeklyKos: [0,0,0,0,0,0],
       weeklyAvg: [0,0,0,0,0,0]
