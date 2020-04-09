@@ -1400,10 +1400,87 @@ const gameData = [
     {name: "Tim", character: darksamus, kos: 1},
     {stage: "King of Fighters Stadium"},
     {date: "Apr 2 2020"}
+  ],[
+    {name: "Micah", character: bowserjr, kos: 5},
+    {name: "Nick", character: mario, kos: 0},
+    {name: "Zack", character: kirby, kos: 3},
+    {name: "", character: empty, kos: 0},
+    {stage: "Smashville"},
+    {date: "Apr 8 2020"}
+  ],[
+    {name: "Zack", character: kirby, kos: 6},
+    {name: "Tim", character: samus, kos: 2},
+    {name: "Nick", character: sonic, kos: 2},
+    {name: "Micah", character: roy, kos: 1},
+    {stage: "Custom"},
+    {date: "Apr 8 2020"}
+  ],[
+    {name: "Nick", character: samus, kos: 4},
+    {name: "Micah", character: peach, kos: 3},
+    {name: "Zack", character: kirby, kos: 1},
+    {name: "Tim", character: samus, kos: 2},
+    {stage: "Custom"},
+    {date: "Apr 8 2020"}
+  ],[
+    {name: "Zack", character: bowser, kos: 5},
+    {name: "Tim", character: pacman, kos: 2},
+    {name: "Micah", character: peach, kos: 3},
+    {name: "Nick", character: samus, kos: 1},
+    {stage: "Custom"},
+    {date: "Apr 8 2020"}
+  ],[
+    {name: "Zack", character: pokemontrainer, kos: 5},
+    {name: "Tim", character: pacman, kos: 3},
+    {name: "Micah", character: peach, kos: 1},
+    {name: "Nick", character: mario, kos: 2},
+    {stage: "Custom"},
+    {date: "Apr 8 2020"}
+  ],[
+    {name: "Micah", character: wiifittrainer, kos: 7},
+    {name: "Tim", character: miiswordfighter, kos: 0},
+    {name: "Nick", character: mario, kos: 4},
+    {name: "Zack", character: pokemontrainer, kos: 0},
+    {stage: "Custom"},
+    {date: "Apr 8 2020"}
+  ],[
+    {name: "Micah", character: wiifittrainer, kos: 4},
+    {name: "Tim", character: darksamus, kos: 4},
+    {name: "Zack", character: pokemontrainer, kos: 1},
+    {name: "Nick", character: marth, kos: 0},
+    {stage: "Custom"},
+    {date: "Apr 8 2020"}
+  ],[
+    {name: "Betsy", character: villager, kos: 3},
+    {name: "Nick", character: lucario, kos: 4},
+    {name: "Zack", character: pokemontrainer, kos: 2},
+    {name: "Tim", character: darksamus, kos: 0},
+    {stage: "Custom"},
+    {date: "Apr 8 2020"}
+  ],[
+    {name: "Zack", character: yoshi, kos: 3},
+    {name: "Micah", character: isabell, kos: 4},
+    {name: "Nick", character: lucario, kos: 4},
+    {name: "Tim", character: yoshi, kos: 0},
+    {stage: "Custom"},
+    {date: "Apr 8 2020"}
+  ],[
+    {name: "Tim", character: miigunner, kos: 3},
+    {name: "Micah", character: rob, kos: 3},
+    {name: "Zack", character: yoshi, kos: 2},
+    {name: "", character: empty, kos: 0},
+    {stage: "Custom"},
+    {date: "Apr 8 2020"}
+  ],[
+    {name: "Tim", character: miiswordfighter, kos: 5},
+    {name: "Betsy", character: miiswordfighter, kos: 2},
+    {name: "Zack", character: wario, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Custom"},
+    {date: "Apr 8 2020"}
   ]
 ];
 
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020", "Mar 4 2020", "Mar 12 2020", "Mar 18 2020", "Mar 26 2020", "Apr 2 2020"];
+var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020", "Mar 4 2020", "Mar 12 2020", "Mar 18 2020", "Mar 26 2020", "Apr 2 2020", "Apr 8 2020"];
 
 var fourP19 = [0,0,0,0,0,0,0];
 var threeP19 = [0,0,0,0,0,0,0];
@@ -1455,6 +1532,7 @@ var fighterStatsZack = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsBetsy = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsJames = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsCraig = {games: 0, wins: 0, place: 0, kos: 0};
+var fighterStatsNick = {games: 0, wins: 0, place: 0, kos: 0};
 
 
 class App extends React.Component {
@@ -2993,7 +3071,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Apr 2 2020",
+      date: "Apr 8 2020",
       weeklyWins: [0,0,0,0,0,0,0],
       weeklyKos: [0,0,0,0,0,0,0],
       weeklyAvg: [0,0,0,0,0,0,0]
@@ -3233,43 +3311,43 @@ class Weekly extends React.Component {
             <div className="col-xs-1 col-md-1"><span onClick={this.nextDate} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
           </div>
           <div className="row">
-            <div className="col-xs-1 col-md-offset-2 col-md-1 weeklyName">Micah</div>
-            <div className="col-xs-1 col-md-1 weeklyName">Tim</div>
-            <div className="col-xs-1 col-md-1 weeklyName">Doug</div>
-            <div className="col-xs-1 col-md-1 weeklyName">Zack</div>
-            <div className="col-xs-1 col-md-1 weeklyName">James</div>
-            <div className="col-xs-1 col-md-1 weeklyName">Craig</div>
-            <div className="col-xs-1 col-md-1 weeklyName">Betsy</div>
+            {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-offset-2 col-md-1 weeklyName">Micah</div> : null}
+            {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">Tim</div> : null}
+            {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">Doug</div> : null}
+            {this.state.weeklyAvg[3] ? <div className="col-xs-1 col-md-1 weeklyName">Zack</div> : null}
+            {this.state.weeklyAvg[5] ? <div className="col-xs-1 col-md-1 weeklyName">James</div> : null}
+            {this.state.weeklyAvg[6] ? <div className="col-xs-1 col-md-1 weeklyName">Craig</div> : null}
+            {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">Betsy</div> : null}
           </div>
           <div className="row">
             <div className="col-md-2 weeklyName">Wins</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[0]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[1]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[2]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[3]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[5]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[6]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[4]}</div>
+            {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[0]}</div> : null}
+            {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[1]}</div> : null}
+            {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[2]}</div> : null}
+            {this.state.weeklyAvg[3] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[3]}</div> : null}
+            {this.state.weeklyAvg[5] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[5]}</div> : null}
+            {this.state.weeklyAvg[6] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[6]}</div> : null}
+            {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[4]}</div> : null}
           </div>
           <div className="row">
             <div className="col-md-2 weeklyName">Avg Place</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[0]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[1]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[2]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[3]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[5]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[6]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[4]}</div>
+            {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[0]}</div> : null}
+            {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[1]}</div> : null}
+            {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[2]}</div> : null}
+            {this.state.weeklyAvg[3] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[3]}</div> : null}
+            {this.state.weeklyAvg[5] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[5]}</div> : null}
+            {this.state.weeklyAvg[6] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[6]}</div> : null}
+            {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[4]}</div> : null}
           </div>
           <div className="row">
             <div className="col-md-2 weeklyName">Avg Kos</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[0]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[1]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[2]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[3]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[5]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[6]}</div>
-            <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[4]}</div>
+            {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[0]}</div> : null}
+            {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[1]}</div> : null}
+            {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[2]}</div> : null}
+            {this.state.weeklyAvg[3] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[3]}</div> : null}
+            {this.state.weeklyAvg[5] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[5]}</div> : null}
+            {this.state.weeklyAvg[6] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[6]}</div> : null}
+            {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[4]}</div> : null}
           </div>
           <div className="row">
             {this.listGames()}
@@ -3391,7 +3469,7 @@ class Fighters extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          fighterStats: [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy, fighterStatsJames],
+          fighterStats: [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy, fighterStatsJames, fighterStatsCraig],
           fighterName: " ",
           fighterImage: empty
         }
@@ -3405,6 +3483,7 @@ class Fighters extends React.Component {
         fighterStatsBetsy = {games: 0, wins: 0, place: 0, kos: 0};
         fighterStatsJames = {games: 0, wins: 0, place: 0, kos: 0};
         fighterStatsCraig = {games: 0, wins: 0, place: 0, kos: 0};
+        fighterStatsNick = {games: 0, wins: 0, place: 0, kos: 0};
         var fighter = (document.getElementById("fighterName").value).replace(/\s/g, '').toLowerCase();
         var fighterImage;
         for(var i=0; i < gameData.length; i++){
@@ -3445,6 +3524,7 @@ class Fighters extends React.Component {
         });
     }
     render() {
+        console.log(this.state.fighterStats);
         return (
             <div className="row">
                 <div className="col-xs-12">
@@ -3499,7 +3579,7 @@ class Fighters extends React.Component {
                         <div className="col-xs-2 statsNumber">{this.state.fighterStats[4].place}</div>
                         <div className="col-xs-2 statsNumber">{this.state.fighterStats[4].kos}</div>
                     </div>
-                    <div className="row">
+                    <div className="row playerRow">
                         <div className="col-xs-2 fighterStatsPlayer">James</div>
                         <div className="col-xs-2 statsNumber">{this.state.fighterStats[5].games}</div>
                         <div className="col-xs-2 statsNumber">{this.state.fighterStats[5].wins}</div>
