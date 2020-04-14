@@ -72,12 +72,12 @@ import simon from './assets/simon.jpg';
 import smash from './assets/smash.png';
 import snake from './assets/snake.jpg';
 import sonic from './assets/sonic.jpg';
-import terry from './assets/terry.png';
+import terry from './assets/terry.jpg';
 import toonlink from './assets/toonlink.jpg';
 import unknown from './assets/unknown.jpg';
 import villager from './assets/villager.jpg';
 import wario from './assets/wario.jpg';
-import wiifittrainer from './assets/wiifittrainer.png';
+import wiifittrainer from './assets/wiifittrainer.jpg';
 import wolf from './assets/wolf.jpg';
 import yoshi from './assets/yoshi.jpg';
 import younglink from './assets/younglink.jpg';
@@ -1481,7 +1481,7 @@ const gameData = [
 ];
 
 var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020", "Mar 4 2020", "Mar 12 2020", "Mar 18 2020", "Mar 26 2020", "Apr 2 2020", "Apr 8 2020"];
-
+var ultimateFighters = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
 var fourP19 = [0,0,0,0,0,0,0];
 var threeP19 = [0,0,0,0,0,0,0];
 var fourP20 = [0,0,0,0,0,0,0];
@@ -1491,10 +1491,13 @@ var weeklyPlace = [0,0,0,0,0,0,0];
 var weeklyKos = [0,0,0,0,0,0,0];
 var weeklyGames = [0,0,0,0,0,0,0];
 var weeklyAvg = [0,0,0,0,0,0,0];
+var weeklyPoints = [0,0,0,0,0,0,0];
 var playerkos19 = [0,0,0,0,0,0,0];
 var playerkos20 = [0,0,0,0,0,0,0];
 var highKoGames19 = [0,0,0,0,0,0,0];
 var highKoGames20 = [0,0,0,0,0,0,0];
+var gamePoints19 = [0,0,0,0,0,0,0];
+var gamePoints20 = [0,0,0,0,0,0,0];
 var micahCharacters = [];
 var timCharacters = [];
 var dougCharacters = [];
@@ -1533,6 +1536,7 @@ var fighterStatsBetsy = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsJames = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsCraig = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsNick = {games: 0, wins: 0, place: 0, kos: 0};
+var playerList = ["Micah", "Tim", "Doug", "Zack", "Betsy", "James", "Craig"];
 
 
 class App extends React.Component {
@@ -1673,6 +1677,21 @@ class App extends React.Component {
             if(year === "2019"){
                 gamesPlayed19[0] ++;
                 gamePlace19[0] = gamePlace19[0] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints19[0] = gamePoints19[0] + 3;
+                    }else if(j === 1){
+                        gamePoints19[0] = gamePoints19[0] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints19[0] = gamePoints19[0] + 4;
+                    }else if(j === 1){
+                        gamePoints19[0] = gamePoints19[0] + 2;
+                    }else if(j === 2){
+                        gamePoints19[0] = gamePoints19[0] + 1;
+                    }
+                }
                 playerkos19[0] = playerkos19[0] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames19[0] ++;
@@ -1700,6 +1719,21 @@ class App extends React.Component {
             }else{
                 gamesPlayed20[0] ++;
                 gamePlace20[0] = gamePlace20[0] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints20[0] = gamePoints20[0] + 3;
+                    }else if(j === 1){
+                        gamePoints20[0] = gamePoints20[0] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints20[0] = gamePoints20[0] + 4;
+                    }else if(j === 1){
+                        gamePoints20[0] = gamePoints20[0] + 2;
+                    }else if(j === 2){
+                        gamePoints20[0] = gamePoints20[0] + 1;
+                    }
+                }
                 playerkos20[0] = playerkos20[0] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames20[0] ++;
@@ -1749,6 +1783,21 @@ class App extends React.Component {
             if(year === "2019"){
                 gamesPlayed19[1] ++;
                 gamePlace19[1] = gamePlace19[1] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints19[1] = gamePoints19[1] + 3;
+                    }else if(j === 1){
+                        gamePoints19[1] = gamePoints19[1] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints19[1] = gamePoints19[1] + 4;
+                    }else if(j === 1){
+                        gamePoints19[1] = gamePoints19[1] + 2;
+                    }else if(j === 2){
+                        gamePoints19[1] = gamePoints19[1] + 1;
+                    }
+                }
                 playerkos19[1] = playerkos19[1] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames19[1] ++;
@@ -1776,6 +1825,21 @@ class App extends React.Component {
             }else{
                 gamesPlayed20[1] ++;
                 gamePlace20[1] = gamePlace20[1] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints20[1] = gamePoints20[1] + 3;
+                    }else if(j === 1){
+                        gamePoints20[1] = gamePoints20[1] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints20[1] = gamePoints20[1] + 4;
+                    }else if(j === 1){
+                        gamePoints20[1] = gamePoints20[1] + 2;
+                    }else if(j === 2){
+                        gamePoints20[1] = gamePoints20[1] + 1;
+                    }
+                }
                 playerkos20[1] = playerkos20[1] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames20[1] ++;
@@ -1825,6 +1889,21 @@ class App extends React.Component {
             if(year === "2019"){
                 gamesPlayed19[2] ++;
                 gamePlace19[2] = gamePlace19[2] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints19[2] = gamePoints19[2] + 3;
+                    }else if(j === 1){
+                        gamePoints19[2] = gamePoints19[2] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints19[2] = gamePoints19[2] + 4;
+                    }else if(j === 1){
+                       gamePoints19[2] = gamePoints19[2] + 2;
+                    }else if(j === 2){
+                        gamePoints19[2] = gamePoints19[2] + 1;
+                    }
+                }
                 playerkos19[2] = playerkos19[2] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames19[2] ++;
@@ -1852,6 +1931,21 @@ class App extends React.Component {
             }else{
                 gamesPlayed20[2] ++;
                 gamePlace20[2] = gamePlace20[2] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints20[2] = gamePoints20[2] + 3;
+                    }else if(j === 1){
+                        gamePoints20[2] = gamePoints20[2] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints20[2] = gamePoints20[2] + 4;
+                    }else if(j === 1){
+                        gamePoints20[2] = gamePoints20[2] + 2;
+                    }else if(j === 2){
+                        gamePoints20[2] = gamePoints20[2] + 1;
+                    }
+                }
                 playerkos20[2] = playerkos20[2] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames20[2] ++;
@@ -1901,6 +1995,21 @@ class App extends React.Component {
             if(year === "2019"){
                 gamesPlayed19[3] ++;
                 gamePlace19[3] = gamePlace19[3] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints19[3] = gamePoints19[3] + 3;
+                    }else if(j === 1){
+                        gamePoints19[3] = gamePoints19[3] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints19[3] = gamePoints19[3] + 4;
+                    }else if(j === 1){
+                        gamePoints19[3] = gamePoints19[3] + 2;
+                    }else if(j === 2){
+                        gamePoints19[3] = gamePoints19[3] + 1;
+                    }
+                }
                 playerkos19[3] = playerkos19[3] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames19[3] ++;
@@ -1928,6 +2037,21 @@ class App extends React.Component {
             }else{
                 gamesPlayed20[3] ++;
                 gamePlace20[3] = gamePlace20[3] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints20[3] = gamePoints20[3] + 3;
+                    }else if(j === 1){
+                        gamePoints20[3] = gamePoints20[3] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints20[3] = gamePoints20[3] + 4;
+                    }else if(j === 1){
+                        gamePoints20[3] = gamePoints20[3] + 2;
+                    }else if(j === 2){
+                        gamePoints20[3] = gamePoints20[3] + 1;
+                    }
+                }
                 playerkos20[3] = playerkos20[3] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames20[3] ++;
@@ -1977,6 +2101,21 @@ class App extends React.Component {
             if(year === "2019"){
                 gamesPlayed19[4] ++;
                 gamePlace19[4] = gamePlace19[4] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints19[4] = gamePoints19[4] + 3;
+                    }else if(j === 1){
+                        gamePoints19[4] = gamePoints19[4] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints19[4] = gamePoints19[4] + 4;
+                    }else if(j === 1){
+                        gamePoints19[4] = gamePoints19[4] + 2;
+                    }else if(j === 2){
+                        gamePoints19[4] = gamePoints19[4] + 1;
+                    }
+                }
                 playerkos19[4] = playerkos19[4] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames19[4] ++;
@@ -2004,6 +2143,21 @@ class App extends React.Component {
             }else{
                 gamesPlayed20[4] ++;
                 gamePlace20[4] = gamePlace20[4] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints20[4] = gamePoints20[4] + 3;
+                    }else if(j === 1){
+                        gamePoints20[4] = gamePoints20[4] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints20[4] = gamePoints20[4] + 4;
+                    }else if(j === 1){
+                        gamePoints20[4] = gamePoints20[4] + 2;
+                    }else if(j === 2){
+                        gamePoints20[4] = gamePoints20[4] + 1;
+                    }
+                }
                 playerkos20[4] = playerkos20[4] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames20[4] ++;
@@ -2053,6 +2207,21 @@ class App extends React.Component {
             if(year === "2019"){
                 gamesPlayed19[5] ++;
                 gamePlace19[5] = gamePlace19[5] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints19[5] = gamePoints19[5] + 3;
+                    }else if(j === 1){
+                        gamePoints19[5] = gamePoints19[5] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints19[5] = gamePoints19[5] + 4;
+                    }else if(j === 1){
+                        gamePoints19[5] = gamePoints19[5] + 2;
+                    }else if(j === 2){
+                        gamePoints19[5] = gamePoints19[5] + 1;
+                    }
+                }
                 playerkos19[5] = playerkos19[5] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames19[5] ++;
@@ -2080,6 +2249,21 @@ class App extends React.Component {
             }else{
                 gamesPlayed20[5] ++;
                 gamePlace20[5] = gamePlace20[5] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints20[5] = gamePoints20[5] + 3;
+                    }else if(j === 1){
+                        gamePoints20[5] = gamePoints20[5] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints20[5] = gamePoints20[5] + 4;
+                    }else if(j === 1){
+                        gamePoints20[5] = gamePoints20[5] + 2;
+                    }else if(j === 2){
+                        gamePoints20[5] = gamePoints20[5] + 1;
+                    }
+                }
                 playerkos20[5] = playerkos20[5] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames20[5] ++;
@@ -2129,6 +2313,21 @@ class App extends React.Component {
             if(year === "2019"){
                 gamesPlayed19[6] ++;
                 gamePlace19[6] = gamePlace19[6] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints19[6] = gamePoints19[6] + 3;
+                    }else if(j === 1){
+                        gamePoints19[6] = gamePoints19[6] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints19[6] = gamePoints19[6] + 4;
+                    }else if(j === 1){
+                        gamePoints19[6] = gamePoints19[6] + 2;
+                    }else if(j === 2){
+                        gamePoints19[6] = gamePoints19[6] + 1;
+                    }
+                }
                 playerkos19[6] = playerkos19[6] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames19[6] ++;
@@ -2156,6 +2355,21 @@ class App extends React.Component {
             }else{
                 gamesPlayed20[6] ++;
                 gamePlace20[6] = gamePlace20[6] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        gamePoints20[6] = gamePoints20[6] + 3;
+                    }else if(j === 1){
+                        gamePoints20[6] = gamePoints20[6] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        gamePoints20[6] = gamePoints20[6] + 4;
+                    }else if(j === 1){
+                        gamePoints20[6] = gamePoints20[6] + 2;
+                    }else if(j === 2){
+                        gamePoints20[6] = gamePoints20[6] + 1;
+                    }
+                }
                 playerkos20[6] = playerkos20[6] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4){
                   highKoGames20[6] ++;
@@ -2181,6 +2395,11 @@ class App extends React.Component {
                     craigCharacters20[a].kos = craigCharacters20[a].kos + gameData[i][j].kos;
                 }
             }
+        }
+        for(var k = 0; k<ultimateFighters.length; k++){
+            if(ultimateFighters[k].name === gameData[i][j].character){
+                ultimateFighters[k].number ++;
+            }else{}
         }
       }
     }
@@ -2344,150 +2563,116 @@ class Tab extends React.Component {
 
 class Overall extends React.Component {
     constructor(props) {
-    super(props);
+        super(props);
         this.state = {
-            graphName: null,
-            graphStats: [],
-            graphYear: "Overall"
+          topKos: [0,0,0,0,0,0,0],
+          topPlace: [0,0,0,0,0,0,0]
         }
-    this.changeGraphClick = this.changeGraphClick.bind(this);
-    this.changeYearClick = this.changeYearClick.bind(this);
     }
-  componentDidMount(){
-    var graphStats = [this.props.threeP19[0] + this.props.fourP19[0] + this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP19[1] + this.props.fourP19[1] + this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP19[2] + this.props.fourP19[2] + this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP19[3] + this.props.fourP19[3] + this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP19[4] + this.props.fourP19[4] + this.props.threeP20[4] + this.props.fourP20[4], this.props.threeP19[5] + this.props.fourP19[5] + this.props.threeP20[5] + this.props.fourP20[5], this.props.threeP19[6] + this.props.fourP19[6] + this.props.threeP20[6] + this.props.fourP20[6]];
-    this.setState({
-        graphName: "Overall Wins",
-        graphStats: graphStats
-    });
-  }
-  changeGraphClick(){
-    var graphStats;
-    var graphName;
-    if(this.state.graphName === "Overall Wins"){
-        if(this.state.graphYear === "Overall"){
-            graphStats = [this.props.threeP19[0] + this.props.threeP20[0], this.props.threeP19[1] + this.props.threeP20[1], this.props.threeP19[2] + this.props.threeP20[2], this.props.threeP19[3] + this.props.threeP20[3], this.props.threeP19[4] + this.props.threeP20[4], this.props.threeP19[5] + this.props.threeP20[5], this.props.threeP19[6] + this.props.threeP20[6]];
-        }else if(this.state.graphYear === "2019"){
-            graphStats = [this.props.threeP19[0], this.props.threeP19[1], this.props.threeP19[2], this.props.threeP19[3], this.props.threeP19[4], this.props.threeP19[5], this.props.threeP19[6]]; 
-        }else if(this.state.graphYear === "2020"){
-            graphStats = [this.props.threeP20[0], this.props.threeP20[1], this.props.threeP20[2], this.props.threeP20[3], this.props.threeP20[4], this.props.threeP20[5], this.props.threeP20[6]];
+    componentDidMount(){
+        var topKos19 = [];
+        var topKos20 = [];
+        var topKosOverall = [];
+        var topPlace19 = [];
+        var topPlace20 = [];
+        var topPlaceOverall = [];
+        for(var i=0; i<playerkos19.length; i++){
+            topKos19[i] = {name: playerList[i], number: (playerkos19[i]/gamesPlayed19[i]).toFixed(2)};
+            topKos20[i] = {name: playerList[i], number: (playerkos20[i]/gamesPlayed20[i]).toFixed(2)};
+            topKosOverall[i] = {name: playerList[i], number: ((playerkos19[i] + playerkos20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2)};
+            topPlace19[i] = {name: playerList[i], number: (gamePlace19[i]/gamesPlayed19[i]).toFixed(2)};
+            topPlace20[i] = {name: playerList[i], number: (gamePlace20[i]/gamesPlayed20[i]).toFixed(2)};
+            topPlaceOverall[i] = {name: playerList[i], number: ((gamePlace19[i] + gamePlace20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2)};
+            
         }
-        graphName = "3-Player Wins";
-    }else if(this.state.graphName === "3-Player Wins"){
-        if(this.state.graphYear === "Overall"){
-            graphStats = [this.props.fourP19[0] + this.props.fourP20[0], this.props.fourP19[1] + this.props.fourP20[1], this.props.fourP19[2] + this.props.fourP20[2], this.props.fourP19[3] + this.props.fourP20[3], this.props.fourP19[4] + this.props.fourP20[4], this.props.fourP19[5] + this.props.fourP20[5], this.props.fourP19[6] + this.props.fourP20[6]];
-        }else if(this.state.graphYear === "2019"){
-            graphStats = [this.props.fourP19[0], this.props.fourP19[1], this.props.fourP19[2], this.props.fourP19[3], this.props.fourP19[4], this.props.fourP19[5], this.props.fourP19[6]];
-        }else if(this.state.graphYear === "2020"){
-            graphStats = [this.props.fourP20[0], this.props.fourP20[1], this.props.fourP20[2], this.props.fourP20[3], this.props.fourP20[4], this.props.fourP20[5], this.props.fourP20[6]];
-        }
-        graphName = "4-Player Wins";
-    }else if(this.state.graphName === "4-Player Wins"){
-        if(this.state.graphYear === "Overall"){
-            graphStats = [playerkos19[0] + playerkos20[0], playerkos19[1] + playerkos20[1], playerkos19[2] + playerkos20[2], playerkos19[3] + playerkos20[3], playerkos19[4] + playerkos20[4], playerkos19[5] + playerkos20[5], playerkos19[6] + playerkos20[6]];
-        }else if(this.state.graphYear === "2019"){
-            graphStats = [playerkos19[0], playerkos19[1], playerkos19[2], playerkos19[3], playerkos19[4], playerkos19[5], playerkos19[6]];
-        }else if(this.state.graphYear === "2020"){
-            graphStats = [playerkos20[0], playerkos20[1], playerkos20[2], playerkos20[3], playerkos20[4], playerkos20[5], playerkos20[6]];
-        }
-        graphName = "Total Kos"
-    }else if(this.state.graphName === "Total Kos"){
-        if(this.state.graphYear === "Overall"){
-            graphStats = [this.props.threeP19[0] + this.props.fourP19[0] + this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP19[1] + this.props.fourP19[1] + this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP19[2] + this.props.fourP19[2] + this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP19[3] + this.props.fourP19[3] + this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP19[4] + this.props.fourP19[4] + this.props.threeP20[4] + this.props.fourP20[4], this.props.threeP19[5] + this.props.fourP19[5] + this.props.threeP20[5] + this.props.fourP20[5], this.props.threeP19[6] + this.props.fourP19[6] + this.props.threeP20[6] + this.props.fourP20[6]];
-        }else if(this.state.graphYear === "2019"){
-            graphStats = [this.props.threeP19[0] + this.props.fourP19[0], this.props.threeP19[1] + this.props.fourP19[1], this.props.threeP19[2] + this.props.fourP19[2], this.props.threeP19[3] + this.props.fourP19[3], this.props.threeP19[4] + this.props.fourP19[4], this.props.threeP19[5] + this.props.fourP19[5], this.props.threeP19[6] + this.props.fourP19[6]];
-        }else if(this.state.graphYear === "2020"){
-            graphStats = [this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP20[4] + this.props.fourP20[4], this.props.threeP20[5] + this.props.fourP20[5], this.props.threeP20[6] + this.props.fourP20[6]];
-        }
-        graphName = "Overall Wins";
+        this.setState({
+            topKos: topKos20,
+            topPlace: topPlace20
+        });
     }
-    this.setState({
-        graphName: graphName,
-        graphStats: graphStats
-    });
-  }
-  changeYearClick(){
-    var graphStats;
-    var graphYear;
-    if(this.state.graphYear === "Overall"){
-        if(this.state.graphName === "Overall Wins"){
-            graphStats = [this.props.threeP19[0] + this.props.fourP19[0], this.props.threeP19[1] + this.props.fourP19[1], this.props.threeP19[2] + this.props.fourP19[2], this.props.threeP19[3] + this.props.fourP19[3], this.props.threeP19[4] + this.props.fourP19[4], this.props.threeP19[5] + this.props.fourP19[5], this.props.threeP19[6] + this.props.fourP19[6]];
-        }else if(this.state.graphName === "3-Player Wins"){
-            graphStats = [this.props.threeP19[0], this.props.threeP19[1], this.props.threeP19[2], this.props.threeP19[3], this.props.threeP19[4], this.props.threeP19[5], this.props.threeP19[6]];
-        }else if(this.state.graphName === "4-Player Wins"){
-            graphStats = [this.props.fourP19[0], this.props.fourP19[1], this.props.fourP19[2], this.props.fourP19[3], this.props.fourP19[4], this.props.fourP19[5], this.props.fourP19[6]];
-        }else if(this.state.graphName === "Total Kos"){
-            graphStats = [playerkos19[0], playerkos19[1], playerkos19[2], playerkos19[3], playerkos19[4], playerkos19[5], playerkos19[6]];
-        }
-        graphYear = "2019";
-    }else if(this.state.graphYear === "2019"){
-        if(this.state.graphName === "Overall Wins"){
-            graphStats = [this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP20[4] + this.props.fourP20[4], this.props.threeP20[5] + this.props.fourP20[5], this.props.threeP20[6] + this.props.fourP20[6]];
-        }else if(this.state.graphName === "3-Player Wins"){
-            graphStats = [this.props.threeP20[0], this.props.threeP20[1], this.props.threeP20[2], this.props.threeP20[3], this.props.threeP20[4], this.props.threeP20[5], this.props.threeP20[6]];
-        }else if(this.state.graphName === "4-Player Wins"){
-            graphStats = [this.props.fourP20[0], this.props.fourP20[1], this.props.fourP20[2], this.props.fourP20[3], this.props.fourP20[4], this.props.fourP20[5], this.props.fourP20[6]];
-        }else if(this.state.graphName === "Total Kos"){
-            graphStats = [playerkos20[0], playerkos20[1], playerkos20[2], playerkos20[3], playerkos20[4], playerkos20[5]];
-        }
-        graphYear = "2020";
-    }else if(this.state.graphYear === "2020"){
-        if(this.state.graphName === "Overall Wins"){
-            graphStats = [this.props.threeP19[0] + this.props.fourP19[0] + this.props.threeP20[0] + this.props.fourP20[0], this.props.threeP19[1] + this.props.fourP19[1] + this.props.threeP20[1] + this.props.fourP20[1], this.props.threeP19[2] + this.props.fourP19[2] + this.props.threeP20[2] + this.props.fourP20[2], this.props.threeP19[3] + this.props.fourP19[3] + this.props.threeP20[3] + this.props.fourP20[3], this.props.threeP19[4] + this.props.fourP19[4] + this.props.threeP20[4] + this.props.fourP20[4], this.props.threeP19[5] + this.props.fourP19[5] + this.props.threeP20[5] + this.props.fourP20[5], this.props.threeP19[6] + this.props.fourP19[6] + this.props.threeP20[6] + this.props.fourP20[6]];
-        }else if(this.state.graphName === "3-Player Wins"){
-            graphStats = [this.props.threeP19[0] + this.props.threeP20[0], this.props.threeP19[1] + this.props.threeP20[1], this.props.threeP19[2] + this.props.threeP20[2], this.props.threeP19[3] + this.props.threeP20[3], this.props.threeP19[4] + this.props.threeP20[4], this.props.threeP19[5] + this.props.threeP20[5], this.props.threeP19[6] + this.props.threeP20[6]];
-        }else if(this.state.graphName === "4-Player Wins"){
-            graphStats = [this.props.fourP19[0] + this.props.fourP20[0], this.props.fourP19[1] + this.props.fourP20[1], this.props.fourP19[2] + this.props.fourP20[2], this.props.fourP19[3] + this.props.fourP20[3], this.props.fourP19[4] + this.props.fourP20[4], this.props.fourP19[5] + this.props.fourP20[5], this.props.fourP19[6] + this.props.fourP20[6]];
-        }else if(this.state.graphName === "Total Kos"){
-            graphStats = [playerkos19[0] + playerkos20[0], playerkos19[1] + playerkos20[1], playerkos19[2] + playerkos20[2], playerkos19[3] + playerkos20[3], playerkos19[4] + playerkos20[4], playerkos19[5] + playerkos20[5], playerkos19[6] + playerkos20[6]];
-        }
-        graphYear = "Overall"
+    listTopKos() {
+        const numberOfTopKos = this.state.topKos;
+        numberOfTopKos.sort(function(a, b){
+            if(a.number < b.number) { return 1; }
+            if(a.number > b.number) { return -1; }
+            return 0;
+        });
+        const listTopKos = numberOfTopKos.map((player, index) => {
+          return <TopList key={index} id={index} name={player.name} number={player.number} />
+        });
+        return (
+          <div className="col-xs-12">{listTopKos}</div>
+        )
     }
-    this.setState({
-        graphYear: graphYear,
-        graphStats: graphStats
-    });
-  }
-  render(){
-    const options = {
-      title: {
-        text: this.state.graphName
-      },
-      axisY:{
-        gridThickness: 0,
-        tickLength: 0,
-        lineThickness: 0,
-        labelFormatter: function(){
-          return " ";
-        }
-      },
-      backgroundColor: "white",
-      data: [{        
-                type: "column",
-                dataPoints: [
-                    { label: "Micah",  y: this.state.graphStats[0], color: "#ffc233"  },
-                    { label: "Tim", y: this.state.graphStats[1], color: "#9228de" },
-                    { label: "Doug", y: this.state.graphStats[2], color: "#70d115"  },
-                    { label: "Zack",  y: this.state.graphStats[3], color: "#ff78f1"  },
-                    { label: "Betsy", y: this.state.graphStats[4], color: "red"}, 
-                    { label: "James", y: this.state.graphStats[5], color: "gold"},
-                    { label: "Craig", y: this.state.graphStats[6], color: "silver"}
-                ]
-       }]
-   }
-    return (
+    listTopPlace() {
+        const numberOfTopPlace = this.state.topPlace;
+        numberOfTopPlace.sort(function(a, b){
+            if(a.number < b.number) { return -1; }
+            if(a.number > b.number) { return 1; }
+            return 0;
+        });
+        const listTopPlace = numberOfTopPlace.map((player, index) => {
+          return <TopList key={index} id={index} name={player.name} number={player.number} />
+        });
+        return (
+          <div className="col-xs-12">{listTopPlace}</div>
+        )
+    }
+    listTopPlayed() {
+        const numberOfTopPlayed = ultimateFighters;
+        numberOfTopPlayed.sort(function(a, b){
+            if(a.number < b.number) { return 1; }
+            if(a.number > b.number) { return -1; }
+            return 0;
+        });
+        const listTopPlayed = numberOfTopPlayed.map((player, index) => {
+            var imageString = player.name.toString();
+            console.log(imageString);
+            var splitString = imageString.split("/");
+            var splitAgain = splitString[3].split(".");
+            var splitName = splitAgain[0];
+          return <TopList key={index} id={index} name={splitName} number={player.number} />
+        });
+        return (
+          <div className="col-xs-12">{listTopPlayed}</div>
+        )
+    }
+    render(){
+     return (
         <div className="col-xs-12">
             <div className="row">
-                <div className="col-xs-6 col-md-offset-4 col-md-4" id="changeGraph" onClick={this.changeGraphClick}>Change Graph</div>
-                <div className="col-xs-6 col-md-offset-2 col-md-2 changeYear" onClick={this.changeYearClick}>{this.state.graphYear}</div>
-            </div>
-            <div className="row overall">
-                <div className="col-xs-12">
-                    <CanvasJSChart options = {options} />
+                <div className="col-xs-4">
+                    <div className="row">Top Place</div>
+                    <div className="row">
+                        {this.listTopPlace()}
+                    </div>
+                </div>
+                <div className="col-xs-4">
+                    <div className="row">Top Kos</div>
+                    <div className="row">
+                        {this.listTopKos()}
+                    </div>
+                </div>
+                <div className="col-xs-4">
+                    <div className="row">Most Played</div>
+                    <div className="row">
+                        {this.listTopPlayed()}
+                    </div>
                 </div>
             </div>
         </div>
-    )
-  }
+     )
+    }
+}
+
+class TopList extends React.Component {
+    render(){
+        return (
+            <div className="row">
+                <div>{this.props.name}  {this.props.number}</div>
+            </div>
+        )
+    }
 }
 
 class Stats extends React.Component {
@@ -2532,8 +2717,16 @@ class Stats extends React.Component {
         if(a.kos > b.kos) { return -1; }
         return 0;
     });
-    for(var i=0; i<3; i++){
-        totalKos.push(micahCharacters[i]);
+    console.log(micahCharacters);
+    for(var i=0; i < micahCharacters.length; i++){
+        if(micahCharacters[i].number < 3){
+            console.log("not enough games");
+        }else{
+            totalKos.push(micahCharacters[i]);
+        }
+        if(totalKos.length === 3){
+            break;
+        }else{}
     }
     averagePlace = ((gamePlace19[0] + gamePlace20[0])/(gamesPlayed19[0] + gamesPlayed20[0])).toFixed(2);
     highKoGames = highKoGames19[0] + highKoGames20[0];
@@ -2629,12 +2822,18 @@ class Stats extends React.Component {
             if(a.kos > b.kos) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<playerCharacters19.length; i++){
             if(playerCharacters19[i] === undefined){
                 totalKos.push({character: empty, number: null});
             }else{
-                totalKos.push(playerCharacters19[i]);
+                if(playerCharacters19[i].number < 3){
+                }else{
+                    totalKos.push(playerCharacters19[i]);
+                }
             }
+            if(totalKos.length === 3){
+                break;
+            }else{}
         }
         averagePlace = (gamePlace19[playerNumber]/gamesPlayed19[playerNumber]).toFixed(2);
         highKoGames = highKoGames19[playerNumber]; 
@@ -2669,12 +2868,19 @@ class Stats extends React.Component {
             if(a.kos > b.kos) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<playerCharacters20.length; i++){
             if(playerCharacters20[i] === undefined){
                 totalKos.push({character: empty, number: null});
             }else{
-                totalKos.push(playerCharacters20[i]);
+                if(playerCharacters20[i].number < 3){
+
+                }else{
+                    totalKos.push(playerCharacters20[i]);
+                }
             }
+            if(totalKos.length === 3){
+                break;
+            }else{}
         }
         averagePlace = (gamePlace20[playerNumber]/gamesPlayed20[playerNumber]).toFixed(2);
         highKoGames = highKoGames20[playerNumber];
@@ -2709,12 +2915,19 @@ class Stats extends React.Component {
             if(a.kos > b.kos) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<playerCharacters.length; i++){
             if(playerCharacters[i] === undefined){
                 totalKos.push({character: empty, number: null});
             }else{
-                totalKos.push(playerCharacters[i]);
+                if(playerCharacters[i].number < 3){
+
+                }else{
+                    totalKos.push(playerCharacters[i]);
+                }
             }
+            if(totalKos.length === 3){
+                break;
+            }else{}
         }
         averagePlace = ((gamePlace19[playerNumber] + gamePlace20[playerNumber])/(gamesPlayed19[playerNumber] + gamesPlayed20[playerNumber])).toFixed(2);
         highKoGames = highKoGames19[playerNumber] + highKoGames20[playerNumber];
@@ -2767,12 +2980,19 @@ class Stats extends React.Component {
             if(a.kos > b.kos) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<playerArray.length; i++){
             if(playerArray[i] === undefined){
                 totalKos.push({character: empty, number: null});
             }else{
-                totalKos.push(playerArray[i]);
+                if(playerArray[i].number < 3){
+
+                }else{
+                    totalKos.push(playerArray[i]);
+                }
             }
+            if(totalKos.length === 3){
+                break;
+            }else{}
         }
         averagePlace = ((gamePlace19[nameIndex + 1] + gamePlace20[nameIndex + 1])/(gamesPlayed19[nameIndex + 1] + gamesPlayed20[nameIndex + 1])).toFixed(2);
         highKoGames = highKoGames19[nameIndex + 1] + highKoGames20[nameIndex + 1];
@@ -2806,12 +3026,19 @@ class Stats extends React.Component {
             if(a.kos > b.kos) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<playerArray19.length; i++){
             if(playerArray19[i] === undefined){
                 totalKos.push({character: empty, number: null});
             }else{
-                totalKos.push(playerArray19[i]);
+                if(playerArray19[i].number < 3){
+
+                }else{
+                    totalKos.push(playerArray19[i]);
+                }
             }
+            if(totalKos.length === 3){
+                break;
+            }else{}
         }
         averagePlace = (gamePlace19[nameIndex + 1]/gamesPlayed19[nameIndex + 1]).toFixed(2);
         highKoGames = highKoGames19[nameIndex + 1];
@@ -2845,12 +3072,19 @@ class Stats extends React.Component {
             if(a.kos > b.kos) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<playerArray20.length; i++){
             if(playerArray20[i] === undefined){
                 totalKos.push({character: empty, number: null});
             }else{
-                totalKos.push(playerArray20[i]);
+                if(playerArray20[i].number < 3){
+
+                }else{
+                    totalKos.push(playerArray20[i]);
+                }
             }
+            if(totalKos.length === 3){
+                break;
+            }else{}
         }
         averagePlace = (gamePlace20[nameIndex + 1]/gamesPlayed20[nameIndex + 1]).toFixed(2);
         highKoGames = highKoGames20[nameIndex + 1];
@@ -2906,12 +3140,19 @@ class Stats extends React.Component {
             if(a.kos > b.kos) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<playerArray.length; i++){
             if(playerArray[i] === undefined){
                 totalKos.push({character: empty, number: null});
             }else{
-                totalKos.push(playerArray[i]);
+                if(playerArray[i].number < 3){
+
+                }else{
+                    totalKos.push(playerArray[i]);
+                }
             }
+            if(totalKos.length === 3){
+                break;
+            }else{}
         }
         averagePlace = ((gamePlace19[nameIndex - 1] + gamePlace20[nameIndex - 1])/(gamesPlayed19[nameIndex - 1] + gamesPlayed20[nameIndex - 1])).toFixed(2);
         highKoGames = highKoGames19[nameIndex - 1] + highKoGames20[nameIndex - 1];
@@ -2945,12 +3186,19 @@ class Stats extends React.Component {
             if(a.kos > b.kos) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<playerArray19.length; i++){
             if(playerArray19[i] === undefined){
                 totalKos.push({character: empty, number: null});
             }else{
-                totalKos.push(playerArray19[i]);
+                if(playerArray19[i].number < 3){
+
+                }else{
+                    totalKos.push(playerArray19[i]);
+                }
             }
+            if(totalKos.length === 3){
+                break;
+            }else{}
         }
         averagePlace = (gamePlace19[nameIndex - 1]/gamesPlayed19[nameIndex - 1]).toFixed(2);
         highKoGames = highKoGames19[nameIndex - 1];
@@ -2984,12 +3232,19 @@ class Stats extends React.Component {
             if(a.kos > b.kos) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<playerArray20.length; i++){
             if(playerArray20[i] === undefined){
                 totalKos.push({character: empty, number: null});
             }else{
-                totalKos.push(playerArray20[i]);
+                if(playerArray20[i].number < 3){
+
+                }else{
+                    totalKos.push(playerArray20[i]);
+                }
             }
+            if(totalKos.length === 3){
+                break;
+            }else{}
         }
         averagePlace = (gamePlace20[nameIndex - 1]/gamesPlayed20[nameIndex - 1]).toFixed(2);
         highKoGames = highKoGames20[nameIndex - 1];
@@ -3074,7 +3329,8 @@ class Weekly extends React.Component {
       date: "Apr 8 2020",
       weeklyWins: [0,0,0,0,0,0,0],
       weeklyKos: [0,0,0,0,0,0,0],
-      weeklyAvg: [0,0,0,0,0,0,0]
+      weeklyAvg: [0,0,0,0,0,0,0],
+      weeklyPoints: [0,0,0,0,0,0,0,]
     }
   this.nextDate = this.nextDate.bind(this);
   this.previousDate = this.previousDate.bind(this);
@@ -3086,36 +3342,142 @@ class Weekly extends React.Component {
     weeklyGames = [0,0,0,0,0,0,0];
     weeklyPlace = [0,0,0,0,0,0,0];
     weeklyAvg = [0,0,0,0,0,0,0];
+    weeklyPoints = [0,0,0,0,0,0,0];
     for(var i=0; i < gameData.length; i++){
         for(var j=0; j < 4; j++){
             if(gameData[i][j].name === "Micah" && gameData[i][5].date === newDate){
                 weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
                 weeklyGames[0] ++;
                 weeklyPlace[0] = weeklyPlace[0] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[0] = weeklyPoints[0] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[0] = weeklyPoints[0] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[0] = weeklyPoints[0] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[0] = weeklyPoints[0] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[0] = weeklyPoints[0] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Tim" && gameData[i][5].date === newDate){
                 weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
                 weeklyGames[1] ++;
                 weeklyPlace[1] = weeklyPlace[1] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[1] = weeklyPoints[1] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[1] = weeklyPoints[1] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[1] = weeklyPoints[1] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[1] = weeklyPoints[1] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[1] = weeklyPoints[1] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Doug" && gameData[i][5].date === newDate){
                 weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
                 weeklyGames[2] ++;
                 weeklyPlace[2] = weeklyPlace[2] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[2] = weeklyPoints[2] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[2] = weeklyPoints[2] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[2] = weeklyPoints[2] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[2] = weeklyPoints[2] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[2] = weeklyPoints[2] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Zack" && gameData[i][5].date === newDate){
                 weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
                 weeklyGames[3] ++;
                 weeklyPlace[3] = weeklyPlace[3] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[3] = weeklyPoints[3] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[3] = weeklyPoints[3] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[3] = weeklyPoints[3] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[3] = weeklyPoints[3] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[3] = weeklyPoints[3] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date === newDate){
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[4] = weeklyPoints[4] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[4] = weeklyPoints[4] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[4] = weeklyPoints[4] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[4] = weeklyPoints[4] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[4] = weeklyPoints[4] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "James" && gameData[i][5].date === newDate){
                 weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
                 weeklyGames[5] ++;
                 weeklyPlace[5] = weeklyPlace[5] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[5] = weeklyPoints[5] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[5] = weeklyPoints[5] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[5] = weeklyPoints[5] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[5] = weeklyPoints[5] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[5] = weeklyPoints[5] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Craig" && gameData[i][5].date === newDate){
                 weeklyKos[6] = weeklyKos[6] + gameData[i][j].kos;
                 weeklyGames[6] ++;
                 weeklyPlace[6] = weeklyPlace[6] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[6] = weeklyPoints[6] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[6] = weeklyPoints[6] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[6] = weeklyPoints[6] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[6] = weeklyPoints[6] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[6] = weeklyPoints[6] + 1;
+                    }
+                }
             }
         }
         if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
@@ -3144,7 +3506,8 @@ class Weekly extends React.Component {
       date: newDate,
       weeklyWins: weeklyWins,
       weeklyAvg: weeklyAvg,
-      weeklyKos: weeklyKos
+      weeklyKos: weeklyKos,
+      weeklyPoints: weeklyPoints
     });
   }
   previousDate(){
@@ -3153,6 +3516,7 @@ class Weekly extends React.Component {
     weeklyGames = [0,0,0,0,0,0,0];
     weeklyPlace = [0,0,0,0,0,0,0];
     weeklyAvg = [0,0,0,0,0,0,0];
+    weeklyPoints = [0,0,0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex > 0){
       var newDate = dates[dateIndex - 1];
@@ -3162,30 +3526,135 @@ class Weekly extends React.Component {
                 weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
                 weeklyGames[0] ++;
                 weeklyPlace[0] = weeklyPlace[0] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[0] = weeklyPoints[0] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[0] = weeklyPoints[0] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[0] = weeklyPoints[0] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[0] = weeklyPoints[0] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[0] = weeklyPoints[0] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Tim" && gameData[i][5].date === newDate){
                 weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
                 weeklyGames[1] ++;
                 weeklyPlace[1] = weeklyPlace[1] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[1] = weeklyPoints[1] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[1] = weeklyPoints[1] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[1] = weeklyPoints[1] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[1] = weeklyPoints[1] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[1] = weeklyPoints[1] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Doug" && gameData[i][5].date === newDate){
                 weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
                 weeklyGames[2] ++;
                 weeklyPlace[2] = weeklyPlace[2] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[2] = weeklyPoints[2] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[2] = weeklyPoints[2] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[2] = weeklyPoints[2] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[2] = weeklyPoints[2] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[2] = weeklyPoints[2] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Zack" && gameData[i][5].date === newDate){
                 weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
                 weeklyGames[3] ++;
                 weeklyPlace[3] = weeklyPlace[3] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[3] = weeklyPoints[3] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[3] = weeklyPoints[3] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[3] = weeklyPoints[3] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[3] = weeklyPoints[3] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[3] = weeklyPoints[3] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date === newDate){
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[4] = weeklyPoints[4] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[4] = weeklyPoints[4] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[4] = weeklyPoints[4] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[4] = weeklyPoints[4] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[4] = weeklyPoints[4] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "James" && gameData[i][5].date === newDate){
                 weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
                 weeklyGames[5] ++;
                 weeklyPlace[5] = weeklyPlace[5] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[5] = weeklyPoints[5] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[5] = weeklyPoints[5] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[5] = weeklyPoints[5] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[5] = weeklyPoints[5] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[5] = weeklyPoints[5] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Craig" && gameData[i][5].date === newDate){
                 weeklyKos[6] = weeklyKos[6] + gameData[i][j].kos;
                 weeklyGames[6] ++;
                 weeklyPlace[6] = weeklyPlace[6] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[6] = weeklyPoints[6] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[6] = weeklyPoints[6] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[6] = weeklyPoints[6] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[6] = weeklyPoints[6] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[6] = weeklyPoints[6] + 1;
+                    }
+                }
             }
         }
         if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
@@ -3214,7 +3683,8 @@ class Weekly extends React.Component {
         date: newDate,
         weeklyWins: weeklyWins,
         weeklyAvg: weeklyAvg,
-        weeklyKos: weeklyKos
+        weeklyKos: weeklyKos,
+        weeklyPoints: weeklyPoints
     });
     }
   }
@@ -3224,6 +3694,7 @@ class Weekly extends React.Component {
     weeklyGames = [0,0,0,0,0,0,0];
     weeklyPlace = [0,0,0,0,0,0,0];
     weeklyAvg = [0,0,0,0,0,0,0];
+    weeklyPoints = [0,0,0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex < dates.length - 1){
       var newDate = dates[dateIndex + 1];
@@ -3233,30 +3704,135 @@ class Weekly extends React.Component {
                 weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
                 weeklyGames[0] ++;
                 weeklyPlace[0] = weeklyPlace[0] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[0] = weeklyPoints[0] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[0] = weeklyPoints[0] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[0] = weeklyPoints[0] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[0] = weeklyPoints[0] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[0] = weeklyPoints[0] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Tim" && gameData[i][5].date === newDate){
                 weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
                 weeklyGames[1] ++;
                 weeklyPlace[1] = weeklyPlace[1] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[1] = weeklyPoints[1] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[1] = weeklyPoints[1] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[1] = weeklyPoints[1] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[1] = weeklyPoints[1] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[1] = weeklyPoints[1] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Doug" && gameData[i][5].date === newDate){
                 weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
                 weeklyGames[2] ++;
                 weeklyPlace[2] = weeklyPlace[2] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[2] = weeklyPoints[2] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[2] = weeklyPoints[2] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[2] = weeklyPoints[2] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[2] = weeklyPoints[2] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[2] = weeklyPoints[2] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Zack" && gameData[i][5].date === newDate){
                 weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
                 weeklyGames[3] ++;
                 weeklyPlace[3] = weeklyPlace[3] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[3] = weeklyPoints[3] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[3] = weeklyPoints[3] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[3] = weeklyPoints[3] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[3] = weeklyPoints[3] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[3] = weeklyPoints[3] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date === newDate){
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[4] = weeklyPoints[4] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[4] = weeklyPoints[4] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[4] = weeklyPoints[4] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[4] = weeklyPoints[4] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[4] = weeklyPoints[4] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "James" && gameData[i][5].date === newDate){
                 weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
                 weeklyGames[5] ++;
                 weeklyPlace[5] = weeklyPlace[5] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[5] = weeklyPoints[5] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[5] = weeklyPoints[5] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[5] = weeklyPoints[5] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[5] = weeklyPoints[5] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[5] = weeklyPoints[5] + 1;
+                    }
+                }
             }else if(gameData[i][j].name === "Craig" && gameData[i][5].date === newDate){
                 weeklyKos[6] = weeklyKos[6] + gameData[i][j].kos;
                 weeklyGames[6] ++;
                 weeklyPlace[6] = weeklyPlace[6] + (j + 1);
+                if(gameData[i][3].character === empty){
+                    if(j === 0){
+                        weeklyPoints[6] = weeklyPoints[6] + 3;
+                    }else if(j === 1){
+                        weeklyPoints[6] = weeklyPoints[6] + 1;
+                    }
+                }else{
+                    if(j === 0){
+                        weeklyPoints[6] = weeklyPoints[6] + 4;
+                    }else if(j === 1){
+                        weeklyPoints[6] = weeklyPoints[6] + 2;
+                    }else if(j === 2){
+                        weeklyPoints[6] = weeklyPoints[6] + 1;
+                    }
+                }
             }
         }
         if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
@@ -3285,7 +3861,8 @@ class Weekly extends React.Component {
       date: newDate,
       weeklyWins: weeklyWins,
       weeklyAvg: weeklyAvg,
-      weeklyKos: weeklyKos
+      weeklyKos: weeklyKos,
+      weeklyPoints: weeklyPoints
     });
     }
   }
@@ -3331,13 +3908,13 @@ class Weekly extends React.Component {
           </div>
           <div className="row">
             <div className="col-md-2 weeklyName">Avg Place</div>
-            {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[0]}</div> : null}
-            {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[1]}</div> : null}
-            {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[2]}</div> : null}
-            {this.state.weeklyAvg[3] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[3]}</div> : null}
-            {this.state.weeklyAvg[5] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[5]}</div> : null}
-            {this.state.weeklyAvg[6] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[6]}</div> : null}
-            {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[4]}</div> : null}
+            {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[0]}</div> : null}
+            {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[1]}</div> : null}
+            {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[2]}</div> : null}
+            {this.state.weeklyAvg[3] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[3]}</div> : null}
+            {this.state.weeklyAvg[5] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[5]}</div> : null}
+            {this.state.weeklyAvg[6] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[6]}</div> : null}
+            {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[4]}</div> : null}
           </div>
           <div className="row">
             <div className="col-md-2 weeklyName">Avg Kos</div>

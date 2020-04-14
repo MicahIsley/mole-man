@@ -171,6 +171,14 @@ html {
   border-color: blue;
 }
 
+.James {
+  border-color: black;
+}
+
+.Craig {
+  border-color: yellow;
+}
+
 .displayBox:hover .playerName {
   display: block;
 }
