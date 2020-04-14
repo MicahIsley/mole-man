@@ -97,7 +97,7 @@ const gameData = [
     {name: "Doug", character: sheik, kos: 0},
     {name: "Zack", character: hero, kos: 0},
     {stage: "Custom"},
-    {date: "Sept 11 2019"}
+    {date: new Date(2019,8,11)}
   ],/*[
     {name: "Doug", character: banjo, kos: 0},
     {name: "Zack", character: banjo, kos: 0},
@@ -139,28 +139,28 @@ const gameData = [
     {name: "Micah", character: peach, kos: 0},
     {name: "Doug", character: samus, kos: 1},
     {stage: "custom"},
-    {date: "Sept 11 2019"}
+    {date: new Date(2019,8,11)}
   ],[
     {name: "Doug", character: samus, kos: 4},
     {name: "Tim", character: ness, kos: 2},
     {name: "Zack", character: drmario, kos: 4},
     {name: "Micah", character: peach, kos: 1},
     {stage: "Custom"},
-    {date: "Sept 11 2019"}
+    {date: new Date(2019,8,11)}
   ],[
     {name: "Doug", character: luigi, kos: 5},
     {name: "Zack", character: drmario, kos: 4},
     {name: "Tim", character: ness, kos: 2},
     {name: "Micah", character: incineroar, kos: 0},
     {stage: "Mario Maker"},
-    {date: "Sept 11 2019"}
+    {date: new Date(2019,8,11)}
   ],[
     {name: "Tim", character: samus, kos: 6},
     {name: "Doug", character: kirby, kos: 2},
     {name: "Zack", character: drmario, kos: 0},
     {name: "Micah", character: incineroar, kos: 3},
     {stage: "Corneria"},
-    {date: "Sept 11 2019"}
+    {date: new Date(2019,8,11)}
   ],/*[
     {name: "Micah", character: bowserjr, kos: 0},
     {name: "Tim", character: samus, kos: 0},
@@ -174,1314 +174,1315 @@ const gameData = [
     {name: "Tim", character: cloud, kos: 1},
     {name: " " , character: empty, kos: 0},
     {stage: "Custom"},
-    {date: "Sept 18 2019"}
+    {date: new Date(2019,8,18)}
   ],[
     {name: "Micah", character: darkpit, kos: 0},
     {name: "Tim", character: pacman, kos: 0},
     {name: "Doug", character: zerosuitsamus, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Peach's Castle"},
-    {date: "Sept 18 2019"}
+    {date: new Date(2019,8,18)}
   ],[
     {name: "Betsy", character: bowser, kos: 4},
     {name: "Tim", character: pacman, kos: 2},
     {name: "Doug", character: zerosuitsamus, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Sept 18 2019"}
+    {date: new Date(2019,8,18)}
   ],[
     {name: "Micah", character: iceclimbers, kos: 4},
     {name: "Tim", character: samus, kos: 3},
     {name: "Doug", character: toonlink, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Sept 18 2019"}
+    {date: new Date(2019,8,18)}
   ],[
     {name: "Tim", character: samus, kos: 0},
     {name: "Micah", character: lucario, kos: 0},
     {name: "Doug", character: samus, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Sept 18 2019"}
+    {date: new Date(2019,8,18)}
   ],[
     {name: "Tim", character: ness, kos: 0},
     {name: "Doug", character: marth, kos: 0},
     {name: "Micah", character: miiswordfighter, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Sept 18 2019"}
+    {date: new Date(2019,8,18)}
   ],[
     {name: "Tim", character: darksamus, kos: 4},
     {name: "Zack", character: kingdedede, kos: 4},
     {name: "Micah", character: incineroar, kos: 0},
     {name: "", character: empty},
     {stage: "Spiral Mountain"},
-    {date: "Sept 25 2019"}
+    {date: new Date(2019,8,25)}
   ],[
     {name: "Micah", character: bowserjr, kos: 4},
     {name: "Zack", character: corrin, kos: 2},
     {name: "Tim", character: samus, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Kongo Jungle"},
-    {date: "Sept 25 2019"}
+    {date: new Date(2019,8,25)}
   ],[
     {name: "Zack", character: corrin, kos: 0},
     {name: "Micah", character: bowserjr, kos: 0},
     {name: "Tim", character: samus, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Unknown"},
-    {date: "Sept 25 2019"}
+    {date: new Date(2019,8,25)}
   ],[
     {name: "Zack", character: yoshi, kos: 3},
     {name: "Micah", character: iceclimbers, kos: 2},
     {name: "Tim", character: ness, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Paper Mario"},
-    {date: "Sept 25 2019"}
+    {date: new Date(2019,8,25)}
   ],[
     {name: "Zack", character: yoshi, kos: 2},
     {name: "Tim", character: ness, kos: 4},
     {name: "Micah", character: iceclimbers, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Big Battlefield"},
-    {date: "Sept 25 2019"}
+    {date: new Date(2019,8,25)}
   ],[
     {name: "Tim", character: ness, kos: 3},
     {name: "Zack", character: drmario, kos: 4},
     {name: "Micah", character: peach, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Mario Galaxy"},
-    {date: "Sept 25 2019"}
+    {date: new Date(2019,8,25)}
   ],[
     {name: "Zack", character: hero, kos: 6},
     {name: "Micah", character: peach, kos: 1},
     {name: "Tim", character: pacman, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Final Destination"},
-    {date: "Sept 25 2019"}
+    {date: new Date(2019,8,25)}
   ],[
     {name: "Tim", character: ness, kos: 5},
     {name: "Zack", character: corrin, kos: 2},
     {name: "Micah", character: banjo, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Kalos Pokemon League"},
-    {date: "Sept 25 2019"}
+    {date: new Date(2019,8,25)}
   ],[
     {name: "Micah", character: iceclimbers, kos: 2},
     {name: "Doug", character: marth, kos: 4},
     {name: "Tim", character: ness, kos:2},
     {name: "", character: empty, kos: 0},
     {stage: "Final Destination"},
-    {date: "Oct 9 2019"}
+    {date: new Date(2019,9,9)}
   ],[
     {name: "Doug", character: hero, kos: 4},
     {name: "Tim", character: ness, kos: 1},
     {name: "Micah", character: simon, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Yoshi's Island"},
-    {date: "Oct 9 2019"}
+    {date: new Date(2019,9,9)}
   ],[
     {name: "Zack", character: corrin, kos: 4},
     {name: "Tim", character: pacman, kos: 2},
     {name: "Doug", character: link, kos: 3},
     {name: "Micah", character: simon, kos: 2},
     {stage: "Rainbow Cruise"},
-    {date: "Oct 9 2019"}
+    {date: new Date(2019,9,9)}
   ],[
     {name: "Zack", character: corrin, kos: 0},
     {name: "Tim", character: ness, kos: 0},
     {name: "Doug", character: fox, kos: 0},
     {name: "Micah", character: bowserjr, kos: 0},
     {stage: "Rainbow Cruise"},
-    {date: "Oct 9 2019"}
+    {date: new Date(2019,9,9)}
   ],[
     {name: "Tim", character: samus, kos: 2},
     {name: "Zack", character: kingdedede, kos: 4},
     {name: "Micah", character: bowserjr, kos: 4},
     {name: "Doug", character: kingkrool, kos: 1},
     {stage: "Tortimer Island"},
-    {date: "Oct 9 2019"}
+    {date: new Date(2019,9,9)}
   ],[
     {name: "Micah", character: banjo, kos: 3},
     {name: "Tim", character: darksamus, kos: 4},
     {name: "Doug", character: donkeykong, kos: 2},
     {name: "Zack", character: roy, kos: 1},
     {stage: "Balloon Fight"},
-    {date: "Oct 9 2019"}
+    {date: new Date(2019,9,9)}
   ],[
     {name: "Micah", character: zelda, kos: 3},
     {name: "Doug", character: luigi, kos: 3},
     {name: "Zack", character: roy, kos: 1},
     {name: "Tim", character: darksamus, kos: 2},
     {stage: "Custom"},
-    {date: "Oct 9 2019"}
+    {date: new Date(2019,9,9)}
   ],[
     {name: "Doug", character: samus, kos: 1},
     {name: "Zack", character: yoshi, kos: 3},
     {name: "Micah", character: zelda, kos: 3},
     {name: "Tim", character: donkeykong, kos: 4},
     {stage: "Duck Hunt"},
-    {date: "Oct 9 2019"}
+    {date: new Date(2019,9,9)}
   ],[
     {name: "Betsy", character: villager, kos: 2},
     {name: "Zack", character: yoshi, kos: 4},
     {name: "Doug", character: younglink, kos: 4},
     {name: "Tim", character: ness, kos: 1},
     {stage: "Custom"},
-    {date: "Oct 9 2019"}
+    {date: new Date(2019,9,9)}
   ],[
     {name: "Zack", character: yoshi, kos: 0},
     {name: "Tim", character: ness, kos: 0},
     {name: "Doug", character: pokemontrainer, kos: 0},
     {name: "Micah", character: incineroar, kos: 0},
     {stage: ""},
-    {date: "Oct 9 2019"}
+    {date: new Date(2019,9,9)}
   ],[
     {name: "Zack", character: samus, kos: 2},
     {name: "Tim", character: pacman, kos: 2},
     {name: "Micah", character: ken, kos: 2},
     {name: "Doug", character: sheik, kos: 3},
     {stage: "Odessy"},
-    {date: "Oct 16 2019"}
+    {date: new Date(2019,9,16)}
   ],[
     {name: "Micah", character: ridley, kos: 4},
     {name: "Zack", character: samus, kos: 1},
     {name: "Tim", character: pacman, kos: 3},
     {name: "Doug", character: ike, kos: 3},
     {stage: "Pokemon Stadium"},
-    {date: "Oct 16 2019"}
+    {date: new Date(2019,9,16)}
   ],[
     {name: "Zack", character: hero, kos: 4},
     {name: "Tim", character: daisy, kos: 2},
     {name: "Doug", character: younglink, kos: 5},
     {name: "Micah", character: wiifittrainer, kos: 0},
     {stage: "Town & City"},
-    {date: "Oct 16 2019"}
+    {date: new Date(2019,9,16)}
   ],[
     {name: "Zack", character: roy, kos: 0},
     {name: "Doug", character: marth, kos: 0},
     {name: "Micah", character: iceclimbers, kos: 0},
     {name: "Tim", character: jigglypuff, kos: 0},
     {stage: "Onett"},
-    {date: "Oct 16 2019"}
+    {date: new Date(2019,9,16)}
   ],[
     {name: "Micah", character: iceclimbers, kos: 3},
     {name: "Zack", character: roy, kos: 4},
     {name: "Tim", character: ness, kos: 3},
     {name: "Doug", character: samus, kos: 0},
     {stage: "Custom"},
-    {date: "Oct 16 2019"}
+    {date: new Date(2019,9,16)}
   ],[
     {name: "Doug", character: samus, kos: 4},
     {name: "Micah", character: zelda, kos: 3},
     {name: "Tim", character: ness, kos: 3},
     {name: "Zack", character: drmario, kos: 0},
     {stage: "Magicant"},
-    {date: "Oct 16 2019"}
+    {date: new Date(2019,9,16)}
   ],[
     {name: "Doug", character: joker, kos: 5},
     {name: "Micah", character: peach, kos: 2},
     {name: "Zack", character: drmario, kos: 2},
     {name: "Tim", character: ness, kos: 2},
     {stage: "Mario Kart"},
-    {date: "Oct 16 2019"}
+    {date: new Date(2019,9,16)}
   ],[
     {name: "Micah", character: isabell, kos: 5},
     {name: "Zack", character: drmario, kos: 4},
     {name: "Tim", character: ness, kos: 0},
     {name: "Doug", character: kirby, kos: 1},
     {stage: "Great Bay"},
-    {date: "Oct 16 2019"}
+    {date: new Date(2019,9,16)}
   ],[
     {name: "Zack", character: corrin, kos: 5},
     {name: "Micah", character: ken, kos: 2},
     {name: "Doug", character: lucario, kos: 3},
     {name: "Tim", character: ness, kos: 1},
     {stage: "Dream Land"},
-    {date: "Oct 16 2019"}
+    {date: new Date(2019,9,16)}
   ],[
     {name: "Tim", character: ness, kos: 5},
     {name: "Zack", character: lucas, kos: 0},
     {name: "Micah", character: bowserjr, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Mario Galaxy"},
-    {date: "Oct 23 2019"}
+    {date: new Date(2019,9,23)}
   ],[
     {name: "Zack", character: yoshi, kos: 4},
     {name: "Tim", character: darksamus, kos: 1},
     {name: "Micah", character: zelda, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Super Happy Tree"},
-    {date: "Oct 23 2019"}
+    {date: new Date(2019,9,23)}
   ],[
     {name: "Micah", character: zelda, kos: 4},
     {name: "Zack", character: yoshi, kos: 1},
     {name: "Tim", character: pacman, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Coliseum"},
-    {date: "Oct 23 2019"}
+    {date: new Date(2019,9,23)}
   ],[
     {name: "Zack", character: drmario, kos: 4},
     {name: "Tim", character: pacman, kos: 3},
     {name: "Micah", character: simon, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Yoshi's Island"},
-    {date: "Oct 23 2019"}
+    {date: new Date(2019,9,23)}
   ],[
     {name: "Micah", character: incineroar, kos:0},
     {name: "Tim", character: donkeykong, kos:0},
     {name: "Zack", character: drmario, kos:0},
     {name: "", character: empty, kos: 0},
     {stage: "Peach's Castle"},
-    {date: "Oct 23 2019"}
+    {date: new Date(2019,9,23)}
   ],[
     {name: "Tim", character: samus, kos: 5},
     {name: "Zack", character: bowser, kos: 1},
     {name: "Micah", character: isabell, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Skyloft"},
-    {date: "Oct 23 2019"}
+    {date: new Date(2019,9,23)}
   ],[
     {name: "Tim", character: samus, kos: 2},
     {name: "Zack", character: bowser, kos: 4},
     {name: "Micah", character: peach, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Luigi's Mansion"},
-    {date: "Oct 23 2019"}
+    {date: new Date(2019,9,23)}
   ],[
     {name: "Zack", character: corrin, kos: 5},
     {name: "Tim", character: donkeykong, kos: 0},
     {name: "Micah", character: peach, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Final Destination"},
-    {date: "Oct 23 2019"}
+    {date: new Date(2019,9,23)}
   ],[
     {name: "Zack", character: hero, kos: 2},
     {name: "Tim", character: darksamus, kos: 3},
     {name: "Micah", character: ken, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Town and City"},
-    {date: "Oct 23 2019"}
+    {date: new Date(2019,9,23)}
   ],[
     {name: "Zack", character: hero, kos: 6},
     {name: "Tim", character: darksamus, kos: 1},
     {name: "Micah", character: ken, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Fourside"},
-    {date: "Oct 23 2019"}
+    {date: new Date(2019,9,23)}
   ],[
     {name: "Micah", character: bowserjr , kos: 3},
     {name: "Doug", character: terry, kos: 4},
     {name: "Zack", character: yoshi, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Kongo Jungle"},
-    {date: "Dec 4 2019"}
+    {date: new Date(2019,11,4)}
   ],[
     {name: "Zack", character: roy, kos: 2},
     {name: "Micah", character: peach, kos: 1},
     {name: "Doug", character: hero, kos: 4},
     {name: "", character: empty, kos: 0},
     {stage: "Smashville"},
-    {date: "Dec 4 2019"}
+    {date: new Date(2019,11,4)}
   ],[
     {name: "Betsy", character: bowser, kos: 4},
     {name: "Doug", character: joker, kos: 3},
     {name: "Zack", character: roy, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Rainbow Cruise"},
-    {date: "Dec 4 2019"}
+    {date: new Date(2019,11,4)}
   ],[
     {name: "Micah", character: incineroar, kos: 4},
     {name: "Zack", character: roy, kos: 3},
     {name: "Doug", character: diddykong, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Duck Hunt"},
-    {date: "Dec 4 2019"}
+    {date: new Date(2019,11,4)}
   ],[
     {name: "Doug", character: samus, kos: 6},
     {name: "Zack", character: corrin, kos: 1},
     {name: "Micah", character: iceclimbers, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Peach's Castle"},
-    {date: "Dec 4 2019"}
+    {date: new Date(2019,11,4)}
   ],[
     {name: "Doug", character: samus, kos: 2},
     {name: "Tim", character: samus, kos: 5},
     {name: "Micah", character: ridley, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Lylat Cruise"},
-    {date: "Dec 18 2019"}
+    {date: new Date(2019,11,18)}
   ],[
     {name: "Micah", character: terry, kos: 3},
     {name: "Tim", character: ness, kos: 3},
     {name: "Doug", character: joker, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Hyrule Castle"},
-    {date: "Dec 18 2019"}
+    {date: new Date(2019,11,18)}
   ],[
     {name: "Tim", character: ness, kos: 2},
     {name: "Zack", character: kirby, kos: 4},
     {name: "Doug", character: captainfalcon, kos: 4},
     {name: "Micah", character: bowserjr, kos: 1},
     {stage: "Battlefield"},
-    {date: "Dec 18 2019"}
+    {date: new Date(2019,11,18)}
   ],[
     {name: "Tim", character: samus, kos: 3},
     {name: "Zack", character: kirby, kos: 3},
     {name: "Micah", character: bowserjr, kos: 3},
     {name: "Doug", character: roy, kos: 2},
     {stage: "Peach's Castle"},
-    {date: "Dec 18 2019"}
+    {date: new Date(2019,11,18)}
   ],[
     {name: "Micah", character: incineroar, kos: 8},
     {name: "Tim", character: darksamus, kos: 1},
     {name: "Doug", character: zerosuitsamus, kos: 1},
     {name: "Zack", character: ridley, kos: 1},
     {stage: "Duck Hunt"},
-    {date: "Dec 18 2019"}
+    {date: new Date(2019,11,18)}
   ],[
     {name: "Micah", character: incineroar, kos: 4},
     {name: "Zack", character: hero, kos: 5},
     {name: "Tim", character: pacman, kos: 1},
     {name: "Doug", character: pokemontrainer, kos: 1},
     {stage: "Battlefield"},
-    {date: "Dec 18 2019"}
+    {date: new Date(2019,11,18)}
   ],[
     {name: "Zack", character: hero, kos: 5},
     {name: "Doug", character: terry, kos: 1},
     {name: "Tim", character: pacman, kos: 2},
     {name: "Micah", character: luigi, kos: 2},
     {stage: "Battlefield"},
-    {date: "Dec 18 2019"}
+    {date: new Date(2019,11,18)}
   ],[
     {name: "Tim", character: ness, kos: 4},
     {name: "Doug", character: younglink, kos: 4},
     {name: "Zack", character: yoshi, kos: 1},
     {name: "Micah", character: peach, kos: 2},
     {stage: "Skyloft"},
-    {date: "Dec 18 2019"}
+    {date: new Date(2019,11,18)}
   ],[
     {name: "Tim", character: ness, kos: 5},
     {name: "Zack", character: roy, kos: 1},
     {name: "Micah", character: iceclimbers, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: ""},
-    {date: "Dec 18 2019"}
+    {date: new Date(2019,11,18)}
   ],[
     {name: "Zack", character: corrin, kos: 4},
     {name: "Doug", character: terry, kos: 4},
     {name: "Micah", character: bowserjr, kos: 2},
     {name: "Tim", character: ness, kos: 0},
     {stage: "Pilot Wings"},
-    {date: "Jan 16 2020"}
+    {date: new Date(2020,0,16)}
   ],[
     {name: "Zack", character: kirby, kos: 5},
     {name: "Tim", character: pacman, kos: 4},
     {name: "Doug", character: joker, kos: 1},
     {name: "Micah", character: peach, kos: 1},
     {stage: "Final Destination"},
-    {date: "Jan 16 2020"}
+    {date: new Date(2020,0,16)}
   ],[
     {name: "Zack", character: kirby, kos: 6},
     {name: "Doug", character: samus, kos: 3},
     {name: "Micah", character: incineroar, kos: 2},
     {name: "Tim", character: pacman, kos: 0},
     {stage: "Super Happy Tree"},
-    {date: "Jan 16 2020"}
+    {date: new Date(2020,0,16)}
   ],[
     {name: "Micah", character: iceclimbers, kos: 5},
     {name: "Tim", character: darksamus, kos: 1},
     {name: "Doug", character: luigi, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Custom"},
-    {date: "Jan 16 2020"}
+    {date: new Date(2020,0,16)}
   ],[
     {name: "Zack", character: yoshi, kos: 4},
     {name: "Tim", character: samus, kos: 1},
     {name: "Doug", character: marth, kos: 5},
     {name: "Micah", character: simon, kos: 1},
     {stage: "Battlefield"},
-    {date: "Jan 16 2020"}
+    {date: new Date(2020,0,16)}
   ],[
     {name: "Micah", character: inkling, kos: 4},
     {name: "Tim", character: samus, kos: 3},
     {name: "Zack", character: yoshi, kos: 3},
     {name: "Doug", character: pirahnaplant, kos: 1},
     {stage: "Duck Hunt"},
-    {date: "Jan 16 2020"}
+    {date: new Date(2020,0,16)}
   ],[
     {name: "Micah", character: terry, kos: 4},
     {name: "Zack", character: hero, kos: 4},
     {name: "Doug", character: toonlink, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Jan 16 2020"}
+    {date: new Date(2020,0,16)}
   ],[
     {name: "Micah", character: zelda, kos: 2},
     {name: "Doug", character: donkeykong, kos: 5},
     {name: "Zack", character: peach, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Super Mario Galaxy"},
-    {date: "Jan 16 2020"}
+    {date: new Date(2020,0,16)}
   ],[
     {name: "Micah", character: wiifittrainer, kos: 3},
     {name: "Doug", character: zerosuitsamus, kos: 4},
     {name: "Zack", character: pokemontrainer, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Pokemon Stadium 2"},
-    {date: "Jan 16 2020"}
+    {date: new Date(2020,0,16)}
   ],[
     {name: "Doug", character: samus, kos: 5},
     {name: "Zack", character: miigunner, kos: 1},
     {name: "Micah", character: terry, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Momento"},
-    {date: "Jan 22 2020"}
+    {date: new Date(2020,0,22)}
   ],[
     {name: "Micah", character: inkling, kos: 4},
     {name: "Zack", character: miibrawler, kos: 2},
     {name: "Doug", character: corrin, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Pokemon Stadium 2"},
-    {date: "Jan 22 2020"}
+    {date: new Date(2020,0,22)}
   ],[
     {name: "Micah", character: inkling, kos: 3},
     {name: "Doug", character: littlemac, kos: 4},
     {name: "Zack", character: miibrawler, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Smashville"},
-    {date: "Jan 22 2020"}
+    {date: new Date(2020,0,22)}
   ],[
     {name: "Micah", character: darkpit, kos: 5},
     {name: "Zack", character: kirby, kos: 3},
     {name: "Doug", character: rosalina, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Jan 22 2020"}
+    {date: new Date(2020,0,22)}
   ],[
     {name: "Zack", character: kirby, kos: 3},
     {name: "Doug", character: zerosuitsamus, kos: 4},
     {name: "Micah", character: mewtwo, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Corneria"},
-    {date: "Jan 22 2020"}
+    {date: new Date(2020,0,22)}
   ],[
     {name: "Micah", character: wiifittrainer, kos: 5},
     {name: "Zack", character: kirby, kos: 3},
     {name: "Doug", character: younglink, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Custom"},
-    {date: "Jan 22 2020"}
+    {date: new Date(2020,0,22)}
   ],[
     {name: "Zack", character: miigunner, kos: 3},
     {name: "Doug", character: luigi, kos: 2},
     {name: "Micah", character: simon, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "King of Fighters Stadium"},
-    {date: "Jan 22 2020"}
+    {date: new Date(2020,0,22)}
   ],[
     {name: "Zack", character: hero, kos: 3},
     {name: "Doug", character: roy, kos: 4},
     {name: "Micah", character: iceclimbers, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Jan 22 2020"}
+    {date: new Date(2020,0,22)}
   ],[
     {name: "Doug", character: pokemontrainer, kos: 6},
     {name: "Micah", character: olimar, kos: 0},
     {name: "Zack", character: hero, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Yoshi's Island"},
-    {date: "Jan 22 2020"}
+    {date: new Date(2020,0,22)}
   ],[
     {name: "Zack", character: yoshi, kos: 3},
     {name: "Betsy", character: villager, kos: 3},
     {name: "Doug", character: sonic, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Yoshi's Island"},
-    {date: "Jan 22 2020"}
+    {date: new Date(2020,0,22)}
   ],[
     {name: "Zack", character: miigunner, kos: 3},
     {name: "Doug", character: captainfalcon, kos: 4},
     {name: "Micah", character: incineroar, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Jan 22 2020"}
+    {date: new Date(2020,0,22)}
   ],[
     {name: "Doug", character: byleth, kos: 2},
     {name: "Zack", character: miigunner, kos: 3},
     {name: "Micah", character: diddykong, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Midgar"},
-    {date: "Jan 30 2020"}
+    {date: new Date(2020,0,30)}
   ],[
     {name: "Zack", character: miigunner, kos: 1},
     {name: "Doug", character: byleth, kos: 4},
     {name: "Micah", character: zelda, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Midgar"},
-    {date: "Jan 30 2020"}
+    {date: new Date(2020,0,30)}
   ],[
     {name: "Zack", character: byleth, kos: 5},
     {name: "Micah", character: incineroar, kos: 3},
     {name: "Doug", character: littlemac, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Peach's Castle"},
-    {date: "Jan 30 2020"}
+    {date: new Date(2020,0,30)}
   ],[
     {name: "Doug", character: captainfalcon, kos: 3},
     {name: "Micah", character: incineroar, kos: 4},
     {name: "Zack", character: byleth, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Pokemon Stadium"},
-    {date: "Jan 30 2020"}
+    {date: new Date(2020,0,30)}
   ],[
     {name: "Micah", character: bowserjr, kos: 4},
     {name: "Zack", character: yoshi, kos: 4},
     {name: "Doug", character: marth, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Pokemon Stadium"},
-    {date: "Jan 30 2020"}
+    {date: new Date(2020,0,30)}
   ],[
     {name: "Zack", character: drmario, kos: 5},
     {name: "Doug", character: samus, kos: 3},
     {name: "Micah", character: wiifittrainer, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Corneria"},
-    {date: "Jan 30 2020"}
+    {date: new Date(2020,0,30)}
   ],[
     {name: "Micah", character: wiifittrainer, kos: 5},
     {name: "Doug", character: link, kos: 3},
     {name: "Zack", character: drmario, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Dream Land"},
-    {date: "Jan 30 2020"}
+    {date: new Date(2020,0,30)}
   ],[
     {name: "Micah", character: terry, kos: 4},
     {name: "Doug", character: pokemontrainer, kos: 1},
     {name: "Zack", character: kingdedede, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Delfino Plaza"},
-    {date: "Jan 30 2020"}
+    {date: new Date(2020,0,30)}
   ],[
     {name: "Zack", character: corrin, kos: 4},
     {name: "Doug", character: zerosuitsamus, kos: 0},
     {name: "Micah", character: peach, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Custom"},
-    {date: "Jan 30 2020"}
+    {date: new Date(2020,0,30)}
   ],[
     {name: "Micah", character: byleth, kos: 5},
     {name: "Doug", character: joker, kos: 3},
     {name: "Zack", character: corrin, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Mario Galaxy"},
-    {date: "Jan 30 2020"}
+    {date: new Date(2020,0,30)}
   ],[
     {name: "Zack", character: hero, kos: 3},
     {name: "Micah", character: lucario, kos: 3},
     {name: "Doug", character: terry, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "3D Land"},
-    {date: "Jan 30 2020"}
+    {date: new Date(2020,0,30)}
   ],[
     {name: "Doug", character: duckhunt, kos: 2},
     {name: "Zack", character: hero, kos: 5},
     {name: "Micah", character: peach, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Micah", character: inkling, kos: 2},
     {name: "Zack", character: hero, kos: 4},
     {name: "Doug", character: banjo, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Town and City"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Micah", character: rob, kos: 3},
     {name: "Zack", character: hero, kos: 4},
     {name: "Doug", character: simon, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Kongo Jungle"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Zack", character: drmario, kos: 5},
     {name: "Micah", character: incineroar, kos: 2},
     {name: "Doug", character: byleth, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Micah", character: pirahnaplant, kos: 3},
     {name: "Doug", character: younglink, kos: 4},
     {name: "Zack", character: drmario, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Princess Peach's Castle"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Micah", character: wiifittrainer, kos: 3},
     {name: "Zack", character: samus, kos: 3},
     {name: "Doug", character: younglink, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Bridge of Eldin"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Micah", character: byleth, kos: 4},
     {name: "Zack", character: samus, kos: 3},
     {name: "Doug", character: ike, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "New Donk City Hall"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Zack", character: samus, kos: 5},
     {name: "Doug", character: roy, kos: 2},
     {name: "Micah", character: iceclimbers, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Mario Galaxy"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Zack", character: samus, kos: 2},
     {name: "Doug", character: samus, kos: 3},
     {name: "Micah", character: bowserjr, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Final Destination"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Micah", character: bowserjr, kos: 4},
     {name: "Zack", character: miigunner, kos: 4},
     {name: "Doug", character: captainfalcon, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Garreg Mack Monestary"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Zack", character: miigunner, kos: 5},
     {name: "Micah", character: zelda, kos: 1},
     {name: "Doug", character: duckhunt, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Green Greens"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Zack", character: miigunner, kos: 3},
     {name: "Doug", character: duckhunt, kos: 3},
     {name: "Micah", character: zelda, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "King of Fighters Stadium"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Micah", character: terry, kos: 4},
     {name: "Zack", character: corrin, kos: 3},
     {name: "Doug", character: kirby, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Spiral Mountain"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Zack", character: yoshi, kos: 3},
     {name: "Doug", character: ryu, kos: 1},
     {name: "Micah", character: pikachu, kos: 4},
     {name: "", character: empty, kos: 0},
     {stage: "Onett"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Zack", character: kirby, kos: 3},
     {name: "Doug", character: luigi, kos: 2},
     {name: "Micah", character: incineroar, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Big Battlefield"},
-    {date: "Feb 5 2020"}
+    {date: new Date(2020,1,5)}
   ],[
     {name: "Tim", character: samus, kos: 1},
     {name: "Zack", character: drmario, kos: 3},
     {name: "Micah", character: sonic, kos: 4},
     {name: "", character: empty, kos: 0},
     {stage: "Norfair"},
-    {date: "Feb 13 2020"}
+    {date: new Date(2020,1,13)}
   ],[
     {name: "Micah", character: simon, kos: 1},
     {name: "Tim", character: samus, kos: 3},
     {name: "Zack", character: drmario, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Mushroomy Kingdom"},
-    {date: "Feb 13 2020"}
+    {date: new Date(2020,1,13)}
   ],[
     {name: "Micah", character: byleth, kos: 5},
     {name: "Zack", character: samus, kos: 2},
     {name: "Tim", character: darksamus, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Garreg Mack Monestary"},
-    {date: "Feb 13 2020"}
+    {date: new Date(2020,1,13)}
   ],[
     {name: "Zack", character: miigunner, kos: 4},
     {name: "Tim", character: pacman, kos: 3},
     {name: "Micah", character: cloud, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Port Town Aero Drive"},
-    {date: "Feb 13 2020"}
+    {date: new Date(2020,1,13)}
   ],[
     {name: "Zack", character: miigunner, kos: 3},
     {name: "Tim", character: pacman, kos: 2},
     {name: "Micah", character: cloud, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Green Greens"},
-    {date: "Feb 13 2020"}
+    {date: new Date(2020,1,13)}
   ],[
     {name: "Tim", character: ness, kos: 5},
     {name: "Micah", character: peach, kos: 2},
     {name: "Zack", character: miigunner, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Great Bay"},
-    {date: "Feb 13 2020"}
+    {date: new Date(2020,1,13)}
   ],[
     {name: "Micah", character: terry, kos: 3},
     {name: "Tim", character: ness, kos: 2},
     {name: "Zack", character: kirby, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Final Destination"},
-    {date: "Feb 13 2020"}
+    {date: new Date(2020,1,13)}
   ],[
     {name: "Zack", character: hero, kos: 1},
     {name: "Micah", character: lucario, kos: 4},
     {name: "Tim", character: pacman, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Custom"},
-    {date: "Feb 13 2020"}
+    {date: new Date(2020,1,13)}
   ],[
     {name: "Micah", character: zelda, kos: 4},
     {name: "Doug", character: joker, kos: 2},
     {name: "Tim", character: pacman, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Town & City"},
-    {date: "Feb 19 2020"}
+    {date: new Date(2020,1,19)}
   ],[
     {name: "Micah", character: ridley, kos: 4},
     {name: "Doug", character: byleth, kos: 3},
     {name: "Tim", character: samus, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Lylat Cruise"},
-    {date: "Feb 19 2020"}
+    {date: new Date(2020,1,19)}
   ],[
     {name: "Doug", character: samus, kos: 2},
     {name: "Tim", character: samus, kos: 3},
     {name: "Micah", character: incineroar, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Find Mii"},
-    {date: "Feb 19 2020"}
+    {date: new Date(2020,1,19)}
   ],[
     {name: "Tim", character: darksamus, kos: 4},
     {name: "Micah", character: darkpit, kos: 4},
     {name: "Doug", character: marth, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Final Destination"},
-    {date: "Feb 19 2020"}
+    {date: new Date(2020,1,19)}
   ],[
     {name: "Tim", character: darksamus, kos: 5},
     {name: "Doug", character: captainfalcon, kos: 1},
     {name: "Micah", character: peach, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Mushroom Kingdom"},
-    {date: "Feb 19 2020"}
+    {date: new Date(2020,1,19)}
   ],[
     {name: "Doug", character: link, kos: 3},
     {name: "Tim", character: ness, kos: 2},
     {name: "Micah", character: peach, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Delfino Plaza"},
-    {date: "Feb 19 2020"}
+    {date: new Date(2020,1,19)}
   ],[
     {name: "Micah", character: simon, kos: 5},
     {name: "Tim", character: ness, kos: 2},
     {name: "Doug", character: younglink, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Final Destination"},
-    {date: "Feb 19 2020"}
+    {date: new Date(2020,1,19)}
   ],[
     {name: "Micah", character: terry, kos: 3},
     {name: "Tim", character: ness, kos: 4},
     {name: "Doug", character: toonlink, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Custom"},
-    {date: "Feb 19 2020"}
+    {date: new Date(2020,1,19)}
   ],[
     {name: "Micah", character: donkeykong, kos: 4},
     {name: "Tim", character: ness, kos: 2},
     {name: "Doug", character: diddykong, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Final Destination"},
-    {date: "Feb 19 2020"}
+    {date: new Date(2020,1,19)}
   ],[
     {name: "Micah", character: wiifittrainer, kos: 2},
     {name: "Zack", character: kingdedede, kos: 5},
     {name: "Tim", character: gameandwatch, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "King of Fighters Stadium"},
-    {date: "Mar 4 2020"}
+    {date: new Date(2020,2,4)}
   ],[
     {name: "Tim", character: pacman, kos: 3},
     {name: "Zack", character: hero, kos: 1},
     {name: "Micah", character: byleth, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Rainbow Cruise"},
-    {date: "Mar 4 2020"}
+    {date: new Date(2020,2,4)}
   ],[
     {name: "Micah", character: isabell, kos: 3},
     {name: "Tim", character: pacman, kos: 4},
     {name: "Zack", character: hero, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Spiral Mountain"},
-    {date: "Mar 4 2020"}
+    {date: new Date(2020,2,4)}
   ],[
     {name: "Zack", character: miigunner, kos: 0},
     {name: "Tim", character: darksamus, kos: 0},
     {name: "Micah", character: simon, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Pilot Wings"},
-    {date: "Mar 4 2020"}
+    {date: new Date(2020,2,4)}
   ],[
     {name: "Zack", character: miigunner, kos: 1},
     {name: "Tim", character: darksamus, kos: 3},
     {name: "Micah", character: mewtwo, kos: 4},
     {name: "", character: empty, kos: 0},
     {stage: "New Donk City Hall"},
-    {date: "Mar 4 2020"}
+    {date: new Date(2020,2,4)}
   ],[
     {name: "Micah", character: incineroar, kos: 6},
     {name: "Zack", character: bowser, kos: 1},
     {name: "Tim", character: yoshi, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Yggdrasil's Altar"},
-    {date: "Mar 4 2020"}
+    {date: new Date(2020,2,4)}
   ],[
     {name: "Tim", character: pacman, kos: 1},
     {name: "Micah", character: pirahnaplant, kos: 4},
     {name: "Zack", character: corrin, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Mushroom Kingdom II"},
-    {date: "Mar 4 2020"}
+    {date: new Date(2020,2,4)}
   ],[
     {name: "Micah", character: zelda, kos: 3},
     {name: "Zack", character: kirby, kos: 2},
     {name: "Tim", character: samus, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Mario Circuit"},
-    {date: "Mar 4 2020"}
+    {date: new Date(2020,2,4)}
   ],[
     {name: "Betsy", character: lucas, kos: 3},
     {name: "Tim", character: darksamus, kos: 2},
     {name: "Zack", character: kirby, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Hyrule Castle"},
-    {date: "Mar 4 2020"}
+    {date: new Date(2020,2,4)}
   ],[
     {name: "Zack", character: lucario, kos: 4},
     {name: "Micah", character: sonic, kos: 2},
     {name: "Doug", character: jigglypuff, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Mar 12 2020"}
+    {date: new Date(2020,2,12)}
   ],[
     {name: "Micah", character: wiifittrainer, kos: 3},
     {name: "Tim", character: darksamus, kos: 3},
     {name: "Doug", character: joker, kos: 4},
     {name: "Zack", character: mewtwo, kos: 1},
     {stage: "Norfair"},
-    {date: "Mar 12 2020"}
+    {date: new Date(2020,2,12)}
   ],[
     {name: "Micah", character: pirahnaplant, kos: 4},
     {name: "Zack", character: corrin, kos: 4},
     {name: "Tim", character: samus, kos: 2},
     {name: "Doug", character: captainfalcon, kos: 1},
     {stage: "Garden of Hope"},
-    {date: "Mar 12 2020"}
+    {date: new Date(2020,2,12)}
   ],[
     {name: "Zack", character: yoshi, kos: 4},
     {name: "Tim", character: samus, kos: 2},
     {name: "Doug", character: pokemontrainer, kos: 3},
     {name: "Micah", character: rosalina, kos: 2},
     {stage: "Jungle Japes"},
-    {date: "Mar 12 2020"}
+    {date: new Date(2020,2,12)}
   ],[
     {name: "Doug", character: byleth, kos: 3},
     {name: "Zack", character: marth, kos: 3},
     {name: "Tim", character: darksamus, kos: 2},
     {name: "Micah", character: ridley, kos: 3},
     {stage: "Smashville"},
-    {date: "Mar 12 2020"}
+    {date: new Date(2020,2,12)}
   ],[
     {name: "Tim", character: ness, kos: 4},
     {name: "Doug", character: zerosuitsamus, kos: 4},
     {name: "Zack", character: bayonetta, kos: 3},
     {name: "Micah", character: isabell, kos: 0},
     {stage: "Corneria"},
-    {date: "Mar 12 2020"}
+    {date: new Date(2020,2,12)}
   ],[
     {name: "Zack", character: toonlink, kos: 4},
     {name: "Doug", character: younglink, kos: 3},
     {name: "Micah", character: bowserjr, kos: 2},
     {name: "Tim", character: darksamus, kos: 2},
     {stage: "Hyrule Castle"},
-    {date: "Mar 12 2020"}
+    {date: new Date(2020,2,12)}
   ],[
     {name: "Tim", character: pacman, kos: 4},
     {name: "Zack", character: snake, kos: 5},
     {name: "Micah", character: terry, kos: 2},
     {name: "Doug", character: luigi, kos: 0},
     {stage: "Green Greens"},
-    {date: "Mar 12 2020"}
+    {date: new Date(2020,2,12)}
   ],[
     {name: "Tim", character: pacman, kos: 4},
     {name: "Micah", character: incineroar, kos: 7},
     {name: "Zack", character: mario, kos: 0},
     {name: "Doug", character: sheik, kos: 0},
     {stage: "Reset Bomb Fortress"},
-    {date: "Mar 12 2020"}
+    {date: new Date(2020,2,12)}
   ],[
     {name: "Tim", character: miiswordfighter, kos: 4},
     {name: "Micah", character: incineroar, kos: 5},
     {name: "Zack", character: cloud, kos: 0},
     {name: "Doug", character: roy, kos: 2},
     {stage: "King of Fighters Stadium"},
-    {date: "Mar 12 2020"}
+    {date: new Date(2020,2,12)}
   ],[
     {name: "Micah", character: iceclimbers, kos: 3},
     {name: "Zack", character: shulk, kos: 4},
     {name: "Tim", character: gameandwatch, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Port Aero Town Drive"},
-    {date: "Mar 12 2020"}
+    {date: new Date(2020,2,12)}
   ],[
     {name: "Micah", character: peach, kos: 3},
     {name: "Zack", character: snake, kos: 3},
     {name: "Tim", character: pacman, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Tim", character: pacman, kos: 4},
     {name: "Micah", character: isabell, kos: 3},
     {name: "Zack", character: miibrawler, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Custom"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Zack", character: miibrawler, kos: 5},
     {name: "Micah", character: sonic, kos: 2},
     {name: "Tim", character: yoshi, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Tortimer Island"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Micah", character: incineroar, kos: 3},
     {name: "Tim", character: darksamus, kos: 2},
     {name: "Zack", character: wario, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Green Hill Zone"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Micah", character: wiifittrainer, kos: 5},
     {name: "Zack", character: wario, kos: 3},
     {name: "Tim", character: darksamus, kos: 3},
     {name: "James", character: gameandwatch, kos: 0},
     {stage: "Gerudo Valley"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Zack", character: wario, kos: 4},
     {name: "Tim", character: ness, kos: 4},
     {name: "James", character: megaman, kos: 1},
     {name: "Micah", character: ridley, kos: 2},
     {stage: "Kalos Pokemon League"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Tim", character: pacman, kos: 3},
     {name: "James", character: duckhunt, kos: 2},
     {name: "Zack", character: hero, kos: 4},
     {name: "Micah", character: bowserjr, kos: 2},
     {stage: "Corneria"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Zack", character: hero, kos: 7},
     {name: "Micah", character: terry, kos: 3},
     {name: "Tim", character: pacman, kos: 1},
     {name: "James", character: drmario, kos: 0},
     {stage: "Green Greens"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Tim", character: ness, kos: 6},
     {name: "Zack", character: snake, kos: 3},
     {name: "James", character: miiswordfighter, kos: 2},
     {name: "Micah", character: iceclimbers, kos: 0},
     {stage: "Kongo Jungle"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Tim", character: samus, kos: 9},
     {name: "Zack", character: snake, kos: 1},
     {name: "James", character: gameandwatch, kos: 0},
     {name: "Micah", character: lucario, kos: 1},
     {stage: "Hanenbow"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Micah", character: inkling, kos: 3},
     {name: "Zack", character: snake, kos: 2},
     {name: "James", character: littlemac, kos: 4},
     {name: "Tim", character: miigunner, kos: 1},
     {stage: "Hyrule Castle"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Zack", character: miigunner, kos: 5},
     {name: "Micah", character: byleth, kos: 2},
     {name: "James", character: mario, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Pokemon Stadium"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Zack", character: miigunner, kos: 5},
     {name: "Micah", character: peach, kos: 2},
     {name: "James", character: megaman, kos: 0},
     {name: "", character: empty, kos: 0},
     {stage: "Smashville"},
-    {date: "Mar 18 2020"}
+    {date: new Date(2020,2,18)}
   ],[
     {name: "Micah", character: peach, kos: 4},
     {name: "Doug", character: byleth, kos: 2},
     {name: "Tim", character: ness, kos: 4},
     {name: "Zack", character: richter, kos: 1},
     {stage: "Jungle Japes"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Tim", character: ness, kos: 4},
     {name: "Doug", character: ryu, kos: 2},
     {name: "Micah", character: isabell, kos: 4},
     {name: "Zack", character: richter, kos: 1},
     {stage: "King of Fighters Stadium"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Zack", character: kingdedede, kos: 2},
     {name: "Tim", character: samus, kos: 2},
     {name: "Craig", character: donkeykong, kos: 2},
     {name: "Doug", character: joker, kos: 2},
     {stage: "Mushroom Kingdom U"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Micah", character: wiifittrainer, kos: 6},
     {name: "Tim", character: samus, kos: 2},
     {name: "Zack", character: kingdedede, kos: 1},
     {name: "Craig", character: donkeykong, kos: 2},
     {stage: "Find Mii"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Tim", character: pacman, kos: 5},
     {name: "Zack", character: kingdedede, kos: 3},
     {name: "Doug", character: younglink, kos: 0},
     {name: "Micah", character: incineroar, kos: 3},
     {stage: "Yohsi's Island(Melee)"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Zack", character: miigunner, kos: 2},
     {name: "Craig", character: ganondorf, kos: 4},
     {name: "Doug", character: samus, kos: 4},
     {name: "Micah", character: bowserjr, kos: 1},
     {stage: "Hyrule Castle"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Zack", character: hero, kos: 4},
     {name: "Craig", character: link, kos: 4},
     {name: "Micah", character: darkpit, kos: 3},
     {name: "Tim", character: pacman, kos: 0},
     {stage: "Battlefield"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Micah", character: zelda, kos: 3},
     {name: "Tim", character: darksamus, kos: 2},
     {name: "Craig", character: donkeykong, kos: 4},
     {name: "Zack", character: kirby, kos: 2},
     {stage: "Big Battlefield"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Zack", character: kirby, kos: 4},
     {name: "Micah", character: banjo, kos: 4},
     {name: "Craig", character: donkeykong, kos: 1},
     {name: "Tim", character: darksamus, kos: 2},
     {stage: "Peach's Castle"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Craig", character: pikachu, kos: 5},
     {name: "Tim", character: rob, kos: 1},
     {name: "Micah", character: roy, kos: 2},
     {name: "Zack", character: richter, kos: 1},
     {stage: "Custom"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Betsy", character: pokemontrainer, kos: 3},
     {name: "Craig", character: pikachu, kos: 5},
     {name: "Zack", character: wario, kos: 1},
     {name: "Tim", character: drmario, kos: 2},
     {stage: "Custom"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Betsy", character: duckhunt, kos: 3},
     {name: "Craig", character: pikachu, kos: 2},
     {name: "Zack", character: wario, kos: 5},
     {name: "Tim", character: jigglypuff, kos: 0},
     {stage: "Yggdrasil's Altar"},
-    {date: "Mar 26 2020"}
+    {date: new Date(2020,2,26)}
   ],[
     {name: "Micah", character: zelda, kos: 4},
     {name: "Tim", character: samus, kos: 2},
     {name: "Craig", character: donkeykong, kos: 2},
     {name: "Zack", character: bowser, kos: 3},
     {stage: "Battlefield"},
-    {date: "Apr 2 2020"}
+    {date: new Date(2020,3,2)}
   ],[
     {name: "Micah", character: terry, kos: 3},
     {name: "Zack", character: bowser, kos: 2},
     {name: "Tim", character: samus, kos: 2},
     {name: "Craig", character: link, kos: 3},
     {stage: "Smashville"},
-    {date: "Apr 2 2020"}
+    {date: new Date(2020,3,2)}
   ],[
     {name: "Craig", character: pikachu, kos: 4},
     {name: "Zack", character: bowser, kos: 5},
     {name: "Micah", character: ike, kos: 1},
     {name: "Tim", character: samus, kos: 1},
     {stage: "Battlefield"},
-    {date: "Apr 2 2020"}
+    {date: new Date(2020,3,2)}
   ],[
     {name: "Tim", character: miiswordfighter, kos: 2},
     {name: "Micah", character: isabell, kos: 4},
     {name: "Craig", character: gameandwatch, kos: 2},
     {name: "Zack", character: wario, kos: 3},
     {stage: "Battlefield"},
-    {date: "Apr 2 2020"}
+    {date: new Date(2020,3,2)}
   ],[
     {name: "Tim", character: pacman, kos: 4},
     {name: "Craig", character: byleth, kos: 3},
     {name: "Zack", character: wario, kos: 2},
     {name: "Micah", character: incineroar, kos: 2},
     {stage: "Delfino Plaza"},
-    {date: "Apr 2 2020"}
+    {date: new Date(2020,3,2)}
   ],[
     {name: "Craig", character: ganondorf, kos: 8},
     {name: "Micah", character: peach, kos: 3},
     {name: "Zack", character: miigunner, kos: 0},
     {name: "Tim", character: pacman, kos: 0},
     {stage: "Pokemon Stadium 2"},
-    {date: "Apr 2 2020"}
+    {date: new Date(2020,3,2)}
   ],[
     {name: "Craig", character: ganondorf, kos: 7},
     {name: "Zack", character: miigunner, kos: 1},
     {name: "Micah", character: bowserjr, kos: 2},
     {name: "Tim", character: darksamus, kos: 1},
     {stage: "Green Greens"},
-    {date: "Apr 2 2020"}
+    {date: new Date(2020,3,2)}
   ],[
     {name: "Betsy", character: villager, kos: 4},
     {name: "Craig", character: kirby, kos: 3},
     {name: "Tim", character: ness, kos: 3},
     {name: "Zack", character: littlemac, kos: 1},
     {stage: "Battlefield"},
-    {date: "Apr 2 2020"}
+    {date: new Date(2020,3,2)}
   ],[
     {name: "Zack", character: pirahnaplant, kos: 5},
     {name: "Craig", character: kirby, kos: 4},
     {name: "Micah", character: darkpit, kos: 1},
     {name: "Tim", character: ness, kos: 1},
     {stage: "Gerudo Valley"},
-    {date: "Apr 2 2020"}
+    {date: new Date(2020,3,2)}
   ],[
     {name: "Zack", character: kirby, kos: 4},
     {name: "Micah", character: wiifittrainer, kos: 3},
     {name: "Craig", character: kirby, kos: 3},
     {name: "Tim", character: pacman, kos: 1},
     {stage: "Battlefield"},
-    {date: "Apr 2 2020"}
+    {date: new Date(2020,3,2)}
   ],[
     {name: "Zack", character: bowser, kos: 6},
     {name: "Micah", character: zelda, kos: 2},
     {name: "Craig", character: pikachu, kos: 2},
     {name: "Tim", character: darksamus, kos: 1},
     {stage: "King of Fighters Stadium"},
-    {date: "Apr 2 2020"}
+    {date: new Date(2020,3,2)}
   ],[
     {name: "Micah", character: bowserjr, kos: 5},
     {name: "Nick", character: mario, kos: 0},
     {name: "Zack", character: kirby, kos: 3},
     {name: "", character: empty, kos: 0},
     {stage: "Smashville"},
-    {date: "Apr 8 2020"}
+    {date: new Date(2020,3,8)}
   ],[
     {name: "Zack", character: kirby, kos: 6},
     {name: "Tim", character: samus, kos: 2},
     {name: "Nick", character: sonic, kos: 2},
     {name: "Micah", character: roy, kos: 1},
     {stage: "Custom"},
-    {date: "Apr 8 2020"}
+    {date: new Date(2020,3,8)}
   ],[
     {name: "Nick", character: samus, kos: 4},
     {name: "Micah", character: peach, kos: 3},
     {name: "Zack", character: kirby, kos: 1},
     {name: "Tim", character: samus, kos: 2},
     {stage: "Custom"},
-    {date: "Apr 8 2020"}
+    {date: new Date(2020,3,8)}
   ],[
     {name: "Zack", character: bowser, kos: 5},
     {name: "Tim", character: pacman, kos: 2},
     {name: "Micah", character: peach, kos: 3},
     {name: "Nick", character: samus, kos: 1},
     {stage: "Custom"},
-    {date: "Apr 8 2020"}
+    {date: new Date(2020,3,8)}
   ],[
     {name: "Zack", character: pokemontrainer, kos: 5},
     {name: "Tim", character: pacman, kos: 3},
     {name: "Micah", character: peach, kos: 1},
     {name: "Nick", character: mario, kos: 2},
     {stage: "Custom"},
-    {date: "Apr 8 2020"}
+    {date: new Date(2020,3,8)}
   ],[
     {name: "Micah", character: wiifittrainer, kos: 7},
     {name: "Tim", character: miiswordfighter, kos: 0},
     {name: "Nick", character: mario, kos: 4},
     {name: "Zack", character: pokemontrainer, kos: 0},
     {stage: "Custom"},
-    {date: "Apr 8 2020"}
+    {date: new Date(2020,3,8)}
   ],[
     {name: "Micah", character: wiifittrainer, kos: 4},
     {name: "Tim", character: darksamus, kos: 4},
     {name: "Zack", character: pokemontrainer, kos: 1},
     {name: "Nick", character: marth, kos: 0},
     {stage: "Custom"},
-    {date: "Apr 8 2020"}
+    {date: new Date(2020,3,8)}
   ],[
     {name: "Betsy", character: villager, kos: 3},
     {name: "Nick", character: lucario, kos: 4},
     {name: "Zack", character: pokemontrainer, kos: 2},
     {name: "Tim", character: darksamus, kos: 0},
     {stage: "Custom"},
-    {date: "Apr 8 2020"}
+    {date: new Date(2020,3,8)}
   ],[
     {name: "Zack", character: yoshi, kos: 3},
     {name: "Micah", character: isabell, kos: 4},
     {name: "Nick", character: lucario, kos: 4},
     {name: "Tim", character: yoshi, kos: 0},
     {stage: "Custom"},
-    {date: "Apr 8 2020"}
+    {date: new Date(2020,3,8)}
   ],[
     {name: "Tim", character: miigunner, kos: 3},
     {name: "Micah", character: rob, kos: 3},
     {name: "Zack", character: yoshi, kos: 2},
     {name: "", character: empty, kos: 0},
     {stage: "Custom"},
-    {date: "Apr 8 2020"}
+    {date: new Date(2020,3,8)}
   ],[
     {name: "Tim", character: miiswordfighter, kos: 5},
     {name: "Betsy", character: miiswordfighter, kos: 2},
     {name: "Zack", character: wario, kos: 1},
     {name: "", character: empty, kos: 0},
     {stage: "Custom"},
-    {date: "Apr 8 2020"}
+    {date: new Date(2020,3,8)}
   ]
 ];
-
-var dates = ["Sept 11 2019", "Sept 18 2019", "Sept 25 2019", "Oct 9 2019", "Oct 16 2019", "Oct 23 2019", "Dec 4 2019", "Dec 18 2019", "Jan 16 2020", "Jan 22 2020", "Jan 30 2020", "Feb 5 2020", "Feb 13 2020", "Feb 19 2020", "Mar 4 2020", "Mar 12 2020", "Mar 18 2020", "Mar 26 2020", "Apr 2 2020", "Apr 8 2020"];
+var dates = [new Date(2019,8,11).getTime(), new Date(2019,8,18).getTime(), new Date(2019,8,25).getTime(), new Date(2019,9,9).getTime(), new Date(2019,9,16).getTime(), new Date(2019,9,23).getTime(), new Date(2019,11,4).getTime(), new Date(2019,11,18).getTime(), new Date(2020,0,16).getTime(), new Date(2020,0,22).getTime(), new Date(2020,0,30).getTime(), new Date(2020,1,5).getTime(), new Date(2020,1,13).getTime(), new Date(2020,1,19).getTime(), new Date(2020,2,4).getTime(), new Date(2020,2,12).getTime(), new Date(2020,2,18).getTime(), new Date(2020,2,26).getTime(), new Date(2020,3,2).getTime(), new Date(2020,3,8).getTime()];
 var ultimateFighters = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
+var ultimateFighters19 = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
+var ultimateFighters20 = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
 var fourP19 = [0,0,0,0,0,0,0];
 var threeP19 = [0,0,0,0,0,0,0];
 var fourP20 = [0,0,0,0,0,0,0];
@@ -1537,6 +1538,13 @@ var fighterStatsJames = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsCraig = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsNick = {games: 0, wins: 0, place: 0, kos: 0};
 var playerList = ["Micah", "Tim", "Doug", "Zack", "Betsy", "James", "Craig"];
+var graphPlaceMicah = [];
+var graphPlaceTim = [];
+var graphPlaceDoug = [];
+var graphPlaceZack = [];
+var graphPlaceBetsy = [];
+var graphPlaceJames = [];
+var graphPlaceCraig = [];
 
 
 class App extends React.Component {
@@ -1558,50 +1566,51 @@ class App extends React.Component {
   this.goToStats = this.goToStats.bind(this);
   this.goToVideos = this.goToVideos.bind(this);
   this.goToFighters = this.goToFighters.bind(this);
+  this.goToGraphs = this.goToGraphs.bind(this);
   }
   componentDidMount(){
     for(var i=0; i < gameData.length; i++){
         var gameDate = gameData[i][5].date;
-        var year = gameDate.split(/[ ,]+/)[2];
+        var year = gameDate.getFullYear();
         if(gameData[i][3].character === empty){
             if(gameData[i][0].name === "Micah"){
-                if(year === "2019"){
+                if(year === 2019){
                     threeP19[0] ++;
                 }else{
                     threeP20[0] ++;
                 }
             }else if(gameData[i][0].name === "Tim"){
-                if(year === "2019"){
+                if(year === 2019){
                     threeP19[1] ++;
                 }else{
                     threeP20[1] ++;
                 }
             }else if(gameData[i][0].name === "Doug"){
-                if(year === "2019"){
+                if(year === 2019){
                     threeP19[2] ++;
                 }else{
                     threeP20[2] ++;
                 }
             }else if(gameData[i][0].name === "Zack"){
-                if(year === "2019"){
+                if(year === 2019){
                     threeP19[3] ++;
                 }else{
                     threeP20[3] ++;
                 }
             }else if(gameData[i][0].name === "Betsy"){
-                if(year === "2019"){
+                if(year === 2019){
                     threeP19[4] ++;
                 }else{
                     threeP20[4] ++;
                 }
             }else if(gameData[i][0].name === "James"){
-                if(year === "2019"){
+                if(year === 2019){
                     threeP19[5] ++;
                 }else{
                     threeP20[5] ++;
                 }
             }else if(gameData[i][0].name === "Craig"){
-                if(year === "2019"){
+                if(year === 2019){
                     threeP19[6] ++;
                 }else{
                     threeP20[6] ++;
@@ -1609,43 +1618,43 @@ class App extends React.Component {
             }
         }else{
             if(gameData[i][0].name === "Micah"){
-                if(year === "2019"){
+                if(year === 2019){
                     fourP19[0] ++;
                 }else{
                     fourP20[0] ++;
                 }
             }else if(gameData[i][0].name === "Tim"){
-                if(year === "2019"){
+                if(year === 2019){
                     fourP19[1] ++;
                 }else{
                     fourP20[1] ++;
                 }
             }else if(gameData[i][0].name === "Doug"){
-                if(year === "2019"){
+                if(year === 2019){
                     fourP19[2] ++;
                 }else{
                     fourP20[2] ++;
                 }
             }else if(gameData[i][0].name === "Zack"){
-                if(year === "2019"){
+                if(year === 2019){
                     fourP19[3] ++;
                 }else{
                     fourP20[3] ++;
                 }
             }else if(gameData[i][0].name === "Betsy"){
-                if(year === "2019"){
+                if(year === 2019){
                     fourP19[4] ++;
                 }else{
                     fourP20[4] ++;
                 }
             }else if(gameData[i][0].name === "James"){
-                if(year === "2019"){
+                if(year === 2019){
                     fourP19[5] ++;
                 }else{
                     fourP20[5] ++;
                 }
             }else if(gameData[i][0].name === "Craig"){
-                if(year === "2019"){
+                if(year === 2019){
                     fourP19[6] ++;
                 }else{
                     fourP20[6] ++;
@@ -1674,7 +1683,7 @@ class App extends React.Component {
                 micahCharacters[a].number ++;
                 micahCharacters[a].kos = micahCharacters[a].kos + gameData[i][j].kos;
             }
-            if(year === "2019"){
+            if(year === 2019){
                 gamesPlayed19[0] ++;
                 gamePlace19[0] = gamePlace19[0] + (j + 1);
                 if(gameData[i][3].character === empty){
@@ -1780,7 +1789,7 @@ class App extends React.Component {
                 timCharacters[a].number ++;
                 timCharacters[a].kos = timCharacters[a].kos + gameData[i][j].kos;
             }
-            if(year === "2019"){
+            if(year === 2019){
                 gamesPlayed19[1] ++;
                 gamePlace19[1] = gamePlace19[1] + (j + 1);
                 if(gameData[i][3].character === empty){
@@ -1886,7 +1895,7 @@ class App extends React.Component {
                 dougCharacters[a].number ++;
                 dougCharacters[a].kos = dougCharacters[a].kos + gameData[i][j].kos;
             }
-            if(year === "2019"){
+            if(year === 2019){
                 gamesPlayed19[2] ++;
                 gamePlace19[2] = gamePlace19[2] + (j + 1);
                 if(gameData[i][3].character === empty){
@@ -1992,7 +2001,7 @@ class App extends React.Component {
                 zackCharacters[a].number ++;
                 zackCharacters[a].kos = zackCharacters[a].kos + gameData[i][j].kos;
             }
-            if(year === "2019"){
+            if(year === 2019){
                 gamesPlayed19[3] ++;
                 gamePlace19[3] = gamePlace19[3] + (j + 1);
                 if(gameData[i][3].character === empty){
@@ -2098,7 +2107,7 @@ class App extends React.Component {
                 betsyCharacters[a].number ++;
                 betsyCharacters[a].kos = betsyCharacters[a].kos + gameData[i][j].kos;
             }
-            if(year === "2019"){
+            if(year === 2019){
                 gamesPlayed19[4] ++;
                 gamePlace19[4] = gamePlace19[4] + (j + 1);
                 if(gameData[i][3].character === empty){
@@ -2204,7 +2213,7 @@ class App extends React.Component {
                 jamesCharacters[a].number ++;
                 jamesCharacters[a].kos = jamesCharacters[a].kos + gameData[i][j].kos;
             }
-            if(year === "2019"){
+            if(year === 2019){
                 gamesPlayed19[5] ++;
                 gamePlace19[5] = gamePlace19[5] + (j + 1);
                 if(gameData[i][3].character === empty){
@@ -2310,7 +2319,7 @@ class App extends React.Component {
                 craigCharacters[a].number ++;
                 craigCharacters[a].kos = craigCharacters[a].kos + gameData[i][j].kos;
             }
-            if(year === "2019"){
+            if(year === 2019){
                 gamesPlayed19[6] ++;
                 gamePlace19[6] = gamePlace19[6] + (j + 1);
                 if(gameData[i][3].character === empty){
@@ -2398,7 +2407,13 @@ class App extends React.Component {
         }
         for(var k = 0; k<ultimateFighters.length; k++){
             if(ultimateFighters[k].name === gameData[i][j].character){
-                ultimateFighters[k].number ++;
+                if(year === 2019){
+                    ultimateFighters19[k].number ++;
+                    ultimateFighters[k].number ++;
+                }else if(year === 2020){
+                    ultimateFighters20[k].number ++;
+                    ultimateFighters[k].number ++;
+                }
             }else{}
         }
       }
@@ -2428,7 +2443,8 @@ class App extends React.Component {
       overall: false,
       stats: false,
       videos: false,
-      fighters: false
+      fighters: false,
+      graphs: false
     });
 
   }
@@ -2443,7 +2459,8 @@ class App extends React.Component {
       overall: true,
       stats: false,
       videos: false,
-      fighters: false
+      fighters: false,
+      graphs: false
     });
   }
   goToStats(){
@@ -2457,7 +2474,8 @@ class App extends React.Component {
       overall: false,
       stats: true,
       videos: false,
-      fighters: false
+      fighters: false,
+      graphs: false
     });
   }
   goToVideos(){
@@ -2470,7 +2488,22 @@ class App extends React.Component {
       overall: false,
       stats: false,
       videos: true,
-      fighters: false
+      fighters: false,
+      graphs: false
+    });
+  }
+  goToGraphs(){
+    const x = document.getElementsByClassName("tab");
+    for (var i=0; i < x.length; i ++ ){
+      x[i].style.background="#0547ff";
+    }
+    this.setState({
+      weekly: false,
+      overall: false,
+      stats: false,
+      videos: false,
+      fighters: false,
+      graphs: true
     });
   }
   goToFighters(){
@@ -2483,7 +2516,8 @@ class App extends React.Component {
       overall: false,
       stats: false,
       videos: false,
-      fighters: true
+      fighters: true,
+      graphs: false
     });
   }
   render(){
@@ -2495,6 +2529,7 @@ class App extends React.Component {
         </div>
         <div className="row RankingTabs">
           <Tab name="Overall" handleClick={this.goToOverall} />
+          <Tab name="Graphs" handleClick={this.goToGraphs} />
           <Tab name="Weekly" handleClick={this.goToWeekly} />
           <Tab name="Stats" handleClick={this.goToStats} />
           <Tab name="Fighters" handleClick={this.goToFighters} />
@@ -2504,6 +2539,7 @@ class App extends React.Component {
         {this.state.stats ? <Stats /> : null }
         {this.state.videos ? <Highlights /> : null }
         {this.state.fighters ? <Fighters /> : null }
+        {this.state.graphs ? <Graphs /> : null }
       </div>
     );
   }
@@ -2561,13 +2597,204 @@ class Tab extends React.Component {
   }
 }
 
+class Graphs extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          avgPlaceMicah: null,
+          avgPlaceTim: [],
+          avgPlaceDoug: [],
+          avgPlaceZack: [],
+          avgPlaceBetsy: [],
+          avgPlaceJames: [],
+          avgPlaceCraig: [],
+          year: "2020"
+        }
+    }
+    componentDidMount(){
+        for(var i=0; i<dates.length; i++){
+            weeklyKos = [0,0,0,0,0,0,0];
+            weeklyGames = [0,0,0,0,0,0,0];
+            weeklyPlace = [0,0,0,0,0,0,0];
+            weeklyAvg = [0,0,0,0,0,0,0];
+            for(var j=0; j < gameData.length; j++){
+                for(var k=0; k < 4; k++){
+                    if(gameData[j][k].name === "Micah" && gameData[j][5].date.getTime() === dates[i]){
+                        weeklyKos[0] = weeklyKos[0] + gameData[j][k].kos;
+                        weeklyGames[0] ++;
+                        weeklyPlace[0] = weeklyPlace[0] + (k + 1);
+                    }else if(gameData[j][k].name === "Tim" && gameData[j][5].date.getTime() === dates[i]){
+                        weeklyKos[1] = weeklyKos[1] + gameData[j][k].kos;
+                        weeklyGames[1] ++;
+                        weeklyPlace[1] = weeklyPlace[1] + (k + 1);
+                    }else if(gameData[j][k].name === "Doug" && gameData[j][5].date.getTime() === dates[i]){
+                        weeklyKos[2] = weeklyKos[2] + gameData[j][k].kos;
+                        weeklyGames[2] ++;
+                        weeklyPlace[2] = weeklyPlace[2] + (k + 1);
+                    }else if(gameData[j][k].name === "Zack" && gameData[j][5].date.getTime() === dates[i]){
+                        weeklyKos[3] = weeklyKos[3] + gameData[j][k].kos;
+                        weeklyGames[3] ++;
+                        weeklyPlace[3] = weeklyPlace[3] + (k + 1);
+                    }else if(gameData[j][k].name === "Betsy" && gameData[j][5].date.getTime() === dates[i]){
+                        weeklyKos[4] = weeklyKos[4] + gameData[j][k].kos;
+                        weeklyGames[4] ++;
+                        weeklyPlace[4] = weeklyPlace[4] + (k + 1);
+                    }else if(gameData[j][k].name === "James" && gameData[j][5].date.getTime() === dates[i]){
+                        weeklyKos[5] = weeklyKos[5] + gameData[j][k].kos;
+                        weeklyGames[5] ++;
+                        weeklyPlace[5] = weeklyPlace[5] + (k + 1);
+                    }else if(gameData[j][k].name === "Craig" && gameData[j][5].date.getTime() === dates[i]){
+                        weeklyKos[6] = weeklyKos[6] + gameData[j][k].kos;
+                        weeklyGames[6] ++;
+                        weeklyPlace[6] = weeklyPlace[6] + (k + 1);
+                    }
+                }
+            }
+            for(var j=0; j < 7; j++){
+                if(weeklyGames[j] > 0){
+                    weeklyAvg[j] = parseFloat((weeklyPlace[j]/weeklyGames[j]).toFixed(2));
+                    weeklyKos[j] = (weeklyKos[j]/weeklyGames[j]).toFixed(2);
+                }else{}
+            }
+            var micahDataPoint = {x: dates[i], y: weeklyAvg[0]};
+            if(weeklyAvg[0] > 0){
+                graphPlaceMicah.push(micahDataPoint);
+            }else{}
+            var timDataPoint = {x: dates[i], y: weeklyAvg[1]};
+            if(weeklyAvg[1] > 0){
+                graphPlaceTim.push(timDataPoint);
+            }else{}
+            var dougDataPoint = {y: weeklyAvg[2], x: dates[i]};
+            if(weeklyAvg[2] > 0){
+                graphPlaceDoug.push(dougDataPoint);
+            }else{}
+            var zackDataPoint = {y: weeklyAvg[3], x: dates[i]};
+            if(weeklyAvg[3] > 0){
+                graphPlaceZack.push(zackDataPoint);
+            }else{}
+            var betsyDataPoint = {y: weeklyAvg[4], x: dates[i]};
+            if(weeklyAvg[4] > 0){
+                graphPlaceBetsy.push(betsyDataPoint);
+            }else{}
+            var jamesDataPoint = {y: weeklyAvg[5], x: dates[i]};
+            if(weeklyAvg[5] > 0){
+                graphPlaceJames.push(jamesDataPoint);
+            }else{}
+            var craigDataPoint = {y: weeklyAvg[6], x: dates[i]};
+            if(weeklyAvg[6] > 0){
+                graphPlaceCraig.push(craigDataPoint);
+            }else{}
+        }
+        console.log(graphPlaceMicah);
+        this.setState({
+            avgPlaceMicah: graphPlaceMicah,
+            avgPlaceTim: graphPlaceTim,
+            avgPlaceDoug: graphPlaceDoug,
+            avgPlaceZack: graphPlaceZack,
+            avgPlaceBetsy: graphPlaceBetsy,
+            avgPlaceJames: graphPlaceJames,
+            avgPlaceCraig: graphPlaceCraig
+        });
+    }
+    /*toggleDataSeries(e){
+        if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+            e.dataSeries.visible = false;
+        }
+        else{
+            e.dataSeries.visible = true;
+        }
+    }*/
+    render(){
+        const options = {
+            animationEnabled: true,
+            title:{
+                text: "Average Place"
+            },
+            axisX: {
+                title: "Date",
+                includeZero: false,
+                valueFormatString: "DD MMM,YY"
+            },
+            axisY: {
+                title: "Average Place",
+                includeZero: false,
+                valueFormatString: "#.##",
+            },
+            legend:{
+                cursor: "pointer",
+                fontSize: 16,
+                itemclick: function (e) {
+                //console.log("legend click: " + e.dataPointIndex);
+                //console.log(e);
+                    if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                        e.dataSeries.visible = false;
+                    } else {
+                        e.dataSeries.visible = true;
+                    }
+
+                    e.chart.render();
+                }
+            },
+            toolTip:{
+                shared: true
+            },
+            data: [{
+                name: "Micah",
+                type: "spline",
+                showInLegend: true,
+                dataPoints: this.state.avgPlaceMicah
+            },{
+                name: "Tim",
+                type: "spline",
+                showInLegend: true,
+                dataPoints: this.state.avgPlaceTim
+            },{
+                name: "Doug",
+                type: "spline",
+                showInLegend: true,
+                dataPoints: this.state.avgPlaceDoug
+            },{
+                name: "Zack",
+                type: "spline",
+                showInLegend: true,
+                dataPoints: this.state.avgPlaceZack
+            },{
+                name: "Betsy",
+                type: "spline",
+                showInLegend: true,
+                dataPoints: this.state.avgPlaceBetsy
+            },{
+                name: "James",
+                type: "spline",
+                showInLegend: true,
+                dataPoints: this.state.avgPlaceJames
+            },{
+                name: "Craig",
+                type: "spline",
+                showInLegend: true,
+                dataPoints: this.state.avgPlaceCraig
+            }]
+        }
+        return(
+            <div id="chartContainer">
+                <CanvasJSChart options = {options}
+                    /* onRef = {ref => this.chart = ref} */
+                />
+            </div>
+        )
+    }
+}
+
 class Overall extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
           topKos: [0,0,0,0,0,0,0],
-          topPlace: [0,0,0,0,0,0,0]
+          topPlace: [0,0,0,0,0,0,0],
+          topPlayed: [],
+          year: "2020"
         }
+    this.changeOverallYear = this.changeOverallYear.bind(this);
     }
     componentDidMount(){
         var topKos19 = [];
@@ -2587,7 +2814,42 @@ class Overall extends React.Component {
         }
         this.setState({
             topKos: topKos20,
-            topPlace: topPlace20
+            topPlace: topPlace20,
+            topPlayed: ultimateFighters20
+        });
+    }
+    changeOverallYear(){
+        var newYear;
+        var topKos = [];
+        var topPlace = [];
+        var topPlayed = [];
+        if(this.state.year === "Overall"){
+            newYear = "2020";
+            for(var i=0; i<playerkos19.length; i++){
+                topKos[i] = {name: playerList[i], number: (playerkos20[i]/gamesPlayed20[i]).toFixed(2), place: 0};
+                topPlace[i] = {name: playerList[i], number: (gamePlace20[i]/gamesPlayed20[i]).toFixed(2), place: 0};
+            }
+            topPlayed = ultimateFighters20;
+        }else if(this.state.year === "2020"){
+            newYear = "2019";
+            for(var i=0; i<playerkos19.length; i++){
+                topKos[i] = {name: playerList[i], number: (playerkos19[i]/gamesPlayed19[i]).toFixed(2), place: 0};
+                topPlace[i] = {name: playerList[i], number: (gamePlace19[i]/gamesPlayed19[i]).toFixed(2), place: 0};
+            }
+            topPlayed = ultimateFighters19;
+        }else if(this.state.year === "2019"){
+            newYear = "Overall";
+            for(var i=0; i<playerkos19.length; i++){
+                topKos[i] = {name: playerList[i], number: ((playerkos19[i] + playerkos20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};
+                topPlace[i] = {name: playerList[i], number: ((gamePlace19[i] + gamePlace20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};  
+            }
+            topPlayed = ultimateFighters;
+        }
+        this.setState({
+            year: newYear,
+            topKos: topKos,
+            topPlace: topPlace,
+            topPlayed: topPlayed
         });
     }
     listTopKos() {
@@ -2597,8 +2859,17 @@ class Overall extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
+        var place = 1;
+        for(var i=0; i<numberOfTopKos.length; i++){
+            if(numberOfTopKos[i].number > 0){
+                numberOfTopKos[i].place = place;
+                place ++;
+            }else{}
+        }
         const listTopKos = numberOfTopKos.map((player, index) => {
-          return <TopList key={index} id={index} name={player.name} number={player.number} />
+            if(player.number > 0) {
+                return <TopList key={index} id={index} name={player.name} number={player.number} place={player.place} />
+            }
         });
         return (
           <div className="col-xs-12">{listTopKos}</div>
@@ -2611,23 +2882,33 @@ class Overall extends React.Component {
             if(a.number > b.number) { return 1; }
             return 0;
         });
+        var place = 1;
+        for(var i=0; i<numberOfTopPlace.length; i++){
+            if(numberOfTopPlace[i].number > 0){
+                numberOfTopPlace[i].place = place;
+                place ++;
+            }else{}
+        }
         const listTopPlace = numberOfTopPlace.map((player, index) => {
-          return <TopList key={index} id={index} name={player.name} number={player.number} />
+            if(player.number > 0) {
+                return <TopList key={index} id={index} name={player.name} number={player.number} place={player.place} />
+            }
         });
         return (
           <div className="col-xs-12">{listTopPlace}</div>
         )
     }
     listTopPlayed() {
-        const numberOfTopPlayed = ultimateFighters;
+        const numberOfTopPlayed = this.state.topPlayed;
         numberOfTopPlayed.sort(function(a, b){
             if(a.number < b.number) { return 1; }
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        const listTopPlayed = numberOfTopPlayed.map((player, index) => {
+        var topTenPlayed = numberOfTopPlayed.slice(0,10);
+        const listTopPlayed = topTenPlayed.map((player, index) => {
             var imageString = player.name.toString();
-            console.log(imageString);
+            console.log();
             var splitString = imageString.split("/");
             var splitAgain = splitString[3].split(".");
             var splitName = splitAgain[0];
@@ -2641,20 +2922,24 @@ class Overall extends React.Component {
      return (
         <div className="col-xs-12">
             <div className="row">
-                <div className="col-xs-4">
-                    <div className="row">Top Place</div>
+                <div className="col-xs-offset-4 col-xs-4">Overall Rankings</div>
+                <div className="col-xs-4 changeYear" onClick={this.changeOverallYear}>{this.state.year}</div>
+            </div>
+            <div className="row">
+                <div className="col-xs-4 overallCol">
+                    <div className="row overallTitle">Top Place</div>
                     <div className="row">
                         {this.listTopPlace()}
                     </div>
                 </div>
-                <div className="col-xs-4">
-                    <div className="row">Top Kos</div>
+                <div className="col-xs-4 overallCol">
+                    <div className="row overallTitle">Top Kos</div>
                     <div className="row">
                         {this.listTopKos()}
                     </div>
                 </div>
-                <div className="col-xs-4">
-                    <div className="row">Most Played</div>
+                <div className="col-xs-4 overallCol">
+                    <div className="row overallTitle">Most Played</div>
                     <div className="row">
                         {this.listTopPlayed()}
                     </div>
@@ -2669,7 +2954,7 @@ class TopList extends React.Component {
     render(){
         return (
             <div className="row">
-                <div>{this.props.name}  {this.props.number}</div>
+                <div className="overallData" id={this.props.id + "TopList"}>{this.props.place}. {this.props.name}  {this.props.number}</div>
             </div>
         )
     }
@@ -3326,7 +3611,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "Apr 8 2020",
+      date: new Date(2020,3,8),
       weeklyWins: [0,0,0,0,0,0,0],
       weeklyKos: [0,0,0,0,0,0,0],
       weeklyAvg: [0,0,0,0,0,0,0],
@@ -3336,7 +3621,7 @@ class Weekly extends React.Component {
   this.previousDate = this.previousDate.bind(this);
   }
   componentDidMount() {
-    var newDate = this.state.date;
+    var newDate = this.state.date.getTime();
     weeklyWins = [0,0,0,0,0,0,0];
     weeklyKos = [0,0,0,0,0,0,0];
     weeklyGames = [0,0,0,0,0,0,0];
@@ -3345,7 +3630,7 @@ class Weekly extends React.Component {
     weeklyPoints = [0,0,0,0,0,0,0];
     for(var i=0; i < gameData.length; i++){
         for(var j=0; j < 4; j++){
-            if(gameData[i][j].name === "Micah" && gameData[i][5].date === newDate){
+            if(gameData[i][j].name === "Micah" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
                 weeklyGames[0] ++;
                 weeklyPlace[0] = weeklyPlace[0] + (j + 1);
@@ -3364,7 +3649,7 @@ class Weekly extends React.Component {
                         weeklyPoints[0] = weeklyPoints[0] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Tim" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Tim" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
                 weeklyGames[1] ++;
                 weeklyPlace[1] = weeklyPlace[1] + (j + 1);
@@ -3383,7 +3668,7 @@ class Weekly extends React.Component {
                         weeklyPoints[1] = weeklyPoints[1] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Doug" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Doug" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
                 weeklyGames[2] ++;
                 weeklyPlace[2] = weeklyPlace[2] + (j + 1);
@@ -3402,7 +3687,7 @@ class Weekly extends React.Component {
                         weeklyPoints[2] = weeklyPoints[2] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Zack" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Zack" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
                 weeklyGames[3] ++;
                 weeklyPlace[3] = weeklyPlace[3] + (j + 1);
@@ -3421,7 +3706,7 @@ class Weekly extends React.Component {
                         weeklyPoints[3] = weeklyPoints[3] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
@@ -3440,7 +3725,7 @@ class Weekly extends React.Component {
                         weeklyPoints[4] = weeklyPoints[4] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "James" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "James" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
                 weeklyGames[5] ++;
                 weeklyPlace[5] = weeklyPlace[5] + (j + 1);
@@ -3459,7 +3744,7 @@ class Weekly extends React.Component {
                         weeklyPoints[5] = weeklyPoints[5] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Craig" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Craig" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[6] = weeklyKos[6] + gameData[i][j].kos;
                 weeklyGames[6] ++;
                 weeklyPlace[6] = weeklyPlace[6] + (j + 1);
@@ -3480,19 +3765,19 @@ class Weekly extends React.Component {
                 }
             }
         }
-        if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
+        if(gameData[i][0].name === "Micah" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[0] ++;
-        }else if(gameData[i][0].name === "Tim" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Tim" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[1] ++;
-        }else if(gameData[i][0].name === "Doug" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Doug" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[2] ++;
-        }else if(gameData[i][0].name === "Zack" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Zack" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[3] ++;
-        }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[4] ++;
-        }else if(gameData[i][0].name === "James" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "James" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[5] ++;
-        }else if(gameData[i][0].name === "Craig" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Craig" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[6] ++;
         }
     }
@@ -3520,9 +3805,10 @@ class Weekly extends React.Component {
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex > 0){
       var newDate = dates[dateIndex - 1];
+      console.log(newDate);
       for(var i=0; i < gameData.length; i++){
         for(var j=0; j < 4; j++){
-            if(gameData[i][j].name === "Micah" && gameData[i][5].date === newDate){
+            if(gameData[i][j].name === "Micah" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
                 weeklyGames[0] ++;
                 weeklyPlace[0] = weeklyPlace[0] + (j + 1);
@@ -3541,7 +3827,7 @@ class Weekly extends React.Component {
                         weeklyPoints[0] = weeklyPoints[0] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Tim" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Tim" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
                 weeklyGames[1] ++;
                 weeklyPlace[1] = weeklyPlace[1] + (j + 1);
@@ -3560,7 +3846,7 @@ class Weekly extends React.Component {
                         weeklyPoints[1] = weeklyPoints[1] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Doug" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Doug" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
                 weeklyGames[2] ++;
                 weeklyPlace[2] = weeklyPlace[2] + (j + 1);
@@ -3579,7 +3865,7 @@ class Weekly extends React.Component {
                         weeklyPoints[2] = weeklyPoints[2] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Zack" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Zack" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
                 weeklyGames[3] ++;
                 weeklyPlace[3] = weeklyPlace[3] + (j + 1);
@@ -3598,7 +3884,7 @@ class Weekly extends React.Component {
                         weeklyPoints[3] = weeklyPoints[3] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
@@ -3617,7 +3903,7 @@ class Weekly extends React.Component {
                         weeklyPoints[4] = weeklyPoints[4] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "James" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "James" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
                 weeklyGames[5] ++;
                 weeklyPlace[5] = weeklyPlace[5] + (j + 1);
@@ -3636,7 +3922,7 @@ class Weekly extends React.Component {
                         weeklyPoints[5] = weeklyPoints[5] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Craig" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Craig" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[6] = weeklyKos[6] + gameData[i][j].kos;
                 weeklyGames[6] ++;
                 weeklyPlace[6] = weeklyPlace[6] + (j + 1);
@@ -3657,19 +3943,19 @@ class Weekly extends React.Component {
                 }
             }
         }
-        if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
+        if(gameData[i][0].name === "Micah" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[0] ++;
-        }else if(gameData[i][0].name === "Tim" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Tim" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[1] ++;
-        }else if(gameData[i][0].name === "Doug" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Doug" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[2] ++;
-        }else if(gameData[i][0].name === "Zack" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Zack" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[3] ++;
-        }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[4] ++;
-        }else if(gameData[i][0].name === "James" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "James" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[5] ++;
-        }else if(gameData[i][0].name === "Craig" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Craig" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[6] ++;
         }
     }
@@ -3696,11 +3982,13 @@ class Weekly extends React.Component {
     weeklyAvg = [0,0,0,0,0,0,0];
     weeklyPoints = [0,0,0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
+    console.log(dateIndex);
     if(dateIndex < dates.length - 1){
       var newDate = dates[dateIndex + 1];
+      console.log(newDate);
       for(var i=0; i < gameData.length; i++){
         for(var j=0; j < 4; j++){
-            if(gameData[i][j].name === "Micah" && gameData[i][5].date === newDate){
+            if(gameData[i][j].name === "Micah" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
                 weeklyGames[0] ++;
                 weeklyPlace[0] = weeklyPlace[0] + (j + 1);
@@ -3719,7 +4007,7 @@ class Weekly extends React.Component {
                         weeklyPoints[0] = weeklyPoints[0] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Tim" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Tim" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
                 weeklyGames[1] ++;
                 weeklyPlace[1] = weeklyPlace[1] + (j + 1);
@@ -3738,7 +4026,7 @@ class Weekly extends React.Component {
                         weeklyPoints[1] = weeklyPoints[1] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Doug" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Doug" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
                 weeklyGames[2] ++;
                 weeklyPlace[2] = weeklyPlace[2] + (j + 1);
@@ -3757,7 +4045,7 @@ class Weekly extends React.Component {
                         weeklyPoints[2] = weeklyPoints[2] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Zack" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Zack" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
                 weeklyGames[3] ++;
                 weeklyPlace[3] = weeklyPlace[3] + (j + 1);
@@ -3776,7 +4064,7 @@ class Weekly extends React.Component {
                         weeklyPoints[3] = weeklyPoints[3] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
@@ -3795,7 +4083,7 @@ class Weekly extends React.Component {
                         weeklyPoints[4] = weeklyPoints[4] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "James" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "James" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
                 weeklyGames[5] ++;
                 weeklyPlace[5] = weeklyPlace[5] + (j + 1);
@@ -3814,7 +4102,7 @@ class Weekly extends React.Component {
                         weeklyPoints[5] = weeklyPoints[5] + 1;
                     }
                 }
-            }else if(gameData[i][j].name === "Craig" && gameData[i][5].date === newDate){
+            }else if(gameData[i][j].name === "Craig" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[6] = weeklyKos[6] + gameData[i][j].kos;
                 weeklyGames[6] ++;
                 weeklyPlace[6] = weeklyPlace[6] + (j + 1);
@@ -3835,19 +4123,19 @@ class Weekly extends React.Component {
                 }
             }
         }
-        if(gameData[i][0].name === "Micah" && gameData[i][5].date === newDate){
+        if(gameData[i][0].name === "Micah" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[0] ++;
-        }else if(gameData[i][0].name === "Tim" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Tim" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[1] ++;
-        }else if(gameData[i][0].name === "Doug" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Doug" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[2] ++;
-        }else if(gameData[i][0].name === "Zack" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Zack" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[3] ++;
-        }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Betsy" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[4] ++;
-        }else if(gameData[i][0].name === "James" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "James" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[5] ++;
-        }else if(gameData[i][0].name === "Craig" && gameData[i][5].date === newDate){
+        }else if(gameData[i][0].name === "Craig" && gameData[i][5].date.getTime() === newDate){
           weeklyWins[6] ++;
         }
       }
@@ -3867,9 +4155,10 @@ class Weekly extends React.Component {
     }
   }
   listGames () {
+    var date = this.state.date;
     const numberOfGames = gameData;
     const listGames = numberOfGames.map((game, index) => {
-      if(game[5].date === this.state.date) {
+      if(game[5].date.getTime() === date) {
         return <Game key={index} id={index} firstPlace={game[0].name} second={game[1].name} third={game[2].name} fourth={game[3].name} character1={game[0].character} character2={game[1].character} character3={game[2].character} character4={game[3].character} firstKos={game[0].kos} secondKos={game[1].kos} thirdKos={game[2].kos} fourthKos={game[3].kos} stage={game[4].stage} />
       }
     }
@@ -3884,7 +4173,7 @@ class Weekly extends React.Component {
         <div className="col-xs-12">
           <div className="row">
             <div className="col-xs-offset-1 col-xs-1 col-md-offset-4 col-md-1"><span onClick={this.previousDate} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
-            <div className="col-xs-8 col-md-2" id="weeklyDate">{this.state.date}</div>
+            <div className="col-xs-8 col-md-2" id="weeklyDate">{this.state.date.toString()}</div>
             <div className="col-xs-1 col-md-1"><span onClick={this.nextDate} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
           </div>
           <div className="row">

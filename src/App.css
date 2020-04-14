@@ -35,6 +35,20 @@ html {
   font-family: 'Carter One', cursive;
 }
 
+.overallCol {
+  font-family: 'Carter One', cursive;
+  background-color: #ffffff54;
+  border-radius: 30px;
+}
+
+.overallTitle {
+  font-size: 32px;
+}
+
+.overallData {
+  font-size: 24px;
+}
+
 #fighterImage {
   height: 100px;
   border-width: 2px;
