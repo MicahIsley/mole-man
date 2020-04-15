@@ -1525,6 +1525,7 @@ var mostWins;
 var averagePlace;
 var highKoGames;
 var totalKos;
+var gamesPlayed;
 var gamesPlayed19 = [0,0,0,0,0,0,0];
 var gamesPlayed20 = [0,0,0,0,0,0,0];
 var gamePlace19 = [0,0,0,0,0,0,0];
@@ -2592,7 +2593,7 @@ class Highlights extends React.Component {
 class Tab extends React.Component {
   render(){
     return (
-      <div className="col-xs-3 tab" id={this.props.name} onClick={this.props.handleClick}>{this.props.name}</div>
+      <div className="col-xs-2 tab" id={this.props.name} onClick={this.props.handleClick}>{this.props.name}</div>
     )
   }
 }
@@ -2656,31 +2657,31 @@ class Graphs extends React.Component {
                     weeklyKos[j] = (weeklyKos[j]/weeklyGames[j]).toFixed(2);
                 }else{}
             }
-            var micahDataPoint = {x: dates[i], y: weeklyAvg[0]};
+            var micahDataPoint = {x: new Date(dates[i]), y: weeklyAvg[0]};
             if(weeklyAvg[0] > 0){
                 graphPlaceMicah.push(micahDataPoint);
             }else{}
-            var timDataPoint = {x: dates[i], y: weeklyAvg[1]};
+            var timDataPoint = {x: new Date(dates[i]) , y: weeklyAvg[1]};
             if(weeklyAvg[1] > 0){
                 graphPlaceTim.push(timDataPoint);
             }else{}
-            var dougDataPoint = {y: weeklyAvg[2], x: dates[i]};
+            var dougDataPoint = {y: weeklyAvg[2], x: new Date(dates[i]) };
             if(weeklyAvg[2] > 0){
                 graphPlaceDoug.push(dougDataPoint);
             }else{}
-            var zackDataPoint = {y: weeklyAvg[3], x: dates[i]};
+            var zackDataPoint = {y: weeklyAvg[3], x: new Date(dates[i]) };
             if(weeklyAvg[3] > 0){
                 graphPlaceZack.push(zackDataPoint);
             }else{}
-            var betsyDataPoint = {y: weeklyAvg[4], x: dates[i]};
+            var betsyDataPoint = {y: weeklyAvg[4], x: new Date(dates[i]) };
             if(weeklyAvg[4] > 0){
                 graphPlaceBetsy.push(betsyDataPoint);
             }else{}
-            var jamesDataPoint = {y: weeklyAvg[5], x: dates[i]};
+            var jamesDataPoint = {y: weeklyAvg[5], x: new Date(dates[i]) };
             if(weeklyAvg[5] > 0){
                 graphPlaceJames.push(jamesDataPoint);
             }else{}
-            var craigDataPoint = {y: weeklyAvg[6], x: dates[i]};
+            var craigDataPoint = {y: weeklyAvg[6], x: new Date(dates[i]) };
             if(weeklyAvg[6] > 0){
                 graphPlaceCraig.push(craigDataPoint);
             }else{}
@@ -2907,22 +2908,17 @@ class Overall extends React.Component {
         });
         var topTenPlayed = numberOfTopPlayed.slice(0,10);
         const listTopPlayed = topTenPlayed.map((player, index) => {
-            var imageString = player.name.toString();
-            console.log();
-            var splitString = imageString.split("/");
-            var splitAgain = splitString[3].split(".");
-            var splitName = splitAgain[0];
-          return <TopList key={index} id={index} name={splitName} number={player.number} />
+          return <TopPlayed key={index} id={index} name={player.name} number={player.number} />
         });
         return (
-          <div className="col-xs-12">{listTopPlayed}</div>
+          <div className="col-xs-12 topPlayedCol">{listTopPlayed}</div>
         )
     }
     render(){
      return (
         <div className="col-xs-12">
             <div className="row">
-                <div className="col-xs-offset-4 col-xs-4">Overall Rankings</div>
+                <div className="col-xs-offset-4 col-xs-4 overallTitle">Overall Rankings</div>
                 <div className="col-xs-4 changeYear" onClick={this.changeOverallYear}>{this.state.year}</div>
             </div>
             <div className="row">
@@ -2960,6 +2956,16 @@ class TopList extends React.Component {
     }
 }
 
+class TopPlayed extends React.Component {
+    render(){
+        return (
+            <div className="row">
+                <img src={this.props.name} alt="topPlayed" className="col-xs-8 topPlayedImage" /><div className="col-xs-4 overallData" id={this.props.id + "TopList"}>{this.props.number}</div>
+            </div>
+        )
+    }
+}
+
 class Stats extends React.Component {
   constructor(props) {
     super(props);
@@ -2970,7 +2976,8 @@ class Stats extends React.Component {
       mostWins: [],
       totalKos: [],
       highKoGames: 0,
-      year: "Overall"
+      year: "Overall",
+      gamesPlayed: 0
     }
   this.nextName = this.nextName.bind(this);
   this.previousName = this.previousName.bind(this);
@@ -3015,12 +3022,14 @@ class Stats extends React.Component {
     }
     averagePlace = ((gamePlace19[0] + gamePlace20[0])/(gamesPlayed19[0] + gamesPlayed20[0])).toFixed(2);
     highKoGames = highKoGames19[0] + highKoGames20[0];
+    gamesPlayed = gamesPlayed19[0] + gamesPlayed20[0];
     this.setState({
       mostPlayed: mostPlayed,
       averagePlace: averagePlace,
       mostWins: mostWins,
       totalKos: totalKos,
-      highKoGames: highKoGames
+      highKoGames: highKoGames,
+      gamesPlayed: gamesPlayed
     });
   }
   listMostPlayed() {
@@ -3031,7 +3040,7 @@ class Stats extends React.Component {
       return <MostPlayed key={index} id={index} character={character.character} number={character.number} />
     });
     return (
-      <div>{listMostPlayed}</div>
+      <div className="col-xs-4">{listMostPlayed}</div>
     )
   }
   listMostWins() {
@@ -3040,7 +3049,7 @@ class Stats extends React.Component {
       return <MostPlayed key={index} id={index} character={character.character} number={character.wins} />
     });
     return (
-      <div>{listMostWins}</div>
+      <div className="col-xs-4">{listMostWins}</div>
     )
   }
   listMostKos() {
@@ -3049,7 +3058,7 @@ class Stats extends React.Component {
       return <MostPlayed key={index} id={index} character={character.character} number={character.kos} />
     });
     return (
-      <div>{listMostKos}</div>
+      <div className="col-xs-4">{listMostKos}</div>
     )
   }
   changeStatsYear() {
@@ -3121,7 +3130,8 @@ class Stats extends React.Component {
             }else{}
         }
         averagePlace = (gamePlace19[playerNumber]/gamesPlayed19[playerNumber]).toFixed(2);
-        highKoGames = highKoGames19[playerNumber]; 
+        highKoGames = highKoGames19[playerNumber];
+        gamesPlayed = gamesPlayed19[playerNumber];
     }else if(this.state.year === "2019"){
         statsYear = "2020";
         playerCharacters20.sort(function(a, b){
@@ -3169,6 +3179,7 @@ class Stats extends React.Component {
         }
         averagePlace = (gamePlace20[playerNumber]/gamesPlayed20[playerNumber]).toFixed(2);
         highKoGames = highKoGames20[playerNumber];
+        gamesPlayed = gamesPlayed20[playerNumber];
     }else if(this.state.year === "2020"){
         statsYear = "Overall";
         playerCharacters.sort(function(a, b){
@@ -3216,6 +3227,7 @@ class Stats extends React.Component {
         }
         averagePlace = ((gamePlace19[playerNumber] + gamePlace20[playerNumber])/(gamesPlayed19[playerNumber] + gamesPlayed20[playerNumber])).toFixed(2);
         highKoGames = highKoGames19[playerNumber] + highKoGames20[playerNumber];
+        gamesPlayed = gamesPlayed19[playerNumber] + gamesPlayed20[playerNumber];
     }
     this.setState({
         year: statsYear,
@@ -3223,7 +3235,8 @@ class Stats extends React.Component {
         mostWins: mostWins,
         averagePlace: averagePlace,
         highKoGames: highKoGames,
-        totalKos: totalKos
+        totalKos: totalKos,
+        gamesPlayed: gamesPlayed
     });
   }
   nextName() {
@@ -3281,6 +3294,7 @@ class Stats extends React.Component {
         }
         averagePlace = ((gamePlace19[nameIndex + 1] + gamePlace20[nameIndex + 1])/(gamesPlayed19[nameIndex + 1] + gamesPlayed20[nameIndex + 1])).toFixed(2);
         highKoGames = highKoGames19[nameIndex + 1] + highKoGames20[nameIndex + 1];
+        gamesPlayed = gamesPlayed19[nameIndex + 1] + gamesPlayed20[nameIndex + 1];
     }else if(this.state.year === "2019"){
         playerArray19.sort(function(a, b){
             if(a.number < b.number) { return 1; }
@@ -3327,6 +3341,7 @@ class Stats extends React.Component {
         }
         averagePlace = (gamePlace19[nameIndex + 1]/gamesPlayed19[nameIndex + 1]).toFixed(2);
         highKoGames = highKoGames19[nameIndex + 1];
+        gamesPlayed = gamesPlayed19[nameIndex + 1];
     }else if(this.state.year === "2020"){
         playerArray20.sort(function(a, b){
             if(a.number < b.number) { return 1; }
@@ -3373,6 +3388,7 @@ class Stats extends React.Component {
         }
         averagePlace = (gamePlace20[nameIndex + 1]/gamesPlayed20[nameIndex + 1]).toFixed(2);
         highKoGames = highKoGames20[nameIndex + 1];
+        gamesPlayed = gamesPlayed20[nameIndex + 1];
     }
     if(nameIndex < nameArray.length - 1){
       var newName = nameIndex + 1;
@@ -3382,7 +3398,8 @@ class Stats extends React.Component {
         averagePlace: averagePlace,
         mostWins: mostWins,
         totalKos: totalKos,
-        highKoGames: highKoGames
+        highKoGames: highKoGames,
+        gamesPlayed: gamesPlayed
       });
     }
   }
@@ -3441,6 +3458,7 @@ class Stats extends React.Component {
         }
         averagePlace = ((gamePlace19[nameIndex - 1] + gamePlace20[nameIndex - 1])/(gamesPlayed19[nameIndex - 1] + gamesPlayed20[nameIndex - 1])).toFixed(2);
         highKoGames = highKoGames19[nameIndex - 1] + highKoGames20[nameIndex - 1];
+        gamesPlayed = gamesPlayed19[nameIndex - 1] + gamesPlayed20[nameIndex - 1];
     }else if(this.state.year === "2019"){
         playerArray19.sort(function(a, b){
             if(a.number < b.number) { return 1; }
@@ -3487,6 +3505,7 @@ class Stats extends React.Component {
         }
         averagePlace = (gamePlace19[nameIndex - 1]/gamesPlayed19[nameIndex - 1]).toFixed(2);
         highKoGames = highKoGames19[nameIndex - 1];
+        gamesPlayed = gamesPlayed19[nameIndex - 1];
     }else if(this.state.year === "2020"){
         playerArray20.sort(function(a, b){
             if(a.number < b.number) { return 1; }
@@ -3533,6 +3552,7 @@ class Stats extends React.Component {
         }
         averagePlace = (gamePlace20[nameIndex - 1]/gamesPlayed20[nameIndex - 1]).toFixed(2);
         highKoGames = highKoGames20[nameIndex - 1];
+        gamesPlayed = gamesPlayed20[nameIndex - 1];
     }
     if(nameIndex > 0){
       var newName = nameIndex - 1;
@@ -3542,7 +3562,8 @@ class Stats extends React.Component {
         averagePlace: averagePlace,
         mostWins: mostWins,
         totalKos: totalKos,
-        highKoGames: highKoGames
+        highKoGames: highKoGames,
+        gamesPlayed: gamesPlayed
       });
     }
   }
@@ -3557,24 +3578,20 @@ class Stats extends React.Component {
             <div className="col-xs-6 col-md-offset-1 col-md-2 changeYear" onClick={this.changeStatsYear}>{this.state.year}</div>
           </div>
           <div className="row" id="averagePlaceTitle">
-            <div className="col-xs-offset-4 col-xs-2">Average Place</div>
+            <div className="col-xs-2">Total Games</div>
+            <div className="col-xs-2">{this.state.gamesPlayed}</div>
+            <div className="col-xs-2">Average Place</div>
             <div className="col-xs-2">{this.state.averagePlace}</div>
           </div>
           <div className="row">
-            <div className="col-xs-4 statsTitle">Most Played Characters</div>
+            <div className="col-xs-4 statsTitle">Most Played Fighters</div>
             <div className="col-xs-4 statsTitle">Average Kos</div>
             <div className="col-xs-4 statsTitle">Most Wins</div>
           </div>
           <div className="row">
-            <div className="col-xs-4">
-              {this.listMostPlayed()}
-            </div>
-            <div className="col-xs-4">
-                {this.listMostKos()}
-            </div>
-            <div className="col-xs-4" id="mostWinsNumber">
-              {this.listMostWins()}
-            </div>
+            {this.listMostPlayed()}
+            {this.listMostKos()}
+            {this.listMostWins()}
           </div>
         </div>
       </div>
@@ -3598,10 +3615,10 @@ class MostPlayed extends React.Component {
     }
     return (
       <div className="row">
-        <div className="col-xs-9 col-md-10">
+        <div className="col-xs-9 col-md-7">
           <img  className="statsFighterIcon" id={icon} src={this.props.character} alt="mostplayed" />
         </div>
-        <div className="col-xs-2 mostPlayedNum" id={number}>{this.props.number}</div>
+        <div className="col-xs-2 col-md-3 mostPlayedNum" id={number}>{this.props.number}</div>
       </div>
     )
   }
@@ -4168,12 +4185,16 @@ class Weekly extends React.Component {
     )
   }
   render(){
+    var displayDate = new Date(this.state.date).toString();
+    var splitDate = displayDate.split(" ");
+    console.log(splitDate);
+    var finalDate = splitDate[1] + " " + splitDate[2] + " " + splitDate[3];
     return (
       <div className="row rankings">
         <div className="col-xs-12">
           <div className="row">
             <div className="col-xs-offset-1 col-xs-1 col-md-offset-4 col-md-1"><span onClick={this.previousDate} className="arrowButton glyphicon glyphicon-chevron-left" /></div>
-            <div className="col-xs-8 col-md-2" id="weeklyDate">{this.state.date.toString()}</div>
+            <div className="col-xs-8 col-md-2" id="weeklyDate">{finalDate}</div>
             <div className="col-xs-1 col-md-1"><span onClick={this.nextDate} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
           </div>
           <div className="row">
@@ -4337,11 +4358,11 @@ class Fighters extends React.Component {
         this.state = {
           fighterStats: [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy, fighterStatsJames, fighterStatsCraig],
           fighterName: " ",
-          fighterImage: empty
+          fighterImage: smash
         }
     this.findFighterData = this.findFighterData.bind(this);
     }   
-    findFighterData(){
+    findFighterData(fighter){
         fighterStatsMicah = {games: 0, wins: 0, place: 0, kos: 0};
         fighterStatsTim = {games: 0, wins: 0, place: 0, kos: 0};
         fighterStatsDoug = {games: 0, wins: 0, place: 0, kos: 0};
@@ -4350,17 +4371,12 @@ class Fighters extends React.Component {
         fighterStatsJames = {games: 0, wins: 0, place: 0, kos: 0};
         fighterStatsCraig = {games: 0, wins: 0, place: 0, kos: 0};
         fighterStatsNick = {games: 0, wins: 0, place: 0, kos: 0};
-        var fighter = (document.getElementById("fighterName").value).replace(/\s/g, '').toLowerCase();
-        var fighterImage;
+        var fighter = fighter;
+        var fighterImage = fighter;
         for(var i=0; i < gameData.length; i++){
             for(var j=0; j< 4; j++){
-                var imageString = gameData[i][j].character.toString();
-                var splitString = imageString.split("/");
-                var splitAgain = splitString[3].split(".");
-                var splitName = splitAgain[0];
-                if(splitName === fighter){
+                if(gameData[i][j].character === fighter){
                     var playerFighterArray = eval("fighterStats" + gameData[i][j].name);
-                    fighterImage = gameData[i][j].character;
                     playerFighterArray.games ++;
                     if(j === 0){
                         playerFighterArray.wins ++;
@@ -4389,18 +4405,22 @@ class Fighters extends React.Component {
             console.log(this.state);
         });
     }
+    listFighters(){
+        const numberOfFighters = ultimateFighters;
+        const listFighters = numberOfFighters.map((fighter, index) => {
+            return <UltimateFighter key={index} id={index} fighter={fighter.name} click={this.findFighterData} />
+        });
+        return (
+          <div className="row" id="fighterList">{listFighters}</div>
+        )
+    }
     render() {
         console.log(this.state.fighterStats);
         return (
             <div className="row">
                 <div className="col-xs-12">
                     <div className="row" id="mainFighterStatsTitle">Fighter Stats</div>
-                    <div className="row">
-                        <div className="col-xs-offset-4 col-xs-4">
-                            <input type="text" id="fighterName"></input>
-                        </div>
-                        <div className="col-xs-2" id="selectButton" onClick={this.findFighterData}>Select</div>
-                    </div>
+                    {this.listFighters()}
                     <div className="row">
                         <img src={this.state.fighterImage} id="fighterImage" />
                     </div>
@@ -4461,6 +4481,14 @@ class Fighters extends React.Component {
                     </div>
                 </div>
             </div>
+        )
+    }
+}
+
+class UltimateFighter extends React.Component {
+    render(){
+        return(
+            <img src={this.props.fighter} alt="fighter" onClick={() => {this.props.click(this.props.fighter)}} className="ultimateFighterIcon" />
         )
     }
 }
