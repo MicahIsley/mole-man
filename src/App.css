@@ -35,6 +35,10 @@ html {
   font-family: 'Carter One', cursive;
 }
 
+#listGamesRow {
+  margin-top: 20px;
+}
+
 #fighterList {
   width: 1200px;
   height: 80px;
@@ -276,6 +280,7 @@ html {
   border-color: black;
   border-style: solid;
   border-width: 0px 3px 3px 0px;
+  border-radius: 0px 0px 10px 0px;
 }
 
 #weeklyDate {

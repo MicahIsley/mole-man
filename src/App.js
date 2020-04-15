@@ -2818,8 +2818,6 @@ class Graphs extends React.Component {
                 cursor: "pointer",
                 fontSize: 16,
                 itemclick: function (e) {
-                //console.log("legend click: " + e.dataPointIndex);
-                //console.log(e);
                     if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
                         e.dataSeries.visible = false;
                     } else {
@@ -3016,6 +3014,23 @@ class Overall extends React.Component {
           <div className="col-xs-12 topPlayedCol">{listTopPlayed}</div>
         )
     }
+    listLeastPlayed() {
+        const numberOfLeastPlayed = this.state.topPlayed;
+        numberOfLeastPlayed.sort(function(a, b){
+            if(a.number < b.number) { return -1; }
+            if(a.number > b.number) { return 1; }
+            return 0;
+        });
+        var topTenPlayed = numberOfLeastPlayed.slice(0,15);
+        const listLeastPlayed = topTenPlayed.map((player, index) => {
+            if(player.number === 0){
+                return <TopPlayed key={index} id={index} name={player.name} number={player.number} />
+            }
+        });
+        return (
+          <div className="col-xs-12 topPlayedCol">{listLeastPlayed}</div>
+        )
+    }
     render(){
      return (
         <div className="col-xs-12">
@@ -3024,22 +3039,28 @@ class Overall extends React.Component {
                 <div className="col-xs-4 changeYear" onClick={this.changeOverallYear}>{this.state.year}</div>
             </div>
             <div className="row">
-                <div className="col-xs-4 overallCol">
+                <div className="col-xs-3 overallCol">
                     <div className="row overallTitle">Top Place</div>
                     <div className="row">
                         {this.listTopPlace()}
                     </div>
                 </div>
-                <div className="col-xs-4 overallCol">
+                <div className="col-xs-3 overallCol">
                     <div className="row overallTitle">Top Kos</div>
                     <div className="row">
                         {this.listTopKos()}
                     </div>
                 </div>
-                <div className="col-xs-4 overallCol">
+                <div className="col-xs-3 overallCol">
                     <div className="row overallTitle">Most Played</div>
                     <div className="row">
                         {this.listTopPlayed()}
+                    </div>
+                </div>
+                <div className="col-xs-3 overallCol">
+                    <div className="row overallTitle">Unplayed</div>
+                    <div className="row">
+                        {this.listLeastPlayed()}
                     </div>
                 </div>
             </div>
@@ -3111,7 +3132,6 @@ class Stats extends React.Component {
         if(a.kos > b.kos) { return -1; }
         return 0;
     });
-    console.log(micahCharacters);
     for(var i=0; i < micahCharacters.length; i++){
         if(micahCharacters[i].number < 3){
             console.log("not enough games");
@@ -3136,8 +3156,6 @@ class Stats extends React.Component {
   }
   listMostPlayed() {
     const numberOfMostPlayed = this.state.mostPlayed;
-    console.log("listmostplayed");
-    console.log(numberOfMostPlayed);
     const listMostPlayed = numberOfMostPlayed.map((character, index) => {
       return <MostPlayed key={index} id={index} character={character.character} number={character.number} />
     });
@@ -3924,7 +3942,6 @@ class Weekly extends React.Component {
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex > 0){
       var newDate = dates[dateIndex - 1];
-      console.log(newDate);
       for(var i=0; i < gameData.length; i++){
         for(var j=0; j < 4; j++){
             if(gameData[i][j].name === "Micah" && gameData[i][5].date.getTime() === newDate){
@@ -4101,10 +4118,8 @@ class Weekly extends React.Component {
     weeklyAvg = [0,0,0,0,0,0,0];
     weeklyPoints = [0,0,0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
-    console.log(dateIndex);
     if(dateIndex < dates.length - 1){
       var newDate = dates[dateIndex + 1];
-      console.log(newDate);
       for(var i=0; i < gameData.length; i++){
         for(var j=0; j < 4; j++){
             if(gameData[i][j].name === "Micah" && gameData[i][5].date.getTime() === newDate){
@@ -4289,7 +4304,6 @@ class Weekly extends React.Component {
   render(){
     var displayDate = new Date(this.state.date).toString();
     var splitDate = displayDate.split(" ");
-    console.log(splitDate);
     var finalDate = splitDate[1] + " " + splitDate[2] + " " + splitDate[3];
     return (
       <div className="row rankings">
@@ -4300,7 +4314,7 @@ class Weekly extends React.Component {
             <div className="col-xs-1 col-md-1"><span onClick={this.nextDate} className="arrowButton glyphicon glyphicon-chevron-right" /></div>
           </div>
           <div className="row">
-            {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-offset-2 col-md-1 weeklyName">Micah</div> : null}
+            {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-offset-3 col-md-1 weeklyName">Micah</div> : null}
             {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">Tim</div> : null}
             {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">Doug</div> : null}
             {this.state.weeklyAvg[3] ? <div className="col-xs-1 col-md-1 weeklyName">Zack</div> : null}
@@ -4309,7 +4323,7 @@ class Weekly extends React.Component {
             {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">Betsy</div> : null}
           </div>
           <div className="row">
-            <div className="col-md-2 weeklyName">Wins</div>
+            <div className="col-md-offset-1 col-md-2 weeklyName">Wins</div>
             {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[0]}</div> : null}
             {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[1]}</div> : null}
             {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[2]}</div> : null}
@@ -4319,7 +4333,7 @@ class Weekly extends React.Component {
             {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyWins[4]}</div> : null}
           </div>
           <div className="row">
-            <div className="col-md-2 weeklyName">Avg Place</div>
+            <div className="col-md-offset-1 col-md-2 weeklyName">Avg Place</div>
             {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[0]}</div> : null}
             {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[1]}</div> : null}
             {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[2]}</div> : null}
@@ -4329,7 +4343,7 @@ class Weekly extends React.Component {
             {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[4]}</div> : null}
           </div>
           <div className="row">
-            <div className="col-md-2 weeklyName">Avg Kos</div>
+            <div className="col-md-offset-1 col-md-2 weeklyName">Avg Kos</div>
             {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[0]}</div> : null}
             {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[1]}</div> : null}
             {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[2]}</div> : null}
@@ -4338,7 +4352,7 @@ class Weekly extends React.Component {
             {this.state.weeklyAvg[6] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[6]}</div> : null}
             {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[4]}</div> : null}
           </div>
-          <div className="row">
+          <div className="row" id="listGamesRow">
             {this.listGames()}
           </div>
         </div>
@@ -4517,7 +4531,6 @@ class Fighters extends React.Component {
         )
     }
     render() {
-        console.log(this.state.fighterStats);
         return (
             <div className="row">
                 <div className="col-xs-12">
