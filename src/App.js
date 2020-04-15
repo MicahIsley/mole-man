@@ -1546,6 +1546,20 @@ var graphPlaceZack = [];
 var graphPlaceBetsy = [];
 var graphPlaceJames = [];
 var graphPlaceCraig = [];
+var graphKosMicah = [];
+var graphKosTim = [];
+var graphKosDoug = [];
+var graphKosZack = [];
+var graphKosBetsy = [];
+var graphKosJames = [];
+var graphKosCraig = [];
+var graphWinsMicah = [];
+var graphWinsTim = [];
+var graphWinsDoug = [];
+var graphWinsZack = [];
+var graphWinsBetsy = [];
+var graphWinsJames = [];
+var graphWinsCraig = [];
 
 
 class App extends React.Component {
@@ -2609,8 +2623,9 @@ class Graphs extends React.Component {
           avgPlaceBetsy: [],
           avgPlaceJames: [],
           avgPlaceCraig: [],
-          year: "2020"
+          title: "Average Place"
         }
+    this.changeGraph = this.changeGraph.bind(this);
     }
     componentDidMount(){
         for(var i=0; i<dates.length; i++){
@@ -2618,75 +2633,125 @@ class Graphs extends React.Component {
             weeklyGames = [0,0,0,0,0,0,0];
             weeklyPlace = [0,0,0,0,0,0,0];
             weeklyAvg = [0,0,0,0,0,0,0];
+            weeklyWins = [0,0,0,0,0,0,0];
             for(var j=0; j < gameData.length; j++){
                 for(var k=0; k < 4; k++){
                     if(gameData[j][k].name === "Micah" && gameData[j][5].date.getTime() === dates[i]){
                         weeklyKos[0] = weeklyKos[0] + gameData[j][k].kos;
                         weeklyGames[0] ++;
                         weeklyPlace[0] = weeklyPlace[0] + (k + 1);
+                        if(gameData[j][0].name === "Micah"){
+                            weeklyWins[0] ++;
+                        }else{}
                     }else if(gameData[j][k].name === "Tim" && gameData[j][5].date.getTime() === dates[i]){
                         weeklyKos[1] = weeklyKos[1] + gameData[j][k].kos;
                         weeklyGames[1] ++;
                         weeklyPlace[1] = weeklyPlace[1] + (k + 1);
+                        if(gameData[j][0].name === "Tim"){
+                            weeklyWins[1] ++;
+                        }else{}
                     }else if(gameData[j][k].name === "Doug" && gameData[j][5].date.getTime() === dates[i]){
                         weeklyKos[2] = weeklyKos[2] + gameData[j][k].kos;
                         weeklyGames[2] ++;
                         weeklyPlace[2] = weeklyPlace[2] + (k + 1);
+                        if(gameData[j][0].name === "Doug"){
+                            weeklyWins[2] ++;
+                        }else{}
                     }else if(gameData[j][k].name === "Zack" && gameData[j][5].date.getTime() === dates[i]){
                         weeklyKos[3] = weeklyKos[3] + gameData[j][k].kos;
                         weeklyGames[3] ++;
                         weeklyPlace[3] = weeklyPlace[3] + (k + 1);
+                        if(gameData[j][0].name === "Zack"){
+                            weeklyWins[3] ++;
+                        }else{}
                     }else if(gameData[j][k].name === "Betsy" && gameData[j][5].date.getTime() === dates[i]){
                         weeklyKos[4] = weeklyKos[4] + gameData[j][k].kos;
                         weeklyGames[4] ++;
                         weeklyPlace[4] = weeklyPlace[4] + (k + 1);
+                        if(gameData[j][0].name === "Betsy"){
+                            weeklyWins[4] ++;
+                        }else{}
                     }else if(gameData[j][k].name === "James" && gameData[j][5].date.getTime() === dates[i]){
                         weeklyKos[5] = weeklyKos[5] + gameData[j][k].kos;
                         weeklyGames[5] ++;
                         weeklyPlace[5] = weeklyPlace[5] + (k + 1);
+                        if(gameData[j][0].name === "James"){
+                            weeklyWins[5] ++;
+                        }else{}
                     }else if(gameData[j][k].name === "Craig" && gameData[j][5].date.getTime() === dates[i]){
                         weeklyKos[6] = weeklyKos[6] + gameData[j][k].kos;
                         weeklyGames[6] ++;
                         weeklyPlace[6] = weeklyPlace[6] + (k + 1);
+                        if(gameData[j][0].name === "Craig"){
+                            weeklyWins[6] ++;
+                        }else{}
                     }
                 }
             }
             for(var j=0; j < 7; j++){
                 if(weeklyGames[j] > 0){
                     weeklyAvg[j] = parseFloat((weeklyPlace[j]/weeklyGames[j]).toFixed(2));
-                    weeklyKos[j] = (weeklyKos[j]/weeklyGames[j]).toFixed(2);
+                    weeklyKos[j] = parseFloat((weeklyKos[j]/weeklyGames[j]).toFixed(2));
+                    weeklyWins[j] = ((weeklyWins[j]/weeklyGames[j]).toFixed(2)) * 100;
                 }else{}
             }
             var micahDataPoint = {x: new Date(dates[i]), y: weeklyAvg[0]};
+            var micahDataPoint2 = {x: new Date(dates[i]), y: weeklyKos[0]};
+            var micahDataPoint3 = {x: new Date(dates[i]), y: weeklyWins[0]};
             if(weeklyAvg[0] > 0){
                 graphPlaceMicah.push(micahDataPoint);
+                graphKosMicah.push(micahDataPoint2);
+                graphWinsMicah.push(micahDataPoint3);
             }else{}
             var timDataPoint = {x: new Date(dates[i]) , y: weeklyAvg[1]};
+            var timDataPoint2 = {x: new Date(dates[i]), y: weeklyKos[1]};
+            var timDataPoint3 = {x: new Date(dates[i]), y: weeklyWins[1]};
             if(weeklyAvg[1] > 0){
                 graphPlaceTim.push(timDataPoint);
+                graphKosTim.push(timDataPoint2);
+                graphWinsTim.push(timDataPoint3);
             }else{}
             var dougDataPoint = {y: weeklyAvg[2], x: new Date(dates[i]) };
+            var dougDataPoint2 = {x: new Date(dates[i]), y: weeklyKos[2]};
+            var dougDataPoint3 = {x: new Date(dates[i]), y: weeklyWins[2]};
             if(weeklyAvg[2] > 0){
                 graphPlaceDoug.push(dougDataPoint);
+                graphKosDoug.push(dougDataPoint2);
+                graphWinsDoug.push(dougDataPoint3);
             }else{}
             var zackDataPoint = {y: weeklyAvg[3], x: new Date(dates[i]) };
+            var zackDataPoint2 = {x: new Date(dates[i]), y: weeklyKos[3]};
+            var zackDataPoint3 = {x: new Date(dates[i]), y: weeklyWins[3]};
             if(weeklyAvg[3] > 0){
                 graphPlaceZack.push(zackDataPoint);
+                graphKosZack.push(zackDataPoint2);
+                graphWinsZack.push(zackDataPoint3);
             }else{}
             var betsyDataPoint = {y: weeklyAvg[4], x: new Date(dates[i]) };
+            var betsyDataPoint2 = {x: new Date(dates[i]), y: weeklyKos[4]};
+            var betsyDataPoint3 = {x: new Date(dates[i]), y: weeklyWins[4]};
             if(weeklyAvg[4] > 0){
                 graphPlaceBetsy.push(betsyDataPoint);
+                graphKosBetsy.push(betsyDataPoint2);
+                graphWinsBetsy.push(betsyDataPoint3);
             }else{}
             var jamesDataPoint = {y: weeklyAvg[5], x: new Date(dates[i]) };
+            var jamesDataPoint2 = {x: new Date(dates[i]), y: weeklyKos[5]};
+            var jamesDataPoint3 = {x: new Date(dates[i]), y: weeklyWins[5]};
             if(weeklyAvg[5] > 0){
                 graphPlaceJames.push(jamesDataPoint);
+                graphKosJames.push(jamesDataPoint2);
+                graphWinsJames.push(jamesDataPoint3);
             }else{}
             var craigDataPoint = {y: weeklyAvg[6], x: new Date(dates[i]) };
+            var craigDataPoint2 = {x: new Date(dates[i]), y: weeklyKos[6]};
+            var craigDataPoint3 = {x: new Date(dates[i]), y: weeklyWins[6]};
             if(weeklyAvg[6] > 0){
                 graphPlaceCraig.push(craigDataPoint);
+                graphKosCraig.push(craigDataPoint2);
+                graphWinsCraig.push(craigDataPoint3);
             }else{}
         }
-        console.log(graphPlaceMicah);
         this.setState({
             avgPlaceMicah: graphPlaceMicah,
             avgPlaceTim: graphPlaceTim,
@@ -2697,19 +2762,47 @@ class Graphs extends React.Component {
             avgPlaceCraig: graphPlaceCraig
         });
     }
-    /*toggleDataSeries(e){
-        if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-            e.dataSeries.visible = false;
+    changeGraph(){
+        if(this.state.title === "Average Place"){
+            this.setState({
+                avgPlaceMicah: graphKosMicah,
+                avgPlaceTim: graphKosTim,
+                avgPlaceDoug: graphKosDoug,
+                avgPlaceZack: graphKosZack,
+                avgPlaceBetsy: graphKosBetsy,
+                avgPlaceJames: graphKosJames,
+                avgPlaceCraig: graphKosCraig,
+                title: "Average Kos"
+            })
+        }else if(this.state.title === "Average Kos"){
+            this.setState({
+                avgPlaceMicah: graphWinsMicah,
+                avgPlaceTim: graphWinsTim,
+                avgPlaceDoug: graphWinsDoug,
+                avgPlaceZack: graphWinsZack,
+                avgPlaceBetsy: graphWinsBetsy,
+                avgPlaceJames: graphWinsJames,
+                avgPlaceCraig: graphWinsCraig,
+                title: "Win Percentage"
+            });
+        }else if(this.state.title === "Win Percentage"){
+            this.setState({
+                avgPlaceMicah: graphPlaceMicah,
+                avgPlaceTim: graphPlaceTim,
+                avgPlaceDoug: graphPlaceDoug,
+                avgPlaceZack: graphPlaceZack,
+                avgPlaceBetsy: graphPlaceBetsy,
+                avgPlaceJames: graphPlaceJames,
+                avgPlaceCraig: graphPlaceCraig,
+                title: "Average Place"
+            });
         }
-        else{
-            e.dataSeries.visible = true;
-        }
-    }*/
+    }
     render(){
         const options = {
             animationEnabled: true,
             title:{
-                text: "Average Place"
+                text: this.state.title
             },
             axisX: {
                 title: "Date",
@@ -2717,7 +2810,7 @@ class Graphs extends React.Component {
                 valueFormatString: "DD MMM,YY"
             },
             axisY: {
-                title: "Average Place",
+                title: this.state.title,
                 includeZero: false,
                 valueFormatString: "#.##",
             },
@@ -2777,10 +2870,19 @@ class Graphs extends React.Component {
             }]
         }
         return(
-            <div id="chartContainer">
-                <CanvasJSChart options = {options}
-                    /* onRef = {ref => this.chart = ref} */
-                />
+            <div className="row">
+                <div className="col-xs-12">
+                    <div className="row">
+                        <div className="col-xs-offset-2 col-xs-2 changeYear" onClick={this.changeGraph}>Change Graph</div>
+                    </div>
+                    <div className="row">
+                        <div id="chartContainer">
+                            <CanvasJSChart options = {options}
+                                /* onRef = {ref => this.chart = ref} */
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
