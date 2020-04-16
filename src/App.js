@@ -1477,9 +1477,79 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Custom"},
     {date: new Date(2020,3,8)}
+  ],[
+    {name: "Zack", character: kirby, kos: 5},
+    {name: "Tim", character: ness, kos: 5},
+    {name: "Doug", character: megaman, kos: 0},
+    {name: "Micah", character: wolf, kos: 1},
+    {stage: "Battlefield"},
+    {date: new Date(2020,3,15)}
+  ],[
+    {name: "Zack", character: yoshi, kos: 5},
+    {name: "Tim", character: pacman, kos: 4},
+    {name: "Doug", character: shulk, kos: 2},
+    {name: "Micah", character: wiifittrainer, kos: 0},
+    {stage: "Princess Peach's Castle"},
+    {date: new Date(2020,3,15)}
+  ],[
+    {name: "Zack", character: samus, kos: 4},
+    {name: "Doug", character: samus, kos: 3},
+    {name: "Micah", character: incineroar, kos: 2},
+    {name: "Tim", character: snake, kos: 1},
+    {stage: "Custom"},
+    {date: new Date(2020,3,15)}
+  ],[
+    {name: "Zack", character: kingdedede, kos: 7},
+    {name: "Tim", character: ness, kos: 1},
+    {name: "Micah", character: peach, kos: 2},
+    {name: "Doug", character: greninja, kos: 0},
+    {stage: "Dream Land"},
+    {date: new Date(2020,3,15)}
+  ],[
+    {name: "Tim", character: samus, kos: 3},
+    {name: "Micah", character: bowserjr, kos: 2},
+    {name: "Zack", character: bowser, kos: 4},
+    {name: "Doug", character: zerosuitsamus, kos: 1},
+    {stage: "Delfino Plaza"},
+    {date: new Date(2020,3,15)}
+  ],[
+    {name: "Tim", character: miigunner, kos: 2},
+    {name: "Doug", character: rob, kos: 3},
+    {name: "Micah", character: zelda, kos: 3},
+    {name: "Zack", character: drmario, kos: 3},
+    {stage: "Yggdrasil's Altar"},
+    {date: new Date(2020,3,15)}
+  ],[
+    {name: "Micah", character: zelda, kos: 5},
+    {name: "Doug", character: lucina, kos: 3},
+    {name: "Tim", character: miiswordfighter, kos: 1},
+    {name: "Zack", character: hero, kos: 2},
+    {stage: "Custom"},
+    {date: new Date(2020,3,15)}
+  ],[
+    {name: "Betsy", character: link, kos: 3},
+    {name: "Doug", character: byleth, kos: 6},
+    {name: "Tim", character: pacman, kos: 1},
+    {name: "Zack", character: hero, kos: 1},
+    {stage: "Battlefield"},
+    {date: new Date(2020,3,15)}
+  ],[
+    {name: "Doug", character: pit, kos: 1},
+    {name: "Micah", character: iceclimbers, kos: 1},
+    {name: "Tim", character: miiswordfighter, kos: 5},
+    {name: "Zack", character: hero, kos: 4},
+    {stage: "Duck Hunt"},
+    {date: new Date(2020,3,15)}
+  ],[
+    {name: "Zack", character: hero, kos: 5},
+    {name: "Tim", character: darksamus, kos: 3},
+    {name: "Micah", character: terry, kos: 3},
+    {name: "Doug", character: incineroar, kos: 0},
+    {stage: "Custom"},
+    {date: new Date(2020,3,15)}
   ]
 ];
-var dates = [new Date(2019,8,11).getTime(), new Date(2019,8,18).getTime(), new Date(2019,8,25).getTime(), new Date(2019,9,9).getTime(), new Date(2019,9,16).getTime(), new Date(2019,9,23).getTime(), new Date(2019,11,4).getTime(), new Date(2019,11,18).getTime(), new Date(2020,0,16).getTime(), new Date(2020,0,22).getTime(), new Date(2020,0,30).getTime(), new Date(2020,1,5).getTime(), new Date(2020,1,13).getTime(), new Date(2020,1,19).getTime(), new Date(2020,2,4).getTime(), new Date(2020,2,12).getTime(), new Date(2020,2,18).getTime(), new Date(2020,2,26).getTime(), new Date(2020,3,2).getTime(), new Date(2020,3,8).getTime()];
+var dates = [new Date(2019,8,11).getTime(), new Date(2019,8,18).getTime(), new Date(2019,8,25).getTime(), new Date(2019,9,9).getTime(), new Date(2019,9,16).getTime(), new Date(2019,9,23).getTime(), new Date(2019,11,4).getTime(), new Date(2019,11,18).getTime(), new Date(2020,0,16).getTime(), new Date(2020,0,22).getTime(), new Date(2020,0,30).getTime(), new Date(2020,1,5).getTime(), new Date(2020,1,13).getTime(), new Date(2020,1,19).getTime(), new Date(2020,2,4).getTime(), new Date(2020,2,12).getTime(), new Date(2020,2,18).getTime(), new Date(2020,2,26).getTime(), new Date(2020,3,2).getTime(), new Date(2020,3,8).getTime(), new Date(2020,3,15).getTime()];
 var ultimateFighters = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
 var ultimateFighters19 = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
 var ultimateFighters20 = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
@@ -1493,12 +1563,15 @@ var weeklyKos = [0,0,0,0,0,0,0];
 var weeklyGames = [0,0,0,0,0,0,0];
 var weeklyAvg = [0,0,0,0,0,0,0];
 var weeklyPoints = [0,0,0,0,0,0,0];
+var weeklyNegative = [0,0,0,0,0,0,0];
 var playerkos19 = [0,0,0,0,0,0,0];
 var playerkos20 = [0,0,0,0,0,0,0];
 var highKoGames19 = [0,0,0,0,0,0,0];
 var highKoGames20 = [0,0,0,0,0,0,0];
 var gamePoints19 = [0,0,0,0,0,0,0];
 var gamePoints20 = [0,0,0,0,0,0,0];
+var gameNegative19 = [0,0,0,0,0,0,0];
+var gameNegative20 = [0,0,0,0,0,0,0];
 var micahCharacters = [];
 var timCharacters = [];
 var dougCharacters = [];
@@ -1703,23 +1776,36 @@ class App extends React.Component {
                 gamePlace19[0] = gamePlace19[0] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints19[0] = gamePoints19[0] + 3;
+                        gamePoints19[0] = gamePoints19[0] + 6;
+                        gameNegative19[0] = gameNegative19[0] + 2
                     }else if(j === 1){
-                        gamePoints19[0] = gamePoints19[0] + 1;
+                        gamePoints19[0] = gamePoints19[0] + 3;
+                    }else{
+                        gameNegative19[0] = gameNegative19[0] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints19[0] = gamePoints19[0] + 4;
+                        gamePoints19[0] = gamePoints19[0] + 8;
+                        gameNegative19[0] = gameNegative19[0] + 3
                     }else if(j === 1){
-                        gamePoints19[0] = gamePoints19[0] + 2;
+                        gamePoints19[0] = gamePoints19[0] + 4;
+                        gameNegative19[0] = gameNegative19[0] + 1
                     }else if(j === 2){
                         gamePoints19[0] = gamePoints19[0] + 1;
+                        gameNegative19[0] = gameNegative19[0] - 1
+                    }else{
+                        gameNegative19[0] = gameNegative19[0] - 3
                     }
                 }
                 playerkos19[0] = playerkos19[0] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[0] ++;
-                }else{}
+                  gamePoints19[0] = gamePoints19[0] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints19[0] = gamePoints19[0] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints19[0] = gamePoints19[0] + 3;
+                }
                 var existingCharacter19 = false;
                 for(var k=0; k < micahCharacters19.length; k++){
                     if(micahCharacters19[k].character === gameData[i][j].character){
@@ -1745,23 +1831,36 @@ class App extends React.Component {
                 gamePlace20[0] = gamePlace20[0] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints20[0] = gamePoints20[0] + 3;
+                        gamePoints20[0] = gamePoints20[0] + 6;
+                        gameNegative20[0] = gameNegative20[0] + 2
                     }else if(j === 1){
-                        gamePoints20[0] = gamePoints20[0] + 1;
+                        gamePoints20[0] = gamePoints20[0] + 3;
+                    }else{
+                        gameNegative20[0] = gameNegative20[0] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints20[0] = gamePoints20[0] + 4;
+                        gamePoints20[0] = gamePoints20[0] + 8;
+                        gameNegative20[0] = gameNegative20[0] + 3
                     }else if(j === 1){
-                        gamePoints20[0] = gamePoints20[0] + 2;
+                        gamePoints20[0] = gamePoints20[0] + 4;
+                        gameNegative20[0] = gameNegative20[0] + 1
                     }else if(j === 2){
                         gamePoints20[0] = gamePoints20[0] + 1;
+                        gameNegative20[0] = gameNegative20[0] - 1
+                    }else{
+                        gameNegative20[0] = gameNegative20[0] - 3
                     }
                 }
                 playerkos20[0] = playerkos20[0] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[0] ++;
-                }else{}
+                  gamePoints20[0] = gamePoints20[0] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints20[0] = gamePoints20[0] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints20[0] = gamePoints20[0] + 3;
+                }
                 var existingCharacter20 = false;
                 for(var k=0; k < micahCharacters20.length; k++){
                     if(micahCharacters20[k].character === gameData[i][j].character){
@@ -1809,23 +1908,36 @@ class App extends React.Component {
                 gamePlace19[1] = gamePlace19[1] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints19[1] = gamePoints19[1] + 3;
+                        gamePoints19[1] = gamePoints19[1] + 6;
+                        gameNegative19[1] = gameNegative19[1] + 2
                     }else if(j === 1){
-                        gamePoints19[1] = gamePoints19[1] + 1;
+                        gamePoints19[1] = gamePoints19[1] + 3;
+                    }else{
+                        gameNegative19[1] = gameNegative19[1] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints19[1] = gamePoints19[1] + 4;
+                        gamePoints19[1] = gamePoints19[1] + 8;
+                        gameNegative19[1] = gameNegative19[1] + 3
                     }else if(j === 1){
-                        gamePoints19[1] = gamePoints19[1] + 2;
+                        gamePoints19[1] = gamePoints19[1] + 4;
+                        gameNegative19[1] = gameNegative19[1] + 1
                     }else if(j === 2){
                         gamePoints19[1] = gamePoints19[1] + 1;
+                        gameNegative19[1] = gameNegative19[1] - 1
+                    }else{
+                        gameNegative19[1] = gameNegative19[1] - 3
                     }
                 }
                 playerkos19[1] = playerkos19[1] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[1] ++;
-                }else{}
+                  gamePoints19[1] = gamePoints19[1] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints19[1] = gamePoints19[1] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints19[1] = gamePoints19[1] + 3;
+                }
                 var existingCharacter19 = false;
                 for(var k=0; k < timCharacters19.length; k++){
                     if(timCharacters19[k].character === gameData[i][j].character){
@@ -1851,23 +1963,36 @@ class App extends React.Component {
                 gamePlace20[1] = gamePlace20[1] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints20[1] = gamePoints20[1] + 3;
+                        gamePoints20[1] = gamePoints20[1] + 6;
+                        gameNegative20[1] = gameNegative20[1] + 2
                     }else if(j === 1){
-                        gamePoints20[1] = gamePoints20[1] + 1;
+                        gamePoints20[1] = gamePoints20[1] + 3;
+                    }else{
+                        gameNegative20[1] = gameNegative20[1] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints20[1] = gamePoints20[1] + 4;
+                        gamePoints20[1] = gamePoints20[1] + 8;
+                        gameNegative20[1] = gameNegative20[1] + 3
                     }else if(j === 1){
-                        gamePoints20[1] = gamePoints20[1] + 2;
+                        gamePoints20[1] = gamePoints20[1] + 4;
+                        gameNegative20[1] = gameNegative20[1] + 1
                     }else if(j === 2){
                         gamePoints20[1] = gamePoints20[1] + 1;
+                        gameNegative20[1] = gameNegative20[1] - 1
+                    }else{
+                        gameNegative20[1] = gameNegative20[1] - 3
                     }
                 }
                 playerkos20[1] = playerkos20[1] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[1] ++;
-                }else{}
+                  gamePoints20[1] = gamePoints20[1] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints20[1] = gamePoints20[1] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints20[1] = gamePoints20[1] + 3;
+                }
                 var existingCharacter20 = false;
                 for(var k=0; k < timCharacters20.length; k++){
                     if(timCharacters20[k].character === gameData[i][j].character){
@@ -1915,23 +2040,36 @@ class App extends React.Component {
                 gamePlace19[2] = gamePlace19[2] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints19[2] = gamePoints19[2] + 3;
+                        gamePoints19[2] = gamePoints19[2] + 6;
+                        gameNegative19[2] = gameNegative19[2] + 2
                     }else if(j === 1){
-                        gamePoints19[2] = gamePoints19[2] + 1;
+                        gamePoints19[2] = gamePoints19[2] + 3;
+                    }else{
+                        gameNegative19[2] = gameNegative19[2] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints19[2] = gamePoints19[2] + 4;
+                        gamePoints19[2] = gamePoints19[2] + 8;
+                        gameNegative19[2] = gameNegative19[2] + 3
                     }else if(j === 1){
-                       gamePoints19[2] = gamePoints19[2] + 2;
+                        gamePoints19[2] = gamePoints19[2] + 4;
+                        gameNegative19[2] = gameNegative19[2] + 1
                     }else if(j === 2){
                         gamePoints19[2] = gamePoints19[2] + 1;
+                        gameNegative19[2] = gameNegative19[2] - 1
+                    }else{
+                        gameNegative19[2] = gameNegative19[2] - 3
                     }
                 }
                 playerkos19[2] = playerkos19[2] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[2] ++;
-                }else{}
+                  gamePoints19[2] = gamePoints19[2] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints19[2] = gamePoints19[2] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints19[2] = gamePoints19[2] + 3;
+                }
                 var existingCharacter19 = false;
                 for(var k=0; k < dougCharacters19.length; k++){
                     if(dougCharacters19[k].character === gameData[i][j].character){
@@ -1957,23 +2095,36 @@ class App extends React.Component {
                 gamePlace20[2] = gamePlace20[2] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints20[2] = gamePoints20[2] + 3;
+                        gamePoints20[2] = gamePoints20[2] + 6;
+                        gameNegative20[2] = gameNegative20[2] + 2
                     }else if(j === 1){
-                        gamePoints20[2] = gamePoints20[2] + 1;
+                        gamePoints20[2] = gamePoints20[2] + 3;
+                    }else{
+                        gameNegative20[2] = gameNegative20[2] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints20[2] = gamePoints20[2] + 4;
+                        gamePoints20[2] = gamePoints20[2] + 8;
+                        gameNegative20[2] = gameNegative20[2] + 3
                     }else if(j === 1){
-                        gamePoints20[2] = gamePoints20[2] + 2;
+                        gamePoints20[2] = gamePoints20[2] + 4;
+                        gameNegative20[2] = gameNegative20[2] + 1
                     }else if(j === 2){
                         gamePoints20[2] = gamePoints20[2] + 1;
+                        gameNegative20[2] = gameNegative20[2] - 1
+                    }else{
+                        gameNegative20[2] = gameNegative20[2] - 3
                     }
                 }
                 playerkos20[2] = playerkos20[2] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[2] ++;
-                }else{}
+                  gamePoints20[2] = gamePoints20[2] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints20[2] = gamePoints20[2] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints20[2] = gamePoints20[2] + 3;
+                }
                 var existingCharacter20 = false;
                 for(var k=0; k < dougCharacters20.length; k++){
                     if(dougCharacters20[k].character === gameData[i][j].character){
@@ -2021,23 +2172,36 @@ class App extends React.Component {
                 gamePlace19[3] = gamePlace19[3] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints19[3] = gamePoints19[3] + 3;
+                        gamePoints19[3] = gamePoints19[3] + 6;
+                        gameNegative19[3] = gameNegative19[3] + 2
                     }else if(j === 1){
-                        gamePoints19[3] = gamePoints19[3] + 1;
+                        gamePoints19[3] = gamePoints19[3] + 3;
+                    }else{
+                        gameNegative19[3] = gameNegative19[3] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints19[3] = gamePoints19[3] + 4;
+                        gamePoints19[3] = gamePoints19[3] + 8;
+                        gameNegative19[3] = gameNegative19[3] + 3
                     }else if(j === 1){
-                        gamePoints19[3] = gamePoints19[3] + 2;
+                        gamePoints19[3] = gamePoints19[3] + 4;
+                        gameNegative19[3] = gameNegative19[3] + 1
                     }else if(j === 2){
                         gamePoints19[3] = gamePoints19[3] + 1;
+                        gameNegative19[3] = gameNegative19[3] - 1
+                    }else{
+                        gameNegative19[3] = gameNegative19[3] - 3
                     }
                 }
                 playerkos19[3] = playerkos19[3] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[3] ++;
-                }else{}
+                  gamePoints19[3] = gamePoints19[3] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints19[3] = gamePoints19[3] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints19[3] = gamePoints19[3] + 3;
+                }
                 var existingCharacter19 = false;
                 for(var k=0; k < zackCharacters19.length; k++){
                     if(zackCharacters19[k].character === gameData[i][j].character){
@@ -2063,23 +2227,36 @@ class App extends React.Component {
                 gamePlace20[3] = gamePlace20[3] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints20[3] = gamePoints20[3] + 3;
+                        gamePoints20[3] = gamePoints20[3] + 6;
+                        gameNegative20[3] = gameNegative20[3] + 2
                     }else if(j === 1){
-                        gamePoints20[3] = gamePoints20[3] + 1;
+                        gamePoints20[3] = gamePoints20[3] + 3;
+                    }else{
+                        gameNegative20[3] = gameNegative20[3] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints20[3] = gamePoints20[3] + 4;
+                        gamePoints20[3] = gamePoints20[3] + 8;
+                        gameNegative20[3] = gameNegative20[3] + 3
                     }else if(j === 1){
-                        gamePoints20[3] = gamePoints20[3] + 2;
+                        gamePoints20[3] = gamePoints20[3] + 4;
+                        gameNegative20[3] = gameNegative20[3] + 1
                     }else if(j === 2){
                         gamePoints20[3] = gamePoints20[3] + 1;
+                        gameNegative20[3] = gameNegative20[3] - 1
+                    }else{
+                        gameNegative20[3] = gameNegative20[3] - 3
                     }
                 }
                 playerkos20[3] = playerkos20[3] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[3] ++;
-                }else{}
+                  gamePoints20[3] = gamePoints20[3] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints20[3] = gamePoints20[3] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints20[3] = gamePoints20[3] + 3;
+                }
                 var existingCharacter20 = false;
                 for(var k=0; k < zackCharacters20.length; k++){
                     if(zackCharacters20[k].character === gameData[i][j].character){
@@ -2127,23 +2304,36 @@ class App extends React.Component {
                 gamePlace19[4] = gamePlace19[4] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints19[4] = gamePoints19[4] + 3;
+                        gamePoints19[4] = gamePoints19[4] + 6;
+                        gameNegative19[4] = gameNegative19[4] + 2
                     }else if(j === 1){
-                        gamePoints19[4] = gamePoints19[4] + 1;
+                        gamePoints19[4] = gamePoints19[4] + 3;
+                    }else{
+                        gameNegative19[4] = gameNegative19[4] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints19[4] = gamePoints19[4] + 4;
+                        gamePoints19[4] = gamePoints19[4] + 8;
+                        gameNegative19[4] = gameNegative19[4] + 3
                     }else if(j === 1){
-                        gamePoints19[4] = gamePoints19[4] + 2;
+                        gamePoints19[4] = gamePoints19[4] + 4;
+                        gameNegative19[4] = gameNegative19[4] + 1
                     }else if(j === 2){
                         gamePoints19[4] = gamePoints19[4] + 1;
+                        gameNegative19[4] = gameNegative19[4] - 1
+                    }else{
+                        gameNegative19[4] = gameNegative19[4] - 3
                     }
                 }
                 playerkos19[4] = playerkos19[4] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[4] ++;
-                }else{}
+                  gamePoints19[4] = gamePoints19[4] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints19[4] = gamePoints19[4] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints19[4] = gamePoints19[4] + 3;
+                }
                 var existingCharacter19 = false;
                 for(var k=0; k < betsyCharacters19.length; k++){
                     if(betsyCharacters19[k].character === gameData[i][j].character){
@@ -2169,23 +2359,36 @@ class App extends React.Component {
                 gamePlace20[4] = gamePlace20[4] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints20[4] = gamePoints20[4] + 3;
+                        gamePoints20[4] = gamePoints20[4] + 6;
+                        gameNegative20[4] = gameNegative20[4] + 2
                     }else if(j === 1){
-                        gamePoints20[4] = gamePoints20[4] + 1;
+                        gamePoints20[4] = gamePoints20[4] + 3;
+                    }else{
+                        gameNegative20[4] = gameNegative20[4] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints20[4] = gamePoints20[4] + 4;
+                        gamePoints20[4] = gamePoints20[4] + 8;
+                        gameNegative20[4] = gameNegative20[4] + 3
                     }else if(j === 1){
-                        gamePoints20[4] = gamePoints20[4] + 2;
+                        gamePoints20[4] = gamePoints20[4] + 4;
+                        gameNegative20[4] = gameNegative20[4] + 1
                     }else if(j === 2){
                         gamePoints20[4] = gamePoints20[4] + 1;
+                        gameNegative20[4] = gameNegative20[4] - 1
+                    }else{
+                        gameNegative20[4] = gameNegative20[4] - 3
                     }
                 }
                 playerkos20[4] = playerkos20[4] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[4] ++;
-                }else{}
+                  gamePoints20[4] = gamePoints20[4] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints20[4] = gamePoints20[4] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints20[4] = gamePoints20[4] + 3;
+                }
                 var existingCharacter20 = false;
                 for(var k=0; k < betsyCharacters20.length; k++){
                     if(betsyCharacters20[k].character === gameData[i][j].character){
@@ -2233,23 +2436,36 @@ class App extends React.Component {
                 gamePlace19[5] = gamePlace19[5] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints19[5] = gamePoints19[5] + 3;
+                        gamePoints19[5] = gamePoints19[5] + 6;
+                        gameNegative19[5] = gameNegative19[5] + 2
                     }else if(j === 1){
-                        gamePoints19[5] = gamePoints19[5] + 1;
+                        gamePoints19[5] = gamePoints19[5] + 3;
+                    }else{
+                        gameNegative19[5] = gameNegative19[5] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints19[5] = gamePoints19[5] + 4;
+                        gamePoints19[5] = gamePoints19[5] + 8;
+                        gameNegative19[5] = gameNegative19[5] + 3
                     }else if(j === 1){
-                        gamePoints19[5] = gamePoints19[5] + 2;
+                        gamePoints19[5] = gamePoints19[5] + 4;
+                        gameNegative19[5] = gameNegative19[5] + 1
                     }else if(j === 2){
                         gamePoints19[5] = gamePoints19[5] + 1;
+                        gameNegative19[5] = gameNegative19[5] - 1
+                    }else{
+                        gameNegative19[5] = gameNegative19[5] - 3
                     }
                 }
                 playerkos19[5] = playerkos19[5] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[5] ++;
-                }else{}
+                  gamePoints19[5] = gamePoints19[5] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints19[5] = gamePoints19[5] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints19[5] = gamePoints19[5] + 3;
+                }
                 var existingCharacter19 = false;
                 for(var k=0; k < jamesCharacters19.length; k++){
                     if(jamesCharacters19[k].character === gameData[i][j].character){
@@ -2275,23 +2491,36 @@ class App extends React.Component {
                 gamePlace20[5] = gamePlace20[5] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints20[5] = gamePoints20[5] + 3;
+                        gamePoints20[5] = gamePoints20[5] + 6;
+                        gameNegative20[5] = gameNegative20[5] + 2
                     }else if(j === 1){
-                        gamePoints20[5] = gamePoints20[5] + 1;
+                        gamePoints20[5] = gamePoints20[5] + 3;
+                    }else{
+                        gameNegative20[5] = gameNegative20[5] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints20[5] = gamePoints20[5] + 4;
+                        gamePoints20[5] = gamePoints20[5] + 8;
+                        gameNegative20[5] = gameNegative20[5] + 3
                     }else if(j === 1){
-                        gamePoints20[5] = gamePoints20[5] + 2;
+                        gamePoints20[5] = gamePoints20[5] + 4;
+                        gameNegative20[5] = gameNegative20[5] + 1
                     }else if(j === 2){
                         gamePoints20[5] = gamePoints20[5] + 1;
+                        gameNegative20[5] = gameNegative20[5] - 1
+                    }else{
+                        gameNegative20[5] = gameNegative20[5] - 3
                     }
                 }
                 playerkos20[5] = playerkos20[5] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[5] ++;
-                }else{}
+                  gamePoints20[5] = gamePoints20[5] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints20[5] = gamePoints20[5] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints20[5] = gamePoints20[5] + 3;
+                }
                 var existingCharacter20 = false;
                 for(var k=0; k < jamesCharacters20.length; k++){
                     if(jamesCharacters20[k].character === gameData[i][j].character){
@@ -2339,23 +2568,36 @@ class App extends React.Component {
                 gamePlace19[6] = gamePlace19[6] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints19[6] = gamePoints19[6] + 3;
+                        gamePoints19[6] = gamePoints19[6] + 6;
+                        gameNegative19[6] = gameNegative19[6] + 2
                     }else if(j === 1){
-                        gamePoints19[6] = gamePoints19[6] + 1;
+                        gamePoints19[6] = gamePoints19[6] + 3;
+                    }else{
+                        gameNegative19[6] = gameNegative19[6] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints19[6] = gamePoints19[6] + 4;
+                        gamePoints19[6] = gamePoints19[6] + 8;
+                        gameNegative19[6] = gameNegative19[6] + 3
                     }else if(j === 1){
-                        gamePoints19[6] = gamePoints19[6] + 2;
+                        gamePoints19[6] = gamePoints19[6] + 4;
+                        gameNegative19[6] = gameNegative19[6] + 1
                     }else if(j === 2){
                         gamePoints19[6] = gamePoints19[6] + 1;
+                        gameNegative19[6] = gameNegative19[6] - 1
+                    }else{
+                        gameNegative19[6] = gameNegative19[6] - 3
                     }
                 }
                 playerkos19[6] = playerkos19[6] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[6] ++;
-                }else{}
+                  gamePoints19[6] = gamePoints19[6] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints19[6] = gamePoints19[6] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints19[6] = gamePoints19[6] + 3;
+                }
                 var existingCharacter19 = false;
                 for(var k=0; k < craigCharacters19.length; k++){
                     if(craigCharacters19[k].character === gameData[i][j].character){
@@ -2381,23 +2623,36 @@ class App extends React.Component {
                 gamePlace20[6] = gamePlace20[6] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        gamePoints20[6] = gamePoints20[6] + 3;
+                        gamePoints20[6] = gamePoints20[6] + 6;
+                        gameNegative20[6] = gameNegative20[6] + 2
                     }else if(j === 1){
-                        gamePoints20[6] = gamePoints20[6] + 1;
+                        gamePoints20[6] = gamePoints20[6] + 3;
+                    }else{
+                        gameNegative20[6] = gameNegative20[6] - 2
                     }
                 }else{
                     if(j === 0){
-                        gamePoints20[6] = gamePoints20[6] + 4;
+                        gamePoints20[6] = gamePoints20[6] + 8;
+                        gameNegative20[6] = gameNegative20[6] + 3
                     }else if(j === 1){
-                        gamePoints20[6] = gamePoints20[6] + 2;
+                        gamePoints20[6] = gamePoints20[6] + 4;
+                        gameNegative20[6] = gameNegative20[6] + 1
                     }else if(j === 2){
                         gamePoints20[6] = gamePoints20[6] + 1;
+                        gameNegative20[6] = gameNegative20[6] - 1
+                    }else{
+                        gameNegative20[6] = gameNegative20[6] - 3
                     }
                 }
                 playerkos20[6] = playerkos20[6] + gameData[i][j].kos;
-                if(gameData[i][j].kos >= 4){
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[6] ++;
-                }else{}
+                  gamePoints20[6] = gamePoints20[6] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    gamePoints20[6] = gamePoints20[6] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    gamePoints20[6] = gamePoints20[6] + 3;
+                }
                 var existingCharacter20 = false;
                 for(var k=0; k < craigCharacters20.length; k++){
                     if(craigCharacters20[k].character === gameData[i][j].character){
@@ -2892,6 +3147,8 @@ class Overall extends React.Component {
         this.state = {
           topKos: [0,0,0,0,0,0,0],
           topPlace: [0,0,0,0,0,0,0],
+          topPoints: [],
+          topNegative: [],
           topPlayed: [],
           year: "2020"
         }
@@ -2904,6 +3161,8 @@ class Overall extends React.Component {
         var topPlace19 = [];
         var topPlace20 = [];
         var topPlaceOverall = [];
+        var topPoints20 = [];
+        var topNegative20 = [];
         for(var i=0; i<playerkos19.length; i++){
             topKos19[i] = {name: playerList[i], number: (playerkos19[i]/gamesPlayed19[i]).toFixed(2)};
             topKos20[i] = {name: playerList[i], number: (playerkos20[i]/gamesPlayed20[i]).toFixed(2)};
@@ -2911,12 +3170,15 @@ class Overall extends React.Component {
             topPlace19[i] = {name: playerList[i], number: (gamePlace19[i]/gamesPlayed19[i]).toFixed(2)};
             topPlace20[i] = {name: playerList[i], number: (gamePlace20[i]/gamesPlayed20[i]).toFixed(2)};
             topPlaceOverall[i] = {name: playerList[i], number: ((gamePlace19[i] + gamePlace20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2)};
-            
+            topPoints20[i] = {name: playerList[i], number: (gamePoints20[i]/gamesPlayed20[i]).toFixed(2)};
+            topNegative20[i] = {name: playerList[i], number: gameNegative20[i]};
         }
         this.setState({
             topKos: topKos20,
             topPlace: topPlace20,
-            topPlayed: ultimateFighters20
+            topPlayed: ultimateFighters20,
+            topPoints: topPoints20,
+            topNegative: topNegative20
         });
     }
     changeOverallYear(){
@@ -2924,11 +3186,15 @@ class Overall extends React.Component {
         var topKos = [];
         var topPlace = [];
         var topPlayed = [];
+        var topPoints = [];
+        var topNegative = [];
         if(this.state.year === "Overall"){
             newYear = "2020";
             for(var i=0; i<playerkos19.length; i++){
                 topKos[i] = {name: playerList[i], number: (playerkos20[i]/gamesPlayed20[i]).toFixed(2), place: 0};
                 topPlace[i] = {name: playerList[i], number: (gamePlace20[i]/gamesPlayed20[i]).toFixed(2), place: 0};
+                topPoints[i] = {name: playerList[i], number: (gamePoints20[i]/gamesPlayed20[i]).toFixed(2)};
+                topNegative[i] = {name: playerList[i], number: gameNegative20[i]};
             }
             topPlayed = ultimateFighters20;
         }else if(this.state.year === "2020"){
@@ -2936,6 +3202,8 @@ class Overall extends React.Component {
             for(var i=0; i<playerkos19.length; i++){
                 topKos[i] = {name: playerList[i], number: (playerkos19[i]/gamesPlayed19[i]).toFixed(2), place: 0};
                 topPlace[i] = {name: playerList[i], number: (gamePlace19[i]/gamesPlayed19[i]).toFixed(2), place: 0};
+                topPoints[i] = {name: playerList[i], number: (gamePoints19[i]/gamesPlayed19[i]).toFixed(2)};
+                topNegative[i] = {name: playerList[i], number: gameNegative19[i]};
             }
             topPlayed = ultimateFighters19;
         }else if(this.state.year === "2019"){
@@ -2943,6 +3211,8 @@ class Overall extends React.Component {
             for(var i=0; i<playerkos19.length; i++){
                 topKos[i] = {name: playerList[i], number: ((playerkos19[i] + playerkos20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};
                 topPlace[i] = {name: playerList[i], number: ((gamePlace19[i] + gamePlace20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};  
+                topPoints[i] = {name: playerList[i], number: ((gamePoints19[i] + gamePoints20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2)};
+                topNegative[i] = {name: playerList[i], number: gameNegative19[i] + gameNegative20[i]};
             }
             topPlayed = ultimateFighters;
         }
@@ -2950,7 +3220,9 @@ class Overall extends React.Component {
             year: newYear,
             topKos: topKos,
             topPlace: topPlace,
-            topPlayed: topPlayed
+            topPlayed: topPlayed,
+            topPoints: topPoints,
+            topNegative: topNegative
         });
     }
     listTopKos() {
@@ -2997,6 +3269,48 @@ class Overall extends React.Component {
         });
         return (
           <div className="col-xs-12">{listTopPlace}</div>
+        )
+    }
+    listTopPoints() {
+        const numberOfTopPoints = this.state.topPoints;
+        console.log(numberOfTopPoints);
+        numberOfTopPoints.sort(function(a, b){
+            if(a.number < b.number) { return 1; }
+            if(a.number > b.number) { return -1; }
+            return 0;
+        });
+        var place = 1;
+        for(var i=0; i<numberOfTopPoints.length; i++){
+            if(numberOfTopPoints[i].number > 0){
+                numberOfTopPoints[i].place = place;
+                place ++;
+            }else{}
+        }
+        const listTopPoints = numberOfTopPoints.map((player, index) => {
+            if(player.number > 0) {
+                return <TopList key={index} id={index} name={player.name} number={player.number} place={player.place} />
+            }
+        });
+        return (
+          <div className="col-xs-12">{listTopPoints}</div>
+        )
+    }
+    listTopNegative() {
+        const numberOfTopNegative = this.state.topNegative;
+        console.log(numberOfTopNegative);
+        numberOfTopNegative.sort(function(a, b){
+            return b.number - a.number;
+        });
+        var place = 1;
+        for(var i=0; i<numberOfTopNegative.length; i++){
+            numberOfTopNegative[i].place = place;
+            place ++;
+        }
+        const listTopNegative = numberOfTopNegative.map((player, index) => {
+            return <TopList key={index} id={index} name={player.name} number={player.number} place={player.place} />
+        });
+        return (
+          <div className="col-xs-12">{listTopNegative}</div>
         )
     }
     listTopPlayed() {
@@ -3046,11 +3360,25 @@ class Overall extends React.Component {
                     </div>
                 </div>
                 <div className="col-xs-3 overallCol">
+                    <div className="row overallTitle">Top Points</div>
+                    <div className="row">
+                        {this.listTopPoints()}
+                    </div>
+                </div>
+                <div className="col-xs-3 overallCol">
+                    <div className="row overallTitle">Top Negative</div>
+                    <div className="row">
+                        {this.listTopNegative()}
+                    </div>
+                </div>
+                <div className="col-xs-3 overallCol">
                     <div className="row overallTitle">Top Kos</div>
                     <div className="row">
                         {this.listTopKos()}
                     </div>
                 </div>
+            </div>
+            <div className="row">
                 <div className="col-xs-3 overallCol">
                     <div className="row overallTitle">Most Played</div>
                     <div className="row">
@@ -3748,11 +4076,12 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date(2020,3,8),
+      date: new Date(2020,3,15),
       weeklyWins: [0,0,0,0,0,0,0],
       weeklyKos: [0,0,0,0,0,0,0],
       weeklyAvg: [0,0,0,0,0,0,0],
-      weeklyPoints: [0,0,0,0,0,0,0,]
+      weeklyPoints: [0,0,0,0,0,0,0],
+      weeklyNegative: [0,0,0,0,0,0,0]
     }
   this.nextDate = this.nextDate.bind(this);
   this.previousDate = this.previousDate.bind(this);
@@ -3765,139 +4094,245 @@ class Weekly extends React.Component {
     weeklyPlace = [0,0,0,0,0,0,0];
     weeklyAvg = [0,0,0,0,0,0,0];
     weeklyPoints = [0,0,0,0,0,0,0];
+    weeklyNegative = [0,0,0,0,0,0,0];
     for(var i=0; i < gameData.length; i++){
         for(var j=0; j < 4; j++){
             if(gameData[i][j].name === "Micah" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[0] = weeklyPoints[0] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[0] = weeklyPoints[0] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[0] = weeklyPoints[0] + 3;
+                }
                 weeklyGames[0] ++;
                 weeklyPlace[0] = weeklyPlace[0] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[0] = weeklyPoints[0] + 3;
+                        weeklyPoints[0] = weeklyPoints[0] + 6;
+                        weeklyNegative[0] = weeklyNegative[0] + 2;
                     }else if(j === 1){
-                        weeklyPoints[0] = weeklyPoints[0] + 1;
+                        weeklyPoints[0] = weeklyPoints[0] + 3;
+                    }else{
+                        weeklyNegative[0] = weeklyNegative[0] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[0] = weeklyPoints[0] + 4;
+                        weeklyPoints[0] = weeklyPoints[0] + 8;
+                        weeklyNegative[0] = weeklyNegative[0] + 3;
                     }else if(j === 1){
-                        weeklyPoints[0] = weeklyPoints[0] + 2;
+                        weeklyPoints[0] = weeklyPoints[0] + 4;
+                        weeklyNegative[0] = weeklyNegative[0] + 1;
                     }else if(j === 2){
                         weeklyPoints[0] = weeklyPoints[0] + 1;
+                        weeklyNegative[0] = weeklyNegative[0] - 1;
+                    }else{
+                        weeklyNegative[0] = weeklyNegative[0] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Tim" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[1] = weeklyPoints[1] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[1] = weeklyPoints[1] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[1] = weeklyPoints[1] + 3;
+                }
                 weeklyGames[1] ++;
                 weeklyPlace[1] = weeklyPlace[1] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[1] = weeklyPoints[1] + 3;
+                        weeklyPoints[1] = weeklyPoints[1] + 6;
+                        weeklyNegative[1] = weeklyNegative[1] + 2;
                     }else if(j === 1){
-                        weeklyPoints[1] = weeklyPoints[1] + 1;
+                        weeklyPoints[1] = weeklyPoints[1] + 3;
+                    }else{
+                        weeklyNegative[1] = weeklyNegative[1] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[1] = weeklyPoints[1] + 4;
+                        weeklyPoints[1] = weeklyPoints[1] + 8;
+                        weeklyNegative[1] = weeklyNegative[1] + 3;
                     }else if(j === 1){
-                        weeklyPoints[1] = weeklyPoints[1] + 2;
+                        weeklyPoints[1] = weeklyPoints[1] + 4;
+                        weeklyNegative[1] = weeklyNegative[1] + 1;
                     }else if(j === 2){
                         weeklyPoints[1] = weeklyPoints[1] + 1;
+                        weeklyNegative[1] = weeklyNegative[1] - 1;
+                    }else{
+                        weeklyNegative[1] = weeklyNegative[1] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Doug" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[2] = weeklyPoints[2] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[2] = weeklyPoints[2] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[2] = weeklyPoints[2] + 3;
+                }
                 weeklyGames[2] ++;
                 weeklyPlace[2] = weeklyPlace[2] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[2] = weeklyPoints[2] + 3;
+                        weeklyPoints[2] = weeklyPoints[2] + 6;
+                        weeklyNegative[2] = weeklyNegative[2] + 2;
                     }else if(j === 1){
-                        weeklyPoints[2] = weeklyPoints[2] + 1;
+                        weeklyPoints[2] = weeklyPoints[2] + 3;
+                    }else{
+                        weeklyNegative[2] = weeklyNegative[2] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[2] = weeklyPoints[2] + 4;
+                        weeklyPoints[2] = weeklyPoints[2] + 8;
+                        weeklyNegative[2] = weeklyNegative[2] + 3;
                     }else if(j === 1){
-                        weeklyPoints[2] = weeklyPoints[2] + 2;
+                        weeklyPoints[2] = weeklyPoints[2] + 4;
+                        weeklyNegative[2] = weeklyNegative[2] + 1;
                     }else if(j === 2){
                         weeklyPoints[2] = weeklyPoints[2] + 1;
+                        weeklyNegative[2] = weeklyNegative[2] - 1;
+                    }else{
+                        weeklyNegative[2] = weeklyNegative[2] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Zack" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[3] = weeklyPoints[3] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[3] = weeklyPoints[3] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[3] = weeklyPoints[3] + 3;
+                }
                 weeklyGames[3] ++;
                 weeklyPlace[3] = weeklyPlace[3] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[3] = weeklyPoints[3] + 3;
+                        weeklyPoints[3] = weeklyPoints[3] + 6;
+                        weeklyNegative[3] = weeklyNegative[3] + 2;
                     }else if(j === 1){
-                        weeklyPoints[3] = weeklyPoints[3] + 1;
+                        weeklyPoints[3] = weeklyPoints[3] + 3;
+                    }else{
+                        weeklyNegative[3] = weeklyNegative[3] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[3] = weeklyPoints[3] + 4;
+                        weeklyPoints[3] = weeklyPoints[3] + 8;
+                        weeklyNegative[3] = weeklyNegative[3] + 3;
                     }else if(j === 1){
-                        weeklyPoints[3] = weeklyPoints[3] + 2;
+                        weeklyPoints[3] = weeklyPoints[3] + 4;
+                        weeklyNegative[3] = weeklyNegative[3] + 1;
                     }else if(j === 2){
                         weeklyPoints[3] = weeklyPoints[3] + 1;
+                        weeklyNegative[3] = weeklyNegative[3] - 1;
+                    }else{
+                        weeklyNegative[3] = weeklyNegative[3] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[4] = weeklyPoints[4] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[4] = weeklyPoints[4] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[4] = weeklyPoints[4] + 3;
+                }
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[4] = weeklyPoints[4] + 3;
+                        weeklyPoints[4] = weeklyPoints[4] + 6;
+                        weeklyNegative[4] = weeklyNegative[4] + 2;
                     }else if(j === 1){
-                        weeklyPoints[4] = weeklyPoints[4] + 1;
+                        weeklyPoints[4] = weeklyPoints[4] + 3;
+                    }else{
+                        weeklyNegative[3] = weeklyNegative[3] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[4] = weeklyPoints[4] + 4;
+                        weeklyPoints[4] = weeklyPoints[4] + 8;
+                        weeklyNegative[4] = weeklyNegative[4] + 3;
                     }else if(j === 1){
-                        weeklyPoints[4] = weeklyPoints[4] + 2;
+                        weeklyPoints[4] = weeklyPoints[4] + 4;
+                        weeklyNegative[4] = weeklyNegative[4] + 1;
                     }else if(j === 2){
                         weeklyPoints[4] = weeklyPoints[4] + 1;
+                        weeklyNegative[4] = weeklyNegative[4] - 1;
+                    }else{
+                        weeklyNegative[4] = weeklyNegative[4] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "James" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[5] = weeklyPoints[5] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[5] = weeklyPoints[5] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[5] = weeklyPoints[5] + 3;
+                }
                 weeklyGames[5] ++;
                 weeklyPlace[5] = weeklyPlace[5] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[5] = weeklyPoints[5] + 3;
+                        weeklyPoints[5] = weeklyPoints[5] + 6;
+                        weeklyNegative[5] = weeklyNegative[5] + 2;
                     }else if(j === 1){
-                        weeklyPoints[5] = weeklyPoints[5] + 1;
+                        weeklyPoints[5] = weeklyPoints[5] + 3;
+                    }else{
+                        weeklyNegative[5] = weeklyNegative[5] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[5] = weeklyPoints[5] + 4;
+                        weeklyPoints[5] = weeklyPoints[5] + 8;
+                        weeklyNegative[5] = weeklyNegative[5] + 3;
                     }else if(j === 1){
-                        weeklyPoints[5] = weeklyPoints[5] + 2;
+                        weeklyPoints[5] = weeklyPoints[5] + 4;
+                        weeklyNegative[5] = weeklyNegative[5] + 1;
                     }else if(j === 2){
                         weeklyPoints[5] = weeklyPoints[5] + 1;
+                        weeklyNegative[5] = weeklyNegative[5] - 1;
+                    }else{
+                        weeklyNegative[5] = weeklyNegative[5] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Craig" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[6] = weeklyKos[6] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[6] = weeklyPoints[6] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[6] = weeklyPoints[6] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[6] = weeklyPoints[6] + 3;
+                }
                 weeklyGames[6] ++;
                 weeklyPlace[6] = weeklyPlace[6] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[6] = weeklyPoints[6] + 3;
+                        weeklyPoints[6] = weeklyPoints[6] + 6;
+                        weeklyNegative[6] = weeklyNegative[6] + 2;
                     }else if(j === 1){
-                        weeklyPoints[6] = weeklyPoints[6] + 1;
+                        weeklyPoints[6] = weeklyPoints[6] + 3;
+                    }else{
+                        weeklyNegative[6] = weeklyNegative[6] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[6] = weeklyPoints[6] + 4;
+                        weeklyPoints[6] = weeklyPoints[6] + 8;
+                        weeklyNegative[6] = weeklyNegative[6] + 3;
                     }else if(j === 1){
-                        weeklyPoints[6] = weeklyPoints[6] + 2;
+                        weeklyPoints[6] = weeklyPoints[6] + 4;
+                        weeklyNegative[6] = weeklyNegative[6] + 1;
                     }else if(j === 2){
                         weeklyPoints[6] = weeklyPoints[6] + 1;
+                        weeklyNegative[6] = weeklyNegative[6] - 1;
+                    }else{
+                        weeklyNegative[6] = weeklyNegative[6] - 3;
                     }
                 }
             }
@@ -3922,6 +4357,7 @@ class Weekly extends React.Component {
         if(weeklyGames[i] > 0){
             weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
             weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+            weeklyPoints[i] = (weeklyPoints[i]/weeklyGames[i]).toFixed(2);
         }else{}
     }
     this.setState({
@@ -3929,7 +4365,8 @@ class Weekly extends React.Component {
       weeklyWins: weeklyWins,
       weeklyAvg: weeklyAvg,
       weeklyKos: weeklyKos,
-      weeklyPoints: weeklyPoints
+      weeklyPoints: weeklyPoints,
+      weeklyNegative: weeklyNegative
     });
   }
   previousDate(){
@@ -3939,6 +4376,7 @@ class Weekly extends React.Component {
     weeklyPlace = [0,0,0,0,0,0,0];
     weeklyAvg = [0,0,0,0,0,0,0];
     weeklyPoints = [0,0,0,0,0,0,0];
+    weeklyNegative = [0,0,0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex > 0){
       var newDate = dates[dateIndex - 1];
@@ -3946,135 +4384,240 @@ class Weekly extends React.Component {
         for(var j=0; j < 4; j++){
             if(gameData[i][j].name === "Micah" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[0] = weeklyPoints[0] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[0] = weeklyPoints[0] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[0] = weeklyPoints[0] + 3;
+                }
                 weeklyGames[0] ++;
                 weeklyPlace[0] = weeklyPlace[0] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[0] = weeklyPoints[0] + 3;
+                        weeklyPoints[0] = weeklyPoints[0] + 6;
+                        weeklyNegative[0] = weeklyNegative[0] + 2;
                     }else if(j === 1){
-                        weeklyPoints[0] = weeklyPoints[0] + 1;
+                        weeklyPoints[0] = weeklyPoints[0] + 3;
+                    }else{
+                        weeklyNegative[0] = weeklyNegative[0] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[0] = weeklyPoints[0] + 4;
+                        weeklyPoints[0] = weeklyPoints[0] + 8;
+                        weeklyNegative[0] = weeklyNegative[0] + 3;
                     }else if(j === 1){
-                        weeklyPoints[0] = weeklyPoints[0] + 2;
+                        weeklyPoints[0] = weeklyPoints[0] + 4;
+                        weeklyNegative[0] = weeklyNegative[0] + 1;
                     }else if(j === 2){
                         weeklyPoints[0] = weeklyPoints[0] + 1;
+                        weeklyNegative[0] = weeklyNegative[0] - 1;
+                    }else{
+                        weeklyNegative[0] = weeklyNegative[0] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Tim" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[1] = weeklyPoints[1] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[1] = weeklyPoints[1] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[1] = weeklyPoints[1] + 3;
+                }
                 weeklyGames[1] ++;
                 weeklyPlace[1] = weeklyPlace[1] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[1] = weeklyPoints[1] + 3;
+                        weeklyPoints[1] = weeklyPoints[1] + 6;
+                        weeklyNegative[1] = weeklyNegative[1] + 2;
                     }else if(j === 1){
-                        weeklyPoints[1] = weeklyPoints[1] + 1;
+                        weeklyPoints[1] = weeklyPoints[1] + 3;
+                    }else{
+                        weeklyNegative[1] = weeklyNegative[1] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[1] = weeklyPoints[1] + 4;
+                        weeklyPoints[1] = weeklyPoints[1] + 8;
+                        weeklyNegative[1] = weeklyNegative[1] + 3;
                     }else if(j === 1){
-                        weeklyPoints[1] = weeklyPoints[1] + 2;
+                        weeklyPoints[1] = weeklyPoints[1] + 4;
+                        weeklyNegative[1] = weeklyNegative[1] + 1;
                     }else if(j === 2){
                         weeklyPoints[1] = weeklyPoints[1] + 1;
+                        weeklyNegative[1] = weeklyNegative[1] - 1;
+                    }else{
+                        weeklyNegative[1] = weeklyNegative[1] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Doug" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[2] = weeklyPoints[2] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[2] = weeklyPoints[2] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[2] = weeklyPoints[2] + 3;
+                }
                 weeklyGames[2] ++;
                 weeklyPlace[2] = weeklyPlace[2] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[2] = weeklyPoints[2] + 3;
+                        weeklyPoints[2] = weeklyPoints[2] + 6;
+                        weeklyNegative[2] = weeklyNegative[2] + 2;
                     }else if(j === 1){
-                        weeklyPoints[2] = weeklyPoints[2] + 1;
+                        weeklyPoints[2] = weeklyPoints[2] + 3;
+                    }else{
+                        weeklyNegative[2] = weeklyNegative[2] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[2] = weeklyPoints[2] + 4;
+                        weeklyPoints[2] = weeklyPoints[2] + 8;
+                        weeklyNegative[2] = weeklyNegative[2] + 3;
                     }else if(j === 1){
-                        weeklyPoints[2] = weeklyPoints[2] + 2;
+                        weeklyPoints[2] = weeklyPoints[2] + 4;
+                        weeklyNegative[2] = weeklyNegative[2] + 1;
                     }else if(j === 2){
                         weeklyPoints[2] = weeklyPoints[2] + 1;
+                        weeklyNegative[2] = weeklyNegative[2] - 1;
+                    }else{
+                        weeklyNegative[2] = weeklyNegative[2] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Zack" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[3] = weeklyPoints[3] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[3] = weeklyPoints[3] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[3] = weeklyPoints[3] + 3;
+                }
                 weeklyGames[3] ++;
                 weeklyPlace[3] = weeklyPlace[3] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[3] = weeklyPoints[3] + 3;
+                        weeklyPoints[3] = weeklyPoints[3] + 6;
+                        weeklyNegative[3] = weeklyNegative[3] + 2;
                     }else if(j === 1){
-                        weeklyPoints[3] = weeklyPoints[3] + 1;
+                        weeklyPoints[3] = weeklyPoints[3] + 3;
+                    }else{
+                        weeklyNegative[3] = weeklyNegative[3] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[3] = weeklyPoints[3] + 4;
+                        weeklyPoints[3] = weeklyPoints[3] + 8;
+                        weeklyNegative[3] = weeklyNegative[3] + 3;
                     }else if(j === 1){
-                        weeklyPoints[3] = weeklyPoints[3] + 2;
+                        weeklyPoints[3] = weeklyPoints[3] + 4;
+                        weeklyNegative[3] = weeklyNegative[3] + 1;
                     }else if(j === 2){
                         weeklyPoints[3] = weeklyPoints[3] + 1;
+                        weeklyNegative[3] = weeklyNegative[3] - 1;
+                    }else{
+                        weeklyNegative[3] = weeklyNegative[3] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[4] = weeklyPoints[4] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[4] = weeklyPoints[4] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[4] = weeklyPoints[4] + 3;
+                }
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[4] = weeklyPoints[4] + 3;
+                        weeklyPoints[4] = weeklyPoints[4] + 6;
+                        weeklyNegative[4] = weeklyNegative[4] + 2;
                     }else if(j === 1){
-                        weeklyPoints[4] = weeklyPoints[4] + 1;
+                        weeklyPoints[4] = weeklyPoints[4] + 3;
+                    }else{
+                        weeklyNegative[4] = weeklyNegative[4] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[4] = weeklyPoints[4] + 4;
+                        weeklyPoints[4] = weeklyPoints[4] + 8;
+                        weeklyNegative[4] = weeklyNegative[4] + 3;
                     }else if(j === 1){
-                        weeklyPoints[4] = weeklyPoints[4] + 2;
+                        weeklyPoints[4] = weeklyPoints[4] + 4;
+                        weeklyNegative[4] = weeklyNegative[4] + 1;
                     }else if(j === 2){
                         weeklyPoints[4] = weeklyPoints[4] + 1;
+                        weeklyNegative[4] = weeklyNegative[4] - 1;
+                    }else{
+                        weeklyNegative[4] = weeklyNegative[4] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "James" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[5] = weeklyPoints[5] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[5] = weeklyPoints[5] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[5] = weeklyPoints[5] + 3;
+                }
                 weeklyGames[5] ++;
                 weeklyPlace[5] = weeklyPlace[5] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[5] = weeklyPoints[5] + 3;
+                        weeklyPoints[5] = weeklyPoints[5] + 6;
+                        weeklyNegative[5] = weeklyNegative[5] + 2;
                     }else if(j === 1){
-                        weeklyPoints[5] = weeklyPoints[5] + 1;
+                        weeklyPoints[5] = weeklyPoints[5] + 3;
+                    }else{
+                        weeklyNegative[5] = weeklyNegative[5] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[5] = weeklyPoints[5] + 4;
+                        weeklyPoints[5] = weeklyPoints[5] + 8;
+                        weeklyNegative[5] = weeklyNegative[5] + 3;
                     }else if(j === 1){
-                        weeklyPoints[5] = weeklyPoints[5] + 2;
+                        weeklyPoints[5] = weeklyPoints[5] + 4;
+                        weeklyNegative[5] = weeklyNegative[5] + 1;
                     }else if(j === 2){
                         weeklyPoints[5] = weeklyPoints[5] + 1;
+                        weeklyNegative[5] = weeklyNegative[5] - 1;
+                    }else{
+                        weeklyNegative[5] = weeklyNegative[5] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Craig" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[6] = weeklyKos[6] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[6] = weeklyPoints[6] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[6] = weeklyPoints[6] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[6] = weeklyPoints[6] + 3;
+                }
                 weeklyGames[6] ++;
                 weeklyPlace[6] = weeklyPlace[6] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[6] = weeklyPoints[6] + 3;
+                        weeklyPoints[6] = weeklyPoints[6] + 6;
+                        weeklyNegative[6] = weeklyNegative[6] + 2;
                     }else if(j === 1){
-                        weeklyPoints[6] = weeklyPoints[6] + 1;
+                        weeklyPoints[6] = weeklyPoints[6] + 3;
+                    }else{
+                        weeklyNegative[6] = weeklyNegative[6] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[6] = weeklyPoints[6] + 4;
+                        weeklyPoints[6] = weeklyPoints[6] + 8;
+                        weeklyNegative[6] = weeklyNegative[6] + 3;
                     }else if(j === 1){
-                        weeklyPoints[6] = weeklyPoints[6] + 2;
+                        weeklyPoints[6] = weeklyPoints[6] + 4;
+                        weeklyNegative[6] = weeklyNegative[6] + 1;
                     }else if(j === 2){
                         weeklyPoints[6] = weeklyPoints[6] + 1;
+                        weeklyNegative[6] = weeklyNegative[6] - 1;
+                    }else{
+                        weeklyNegative[6] = weeklyNegative[6] - 3;
                     }
                 }
             }
@@ -4099,6 +4642,7 @@ class Weekly extends React.Component {
         if(weeklyGames[i] > 0){
             weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
             weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+            weeklyPoints[i] = (weeklyPoints[i]/weeklyGames[i]).toFixed(2);
         }else{}
     }
     this.setState({
@@ -4106,7 +4650,8 @@ class Weekly extends React.Component {
         weeklyWins: weeklyWins,
         weeklyAvg: weeklyAvg,
         weeklyKos: weeklyKos,
-        weeklyPoints: weeklyPoints
+        weeklyPoints: weeklyPoints,
+        weeklyNegative: weeklyNegative
     });
     }
   }
@@ -4117,6 +4662,7 @@ class Weekly extends React.Component {
     weeklyPlace = [0,0,0,0,0,0,0];
     weeklyAvg = [0,0,0,0,0,0,0];
     weeklyPoints = [0,0,0,0,0,0,0];
+    weeklyNegative = [0,0,0,0,0,0,0];
     var dateIndex = dates.indexOf(this.state.date);
     if(dateIndex < dates.length - 1){
       var newDate = dates[dateIndex + 1];
@@ -4124,135 +4670,240 @@ class Weekly extends React.Component {
         for(var j=0; j < 4; j++){
             if(gameData[i][j].name === "Micah" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[0] = weeklyKos[0] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[0] = weeklyPoints[0] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[0] = weeklyPoints[0] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[0] = weeklyPoints[0] + 3;
+                }
                 weeklyGames[0] ++;
                 weeklyPlace[0] = weeklyPlace[0] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[0] = weeklyPoints[0] + 3;
+                        weeklyPoints[0] = weeklyPoints[0] + 6;
+                        weeklyNegative[0] = weeklyNegative[0] + 2;
                     }else if(j === 1){
-                        weeklyPoints[0] = weeklyPoints[0] + 1;
+                        weeklyPoints[0] = weeklyPoints[0] + 3;
+                    }else{
+                        weeklyNegative[0] = weeklyNegative[0] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[0] = weeklyPoints[0] + 4;
+                        weeklyPoints[0] = weeklyPoints[0] + 8;
+                        weeklyNegative[0] = weeklyNegative[0] + 3;
                     }else if(j === 1){
-                        weeklyPoints[0] = weeklyPoints[0] + 2;
+                        weeklyPoints[0] = weeklyPoints[0] + 4;
+                        weeklyNegative[0] = weeklyNegative[0] + 1;
                     }else if(j === 2){
                         weeklyPoints[0] = weeklyPoints[0] + 1;
+                        weeklyNegative[0] = weeklyNegative[0] - 1;
+                    }else{
+                        weeklyNegative[0] = weeklyNegative[0] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Tim" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[1] = weeklyKos[1] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[1] = weeklyPoints[1] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[1] = weeklyPoints[1] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[1] = weeklyPoints[1] + 3;
+                }
                 weeklyGames[1] ++;
                 weeklyPlace[1] = weeklyPlace[1] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[1] = weeklyPoints[1] + 3;
+                        weeklyPoints[1] = weeklyPoints[1] + 6;
+                        weeklyNegative[1] = weeklyNegative[1] + 2;
                     }else if(j === 1){
-                        weeklyPoints[1] = weeklyPoints[1] + 1;
+                        weeklyPoints[1] = weeklyPoints[1] + 3;
+                    }else{
+                        weeklyNegative[1] = weeklyNegative[1] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[1] = weeklyPoints[1] + 4;
+                        weeklyPoints[1] = weeklyPoints[1] + 8;
+                        weeklyNegative[1] = weeklyNegative[1] + 3;
                     }else if(j === 1){
-                        weeklyPoints[1] = weeklyPoints[1] + 2;
+                        weeklyPoints[1] = weeklyPoints[1] + 4;
+                        weeklyNegative[1] = weeklyNegative[1] + 1;
                     }else if(j === 2){
                         weeklyPoints[1] = weeklyPoints[1] + 1;
+                        weeklyNegative[1] = weeklyNegative[1] - 1;
+                    }else{
+                        weeklyNegative[1] = weeklyNegative[1] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Doug" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[2] = weeklyKos[2] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[2] = weeklyPoints[2] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[2] = weeklyPoints[2] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[2] = weeklyPoints[2] + 3;
+                }
                 weeklyGames[2] ++;
                 weeklyPlace[2] = weeklyPlace[2] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[2] = weeklyPoints[2] + 3;
+                        weeklyPoints[2] = weeklyPoints[2] + 6;
+                        weeklyNegative[2] = weeklyNegative[2] + 2;
                     }else if(j === 1){
-                        weeklyPoints[2] = weeklyPoints[2] + 1;
+                        weeklyPoints[2] = weeklyPoints[2] + 3;
+                    }else{
+                        weeklyNegative[2] = weeklyNegative[2] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[2] = weeklyPoints[2] + 4;
+                        weeklyPoints[2] = weeklyPoints[2] + 8;
+                        weeklyNegative[2] = weeklyNegative[2] + 3;
                     }else if(j === 1){
-                        weeklyPoints[2] = weeklyPoints[2] + 2;
+                        weeklyPoints[2] = weeklyPoints[2] + 4;
+                        weeklyNegative[2] = weeklyNegative[2] + 1;
                     }else if(j === 2){
                         weeklyPoints[2] = weeklyPoints[2] + 1;
+                        weeklyNegative[2] = weeklyNegative[2] - 1;
+                    }else{
+                        weeklyNegative[2] = weeklyNegative[2] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Zack" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[3] = weeklyKos[3] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[3] = weeklyPoints[3] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[3] = weeklyPoints[3] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[3] = weeklyPoints[3] + 3;
+                }
                 weeklyGames[3] ++;
                 weeklyPlace[3] = weeklyPlace[3] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[3] = weeklyPoints[3] + 3;
+                        weeklyPoints[3] = weeklyPoints[3] + 6;
+                        weeklyNegative[3] = weeklyNegative[3] + 2;
                     }else if(j === 1){
-                        weeklyPoints[3] = weeklyPoints[3] + 1;
+                        weeklyPoints[3] = weeklyPoints[3] + 3;
+                    }else{
+                        weeklyNegative[3] = weeklyNegative[3] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[3] = weeklyPoints[3] + 4;
+                        weeklyPoints[3] = weeklyPoints[3] + 8;
+                        weeklyNegative[3] = weeklyNegative[3] + 3;
                     }else if(j === 1){
-                        weeklyPoints[3] = weeklyPoints[3] + 2;
+                        weeklyPoints[3] = weeklyPoints[3] + 4;
+                        weeklyNegative[3] = weeklyNegative[3] + 1;
                     }else if(j === 2){
                         weeklyPoints[3] = weeklyPoints[3] + 1;
+                        weeklyNegative[3] = weeklyNegative[3] - 1;
+                    }else{
+                        weeklyNegative[3] = weeklyNegative[3] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Betsy" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[4] = weeklyKos[4] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[4] = weeklyPoints[4] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[4] = weeklyPoints[4] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[4] = weeklyPoints[4] + 3;
+                }
                 weeklyGames[4] ++;
                 weeklyPlace[4] = weeklyPlace[4] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[4] = weeklyPoints[4] + 3;
+                        weeklyPoints[4] = weeklyPoints[4] + 6;
+                        weeklyNegative[4] = weeklyNegative[4] + 2;
                     }else if(j === 1){
-                        weeklyPoints[4] = weeklyPoints[4] + 1;
+                        weeklyPoints[4] = weeklyPoints[4] + 3;
+                    }else{
+                        weeklyNegative[4] = weeklyNegative[4] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[4] = weeklyPoints[4] + 4;
+                        weeklyPoints[4] = weeklyPoints[4] + 8;
+                        weeklyNegative[4] = weeklyNegative[4] + 3;
                     }else if(j === 1){
-                        weeklyPoints[4] = weeklyPoints[4] + 2;
+                        weeklyPoints[4] = weeklyPoints[4] + 4;
+                        weeklyNegative[4] = weeklyNegative[4] + 1;
                     }else if(j === 2){
                         weeklyPoints[4] = weeklyPoints[4] + 1;
+                        weeklyNegative[4] = weeklyNegative[4] - 1;
+                    }else{
+                        weeklyNegative[4] = weeklyNegative[4] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "James" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[5] = weeklyKos[5] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[5] = weeklyPoints[5] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[5] = weeklyPoints[5] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[5] = weeklyPoints[5] + 3;
+                }
                 weeklyGames[5] ++;
                 weeklyPlace[5] = weeklyPlace[5] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[5] = weeklyPoints[5] + 3;
+                        weeklyPoints[5] = weeklyPoints[5] + 6;
+                        weeklyNegative[5] = weeklyNegative[5] + 2;
                     }else if(j === 1){
-                        weeklyPoints[5] = weeklyPoints[5] + 1;
+                        weeklyPoints[5] = weeklyPoints[5] + 3;
+                    }else{
+                        weeklyNegative[5] = weeklyNegative[5] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[5] = weeklyPoints[5] + 4;
+                        weeklyPoints[5] = weeklyPoints[5] + 8;
+                        weeklyNegative[5] = weeklyNegative[5] + 3;
                     }else if(j === 1){
-                        weeklyPoints[5] = weeklyPoints[5] + 2;
+                        weeklyPoints[5] = weeklyPoints[5] + 4;
+                        weeklyNegative[5] = weeklyNegative[5] + 1;
                     }else if(j === 2){
                         weeklyPoints[5] = weeklyPoints[5] + 1;
+                        weeklyNegative[5] = weeklyNegative[5] - 1;
+                    }else{
+                        weeklyNegative[5] = weeklyNegative[5] - 3;
                     }
                 }
             }else if(gameData[i][j].name === "Craig" && gameData[i][5].date.getTime() === newDate){
                 weeklyKos[6] = weeklyKos[6] + gameData[i][j].kos;
+                if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
+                    weeklyPoints[6] = weeklyPoints[6] + 1;
+                }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
+                    weeklyPoints[6] = weeklyPoints[6] + 2;
+                }else if(gameData[i][j].kos >= 9){
+                    weeklyPoints[6] = weeklyPoints[6] + 3;
+                }
                 weeklyGames[6] ++;
                 weeklyPlace[6] = weeklyPlace[6] + (j + 1);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
-                        weeklyPoints[6] = weeklyPoints[6] + 3;
+                        weeklyPoints[6] = weeklyPoints[6] + 6;
+                        weeklyNegative[6] = weeklyNegative[6] + 2;
                     }else if(j === 1){
-                        weeklyPoints[6] = weeklyPoints[6] + 1;
+                        weeklyPoints[6] = weeklyPoints[6] + 3;
+                    }else{
+                        weeklyNegative[6] = weeklyNegative[6] - 2;
                     }
                 }else{
                     if(j === 0){
-                        weeklyPoints[6] = weeklyPoints[6] + 4;
+                        weeklyPoints[6] = weeklyPoints[6] + 8;
+                        weeklyNegative[6] = weeklyNegative[6] + 3;
                     }else if(j === 1){
-                        weeklyPoints[6] = weeklyPoints[6] + 2;
+                        weeklyPoints[6] = weeklyPoints[6] + 4;
+                        weeklyNegative[6] = weeklyNegative[6] + 1;
                     }else if(j === 2){
                         weeklyPoints[6] = weeklyPoints[6] + 1;
+                        weeklyNegative[6] = weeklyNegative[6] - 1;
+                    }else{
+                        weeklyNegative[6] = weeklyNegative[6] - 3;
                     }
                 }
             }
@@ -4277,6 +4928,7 @@ class Weekly extends React.Component {
         if(weeklyGames[i] > 0){
             weeklyAvg[i] = (weeklyPlace[i]/weeklyGames[i]).toFixed(2);
             weeklyKos[i] = (weeklyKos[i]/weeklyGames[i]).toFixed(2);
+            weeklyPoints[i] = (weeklyPoints[i]/weeklyGames[i]).toFixed(2);
         }else{}
     }
     this.setState({
@@ -4284,7 +4936,8 @@ class Weekly extends React.Component {
       weeklyWins: weeklyWins,
       weeklyAvg: weeklyAvg,
       weeklyKos: weeklyKos,
-      weeklyPoints: weeklyPoints
+      weeklyPoints: weeklyPoints,
+      weeklyNegative: weeklyNegative
     });
     }
   }
@@ -4334,6 +4987,16 @@ class Weekly extends React.Component {
           </div>
           <div className="row">
             <div className="col-md-offset-1 col-md-2 weeklyName">Avg Place</div>
+            {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[0]}</div> : null}
+            {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[1]}</div> : null}
+            {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[2]}</div> : null}
+            {this.state.weeklyAvg[3] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[3]}</div> : null}
+            {this.state.weeklyAvg[5] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[5]}</div> : null}
+            {this.state.weeklyAvg[6] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[6]}</div> : null}
+            {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyAvg[4]}</div> : null}
+          </div>
+          <div className="row">
+            <div className="col-md-offset-1 col-md-2 weeklyName">Avg Points</div>
             {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[0]}</div> : null}
             {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[1]}</div> : null}
             {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyPoints[2]}</div> : null}
@@ -4351,6 +5014,16 @@ class Weekly extends React.Component {
             {this.state.weeklyAvg[5] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[5]}</div> : null}
             {this.state.weeklyAvg[6] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[6]}</div> : null}
             {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyKos[4]}</div> : null}
+          </div>
+          <div className="row">
+            <div className="col-md-offset-1 col-md-2 weeklyName">Negatives</div>
+            {this.state.weeklyAvg[0] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyNegative[0]}</div> : null}
+            {this.state.weeklyAvg[1] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyNegative[1]}</div> : null}
+            {this.state.weeklyAvg[2] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyNegative[2]}</div> : null}
+            {this.state.weeklyAvg[3] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyNegative[3]}</div> : null}
+            {this.state.weeklyAvg[5] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyNegative[5]}</div> : null}
+            {this.state.weeklyAvg[6] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyNegative[6]}</div> : null}
+            {this.state.weeklyAvg[4] ? <div className="col-xs-1 col-md-1 weeklyName">{this.state.weeklyNegative[4]}</div> : null}
           </div>
           <div className="row" id="listGamesRow">
             {this.listGames()}
