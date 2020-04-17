@@ -35,6 +35,15 @@ html {
   font-family: 'Carter One', cursive;
 }
 
+.changeSeason {
+  color: white;
+  background: black;
+  font-size: 26px;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-family: 'Carter One', cursive;
+}
+
 #listGamesRow {
   margin-top: 20px;
 }

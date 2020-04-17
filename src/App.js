@@ -1553,10 +1553,27 @@ var dates = [new Date(2019,8,11).getTime(), new Date(2019,8,18).getTime(), new D
 var ultimateFighters = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
 var ultimateFighters19 = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
 var ultimateFighters20 = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
+var seasonArray = ["Summer", "Winter", "Spring", "Fall"]
 var fourP19 = [0,0,0,0,0,0,0];
+var fourP19Spring = [0,0,0,0,0,0,0];
+var fourP19Summer = [0,0,0,0,0,0,0];
+var fourP19Fall = [0,0,0,0,0,0,0];
+var fourP19Winter = [0,0,0,0,0,0,0];
 var threeP19 = [0,0,0,0,0,0,0];
+var threeP19Spring = [0,0,0,0,0,0,0];
+var threeP19Summer = [0,0,0,0,0,0,0];
+var threeP19Fall = [0,0,0,0,0,0,0];
+var threeP19Winter = [0,0,0,0,0,0,0];
+var fourP20Spring = [0,0,0,0,0,0,0];
+var fourP20Summer = [0,0,0,0,0,0,0];
+var fourP20Fall = [0,0,0,0,0,0,0];
+var fourP20Winter = [0,0,0,0,0,0,0];
 var fourP20 = [0,0,0,0,0,0,0];
 var threeP20 = [0,0,0,0,0,0,0];
+var threeP20Spring = [0,0,0,0,0,0,0];
+var threeP20Fall = [0,0,0,0,0,0,0];
+var threeP20Summer = [0,0,0,0,0,0,0];
+var threeP20Winter = [0,0,0,0,0,0,0];
 var weeklyWins = [0,0,0,0,0,0,0];
 var weeklyPlace = [0,0,0,0,0,0,0];
 var weeklyKos = [0,0,0,0,0,0,0];
@@ -1565,13 +1582,37 @@ var weeklyAvg = [0,0,0,0,0,0,0];
 var weeklyPoints = [0,0,0,0,0,0,0];
 var weeklyNegative = [0,0,0,0,0,0,0];
 var playerkos19 = [0,0,0,0,0,0,0];
+var playerkos19Summer = [0,0,0,0,0,0,0];
+var playerkos19Spring = [0,0,0,0,0,0,0];
+var playerkos19Winter = [0,0,0,0,0,0,0];
+var playerkos19Fall = [0,0,0,0,0,0,0];
 var playerkos20 = [0,0,0,0,0,0,0];
+var playerkos20Summer = [0,0,0,0,0,0,0];
+var playerkos20Spring = [0,0,0,0,0,0,0];
+var playerkos20Winter = [0,0,0,0,0,0,0];
+var playerkos20Fall = [0,0,0,0,0,0,0];
 var highKoGames19 = [0,0,0,0,0,0,0];
 var highKoGames20 = [0,0,0,0,0,0,0];
 var gamePoints19 = [0,0,0,0,0,0,0];
+var gamePoints19Summer = [0,0,0,0,0,0,0];
+var gamePoints19Spring = [0,0,0,0,0,0,0];
+var gamePoints19Winter = [0,0,0,0,0,0,0];
+var gamePoints19Fall = [0,0,0,0,0,0,0];
 var gamePoints20 = [0,0,0,0,0,0,0];
+var gamePoints20Summer = [0,0,0,0,0,0,0];
+var gamePoints20Fall = [0,0,0,0,0,0,0];
+var gamePoints20Winter = [0,0,0,0,0,0,0];
+var gamePoints20Spring = [0,0,0,0,0,0,0];
 var gameNegative19 = [0,0,0,0,0,0,0];
+var gameNegative19Summer = [0,0,0,0,0,0,0];
+var gameNegative19Spring = [0,0,0,0,0,0,0];
+var gameNegative19Winter = [0,0,0,0,0,0,0];
+var gameNegative19Fall = [0,0,0,0,0,0,0];
 var gameNegative20 = [0,0,0,0,0,0,0];
+var gameNegative20Summer = [0,0,0,0,0,0,0];
+var gameNegative20Spring = [0,0,0,0,0,0,0];
+var gameNegative20Winter = [0,0,0,0,0,0,0];
+var gameNegative20Fall = [0,0,0,0,0,0,0];
 var micahCharacters = [];
 var timCharacters = [];
 var dougCharacters = [];
@@ -1586,6 +1627,34 @@ var zackCharacters19 = [];
 var betsyCharacters19 = [];
 var jamesCharacters19 = [];
 var craigCharacters19 = [];
+var micahCharacters19Summer = [];
+var timCharacters19Summer = [];
+var dougCharacters19Summer = [];
+var zackCharacters19Summer = [];
+var betsyCharacters19Summer = [];
+var jamesCharacters19Summer = [];
+var craigCharacters19Summer = [];
+var micahCharacters19Spring = [];
+var timCharacters19Spring = [];
+var dougCharacters19Spring = [];
+var zackCharacters19Spring = [];
+var betsyCharacters19Spring = [];
+var jamesCharacters19Spring = [];
+var craigCharacters19Spring = [];
+var micahCharacters19Fall = [];
+var timCharacters19Fall = [];
+var dougCharacters19Fall = [];
+var zackCharacters19Fall = [];
+var betsyCharacters19Fall = [];
+var jamesCharacters19Fall = [];
+var craigCharacters19Fall = [];
+var micahCharacters19Winter = [];
+var timCharacters19Winter = [];
+var dougCharacters19Winter = [];
+var zackCharacters19Winter = [];
+var betsyCharacters19Winter = [];
+var jamesCharacters19Winter = [];
+var craigCharacters19Winter = [];
 var micahCharacters20 = [];
 var timCharacters20 = [];
 var dougCharacters20 = [];
@@ -1593,6 +1662,34 @@ var zackCharacters20 = [];
 var betsyCharacters20 = [];
 var jamesCharacters20 = [];
 var craigCharacters20 = [];
+var micahCharacters20Summer = [];
+var timCharacters20Summer = [];
+var dougCharacters20Summer = [];
+var zackCharacters20Summer = [];
+var betsyCharacters20Summer = [];
+var jamesCharacters20Summer = [];
+var craigCharacters20Summer = [];
+var micahCharacters20Spring = [];
+var timCharacters20Spring = [];
+var dougCharacters20Spring = [];
+var zackCharacters20Spring = [];
+var betsyCharacters20Spring = [];
+var jamesCharacters20Spring = [];
+var craigCharacters20Spring = [];
+var micahCharacters20Fall = [];
+var timCharacters20Fall = [];
+var dougCharacters20Fall = [];
+var zackCharacters20Fall = [];
+var betsyCharacters20Fall = [];
+var jamesCharacters20Fall = [];
+var craigCharacters20Fall = [];
+var micahCharacters20Winter = [];
+var timCharacters20Winter = [];
+var dougCharacters20Winter = [];
+var zackCharacters20Winter = [];
+var betsyCharacters20Winter = [];
+var jamesCharacters20Winter = [];
+var craigCharacters20Winter = [];
 var mostPlayed = [];
 var mostWins;
 var averagePlace;
@@ -1600,9 +1697,25 @@ var highKoGames;
 var totalKos;
 var gamesPlayed;
 var gamesPlayed19 = [0,0,0,0,0,0,0];
+var gamesPlayed19Summer = [0,0,0,0,0,0,0];
+var gamesPlayed19Spring = [0,0,0,0,0,0,0];
+var gamesPlayed19Winter = [0,0,0,0,0,0,0];
+var gamesPlayed19Fall = [0,0,0,0,0,0,0];
 var gamesPlayed20 = [0,0,0,0,0,0,0];
+var gamesPlayed20Summer = [0,0,0,0,0,0,0];
+var gamesPlayed20Spring = [0,0,0,0,0,0,0];
+var gamesPlayed20Winter = [0,0,0,0,0,0,0];
+var gamesPlayed20Fall = [0,0,0,0,0,0,0];
 var gamePlace19 = [0,0,0,0,0,0,0];
+var gamePlace19Summer = [0,0,0,0,0,0,0];
+var gamePlace19Spring = [0,0,0,0,0,0,0];
+var gamePlace19Fall = [0,0,0,0,0,0,0];
+var gamePlace19Winter = [0,0,0,0,0,0,0];
 var gamePlace20 = [0,0,0,0,0,0,0];
+var gamePlace20Summer = [0,0,0,0,0,0,0];
+var gamePlace20Spring = [0,0,0,0,0,0,0];
+var gamePlace20Winter = [0,0,0,0,0,0,0];
+var gamePlace20Fall = [0,0,0,0,0,0,0];
 var fighterStatsMicah = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsTim = {games: 0, wins: 0, place: 0, kos: 0};
 var fighterStatsDoug = {games: 0, wins: 0, place: 0, kos: 0};
@@ -1660,92 +1773,354 @@ class App extends React.Component {
     for(var i=0; i < gameData.length; i++){
         var gameDate = gameData[i][5].date;
         var year = gameDate.getFullYear();
+        var season;
+        if(gameDate.getMonth() < 3){
+            season = "Winter";
+        }else if(gameDate.getMonth() >= 3 && gameDate.getMonth() < 6){
+            season = "Spring";
+        }else if(gameDate.getMonth() >=6 && gameDate.getMonth() < 9){
+            season = "Summer";
+        }else{
+            season = "Fall";
+        }
         if(gameData[i][3].character === empty){
             if(gameData[i][0].name === "Micah"){
                 if(year === 2019){
                     threeP19[0] ++;
+                    if(season === "Winter"){
+                        threeP19Winter[0] ++;
+                    }else if(season === "Spring"){
+                        threeP19Spring[0] ++;
+                    }else if(season === "Summer"){
+                        threeP19Summer[0] ++;
+                    }else{
+                        threeP19Fall[0] ++;
+                    }
                 }else{
                     threeP20[0] ++;
+                    if(season === "Winter"){
+                        threeP20Winter[0] ++;
+                    }else if(season === "Spring"){
+                        threeP20Spring[0] ++;
+                    }else if(season === "Summer"){
+                        threeP20Summer[0] ++;
+                    }else{
+                        threeP20Fall[0] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "Tim"){
                 if(year === 2019){
                     threeP19[1] ++;
+                    if(season === "Winter"){
+                        threeP19Winter[1] ++;
+                    }else if(season === "Spring"){
+                        threeP19Spring[1] ++;
+                    }else if(season === "Summer"){
+                        threeP19Summer[1] ++;
+                    }else{
+                        threeP19Fall[1] ++;
+                    }
                 }else{
                     threeP20[1] ++;
+                    if(season === "Winter"){
+                        threeP20Winter[1] ++;
+                    }else if(season === "Spring"){
+                        threeP20Spring[1] ++;
+                    }else if(season === "Summer"){
+                        threeP20Summer[1] ++;
+                    }else{
+                        threeP20Fall[1] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "Doug"){
                 if(year === 2019){
                     threeP19[2] ++;
+                    if(season === "Winter"){
+                        threeP19Winter[2] ++;
+                    }else if(season === "Spring"){
+                        threeP19Spring[2] ++;
+                    }else if(season === "Summer"){
+                        threeP19Summer[2] ++;
+                    }else{
+                        threeP19Fall[2] ++;
+                    }
                 }else{
                     threeP20[2] ++;
+                    if(season === "Winter"){
+                        threeP20Winter[2] ++;
+                    }else if(season === "Spring"){
+                        threeP20Spring[2] ++;
+                    }else if(season === "Summer"){
+                        threeP20Summer[2] ++;
+                    }else{
+                        threeP20Fall[2] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "Zack"){
                 if(year === 2019){
                     threeP19[3] ++;
+                    if(season === "Winter"){
+                        threeP19Winter[3] ++;
+                    }else if(season === "Spring"){
+                        threeP19Spring[3] ++;
+                    }else if(season === "Summer"){
+                        threeP19Summer[3] ++;
+                    }else{
+                        threeP19Fall[3] ++;
+                    }
                 }else{
                     threeP20[3] ++;
+                    if(season === "Winter"){
+                        threeP20Winter[3] ++;
+                    }else if(season === "Spring"){
+                        threeP20Spring[3] ++;
+                    }else if(season === "Summer"){
+                        threeP20Summer[3] ++;
+                    }else{
+                        threeP20Fall[3] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "Betsy"){
                 if(year === 2019){
                     threeP19[4] ++;
+                    if(season === "Winter"){
+                        threeP19Winter[4] ++;
+                    }else if(season === "Spring"){
+                        threeP19Spring[4] ++;
+                    }else if(season === "Summer"){
+                        threeP19Summer[4] ++;
+                    }else{
+                        threeP19Fall[4] ++;
+                    }
                 }else{
                     threeP20[4] ++;
+                    if(season === "Winter"){
+                        threeP20Winter[4] ++;
+                    }else if(season === "Spring"){
+                        threeP20Spring[4] ++;
+                    }else if(season === "Summer"){
+                        threeP20Summer[4] ++;
+                    }else{
+                        threeP20Fall[4] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "James"){
                 if(year === 2019){
                     threeP19[5] ++;
+                    if(season === "Winter"){
+                        threeP19Winter[5] ++;
+                    }else if(season === "Spring"){
+                        threeP19Spring[5] ++;
+                    }else if(season === "Summer"){
+                        threeP19Summer[5] ++;
+                    }else{
+                        threeP19Fall[5] ++;
+                    }
                 }else{
                     threeP20[5] ++;
+                    if(season === "Winter"){
+                        threeP20Winter[5] ++;
+                    }else if(season === "Spring"){
+                        threeP20Spring[5] ++;
+                    }else if(season === "Summer"){
+                        threeP20Summer[5] ++;
+                    }else{
+                        threeP20Fall[5] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "Craig"){
                 if(year === 2019){
                     threeP19[6] ++;
+                    if(season === "Winter"){
+                        threeP19Winter[6] ++;
+                    }else if(season === "Spring"){
+                        threeP19Spring[6] ++;
+                    }else if(season === "Summer"){
+                        threeP19Summer[6] ++;
+                    }else{
+                        threeP19Fall[6] ++;
+                    }
                 }else{
                     threeP20[6] ++;
+                    if(season === "Winter"){
+                        threeP20Winter[6] ++;
+                    }else if(season === "Spring"){
+                        threeP20Spring[6] ++;
+                    }else if(season === "Summer"){
+                        threeP20Summer[6] ++;
+                    }else{
+                        threeP20Fall[6] ++;
+                    }
                 }
             }
         }else{
             if(gameData[i][0].name === "Micah"){
                 if(year === 2019){
                     fourP19[0] ++;
+                    if(season === "Winter"){
+                        fourP19Winter[0] ++;
+                    }else if(season === "Spring"){
+                        fourP19Spring[0] ++;
+                    }else if(season === "Summer"){
+                        fourP19Summer[0] ++;
+                    }else{
+                        fourP19Fall[0] ++;
+                    }
                 }else{
                     fourP20[0] ++;
+                    if(season === "Winter"){
+                        fourP20Winter[0] ++;
+                    }else if(season === "Spring"){
+                        fourP20Spring[0] ++;
+                    }else if(season === "Summer"){
+                        fourP20Summer[0] ++;
+                    }else{
+                        fourP20Fall[0] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "Tim"){
                 if(year === 2019){
                     fourP19[1] ++;
+                    if(season === "Winter"){
+                        fourP19Winter[1] ++;
+                    }else if(season === "Spring"){
+                        fourP19Spring[1] ++;
+                    }else if(season === "Summer"){
+                        fourP19Summer[1] ++;
+                    }else{
+                        fourP19Fall[1] ++;
+                    }
                 }else{
                     fourP20[1] ++;
+                    if(season === "Winter"){
+                        fourP20Winter[1] ++;
+                    }else if(season === "Spring"){
+                        fourP20Spring[1] ++;
+                    }else if(season === "Summer"){
+                        fourP20Summer[1] ++;
+                    }else{
+                        fourP20Fall[1] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "Doug"){
                 if(year === 2019){
                     fourP19[2] ++;
+                    if(season === "Winter"){
+                        fourP19Winter[2] ++;
+                    }else if(season === "Spring"){
+                        fourP19Spring[2] ++;
+                    }else if(season === "Summer"){
+                        fourP19Summer[2] ++;
+                    }else{
+                        fourP19Fall[2] ++;
+                    }
                 }else{
                     fourP20[2] ++;
+                    if(season === "Winter"){
+                        fourP20Winter[2] ++;
+                    }else if(season === "Spring"){
+                        fourP20Spring[2] ++;
+                    }else if(season === "Summer"){
+                        fourP20Summer[2] ++;
+                    }else{
+                        fourP20Fall[2] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "Zack"){
                 if(year === 2019){
                     fourP19[3] ++;
+                    if(season === "Winter"){
+                        fourP19Winter[3] ++;
+                    }else if(season === "Spring"){
+                        fourP19Spring[3] ++;
+                    }else if(season === "Summer"){
+                        fourP19Summer[3] ++;
+                    }else{
+                        fourP19Fall[3] ++;
+                    }
                 }else{
                     fourP20[3] ++;
+                    if(season === "Winter"){
+                        fourP20Winter[3] ++;
+                    }else if(season === "Spring"){
+                        fourP20Spring[3] ++;
+                    }else if(season === "Summer"){
+                        fourP20Summer[3] ++;
+                    }else{
+                        fourP20Fall[3] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "Betsy"){
                 if(year === 2019){
                     fourP19[4] ++;
+                    if(season === "Winter"){
+                        fourP19Winter[4] ++;
+                    }else if(season === "Spring"){
+                        fourP19Spring[4] ++;
+                    }else if(season === "Summer"){
+                        fourP19Summer[4] ++;
+                    }else{
+                        fourP19Fall[4] ++;
+                    }
                 }else{
                     fourP20[4] ++;
+                    if(season === "Winter"){
+                        fourP20Winter[4] ++;
+                    }else if(season === "Spring"){
+                        fourP20Spring[4] ++;
+                    }else if(season === "Summer"){
+                        fourP20Summer[4] ++;
+                    }else{
+                        fourP20Fall[4] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "James"){
                 if(year === 2019){
                     fourP19[5] ++;
+                    if(season === "Winter"){
+                        fourP19Winter[5] ++;
+                    }else if(season === "Spring"){
+                        fourP19Spring[5] ++;
+                    }else if(season === "Summer"){
+                        fourP19Summer[5] ++;
+                    }else{
+                        fourP19Fall[5] ++;
+                    }
                 }else{
                     fourP20[5] ++;
+                    if(season === "Winter"){
+                        fourP20Winter[5] ++;
+                    }else if(season === "Spring"){
+                        fourP20Spring[5] ++;
+                    }else if(season === "Summer"){
+                        fourP20Summer[5] ++;
+                    }else{
+                        fourP20Fall[5] ++;
+                    }
                 }
             }else if(gameData[i][0].name === "Craig"){
                 if(year === 2019){
                     fourP19[6] ++;
+                    if(season === "Winter"){
+                        fourP19Winter[6] ++;
+                    }else if(season === "Spring"){
+                        fourP19Spring[6] ++;
+                    }else if(season === "Summer"){
+                        fourP19Summer[6] ++;
+                    }else{
+                        fourP19Fall[6] ++;
+                    }
                 }else{
                     fourP20[6] ++;
+                    if(season === "Winter"){
+                        fourP20Winter[6] ++;
+                    }else if(season === "Spring"){
+                        fourP20Spring[6] ++;
+                    }else if(season === "Summer"){
+                        fourP20Summer[6] ++;
+                    }else{
+                        fourP20Fall[6] ++;
+                    }
                 }
             }
         }
@@ -1772,47 +2147,79 @@ class App extends React.Component {
                 micahCharacters[a].kos = micahCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === 2019){
+                var gamesPlayedSeason = eval("gamesPlayed19" + season);
+                gamesPlayedSeason[0] ++;
                 gamesPlayed19[0] ++;
+                var gamesPlaceSeason = eval("gamePlace19" + season);
+                gamesPlaceSeason[0] = gamesPlaceSeason[0] + (j + 1);
                 gamePlace19[0] = gamePlace19[0] + (j + 1);
+                var gamePointsSeason = eval("gamePoints19" + season);
+                var gameNegativeSeason = eval("gameNegative19" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints19[0] = gamePoints19[0] + 6;
-                        gameNegative19[0] = gameNegative19[0] + 2
+                        gamePointsSeason[0] = gamePointsSeason[0] + 6;
+                        gameNegative19[0] = gameNegative19[0] + 2;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] + 2;
                     }else if(j === 1){
                         gamePoints19[0] = gamePoints19[0] + 3;
+                        gamePointsSeason[0] = gamePointsSeason[0] + 3;
                     }else{
-                        gameNegative19[0] = gameNegative19[0] - 2
+                        gameNegative19[0] = gameNegative19[0] - 2;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints19[0] = gamePoints19[0] + 8;
-                        gameNegative19[0] = gameNegative19[0] + 3
+                        gamePointsSeason[0] = gamePointsSeason[0] + 8;
+                        gameNegative19[0] = gameNegative19[0] + 3;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] + 3;
                     }else if(j === 1){
                         gamePoints19[0] = gamePoints19[0] + 4;
-                        gameNegative19[0] = gameNegative19[0] + 1
+                        gamePointsSeason[0] = gamePointsSeason[0] + 4;
+                        gameNegative19[0] = gameNegative19[0] + 1;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] + 1;
                     }else if(j === 2){
                         gamePoints19[0] = gamePoints19[0] + 1;
-                        gameNegative19[0] = gameNegative19[0] - 1
+                        gamePointsSeason[0] = gamePointsSeason[0] + 1;
+                        gameNegative19[0] = gameNegative19[0] - 1;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] - 1;
                     }else{
-                        gameNegative19[0] = gameNegative19[0] - 3
+                        gameNegative19[0] = gameNegative19[0] - 3;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos19" + season);
+                playerkosSeason[0] = playerkosSeason[0] + gameData[i][j].kos;
                 playerkos19[0] = playerkos19[0] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[0] ++;
                   gamePoints19[0] = gamePoints19[0] + 1;
+                  gamePointsSeason[0] = gamePointsSeason[0] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints19[0] = gamePoints19[0] + 2;
+                    gamePointsSeason[0] = gamePointsSeason[0] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints19[0] = gamePoints19[0] + 3;
+                    gamePointsSeason[0] = gamePointsSeason[0] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter19 = false;
+                var micahCharactersSeason = eval("micahCharacters19" + season);
                 for(var k=0; k < micahCharacters19.length; k++){
                     if(micahCharacters19[k].character === gameData[i][j].character){
                         existingCharacter19 = true;
                     }else{}
                     if(micahCharacters19[k].character === gameData[i][0].character && gameData[i][0].name === "Micah"){
                         micahCharacters19[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < micahCharactersSeason.length; k++){
+                    if(micahCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(micahCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Micah"){
+                        micahCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter19 === false){
@@ -1826,48 +2233,91 @@ class App extends React.Component {
                     micahCharacters19[a].number ++;
                     micahCharacters19[a].kos = micahCharacters19[a].kos + gameData[i][j].kos;
                 }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = micahCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    micahCharactersSeason[a].number ++;
+                    micahCharactersSeason[a].kos = micahCharactersSeason[a].kos + gameData[i][j].kos;
+                }
             }else{
+                var gamesPlayedSeason = eval("gamesPlayed20" + season);
+                gamesPlayedSeason[0] ++;
                 gamesPlayed20[0] ++;
+                var gamesPlaceSeason = eval("gamePlace20" + season);
+                gamesPlaceSeason[0] = gamesPlaceSeason[0] + (j + 1);
                 gamePlace20[0] = gamePlace20[0] + (j + 1);
+                var gamePointsSeason = eval("gamePoints20" + season);
+                var gameNegativeSeason = eval("gameNegative20" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints20[0] = gamePoints20[0] + 6;
-                        gameNegative20[0] = gameNegative20[0] + 2
+                        gamePointsSeason[0] = gamePointsSeason[0] + 6;
+                        gameNegative20[0] = gameNegative20[0] + 2;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] + 2;
                     }else if(j === 1){
                         gamePoints20[0] = gamePoints20[0] + 3;
+                        gamePointsSeason[0] = gamePointsSeason[0] + 3;
                     }else{
-                        gameNegative20[0] = gameNegative20[0] - 2
+                        gameNegative20[0] = gameNegative20[0] - 2;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints20[0] = gamePoints20[0] + 8;
-                        gameNegative20[0] = gameNegative20[0] + 3
+                        gamePointsSeason[0] = gamePointsSeason[0] + 8;
+                        gameNegative20[0] = gameNegative20[0] + 3;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] + 3;
                     }else if(j === 1){
                         gamePoints20[0] = gamePoints20[0] + 4;
-                        gameNegative20[0] = gameNegative20[0] + 1
+                        gamePointsSeason[0] = gamePointsSeason[0] + 4;
+                        gameNegative20[0] = gameNegative20[0] + 1;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] + 1;
                     }else if(j === 2){
                         gamePoints20[0] = gamePoints20[0] + 1;
-                        gameNegative20[0] = gameNegative20[0] - 1
+                        gamePointsSeason[0] = gamePointsSeason[0] + 1;
+                        gameNegative20[0] = gameNegative20[0] - 1;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] - 1;
                     }else{
-                        gameNegative20[0] = gameNegative20[0] - 3
+                        gameNegative20[0] = gameNegative20[0] - 3;
+                        gameNegativeSeason[0] = gameNegativeSeason[0] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos20" + season);
+                playerkosSeason[0] = playerkosSeason[0] + gameData[i][j].kos;
                 playerkos20[0] = playerkos20[0] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[0] ++;
                   gamePoints20[0] = gamePoints20[0] + 1;
+                  gamePointsSeason[0] = gamePointsSeason[0] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints20[0] = gamePoints20[0] + 2;
+                    gamePointsSeason[0] = gamePointsSeason[0] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints20[0] = gamePoints20[0] + 3;
+                    gamePointsSeason[0] = gamePointsSeason[0] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter20 = false;
+                var micahCharactersSeason = eval("micahCharacters20" + season);
                 for(var k=0; k < micahCharacters20.length; k++){
                     if(micahCharacters20[k].character === gameData[i][j].character){
                         existingCharacter20 = true;
                     }else{}
                     if(micahCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "Micah"){
                         micahCharacters20[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < micahCharactersSeason.length; k++){
+                    if(micahCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(micahCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Micah"){
+                        micahCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter20 === false){
@@ -1880,6 +2330,17 @@ class App extends React.Component {
                     var a = micahCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     micahCharacters20[a].number ++;
                     micahCharacters20[a].kos = micahCharacters20[a].kos + gameData[i][j].kos;
+                }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = micahCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    micahCharactersSeason[a].number ++;
+                    micahCharactersSeason[a].kos = micahCharactersSeason[a].kos + gameData[i][j].kos;
                 }
             }
         }else if(gameData[i][j].name === "Tim"){
@@ -1904,47 +2365,79 @@ class App extends React.Component {
                 timCharacters[a].kos = timCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === 2019){
+                var gamesPlayedSeason = eval("gamesPlayed19" + season);
+                gamesPlayedSeason[1] ++;
                 gamesPlayed19[1] ++;
+                var gamesPlaceSeason = eval("gamePlace19" + season);
+                gamesPlaceSeason[1] = gamesPlaceSeason[1] + (j + 1);
                 gamePlace19[1] = gamePlace19[1] + (j + 1);
+                var gamePointsSeason = eval("gamePoints19" + season);
+                var gameNegativeSeason = eval("gameNegative19" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints19[1] = gamePoints19[1] + 6;
-                        gameNegative19[1] = gameNegative19[1] + 2
+                        gamePointsSeason[1] = gamePointsSeason[1] + 6;
+                        gameNegative19[1] = gameNegative19[1] + 2;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] + 2;
                     }else if(j === 1){
                         gamePoints19[1] = gamePoints19[1] + 3;
+                        gamePointsSeason[1] = gamePointsSeason[1] + 3;
                     }else{
-                        gameNegative19[1] = gameNegative19[1] - 2
+                        gameNegative19[1] = gameNegative19[1] - 2;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints19[1] = gamePoints19[1] + 8;
-                        gameNegative19[1] = gameNegative19[1] + 3
+                        gamePointsSeason[1] = gamePointsSeason[1] + 8;
+                        gameNegative19[1] = gameNegative19[1] + 3;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] + 3;
                     }else if(j === 1){
                         gamePoints19[1] = gamePoints19[1] + 4;
-                        gameNegative19[1] = gameNegative19[1] + 1
+                        gamePointsSeason[1] = gamePointsSeason[1] + 4;
+                        gameNegative19[1] = gameNegative19[1] + 1;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] + 1;
                     }else if(j === 2){
                         gamePoints19[1] = gamePoints19[1] + 1;
-                        gameNegative19[1] = gameNegative19[1] - 1
+                        gamePointsSeason[1] = gamePointsSeason[1] + 1;
+                        gameNegative19[1] = gameNegative19[1] - 1;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] - 1;
                     }else{
-                        gameNegative19[1] = gameNegative19[1] - 3
+                        gameNegative19[1] = gameNegative19[1] - 3;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos19" + season);
+                playerkosSeason[1] = playerkosSeason[1] + gameData[i][j].kos;
                 playerkos19[1] = playerkos19[1] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[1] ++;
                   gamePoints19[1] = gamePoints19[1] + 1;
+                  gamePointsSeason[1] = gamePointsSeason[1] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints19[1] = gamePoints19[1] + 2;
+                    gamePointsSeason[1] = gamePointsSeason[1] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints19[1] = gamePoints19[1] + 3;
+                    gamePointsSeason[1] = gamePointsSeason[1] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter19 = false;
+                var timCharactersSeason = eval("timCharacters19" + season);
                 for(var k=0; k < timCharacters19.length; k++){
                     if(timCharacters19[k].character === gameData[i][j].character){
                         existingCharacter19 = true;
                     }else{}
                     if(timCharacters19[k].character === gameData[i][0].character && gameData[i][0].name === "Tim"){
                         timCharacters19[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < timCharactersSeason.length; k++){
+                    if(timCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(timCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Tim"){
+                        timCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter19 === false){
@@ -1958,48 +2451,91 @@ class App extends React.Component {
                     timCharacters19[a].number ++;
                     timCharacters19[a].kos = timCharacters19[a].kos + gameData[i][j].kos;
                 }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = timCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    timCharactersSeason[a].number ++;
+                    timCharactersSeason[a].kos = timCharactersSeason[a].kos + gameData[i][j].kos;
+                }
             }else{
+                var gamesPlayedSeason = eval("gamesPlayed20" + season);
+                gamesPlayedSeason[1] ++;
                 gamesPlayed20[1] ++;
+                var gamesPlaceSeason = eval("gamePlace20" + season);
+                gamesPlaceSeason[1] = gamesPlaceSeason[1] + (j + 1);
                 gamePlace20[1] = gamePlace20[1] + (j + 1);
+                var gamePointsSeason = eval("gamePoints20" + season);
+                var gameNegativeSeason = eval("gameNegative20" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints20[1] = gamePoints20[1] + 6;
-                        gameNegative20[1] = gameNegative20[1] + 2
+                        gamePointsSeason[1] = gamePointsSeason[1] + 6;
+                        gameNegative20[1] = gameNegative20[1] + 2;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] + 2;
                     }else if(j === 1){
                         gamePoints20[1] = gamePoints20[1] + 3;
+                        gamePointsSeason[1] = gamePointsSeason[1] + 3;
                     }else{
-                        gameNegative20[1] = gameNegative20[1] - 2
+                        gameNegative20[1] = gameNegative20[1] - 2;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints20[1] = gamePoints20[1] + 8;
-                        gameNegative20[1] = gameNegative20[1] + 3
+                        gamePointsSeason[1] = gamePointsSeason[1] + 8;
+                        gameNegative20[1] = gameNegative20[1] + 3;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] + 3;
                     }else if(j === 1){
                         gamePoints20[1] = gamePoints20[1] + 4;
-                        gameNegative20[1] = gameNegative20[1] + 1
+                        gamePointsSeason[1] = gamePointsSeason[1] + 4;
+                        gameNegative20[1] = gameNegative20[1] + 1;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] + 1;
                     }else if(j === 2){
                         gamePoints20[1] = gamePoints20[1] + 1;
-                        gameNegative20[1] = gameNegative20[1] - 1
+                        gamePointsSeason[1] = gamePointsSeason[1] + 1;
+                        gameNegative20[1] = gameNegative20[1] - 1;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] - 1;
                     }else{
-                        gameNegative20[1] = gameNegative20[1] - 3
+                        gameNegative20[1] = gameNegative20[1] - 3;
+                        gameNegativeSeason[1] = gameNegativeSeason[1] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos20" + season);
+                playerkosSeason[1] = playerkosSeason[1] + gameData[i][j].kos;
                 playerkos20[1] = playerkos20[1] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[1] ++;
                   gamePoints20[1] = gamePoints20[1] + 1;
+                  gamePointsSeason[1] = gamePointsSeason[1] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints20[1] = gamePoints20[1] + 2;
+                    gamePointsSeason[1] = gamePointsSeason[1] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints20[1] = gamePoints20[1] + 3;
+                    gamePointsSeason[1] = gamePointsSeason[1] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter20 = false;
+                var timCharactersSeason = eval("timCharacters20" + season);
                 for(var k=0; k < timCharacters20.length; k++){
                     if(timCharacters20[k].character === gameData[i][j].character){
                         existingCharacter20 = true;
                     }else{}
                     if(timCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "Tim"){
                         timCharacters20[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < timCharactersSeason.length; k++){
+                    if(timCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(timCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Tim"){
+                        timCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter20 === false){
@@ -2012,6 +2548,17 @@ class App extends React.Component {
                     var a = timCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     timCharacters20[a].number ++;
                     timCharacters20[a].kos = timCharacters20[a].kos + gameData[i][j].kos;
+                }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = timCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    timCharactersSeason[a].number ++;
+                    timCharactersSeason[a].kos = timCharactersSeason[a].kos + gameData[i][j].kos;
                 }
             }
         }else if(gameData[i][j].name === "Doug"){
@@ -2036,47 +2583,79 @@ class App extends React.Component {
                 dougCharacters[a].kos = dougCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === 2019){
+                var gamesPlayedSeason = eval("gamesPlayed19" + season);
+                gamesPlayedSeason[2] ++;
                 gamesPlayed19[2] ++;
+                var gamesPlaceSeason = eval("gamePlace19" + season);
+                gamesPlaceSeason[2] = gamesPlaceSeason[2] + (j + 1);
                 gamePlace19[2] = gamePlace19[2] + (j + 1);
+                var gamePointsSeason = eval("gamePoints19" + season);
+                var gameNegativeSeason = eval("gameNegative19" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints19[2] = gamePoints19[2] + 6;
-                        gameNegative19[2] = gameNegative19[2] + 2
+                        gamePointsSeason[2] = gamePointsSeason[2] + 6;
+                        gameNegative19[2] = gameNegative19[2] + 2;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] + 2;
                     }else if(j === 1){
                         gamePoints19[2] = gamePoints19[2] + 3;
+                        gamePointsSeason[2] = gamePointsSeason[2] + 3;
                     }else{
-                        gameNegative19[2] = gameNegative19[2] - 2
+                        gameNegative19[2] = gameNegative19[2] - 2;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints19[2] = gamePoints19[2] + 8;
-                        gameNegative19[2] = gameNegative19[2] + 3
+                        gamePointsSeason[2] = gamePointsSeason[2] + 8;
+                        gameNegative19[2] = gameNegative19[2] + 3;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] + 3;
                     }else if(j === 1){
                         gamePoints19[2] = gamePoints19[2] + 4;
-                        gameNegative19[2] = gameNegative19[2] + 1
+                        gamePointsSeason[2] = gamePointsSeason[2] + 4;
+                        gameNegative19[2] = gameNegative19[2] + 1;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] + 1;
                     }else if(j === 2){
                         gamePoints19[2] = gamePoints19[2] + 1;
-                        gameNegative19[2] = gameNegative19[2] - 1
+                        gamePointsSeason[2] = gamePointsSeason[2] + 1;
+                        gameNegative19[2] = gameNegative19[2] - 1;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] - 1;
                     }else{
-                        gameNegative19[2] = gameNegative19[2] - 3
+                        gameNegative19[2] = gameNegative19[2] - 3;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos19" + season);
+                playerkosSeason[2] = playerkosSeason[2] + gameData[i][j].kos;
                 playerkos19[2] = playerkos19[2] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[2] ++;
                   gamePoints19[2] = gamePoints19[2] + 1;
+                  gamePointsSeason[2] = gamePointsSeason[2] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints19[2] = gamePoints19[2] + 2;
+                    gamePointsSeason[2] = gamePointsSeason[2] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints19[2] = gamePoints19[2] + 3;
+                    gamePointsSeason[2] = gamePointsSeason[2] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter19 = false;
+                var dougCharactersSeason = eval("dougCharacters19" + season);
                 for(var k=0; k < dougCharacters19.length; k++){
                     if(dougCharacters19[k].character === gameData[i][j].character){
                         existingCharacter19 = true;
                     }else{}
                     if(dougCharacters19[k].character === gameData[i][0].character && gameData[i][0].name === "Doug"){
                         dougCharacters19[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < dougCharactersSeason.length; k++){
+                    if(dougCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(dougCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Doug"){
+                        dougCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter19 === false){
@@ -2090,48 +2669,91 @@ class App extends React.Component {
                     dougCharacters19[a].number ++;
                     dougCharacters19[a].kos = dougCharacters19[a].kos + gameData[i][j].kos;
                 }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = dougCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    dougCharactersSeason[a].number ++;
+                    dougCharactersSeason[a].kos = dougCharactersSeason[a].kos + gameData[i][j].kos;
+                }
             }else{
+                var gamesPlayedSeason = eval("gamesPlayed20" + season);
+                gamesPlayedSeason[2] ++;
                 gamesPlayed20[2] ++;
+                var gamesPlaceSeason = eval("gamePlace20" + season);
+                gamesPlaceSeason[2] = gamesPlaceSeason[2] + (j + 1);
                 gamePlace20[2] = gamePlace20[2] + (j + 1);
+                var gamePointsSeason = eval("gamePoints20" + season);
+                var gameNegativeSeason = eval("gameNegative20" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints20[2] = gamePoints20[2] + 6;
-                        gameNegative20[2] = gameNegative20[2] + 2
+                        gamePointsSeason[2] = gamePointsSeason[2] + 6;
+                        gameNegative20[2] = gameNegative20[2] + 2;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] + 2;
                     }else if(j === 1){
                         gamePoints20[2] = gamePoints20[2] + 3;
+                        gamePointsSeason[2] = gamePointsSeason[2] + 3;
                     }else{
-                        gameNegative20[2] = gameNegative20[2] - 2
+                        gameNegative20[2] = gameNegative20[2] - 2;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints20[2] = gamePoints20[2] + 8;
-                        gameNegative20[2] = gameNegative20[2] + 3
+                        gamePointsSeason[2] = gamePointsSeason[2] + 8;
+                        gameNegative20[2] = gameNegative20[2] + 3;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] + 3;
                     }else if(j === 1){
                         gamePoints20[2] = gamePoints20[2] + 4;
-                        gameNegative20[2] = gameNegative20[2] + 1
+                        gamePointsSeason[2] = gamePointsSeason[2] + 4;
+                        gameNegative20[2] = gameNegative20[2] + 1;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] + 1;
                     }else if(j === 2){
                         gamePoints20[2] = gamePoints20[2] + 1;
-                        gameNegative20[2] = gameNegative20[2] - 1
+                        gamePointsSeason[2] = gamePointsSeason[2] + 1;
+                        gameNegative20[2] = gameNegative20[2] - 1;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] - 1;
                     }else{
-                        gameNegative20[2] = gameNegative20[2] - 3
+                        gameNegative20[2] = gameNegative20[2] - 3;
+                        gameNegativeSeason[2] = gameNegativeSeason[2] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos20" + season);
+                playerkosSeason[2] = playerkosSeason[2] + gameData[i][j].kos;
                 playerkos20[2] = playerkos20[2] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[2] ++;
                   gamePoints20[2] = gamePoints20[2] + 1;
+                  gamePointsSeason[2] = gamePointsSeason[2] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints20[2] = gamePoints20[2] + 2;
+                    gamePointsSeason[2] = gamePointsSeason[2] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints20[2] = gamePoints20[2] + 3;
+                    gamePointsSeason[2] = gamePointsSeason[2] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter20 = false;
+                var dougCharactersSeason = eval("dougCharacters20" + season);
                 for(var k=0; k < dougCharacters20.length; k++){
                     if(dougCharacters20[k].character === gameData[i][j].character){
                         existingCharacter20 = true;
                     }else{}
                     if(dougCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "Doug"){
                         dougCharacters20[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < dougCharactersSeason.length; k++){
+                    if(dougCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(dougCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Doug"){
+                        dougCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter20 === false){
@@ -2144,6 +2766,17 @@ class App extends React.Component {
                     var a = dougCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     dougCharacters20[a].number ++;
                     dougCharacters20[a].kos = dougCharacters20[a].kos + gameData[i][j].kos;
+                }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = dougCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    dougCharactersSeason[a].number ++;
+                    dougCharactersSeason[a].kos = dougCharactersSeason[a].kos + gameData[i][j].kos;
                 }
             }
         }else if(gameData[i][j].name === "Zack"){
@@ -2168,47 +2801,79 @@ class App extends React.Component {
                 zackCharacters[a].kos = zackCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === 2019){
+                var gamesPlayedSeason = eval("gamesPlayed19" + season);
+                gamesPlayedSeason[3] ++;
                 gamesPlayed19[3] ++;
+                var gamesPlaceSeason = eval("gamePlace19" + season);
+                gamesPlaceSeason[3] = gamesPlaceSeason[3] + (j + 1);
                 gamePlace19[3] = gamePlace19[3] + (j + 1);
+                var gamePointsSeason = eval("gamePoints19" + season);
+                var gameNegativeSeason = eval("gameNegative19" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints19[3] = gamePoints19[3] + 6;
-                        gameNegative19[3] = gameNegative19[3] + 2
+                        gamePointsSeason[3] = gamePointsSeason[3] + 6;
+                        gameNegative19[3] = gameNegative19[3] + 2;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] + 2;
                     }else if(j === 1){
                         gamePoints19[3] = gamePoints19[3] + 3;
+                        gamePointsSeason[3] = gamePointsSeason[3] + 3;
                     }else{
-                        gameNegative19[3] = gameNegative19[3] - 2
+                        gameNegative19[3] = gameNegative19[3] - 2;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints19[3] = gamePoints19[3] + 8;
-                        gameNegative19[3] = gameNegative19[3] + 3
+                        gamePointsSeason[3] = gamePointsSeason[3] + 8;
+                        gameNegative19[3] = gameNegative19[3] + 3;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] + 3;
                     }else if(j === 1){
                         gamePoints19[3] = gamePoints19[3] + 4;
-                        gameNegative19[3] = gameNegative19[3] + 1
+                        gamePointsSeason[3] = gamePointsSeason[3] + 4;
+                        gameNegative19[3] = gameNegative19[3] + 1;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] + 1;
                     }else if(j === 2){
                         gamePoints19[3] = gamePoints19[3] + 1;
-                        gameNegative19[3] = gameNegative19[3] - 1
+                        gamePointsSeason[3] = gamePointsSeason[3] + 1;
+                        gameNegative19[3] = gameNegative19[3] - 1;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] - 1;
                     }else{
-                        gameNegative19[3] = gameNegative19[3] - 3
+                        gameNegative19[3] = gameNegative19[3] - 3;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos19" + season);
+                playerkosSeason[3] = playerkosSeason[3] + gameData[i][j].kos;
                 playerkos19[3] = playerkos19[3] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[3] ++;
                   gamePoints19[3] = gamePoints19[3] + 1;
+                  gamePointsSeason[3] = gamePointsSeason[3] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints19[3] = gamePoints19[3] + 2;
+                    gamePointsSeason[3] = gamePointsSeason[3] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints19[3] = gamePoints19[3] + 3;
+                    gamePointsSeason[3] = gamePointsSeason[3] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter19 = false;
+                var zackCharactersSeason = eval("zackCharacters19" + season);
                 for(var k=0; k < zackCharacters19.length; k++){
                     if(zackCharacters19[k].character === gameData[i][j].character){
                         existingCharacter19 = true;
                     }else{}
                     if(zackCharacters19[k].character === gameData[i][0].character && gameData[i][0].name === "Zack"){
                         zackCharacters19[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < zackCharactersSeason.length; k++){
+                    if(zackCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(zackCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Zack"){
+                        zackCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter19 === false){
@@ -2222,48 +2887,91 @@ class App extends React.Component {
                     zackCharacters19[a].number ++;
                     zackCharacters19[a].kos = zackCharacters19[a].kos + gameData[i][j].kos;
                 }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = zackCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    zackCharactersSeason[a].number ++;
+                    zackCharactersSeason[a].kos = zackCharactersSeason[a].kos + gameData[i][j].kos;
+                }
             }else{
+                var gamesPlayedSeason = eval("gamesPlayed20" + season);
+                gamesPlayedSeason[3] ++;
                 gamesPlayed20[3] ++;
+                var gamesPlaceSeason = eval("gamePlace20" + season);
+                gamesPlaceSeason[3] = gamesPlaceSeason[3] + (j + 1);
                 gamePlace20[3] = gamePlace20[3] + (j + 1);
+                var gamePointsSeason = eval("gamePoints20" + season);
+                var gameNegativeSeason = eval("gameNegative20" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints20[3] = gamePoints20[3] + 6;
-                        gameNegative20[3] = gameNegative20[3] + 2
+                        gamePointsSeason[3] = gamePointsSeason[3] + 6;
+                        gameNegative20[3] = gameNegative20[3] + 2;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] + 2;
                     }else if(j === 1){
                         gamePoints20[3] = gamePoints20[3] + 3;
+                        gamePointsSeason[3] = gamePointsSeason[3] + 3;
                     }else{
-                        gameNegative20[3] = gameNegative20[3] - 2
+                        gameNegative20[3] = gameNegative20[3] - 2;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints20[3] = gamePoints20[3] + 8;
-                        gameNegative20[3] = gameNegative20[3] + 3
+                        gamePointsSeason[3] = gamePointsSeason[3] + 8;
+                        gameNegative20[3] = gameNegative20[3] + 3;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] + 3;
                     }else if(j === 1){
                         gamePoints20[3] = gamePoints20[3] + 4;
-                        gameNegative20[3] = gameNegative20[3] + 1
+                        gamePointsSeason[3] = gamePointsSeason[3] + 4;
+                        gameNegative20[3] = gameNegative20[3] + 1;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] + 1;
                     }else if(j === 2){
                         gamePoints20[3] = gamePoints20[3] + 1;
-                        gameNegative20[3] = gameNegative20[3] - 1
+                        gamePointsSeason[3] = gamePointsSeason[3] + 1;
+                        gameNegative20[3] = gameNegative20[3] - 1;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] - 1;
                     }else{
-                        gameNegative20[3] = gameNegative20[3] - 3
+                        gameNegative20[3] = gameNegative20[3] - 3;
+                        gameNegativeSeason[3] = gameNegativeSeason[3] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos20" + season);
+                playerkosSeason[3] = playerkosSeason[3] + gameData[i][j].kos;
                 playerkos20[3] = playerkos20[3] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[3] ++;
                   gamePoints20[3] = gamePoints20[3] + 1;
+                  gamePointsSeason[3] = gamePointsSeason[3] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints20[3] = gamePoints20[3] + 2;
+                    gamePointsSeason[3] = gamePointsSeason[3] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints20[3] = gamePoints20[3] + 3;
+                    gamePointsSeason[3] = gamePointsSeason[3] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter20 = false;
+                var zackCharactersSeason = eval("zackCharacters20" + season);
                 for(var k=0; k < zackCharacters20.length; k++){
                     if(zackCharacters20[k].character === gameData[i][j].character){
                         existingCharacter20 = true;
                     }else{}
                     if(zackCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "Zack"){
                         zackCharacters20[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < zackCharactersSeason.length; k++){
+                    if(zackCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(zackCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Zack"){
+                        zackCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter20 === false){
@@ -2276,6 +2984,17 @@ class App extends React.Component {
                     var a = zackCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     zackCharacters20[a].number ++;
                     zackCharacters20[a].kos = zackCharacters20[a].kos + gameData[i][j].kos;
+                }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = zackCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    zackCharactersSeason[a].number ++;
+                    zackCharactersSeason[a].kos = zackCharactersSeason[a].kos + gameData[i][j].kos;
                 }
             }
         }else if(gameData[i][j].name === "Betsy"){
@@ -2300,47 +3019,79 @@ class App extends React.Component {
                 betsyCharacters[a].kos = betsyCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === 2019){
+                var gamesPlayedSeason = eval("gamesPlayed19" + season);
+                gamesPlayedSeason[4] ++;
                 gamesPlayed19[4] ++;
+                var gamesPlaceSeason = eval("gamePlace19" + season);
+                gamesPlaceSeason[4] = gamesPlaceSeason[4] + (j + 1);
                 gamePlace19[4] = gamePlace19[4] + (j + 1);
+                var gamePointsSeason = eval("gamePoints19" + season);
+                var gameNegativeSeason = eval("gameNegative19" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints19[4] = gamePoints19[4] + 6;
-                        gameNegative19[4] = gameNegative19[4] + 2
+                        gamePointsSeason[4] = gamePointsSeason[4] + 6;
+                        gameNegative19[4] = gameNegative19[4] + 2;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] + 2;
                     }else if(j === 1){
                         gamePoints19[4] = gamePoints19[4] + 3;
+                        gamePointsSeason[4] = gamePointsSeason[4] + 3;
                     }else{
-                        gameNegative19[4] = gameNegative19[4] - 2
+                        gameNegative19[4] = gameNegative19[4] - 2;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints19[4] = gamePoints19[4] + 8;
-                        gameNegative19[4] = gameNegative19[4] + 3
+                        gamePointsSeason[4] = gamePointsSeason[4] + 8;
+                        gameNegative19[4] = gameNegative19[4] + 3;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] + 3;
                     }else if(j === 1){
                         gamePoints19[4] = gamePoints19[4] + 4;
-                        gameNegative19[4] = gameNegative19[4] + 1
+                        gamePointsSeason[4] = gamePointsSeason[4] + 4;
+                        gameNegative19[4] = gameNegative19[4] + 1;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] + 1;
                     }else if(j === 2){
                         gamePoints19[4] = gamePoints19[4] + 1;
-                        gameNegative19[4] = gameNegative19[4] - 1
+                        gamePointsSeason[4] = gamePointsSeason[4] + 1;
+                        gameNegative19[4] = gameNegative19[4] - 1;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] - 1;
                     }else{
-                        gameNegative19[4] = gameNegative19[4] - 3
+                        gameNegative19[4] = gameNegative19[4] - 3;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos19" + season);
+                playerkosSeason[4] = playerkosSeason[4] + gameData[i][j].kos;
                 playerkos19[4] = playerkos19[4] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[4] ++;
                   gamePoints19[4] = gamePoints19[4] + 1;
+                  gamePointsSeason[4] = gamePointsSeason[4] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints19[4] = gamePoints19[4] + 2;
+                    gamePointsSeason[4] = gamePointsSeason[4] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints19[4] = gamePoints19[4] + 3;
+                    gamePointsSeason[4] = gamePointsSeason[4] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter19 = false;
+                var betsyCharactersSeason = eval("betsyCharacters19" + season);
                 for(var k=0; k < betsyCharacters19.length; k++){
                     if(betsyCharacters19[k].character === gameData[i][j].character){
                         existingCharacter19 = true;
                     }else{}
                     if(betsyCharacters19[k].character === gameData[i][0].character && gameData[i][0].name === "Betsy"){
                         betsyCharacters19[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < betsyCharactersSeason.length; k++){
+                    if(betsyCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(betsyCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Betsy"){
+                        betsyCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter19 === false){
@@ -2354,48 +3105,91 @@ class App extends React.Component {
                     betsyCharacters19[a].number ++;
                     betsyCharacters19[a].kos = betsyCharacters19[a].kos + gameData[i][j].kos;
                 }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = betsyCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    betsyCharactersSeason[a].number ++;
+                    betsyCharactersSeason[a].kos = betsyCharactersSeason[a].kos + gameData[i][j].kos;
+                }
             }else{
+                var gamesPlayedSeason = eval("gamesPlayed20" + season);
+                gamesPlayedSeason[4] ++;
                 gamesPlayed20[4] ++;
+                var gamesPlaceSeason = eval("gamePlace20" + season);
+                gamesPlaceSeason[4] = gamesPlaceSeason[4] + (j + 1);
                 gamePlace20[4] = gamePlace20[4] + (j + 1);
+                var gamePointsSeason = eval("gamePoints20" + season);
+                var gameNegativeSeason = eval("gameNegative20" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints20[4] = gamePoints20[4] + 6;
-                        gameNegative20[4] = gameNegative20[4] + 2
+                        gamePointsSeason[4] = gamePointsSeason[4] + 6;
+                        gameNegative20[4] = gameNegative20[4] + 2;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] + 2;
                     }else if(j === 1){
                         gamePoints20[4] = gamePoints20[4] + 3;
+                        gamePointsSeason[4] = gamePointsSeason[4] + 3;
                     }else{
-                        gameNegative20[4] = gameNegative20[4] - 2
+                        gameNegative20[4] = gameNegative20[4] - 2;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints20[4] = gamePoints20[4] + 8;
-                        gameNegative20[4] = gameNegative20[4] + 3
+                        gamePointsSeason[4] = gamePointsSeason[4] + 8;
+                        gameNegative20[4] = gameNegative20[4] + 3;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] + 3;
                     }else if(j === 1){
                         gamePoints20[4] = gamePoints20[4] + 4;
-                        gameNegative20[4] = gameNegative20[4] + 1
+                        gamePointsSeason[4] = gamePointsSeason[4] + 4;
+                        gameNegative20[4] = gameNegative20[4] + 1;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] + 1;
                     }else if(j === 2){
                         gamePoints20[4] = gamePoints20[4] + 1;
-                        gameNegative20[4] = gameNegative20[4] - 1
+                        gamePointsSeason[4] = gamePointsSeason[4] + 1;
+                        gameNegative20[4] = gameNegative20[4] - 1;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] - 1;
                     }else{
-                        gameNegative20[4] = gameNegative20[4] - 3
+                        gameNegative20[4] = gameNegative20[4] - 3;
+                        gameNegativeSeason[4] = gameNegativeSeason[4] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos20" + season);
+                playerkosSeason[4] = playerkosSeason[4] + gameData[i][j].kos;
                 playerkos20[4] = playerkos20[4] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[4] ++;
                   gamePoints20[4] = gamePoints20[4] + 1;
+                  gamePointsSeason[4] = gamePointsSeason[4] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints20[4] = gamePoints20[4] + 2;
+                    gamePointsSeason[4] = gamePointsSeason[4] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints20[4] = gamePoints20[4] + 3;
+                    gamePointsSeason[4] = gamePointsSeason[4] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter20 = false;
+                var betsyCharactersSeason = eval("betsyCharacters20" + season);
                 for(var k=0; k < betsyCharacters20.length; k++){
                     if(betsyCharacters20[k].character === gameData[i][j].character){
                         existingCharacter20 = true;
                     }else{}
                     if(betsyCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "Betsy"){
                         betsyCharacters20[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < betsyCharactersSeason.length; k++){
+                    if(betsyCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(betsyCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Betsy"){
+                        betsyCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter20 === false){
@@ -2408,6 +3202,17 @@ class App extends React.Component {
                     var a = betsyCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     betsyCharacters20[a].number ++;
                     betsyCharacters20[a].kos = betsyCharacters20[a].kos + gameData[i][j].kos;
+                }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = betsyCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    betsyCharactersSeason[a].number ++;
+                    betsyCharactersSeason[a].kos = betsyCharactersSeason[a].kos + gameData[i][j].kos;
                 }
             }
         }else if(gameData[i][j].name === "James"){
@@ -2432,47 +3237,79 @@ class App extends React.Component {
                 jamesCharacters[a].kos = jamesCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === 2019){
+                var gamesPlayedSeason = eval("gamesPlayed19" + season);
+                gamesPlayedSeason[5] ++;
                 gamesPlayed19[5] ++;
+                var gamesPlaceSeason = eval("gamePlace19" + season);
+                gamesPlaceSeason[5] = gamesPlaceSeason[5] + (j + 1);
                 gamePlace19[5] = gamePlace19[5] + (j + 1);
+                var gamePointsSeason = eval("gamePoints19" + season);
+                var gameNegativeSeason = eval("gameNegative19" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints19[5] = gamePoints19[5] + 6;
-                        gameNegative19[5] = gameNegative19[5] + 2
+                        gamePointsSeason[5] = gamePointsSeason[5] + 6;
+                        gameNegative19[5] = gameNegative19[5] + 2;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] + 2;
                     }else if(j === 1){
                         gamePoints19[5] = gamePoints19[5] + 3;
+                        gamePointsSeason[5] = gamePointsSeason[5] + 3;
                     }else{
-                        gameNegative19[5] = gameNegative19[5] - 2
+                        gameNegative19[5] = gameNegative19[5] - 2;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints19[5] = gamePoints19[5] + 8;
-                        gameNegative19[5] = gameNegative19[5] + 3
+                        gamePointsSeason[5] = gamePointsSeason[5] + 8;
+                        gameNegative19[5] = gameNegative19[5] + 3;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] + 3;
                     }else if(j === 1){
                         gamePoints19[5] = gamePoints19[5] + 4;
-                        gameNegative19[5] = gameNegative19[5] + 1
+                        gamePointsSeason[5] = gamePointsSeason[5] + 4;
+                        gameNegative19[5] = gameNegative19[5] + 1;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] + 1;
                     }else if(j === 2){
                         gamePoints19[5] = gamePoints19[5] + 1;
-                        gameNegative19[5] = gameNegative19[5] - 1
+                        gamePointsSeason[5] = gamePointsSeason[5] + 1;
+                        gameNegative19[5] = gameNegative19[5] - 1;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] - 1;
                     }else{
-                        gameNegative19[5] = gameNegative19[5] - 3
+                        gameNegative19[5] = gameNegative19[5] - 3;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos19" + season);
+                playerkosSeason[5] = playerkosSeason[5] + gameData[i][j].kos;
                 playerkos19[5] = playerkos19[5] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[5] ++;
                   gamePoints19[5] = gamePoints19[5] + 1;
+                  gamePointsSeason[5] = gamePointsSeason[5] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints19[5] = gamePoints19[5] + 2;
+                    gamePointsSeason[5] = gamePointsSeason[5] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints19[5] = gamePoints19[5] + 3;
+                    gamePointsSeason[5] = gamePointsSeason[5] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter19 = false;
+                var jamesCharactersSeason = eval("jamesCharacters19" + season);
                 for(var k=0; k < jamesCharacters19.length; k++){
                     if(jamesCharacters19[k].character === gameData[i][j].character){
                         existingCharacter19 = true;
                     }else{}
                     if(jamesCharacters19[k].character === gameData[i][0].character && gameData[i][0].name === "James"){
                         jamesCharacters19[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < jamesCharactersSeason.length; k++){
+                    if(jamesCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(jamesCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "James"){
+                        jamesCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter19 === false){
@@ -2486,48 +3323,91 @@ class App extends React.Component {
                     jamesCharacters19[a].number ++;
                     jamesCharacters19[a].kos = jamesCharacters19[a].kos + gameData[i][j].kos;
                 }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = jamesCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    jamesCharactersSeason[a].number ++;
+                    jamesCharactersSeason[a].kos = jamesCharactersSeason[a].kos + gameData[i][j].kos;
+                }
             }else{
+                var gamesPlayedSeason = eval("gamesPlayed20" + season);
+                gamesPlayedSeason[5] ++;
                 gamesPlayed20[5] ++;
+                var gamesPlaceSeason = eval("gamePlace20" + season);
+                gamesPlaceSeason[5] = gamesPlaceSeason[5] + (j + 1);
                 gamePlace20[5] = gamePlace20[5] + (j + 1);
+                var gamePointsSeason = eval("gamePoints20" + season);
+                var gameNegativeSeason = eval("gameNegative20" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints20[5] = gamePoints20[5] + 6;
-                        gameNegative20[5] = gameNegative20[5] + 2
+                        gamePointsSeason[5] = gamePointsSeason[5] + 6;
+                        gameNegative20[5] = gameNegative20[5] + 2;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] + 2;
                     }else if(j === 1){
                         gamePoints20[5] = gamePoints20[5] + 3;
+                        gamePointsSeason[5] = gamePointsSeason[5] + 3;
                     }else{
-                        gameNegative20[5] = gameNegative20[5] - 2
+                        gameNegative20[5] = gameNegative20[5] - 2;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints20[5] = gamePoints20[5] + 8;
-                        gameNegative20[5] = gameNegative20[5] + 3
+                        gamePointsSeason[5] = gamePointsSeason[5] + 8;
+                        gameNegative20[5] = gameNegative20[5] + 3;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] + 3;
                     }else if(j === 1){
                         gamePoints20[5] = gamePoints20[5] + 4;
-                        gameNegative20[5] = gameNegative20[5] + 1
+                        gamePointsSeason[5] = gamePointsSeason[5] + 4;
+                        gameNegative20[5] = gameNegative20[5] + 1;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] + 1;
                     }else if(j === 2){
                         gamePoints20[5] = gamePoints20[5] + 1;
-                        gameNegative20[5] = gameNegative20[5] - 1
+                        gamePointsSeason[5] = gamePointsSeason[5] + 1;
+                        gameNegative20[5] = gameNegative20[5] - 1;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] - 1;
                     }else{
-                        gameNegative20[5] = gameNegative20[5] - 3
+                        gameNegative20[5] = gameNegative20[5] - 3;
+                        gameNegativeSeason[5] = gameNegativeSeason[5] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos20" + season);
+                playerkosSeason[5] = playerkosSeason[5] + gameData[i][j].kos;
                 playerkos20[5] = playerkos20[5] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[5] ++;
                   gamePoints20[5] = gamePoints20[5] + 1;
+                  gamePointsSeason[5] = gamePointsSeason[5] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints20[5] = gamePoints20[5] + 2;
+                    gamePointsSeason[5] = gamePointsSeason[5] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints20[5] = gamePoints20[5] + 3;
+                    gamePointsSeason[5] = gamePointsSeason[5] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter20 = false;
+                var jamesCharactersSeason = eval("jamesCharacters20" + season);
                 for(var k=0; k < jamesCharacters20.length; k++){
                     if(jamesCharacters20[k].character === gameData[i][j].character){
                         existingCharacter20 = true;
                     }else{}
-                    if(jamesCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "James"){
+                    if(jamesCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "james"){
                         jamesCharacters20[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < jamesCharactersSeason.length; k++){
+                    if(jamesCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(jamesCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "james"){
+                        jamesCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter20 === false){
@@ -2540,6 +3420,17 @@ class App extends React.Component {
                     var a = jamesCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     jamesCharacters20[a].number ++;
                     jamesCharacters20[a].kos = jamesCharacters20[a].kos + gameData[i][j].kos;
+                }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = jamesCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    jamesCharactersSeason[a].number ++;
+                    jamesCharactersSeason[a].kos = jamesCharactersSeason[a].kos + gameData[i][j].kos;
                 }
             }
         }else if(gameData[i][j].name === "Craig"){
@@ -2564,39 +3455,61 @@ class App extends React.Component {
                 craigCharacters[a].kos = craigCharacters[a].kos + gameData[i][j].kos;
             }
             if(year === 2019){
+                var gamesPlayedSeason = eval("gamesPlayed19" + season);
+                gamesPlayedSeason[6] ++;
                 gamesPlayed19[6] ++;
+                var gamesPlaceSeason = eval("gamePlace19" + season);
+                gamesPlaceSeason[6] = gamesPlaceSeason[6] + (j + 1);
                 gamePlace19[6] = gamePlace19[6] + (j + 1);
+                var gamePointsSeason = eval("gamePoints19" + season);
+                var gameNegativeSeason = eval("gameNegative19" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints19[6] = gamePoints19[6] + 6;
-                        gameNegative19[6] = gameNegative19[6] + 2
+                        gamePointsSeason[6] = gamePointsSeason[6] + 6;
+                        gameNegative19[6] = gameNegative19[6] + 2;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] + 2;
                     }else if(j === 1){
                         gamePoints19[6] = gamePoints19[6] + 3;
+                        gamePointsSeason[6] = gamePointsSeason[6] + 3;
                     }else{
-                        gameNegative19[6] = gameNegative19[6] - 2
+                        gameNegative19[6] = gameNegative19[6] - 2;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints19[6] = gamePoints19[6] + 8;
-                        gameNegative19[6] = gameNegative19[6] + 3
+                        gamePointsSeason[6] = gamePointsSeason[6] + 8;
+                        gameNegative19[6] = gameNegative19[6] + 3;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] + 3;
                     }else if(j === 1){
                         gamePoints19[6] = gamePoints19[6] + 4;
-                        gameNegative19[6] = gameNegative19[6] + 1
+                        gamePointsSeason[6] = gamePointsSeason[6] + 4;
+                        gameNegative19[6] = gameNegative19[6] + 1;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] + 1;
                     }else if(j === 2){
                         gamePoints19[6] = gamePoints19[6] + 1;
-                        gameNegative19[6] = gameNegative19[6] - 1
+                        gamePointsSeason[6] = gamePointsSeason[6] + 1;
+                        gameNegative19[6] = gameNegative19[6] - 1;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] - 1;
                     }else{
-                        gameNegative19[6] = gameNegative19[6] - 3
+                        gameNegative19[6] = gameNegative19[6] - 3;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos19" + season);
+                playerkosSeason[6] = playerkosSeason[6] + gameData[i][j].kos;
                 playerkos19[6] = playerkos19[6] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames19[6] ++;
                   gamePoints19[6] = gamePoints19[6] + 1;
+                  gamePointsSeason[6] = gamePointsSeason[6] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints19[6] = gamePoints19[6] + 2;
+                    gamePointsSeason[6] = gamePointsSeason[6] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints19[6] = gamePoints19[6] + 3;
+                    gamePointsSeason[6] = gamePointsSeason[6] + 3;
                 }
                 var existingCharacter19 = false;
                 for(var k=0; k < craigCharacters19.length; k++){
@@ -2605,6 +3518,25 @@ class App extends React.Component {
                     }else{}
                     if(craigCharacters19[k].character === gameData[i][0].character && gameData[i][0].name === "Craig"){
                         craigCharacters19[k].wins ++;
+                    }else{}
+                }
+                var existingCharacterSeason = false;
+                var existingCharacter19 = false;
+                var craigCharactersSeason = eval("craigCharacters19" + season);
+                for(var k=0; k < craigCharacters19.length; k++){
+                    if(craigCharacters19[k].character === gameData[i][j].character){
+                        existingCharacter19 = true;
+                    }else{}
+                    if(craigCharacters19[k].character === gameData[i][0].character && gameData[i][0].name === "Craig"){
+                        craigCharacters19[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < craigCharactersSeason.length; k++){
+                    if(craigCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(craigCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Craig"){
+                        craigCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter19 === false){
@@ -2618,48 +3550,91 @@ class App extends React.Component {
                     craigCharacters19[a].number ++;
                     craigCharacters19[a].kos = craigCharacters19[a].kos + gameData[i][j].kos;
                 }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = craigCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    craigCharactersSeason[a].number ++;
+                    craigCharactersSeason[a].kos = craigCharactersSeason[a].kos + gameData[i][j].kos;
+                }
             }else{
+                var gamesPlayedSeason = eval("gamesPlayed20" + season);
+                gamesPlayedSeason[6] ++;
                 gamesPlayed20[6] ++;
+                var gamesPlaceSeason = eval("gamePlace20" + season);
+                gamesPlaceSeason[6] = gamesPlaceSeason[6] + (j + 1);
                 gamePlace20[6] = gamePlace20[6] + (j + 1);
+                var gamePointsSeason = eval("gamePoints20" + season);
+                var gameNegativeSeason = eval("gameNegative20" + season);
                 if(gameData[i][3].character === empty){
                     if(j === 0){
                         gamePoints20[6] = gamePoints20[6] + 6;
-                        gameNegative20[6] = gameNegative20[6] + 2
+                        gamePointsSeason[6] = gamePointsSeason[6] + 6;
+                        gameNegative20[6] = gameNegative20[6] + 2;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] + 2;
                     }else if(j === 1){
                         gamePoints20[6] = gamePoints20[6] + 3;
+                        gamePointsSeason[6] = gamePointsSeason[6] + 3;
                     }else{
-                        gameNegative20[6] = gameNegative20[6] - 2
+                        gameNegative20[6] = gameNegative20[6] - 2;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] - 2;
                     }
                 }else{
                     if(j === 0){
                         gamePoints20[6] = gamePoints20[6] + 8;
-                        gameNegative20[6] = gameNegative20[6] + 3
+                        gamePointsSeason[6] = gamePointsSeason[6] + 8;
+                        gameNegative20[6] = gameNegative20[6] + 3;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] + 3;
                     }else if(j === 1){
                         gamePoints20[6] = gamePoints20[6] + 4;
-                        gameNegative20[6] = gameNegative20[6] + 1
+                        gamePointsSeason[6] = gamePointsSeason[6] + 4;
+                        gameNegative20[6] = gameNegative20[6] + 1;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] + 1;
                     }else if(j === 2){
                         gamePoints20[6] = gamePoints20[6] + 1;
-                        gameNegative20[6] = gameNegative20[6] - 1
+                        gamePointsSeason[6] = gamePointsSeason[6] + 1;
+                        gameNegative20[6] = gameNegative20[6] - 1;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] - 1;
                     }else{
-                        gameNegative20[6] = gameNegative20[6] - 3
+                        gameNegative20[6] = gameNegative20[6] - 3;
+                        gameNegativeSeason[6] = gameNegativeSeason[6] - 3;
                     }
                 }
+                var playerkosSeason = eval("playerkos20" + season);
+                playerkosSeason[6] = playerkosSeason[6] + gameData[i][j].kos;
                 playerkos20[6] = playerkos20[6] + gameData[i][j].kos;
                 if(gameData[i][j].kos >= 4 && gameData[i][j].kos < 6){
                   highKoGames20[6] ++;
                   gamePoints20[6] = gamePoints20[6] + 1;
+                  gamePointsSeason[6] = gamePointsSeason[6] + 1;
                 }else if(gameData[i][j].kos >= 6 && gameData[i][j].kos < 9){
                     gamePoints20[6] = gamePoints20[6] + 2;
+                    gamePointsSeason[6] = gamePointsSeason[6] + 2;
                 }else if(gameData[i][j].kos >= 9){
                     gamePoints20[6] = gamePoints20[6] + 3;
+                    gamePointsSeason[6] = gamePointsSeason[6] + 3;
                 }
+                var existingCharacterSeason = false;
                 var existingCharacter20 = false;
+                var craigCharactersSeason = eval("craigCharacters20" + season);
                 for(var k=0; k < craigCharacters20.length; k++){
                     if(craigCharacters20[k].character === gameData[i][j].character){
                         existingCharacter20 = true;
                     }else{}
                     if(craigCharacters20[k].character === gameData[i][0].character && gameData[i][0].name === "Craig"){
                         craigCharacters20[k].wins ++;
+                    }else{}
+                }
+                for(var k=0; k < craigCharactersSeason.length; k++){
+                    if(craigCharactersSeason[k].character === gameData[i][j].character){
+                        existingCharacterSeason = true;
+                    }else{}
+                    if(craigCharactersSeason[k].character === gameData[i][0].character && gameData[i][0].name === "Craig"){
+                        craigCharactersSeason[k].wins ++;
                     }else{}
                 }
                 if(existingCharacter20 === false){
@@ -2672,6 +3647,17 @@ class App extends React.Component {
                     var a = craigCharacters20.findIndex(x => x.character === gameData[i][j].character);
                     craigCharacters20[a].number ++;
                     craigCharacters20[a].kos = craigCharacters20[a].kos + gameData[i][j].kos;
+                }
+                if(existingCharacterSeason === false){
+                    if(gameData[i][j].character === gameData[i][0].character){
+                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    }else{
+                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    }
+                }else{
+                    var a = craigCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
+                    craigCharactersSeason[a].number ++;
+                    craigCharactersSeason[a].kos = craigCharactersSeason[a].kos + gameData[i][j].kos;
                 }
             }
         }
@@ -2701,6 +3687,8 @@ class App extends React.Component {
       threeP20: [threeP20[0], threeP20[1], threeP20[2], threeP20[3], threeP20[4], threeP20[5], threeP20[6]],
       fourP20: [fourP20[0], fourP20[1], fourP20[2], fourP20[3], fourP20[4], fourP20[5], fourP20[6]]
     });
+    console.log("Spring 20");
+    console.log(gamePlace20Spring);
   }
   goToWeekly(){
     const x = document.getElementsByClassName("tab");
@@ -3150,9 +4138,11 @@ class Overall extends React.Component {
           topPoints: [],
           topNegative: [],
           topPlayed: [],
-          year: "2020"
+          year: "19",
+          season: "Spring"
         }
     this.changeOverallYear = this.changeOverallYear.bind(this);
+    this.changeOverallSeason = this.changeOverallSeason.bind(this);
     }
     componentDidMount(){
         var topKos19 = [];
@@ -3182,42 +4172,153 @@ class Overall extends React.Component {
         });
     }
     changeOverallYear(){
-        var newYear;
+        var yearArray = ["19", "20", "Overall"];
+        var a = yearArray.findIndex(x => x === this.state.year);
+        if(a === 2){
+            a = -1;
+        }
+        var newYear = yearArray[a + 1];
+        var topKos = [];
+        var topPlace = [];
+        var topPlayed = [];
+        var topPoints = [];
+        var topNegative = [];
+        if(this.state.season === "Overall"){
+            if(newYear === "Overall"){
+                for(var i=0; i<playerkos19.length; i++){
+                    topKos[i] = {name: playerList[i], number: ((playerkos19[i] + playerkos20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};
+                    topPlace[i] = {name: playerList[i], number: ((gamePlace19[i] + gamePlace20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};
+                    topPoints[i] = {name: playerList[i], number: ((gamePoints19[i] + gamePoints20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};
+                    topNegative[i] = {name: playerList[i], number: gameNegative19[i] + gameNegative20[i], place: 0};
+                }
+            }else{
+                var koStat = eval("playerkos" + newYear);
+                var placeStat = eval("gamePlace" + newYear);
+                var pointStat = eval("gamePoints" + newYear);
+                var negStat = eval("gameNegative" + newYear);
+                var playedStat = eval("gamesPlayed" + newYear);
+                for(var i=0; i<playerkos19.length; i++){
+                    topKos[i] = {name: playerList[i], number: (koStat[i]/playedStat[i]).toFixed(2), place: 0};
+                    topPlace[i] = {name: playerList[i], number: (placeStat[i]/playedStat[i]).toFixed(2), place: 0};
+                    topPoints[i] = {name: playerList[i], number: (pointStat[i]/playedStat[i]).toFixed(2), place: 0};
+                    topNegative[i] = {name: playerList[i], number: negStat[i], place: 0};
+                }
+            }
+        }else{
+            if(newYear === "Overall"){
+                var koStat19 = eval("playerkos" + "19" + this.state.season);
+                var placeStat19 = eval("gamePlace" + "19" + this.state.season);
+                var pointStat19 = eval("gamePoints" + "19" + this.state.season);
+                var negStat19 = eval("gameNegative" + "19" + this.state.season);
+                var playedStat19 = eval("gamesPlayed" + "19" + this.state.season);
+                var koStat20 = eval("playerkos" + "20" + this.state.season);
+                var placeStat20 = eval("gamePlace" + "20" + this.state.season);
+                var pointStat20 = eval("gamePoints" + "20" + this.state.season);
+                var negStat20 = eval("gameNegative" + "20" + this.state.season);
+                var playedStat20 = eval("gamesPlayed" + "20" + this.state.season);
+                console.log("overall Spring");
+                for(var i=0; i<playerkos19.length; i++){
+                    topKos[i] = {name: playerList[i], number: ((koStat19[i] + koStat20[i])/(playedStat19[i] + playedStat20[i])).toFixed(2), place: 0};
+                    topPlace[i] = {name: playerList[i], number: ((placeStat19[i] + placeStat20[i])/(playedStat19[i] + playedStat20[i])).toFixed(2), place: 0};
+                    topPoints[i] = {name: playerList[i], number: ((pointStat19[i] + pointStat20[i])/(playedStat19[i] + playedStat20[i])).toFixed(2), place: 0};
+                    topNegative[i] = {name: playerList[i], number: negStat19[i] + negStat20[i], place: 0};
+                }
+            }else{
+                var koStat = eval("playerkos" + newYear + this.state.season);
+                var placeStat = eval("gamePlace" + newYear + this.state.season);
+                var pointStat = eval("gamePoints" + newYear + this.state.season);
+                var negStat = eval("gameNegative" + newYear + this.state.season);
+                var playedStat = eval("gamesPlayed" + newYear + this.state.season);
+                for(var i=0; i<playerkos19.length; i++){
+                    topKos[i] = {name: playerList[i], number: (koStat[i]/playedStat[i]).toFixed(2), place: 0};
+                    topPlace[i] = {name: playerList[i], number: (placeStat[i]/playedStat[i]).toFixed(2), place: 0};
+                    topPoints[i] = {name: playerList[i], number: (pointStat[i]/playedStat[i]).toFixed(2), place: 0};
+                    topNegative[i] = {name: playerList[i], number: negStat[i], place: 0};
+                }
+            }
+        }
+        this.setState({
+            year: newYear,
+            topKos: topKos,
+            topPlace: topPlace,
+            topPlayed: topPlayed,
+            topPoints: topPoints,
+            topNegative: topNegative
+        });
+    }
+    changeOverallSeason(){
+        var overallSeasonArray = ["Spring", "Summer", "Fall", "Winter", "Overall"];
+        var a = overallSeasonArray.findIndex(x => x === this.state.season);
+        if(a === 4){
+            a = -1;
+        }
+        var newSeason = overallSeasonArray[a + 1];
         var topKos = [];
         var topPlace = [];
         var topPlayed = [];
         var topPoints = [];
         var topNegative = [];
         if(this.state.year === "Overall"){
-            newYear = "2020";
-            for(var i=0; i<playerkos19.length; i++){
-                topKos[i] = {name: playerList[i], number: (playerkos20[i]/gamesPlayed20[i]).toFixed(2), place: 0};
-                topPlace[i] = {name: playerList[i], number: (gamePlace20[i]/gamesPlayed20[i]).toFixed(2), place: 0};
-                topPoints[i] = {name: playerList[i], number: (gamePoints20[i]/gamesPlayed20[i]).toFixed(2)};
-                topNegative[i] = {name: playerList[i], number: gameNegative20[i]};
+            if(newSeason === "Overall"){
+                for(var i=0; i<playerkos19.length; i++){
+                    topKos[i] = {name: playerList[i], number: ((playerkos19[i] + playerkos20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};
+                    topPlace[i] = {name: playerList[i], number: ((gamePlace19[i] + gamePlace20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};
+                    topPoints[i] = {name: playerList[i], number: ((gamePoints19[i] + gamePoints20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};
+                    topNegative[i] = {name: playerList[i], number: gameNegative19[i] + gameNegative20[i], place: 0};
+                }
+            }else{
+                var koStat19 = eval("playerkos" + "19" + newSeason);
+                var placeStat19 = eval("gamePlace" + "19" + newSeason);
+                var pointStat19 = eval("gamePoints" + "19" + newSeason);
+                var negStat19 = eval("gameNegative" + "19" + newSeason);
+                var playedStat19 = eval("gamesPlayed" + "19" + newSeason);
+                var koStat20 = eval("playerkos" + "20" + newSeason);
+                var placeStat20 = eval("gamePlace" + "20" + newSeason);
+                var pointStat20 = eval("gamePoints" + "20" + newSeason);
+                var negStat20 = eval("gameNegative" + "20" + newSeason);
+                var playedStat20 = eval("gamesPlayed" + "20" + newSeason);
+                console.log("overall Spring");
+                for(var i=0; i<playerkos19.length; i++){
+                    topKos[i] = {name: playerList[i], number: ((koStat19[i] + koStat20[i])/(playedStat19[i] + playedStat20[i])).toFixed(2), place: 0};
+                    topPlace[i] = {name: playerList[i], number: ((placeStat19[i] + placeStat20[i])/(playedStat19[i] + playedStat20[i])).toFixed(2), place: 0};
+                    topPoints[i] = {name: playerList[i], number: ((pointStat19[i] + pointStat20[i])/(playedStat19[i] + playedStat20[i])).toFixed(2), place: 0};
+                    topNegative[i] = {name: playerList[i], number: negStat19[i] + negStat20[i], place: 0};
+                }
             }
-            topPlayed = ultimateFighters20;
-        }else if(this.state.year === "2020"){
-            newYear = "2019";
-            for(var i=0; i<playerkos19.length; i++){
-                topKos[i] = {name: playerList[i], number: (playerkos19[i]/gamesPlayed19[i]).toFixed(2), place: 0};
-                topPlace[i] = {name: playerList[i], number: (gamePlace19[i]/gamesPlayed19[i]).toFixed(2), place: 0};
-                topPoints[i] = {name: playerList[i], number: (gamePoints19[i]/gamesPlayed19[i]).toFixed(2)};
-                topNegative[i] = {name: playerList[i], number: gameNegative19[i]};
+        }else{
+            if(newSeason === "Overall"){
+                var koStat19 = eval("playerkos" + "19");
+                var placeStat19 = eval("gamePlace" + "19");
+                var pointStat19 = eval("gamePoints" + "19");
+                var negStat19 = eval("gameNegative" + "19");
+                var playedStat19 = eval("gamesPlayed" + "19");
+                var koStat20 = eval("playerkos" + "20");
+                var placeStat20 = eval("gamePlace" + "20");
+                var pointStat20 = eval("gamePoints" + "20");
+                var negStat20 = eval("gameNegative" + "20");
+                var playedStat20 = eval("gamesPlayed" + "20");
+                for(var i=0; i<playerkos19.length; i++){
+                    topKos[i] = {name: playerList[i], number: ((koStat19[i] + koStat20[i])/(playedStat19[i] + playedStat20[i])).toFixed(2), place: 0};
+                    topPlace[i] = {name: playerList[i], number: ((placeStat19[i] + placeStat20[i])/(playedStat19[i] + playedStat20[i])).toFixed(2), place: 0};
+                    topPoints[i] = {name: playerList[i], number: ((pointStat19[i] + pointStat20[i])/(playedStat19[i] + playedStat20[i])).toFixed(2), place: 0};
+                    topNegative[i] = {name: playerList[i], number: negStat19[i] + negStat20[i], place: 0};
+                }
+            }else{
+                var koStat = eval("playerkos" + this.state.year + newSeason);
+                var placeStat = eval("gamePlace" + this.state.year + newSeason);
+                var pointStat = eval("gamePoints" + this.state.year + newSeason);
+                var negStat = eval("gameNegative" + this.state.year + newSeason);
+                var playedStat = eval("gamesPlayed" + this.state.year + newSeason);
+                for(var i=0; i<playerkos19.length; i++){
+                    topKos[i] = {name: playerList[i], number: (koStat[i]/playedStat[i]).toFixed(2), place: 0};
+                    topPlace[i] = {name: playerList[i], number: (placeStat[i]/playedStat[i]).toFixed(2), place: 0};
+                    topPoints[i] = {name: playerList[i], number: (pointStat[i]/playedStat[i]).toFixed(2), place: 0};
+                    topNegative[i] = {name: playerList[i], number: negStat[i], place: 0};
+                }
             }
-            topPlayed = ultimateFighters19;
-        }else if(this.state.year === "2019"){
-            newYear = "Overall";
-            for(var i=0; i<playerkos19.length; i++){
-                topKos[i] = {name: playerList[i], number: ((playerkos19[i] + playerkos20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};
-                topPlace[i] = {name: playerList[i], number: ((gamePlace19[i] + gamePlace20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2), place: 0};  
-                topPoints[i] = {name: playerList[i], number: ((gamePoints19[i] + gamePoints20[i])/(gamesPlayed19[i] + gamesPlayed20[i])).toFixed(2)};
-                topNegative[i] = {name: playerList[i], number: gameNegative19[i] + gameNegative20[i]};
-            }
-            topPlayed = ultimateFighters;
         }
         this.setState({
-            year: newYear,
+            season: newSeason,
             topKos: topKos,
             topPlace: topPlace,
             topPlayed: topPlayed,
@@ -3273,7 +4374,6 @@ class Overall extends React.Component {
     }
     listTopPoints() {
         const numberOfTopPoints = this.state.topPoints;
-        console.log(numberOfTopPoints);
         numberOfTopPoints.sort(function(a, b){
             if(a.number < b.number) { return 1; }
             if(a.number > b.number) { return -1; }
@@ -3297,7 +4397,6 @@ class Overall extends React.Component {
     }
     listTopNegative() {
         const numberOfTopNegative = this.state.topNegative;
-        console.log(numberOfTopNegative);
         numberOfTopNegative.sort(function(a, b){
             return b.number - a.number;
         });
@@ -3350,7 +4449,8 @@ class Overall extends React.Component {
         <div className="col-xs-12">
             <div className="row">
                 <div className="col-xs-offset-4 col-xs-4 overallTitle">Overall Rankings</div>
-                <div className="col-xs-4 changeYear" onClick={this.changeOverallYear}>{this.state.year}</div>
+                <div className="col-xs-2 changeSeason" onClick={this.changeOverallSeason}>{this.state.season}</div>
+                <div className="col-xs-2 changeYear" onClick={this.changeOverallYear}>{this.state.year}</div>
             </div>
             <div className="row">
                 <div className="col-xs-3 overallCol">
@@ -4087,6 +5187,7 @@ class Weekly extends React.Component {
   this.previousDate = this.previousDate.bind(this);
   }
   componentDidMount() {
+    console.log(gamesPlayed19Fall);
     var newDate = this.state.date.getTime();
     weeklyWins = [0,0,0,0,0,0,0];
     weeklyKos = [0,0,0,0,0,0,0];
