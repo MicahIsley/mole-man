@@ -4183,6 +4183,13 @@ class Overall extends React.Component {
         var topPlayed = [];
         var topPoints = [];
         var topNegative = [];
+        if(newYear === "19"){
+            topPlayed = ultimateFighters19;
+        }else if(newYear === "20"){
+            topPlayed = ultimateFighters20;
+        }else{
+            topPlayed = ultimateFighters;
+        }
         if(this.state.season === "Overall"){
             if(newYear === "Overall"){
                 for(var i=0; i<playerkos19.length; i++){
@@ -4321,7 +4328,6 @@ class Overall extends React.Component {
             season: newSeason,
             topKos: topKos,
             topPlace: topPlace,
-            topPlayed: topPlayed,
             topPoints: topPoints,
             topNegative: topNegative
         });
