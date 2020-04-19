@@ -4138,8 +4138,8 @@ class Overall extends React.Component {
           topPoints: [],
           topNegative: [],
           topPlayed: [],
-          year: "19",
-          season: "Spring"
+          year: "20",
+          season: "Overall"
         }
     this.changeOverallYear = this.changeOverallYear.bind(this);
     this.changeOverallSeason = this.changeOverallSeason.bind(this);
