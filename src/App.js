@@ -1692,56 +1692,56 @@ const gameData = [
     {name: "Tim", character: darksamus, kos: 2},
     {name: "Micah", character: wolf, kos: 3},
     {name: "", character: empty, kos: 0},
-    {stage: ""},
+    {stage: "Fountain of Dreams"},
     {date: new Date(2020,4,7)}
   ],[
     {name: "Micah", character: darkpit, kos: 4},
     {name: "Zack", character: samus, kos: 3},
     {name: "Tim", character: pacman, kos: 1},
     {name: "", character: empty, kos: 0},
-    {stage: ""},
+    {stage: "3D Land"},
     {date: new Date(2020,4,7)}
   ],[
     {name: "Zack", character: miibrawler, kos: 3},
     {name: "Micah", character: zelda, kos: 4},
     {name: "Tim", character: miiswordfighter, kos: 1},
     {name: "", character: empty, kos: 0},
-    {stage: ""},
+    {stage: "Battlefield"},
     {date: new Date(2020,4,7)}
   ],[
     {name: "Craig", character: link, kos: 4},
     {name: "Micah", character: wiifittrainer, kos: 3},
     {name: "Tim", character: miigunner, kos: 1},
     {name: "Zack", character: miibrawler, kos: 3},
-    {stage: ""},
+    {stage: "Moray Towers"},
     {date: new Date(2020,4,7)}
   ],[
     {name: "Doug", character: samus, kos: 5},
     {name: "Craig", character: kirby, kos: 2},
     {name: "Tim", character: pacman, kos: 3},
     {name: "Micah", character: fox, kos: 1},
-    {stage: ""},
+    {stage: "Kongo Jungle"},
     {date: new Date(2020,4,7)}
   ],[
     {name: "Zack", character: corrin, kos: 3},
     {name: "Tim", character: ness, kos: 3},
     {name: "Doug", character: luigi, kos: 2},
     {name: "Craig", character: pikachu, kos: 3},
-    {stage: ""},
+    {stage: "Battlefield"},
     {date: new Date(2020,4,7)}
   ],[
     {name: "Doug", character: younglink, kos: 4},
     {name: "Tim", character: pacman, kos: 1},
     {name: "Micah", character: bowserjr, kos: 4},
     {name: "Zack", character: hero, kos: 2},
-    {stage: ""},
+    {stage: "Custom"},
     {date: new Date(2020,4,7)}
   ],[
     {name: "Craig", character: ganondorf, kos: 7},
     {name: "Tim", character: samus, kos: 1},
     {name: "Micah", character: incineroar, kos: 1},
     {name: "Doug", character: joker, kos: 2},
-    {stage: ""},
+    {stage: "King of Fighters Stadium"},
     {date: new Date(2020,4,7)}
   ],[
     {name: "Zack", character: kirby, kos: 5},
@@ -1762,14 +1762,14 @@ const gameData = [
     {name: "Micah", character: mewtwo, kos: 2},
     {name: "Doug", character: roy, kos: 2},
     {name: "", character: empty, kos: 0},
-    {stage: ""},
+    {stage: "Rainbow Cruise"},
     {date: new Date(2020,4,7)}
   ],[
     {name: "Micah", character: terry, kos: 4},
     {name: "Zack", character: bowser, kos: 3},
     {name: "Doug", character: captainfalcon, kos: 1},
     {name: "", character: empty, kos: 0},
-    {stage: ""},
+    {stage: "Lylat Cruise"},
     {date: new Date(2020,4,7)}
   ]
 ];
