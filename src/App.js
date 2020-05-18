@@ -1896,6 +1896,10 @@ var weeklyGames = [0,0,0,0,0,0,0];
 var weeklyAvg = [0,0,0,0,0,0,0];
 var weeklyPoints = [0,0,0,0,0,0,0];
 var weeklyNegative = [0,0,0,0,0,0,0];
+var cumulativePlace = [0,0,0,0,0,0,0];
+var cumulativeGames = [0,0,0,0,0,0,0];
+var cumulativeKos = [0,0,0,0,0,0,0];
+var cumulativeWins = [0,0,0,0,0,0,0];
 var playerkos19 = [0,0,0,0,0,0,0];
 var playerkos19Summer = [0,0,0,0,0,0,0];
 var playerkos19Spring = [0,0,0,0,0,0,0];
@@ -4186,6 +4190,31 @@ class Graphs extends React.Component {
     this.changeGraph = this.changeGraph.bind(this);
     }
     componentDidMount(){
+        graphPlaceMicah = [];
+        graphKosMicah = [];
+        graphWinsMicah = [];
+        graphPlaceTim = [];
+        graphKosTim = [];
+        graphWinsTim = [];
+        graphPlaceDoug = [];
+        graphKosDoug = [];
+        graphWinsDoug = [];
+        graphPlaceZack = [];
+        graphKosZack = [];
+        graphWinsZack = [];
+        graphPlaceBetsy = [];
+        graphKosBetsy = [];
+        graphWinsBetsy = [];
+        graphPlaceJames = [];
+        graphKosJames = [];
+        graphWinsJames = [];
+        graphPlaceCraig = [];
+        graphKosCraig = [];
+        graphWinsCraig = [];
+        cumulativeKos = [0,0,0,0,0,0,0];
+        cumulativeGames = [0,0,0,0,0,0,0];
+        cumulativePlace = [0,0,0,0,0,0,0];
+        cumulativeWins = [0,0,0,0,0,0,0];
         for(var i=0; i<dates.length; i++){
             weeklyKos = [0,0,0,0,0,0,0];
             weeklyGames = [0,0,0,0,0,0,0];
@@ -4246,11 +4275,17 @@ class Graphs extends React.Component {
                     }
                 }
             }
+            for(var j=0; j<7; j++){
+                cumulativeGames[j] = cumulativeGames[j] + weeklyGames[j];
+                cumulativeKos[j] = cumulativeKos[j] + weeklyKos[j];
+                cumulativePlace[j] = cumulativePlace[j] + weeklyPlace[j];
+                cumulativeWins[j] = cumulativeWins[j] + weeklyWins[j];
+            }
             for(var j=0; j < 7; j++){
                 if(weeklyGames[j] > 0){
-                    weeklyAvg[j] = parseFloat((weeklyPlace[j]/weeklyGames[j]).toFixed(2));
-                    weeklyKos[j] = parseFloat((weeklyKos[j]/weeklyGames[j]).toFixed(2));
-                    weeklyWins[j] = ((weeklyWins[j]/weeklyGames[j]).toFixed(2)) * 100;
+                    weeklyAvg[j] = parseFloat((cumulativePlace[j]/cumulativeGames[j]).toFixed(2));
+                    weeklyKos[j] = parseFloat((cumulativeKos[j]/cumulativeGames[j]).toFixed(2));
+                    weeklyWins[j] = ((cumulativeWins[j]/cumulativeGames[j]).toFixed(2)) * 100;
                 }else{}
             }
             var micahDataPoint = {x: new Date(dates[i]), y: weeklyAvg[0]};
@@ -4865,7 +4900,7 @@ class Stats extends React.Component {
         if(a.number > b.number) { return -1; }
         return 0;
     });
-    for(var i=0; i<3; i++){
+    for(var i=0; i<5; i++){
         mostPlayed.push(micahCharacters[i]);
     }
     micahCharacters.sort(function(a, b){
@@ -4873,7 +4908,7 @@ class Stats extends React.Component {
         if(a.wins > b.wins) { return -1; }
         return 0;
     });
-    for(var i=0; i<3; i++){
+    for(var i=0; i<5; i++){
         mostWins.push(micahCharacters[i]);
     }
     micahCharacters.sort(function(a, b){
@@ -4887,7 +4922,7 @@ class Stats extends React.Component {
         }else{
             totalKos.push(micahCharacters[i]);
         }
-        if(totalKos.length === 3){
+        if(totalKos.length === 5){
             break;
         }else{}
     }
@@ -4961,7 +4996,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerCharacters19[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -4973,7 +5008,7 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
                 return 0;
             });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerCharacters19[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
@@ -4994,7 +5029,7 @@ class Stats extends React.Component {
                     totalKos.push(playerCharacters19[i]);
                 }
             }
-            if(totalKos.length === 3){
+            if(totalKos.length === 5){
                 break;
             }else{}
         }
@@ -5008,7 +5043,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerCharacters20[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5020,7 +5055,7 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
                 return 0;
             });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerCharacters20[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
@@ -5042,7 +5077,7 @@ class Stats extends React.Component {
                     totalKos.push(playerCharacters20[i]);
                 }
             }
-            if(totalKos.length === 3){
+            if(totalKos.length === 5){
                 break;
             }else{}
         }
@@ -5056,7 +5091,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerCharacters[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5068,7 +5103,7 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
                 return 0;
             });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerCharacters[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
@@ -5090,7 +5125,7 @@ class Stats extends React.Component {
                     totalKos.push(playerCharacters[i]);
                 }
             }
-            if(totalKos.length === 3){
+            if(totalKos.length === 5){
                 break;
             }else{}
         }
@@ -5123,7 +5158,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5135,7 +5170,7 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
@@ -5157,7 +5192,7 @@ class Stats extends React.Component {
                     totalKos.push(playerArray[i]);
                 }
             }
-            if(totalKos.length === 3){
+            if(totalKos.length === 5){
                 break;
             }else{}
         }
@@ -5170,7 +5205,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray19[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5182,7 +5217,7 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray19[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
@@ -5204,7 +5239,7 @@ class Stats extends React.Component {
                     totalKos.push(playerArray19[i]);
                 }
             }
-            if(totalKos.length === 3){
+            if(totalKos.length === 5){
                 break;
             }else{}
         }
@@ -5217,7 +5252,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray20[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5229,7 +5264,7 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray20[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
@@ -5251,7 +5286,7 @@ class Stats extends React.Component {
                     totalKos.push(playerArray20[i]);
                 }
             }
-            if(totalKos.length === 3){
+            if(totalKos.length === 5){
                 break;
             }else{}
         }
@@ -5287,7 +5322,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5299,7 +5334,7 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
@@ -5321,7 +5356,7 @@ class Stats extends React.Component {
                     totalKos.push(playerArray[i]);
                 }
             }
-            if(totalKos.length === 3){
+            if(totalKos.length === 5){
                 break;
             }else{}
         }
@@ -5334,7 +5369,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray19[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5346,7 +5381,7 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray19[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
@@ -5368,7 +5403,7 @@ class Stats extends React.Component {
                     totalKos.push(playerArray19[i]);
                 }
             }
-            if(totalKos.length === 3){
+            if(totalKos.length === 5){
                 break;
             }else{}
         }
@@ -5381,7 +5416,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray20[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5393,7 +5428,7 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<3; i++){
+        for(var i=0; i<5; i++){
             if(playerArray20[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
@@ -5415,7 +5450,7 @@ class Stats extends React.Component {
                     totalKos.push(playerArray20[i]);
                 }
             }
-            if(totalKos.length === 3){
+            if(totalKos.length === 5){
                 break;
             }else{}
         }
@@ -5473,14 +5508,14 @@ class MostPlayed extends React.Component {
     var icon;
     var number;
     if(this.props.id === 0){
-      icon = "firstIcon";
-      number = "firstNumber";
+      //icon = "firstIcon";
+      //number = "firstNumber";
     }else if(this.props.id === 1){
-      icon = "secondIcon";
-      number = "secondNumber";
+      //icon = "secondIcon";
+      //number = "secondNumber";
     }else if(this.props.id === 2){
-      icon = "thirdIcon";
-      number = "thirdNumber";
+      //icon = "thirdIcon";
+      //number = "thirdNumber";
     }
     return (
       <div className="row">
@@ -6597,8 +6632,8 @@ class Fighters extends React.Component {
                 }else{}
             }
         }
-        var fighterData = [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy, fighterStatsJames, fighterStatsCraig];
-        for(var i=0; i<5; i++){
+        var fighterData = [fighterStatsMicah, fighterStatsTim, fighterStatsDoug, fighterStatsZack, fighterStatsBetsy, fighterStatsJames, fighterStatsCraig, fighterStatsNick];
+        for(var i=0; i<8; i++){
             var averagePlace = (fighterData[i].place/fighterData[i].games).toFixed(2);
             var averageKos = (fighterData[i].kos/fighterData[i].games).toFixed(2);
             if(fighterData[i].games === 0){

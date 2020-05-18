@@ -274,6 +274,12 @@ html {
   margin-bottom: 10px;
 }
 
+.mostPlayedNum {
+  font-size: 50px;
+  color: white;
+  font-family: 'Carter One', cursive;
+}
+
 .gameNumber {
   text-align: center;
   padding-top: 10px;
