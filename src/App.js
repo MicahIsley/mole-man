@@ -1862,9 +1862,93 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Battlefield"},
     {date: new Date(2020,4,13)}
+  ],[
+    {name: "Micah", character: kingdedede, kos: 4},
+    {name: "Zack", character: pokemontrainer, kos: 3},
+    {name: "Tim", character: kingkrool, kos: 1},
+    {name: "", character: empty, kos: 0},
+    {stage: "Custom"},
+    {date: new Date(2020,4,20)}
+  ],[
+    {name: "Micah", character: wiifittrainer, kos: 4},
+    {name: "Zack", character: pokemontrainer, kos: 2},
+    {name: "Tim", character: ridley, kos: 3},
+    {name: "Doug", character: isabell, kos: 2},
+    {stage: "Battlefield"},
+    {date: new Date(2020,4,20)}
+  ],[
+    {name: "Micah", character: cloud, kos: 5},
+    {name: "Zack", character: pokemontrainer, kos: 4},
+    {name: "Tim", character: ridley, kos: 2},
+    {name: "Doug", character: joker, kos: 0},
+    {stage: "Mario Galaxy"},
+    {date: new Date(2020,4,20)}
+  ],[
+    {name: "Tim", character: pacman, kos: 2},
+    {name: "Zack", character: samus, kos: 4},
+    {name: "Doug", character: fox, kos: 1},
+    {name: "Micah", character: incineroar, kos: 4},
+    {stage: "Custom"},
+    {date: new Date(2020,4,20)}
+  ],[
+    {name: "Micah", character: byleth, kos: 6},
+    {name: "Doug", character: younglink, kos: 1},
+    {name: "Zack", character: lucas, kos: 4},
+    {name: "Tim", character: ness, kos: 0},
+    {stage: "Custom"},
+    {date: new Date(2020,4,20)}
+  ],[
+    {name: "Zack", character: lucas, kos: 6},
+    {name: "Micah", character: palutena, kos: 3},
+    {name: "Tim", character: samus, kos: 1},
+    {name: "Doug", character: littlemac, kos: 1},
+    {stage: "Onett"},
+    {date: new Date(2020,4,20)}
+  ],[
+    {name: "Micah", character: luigi, kos: 5},
+    {name: "Zack", character: bowser, kos: 4},
+    {name: "Tim", character: ness, kos: 1},
+    {name: "Doug", character: pokemontrainer, kos: 1},
+    {stage: "Duck Hunt"},
+    {date: new Date(2020,4,20)}
+  ],[
+    {name: "Zack", character: corrin, kos: 4},
+    {name: "Tim", character: pacman, kos: 1},
+    {name: "Doug", character: roy, kos: 3},
+    {name: "Micah", character: metaknight, kos: 3},
+    {stage: "Custom"},
+    {date: new Date(2020,4,20)}
+  ],[
+    {name: "Doug", character: samus, kos: 3},
+    {name: "Tim", character: pacman, kos: 3},
+    {name: "Zack", character: corrin, kos: 4},
+    {name: "Micah", character: peach, kos: 1},
+    {stage: "Corneria"},
+    {date: new Date(2020,4,20)}
+  ],[
+    {name: "Betsy", character: lucas, kos: 7},
+    {name: "Tim", character: miiswordfighter, kos: 3},
+    {name: "Zack", character: miibrawler, kos: 1},
+    {name: "Doug", character: falco, kos: 0},
+    {stage: "Custom"},
+    {date: new Date(2020,4,20)}
+  ],[
+    {name: "Zack", character: yoshi, kos: 6},
+    {name: "Doug", character: villager, kos: 4},
+    {name: "Tim", character: miiswordfighter, kos: 1},
+    {name: "Micah", character: inkling, kos: 0},
+    {stage: "Custom"},
+    {date: new Date(2020,4,20)}
+  ],[
+    {name: "Zack", character: yoshi, kos: 6},
+    {name: "Micah", character: bowserjr, kos: 3},
+    {name: "Doug", character: kingkrool, kos: 2},
+    {name: "Tim", character: ness, kos: 0},
+    {stage: "Custom"},
+    {date: new Date(2020,4,20)}
   ]
 ];
-var dates = [new Date(2019,8,11).getTime(), new Date(2019,8,18).getTime(), new Date(2019,8,25).getTime(), new Date(2019,9,9).getTime(), new Date(2019,9,16).getTime(), new Date(2019,9,23).getTime(), new Date(2019,11,4).getTime(), new Date(2019,11,18).getTime(), new Date(2020,0,16).getTime(), new Date(2020,0,22).getTime(), new Date(2020,0,30).getTime(), new Date(2020,1,5).getTime(), new Date(2020,1,13).getTime(), new Date(2020,1,19).getTime(), new Date(2020,2,4).getTime(), new Date(2020,2,12).getTime(), new Date(2020,2,18).getTime(), new Date(2020,2,26).getTime(), new Date(2020,3,2).getTime(), new Date(2020,3,8).getTime(), new Date(2020,3,15).getTime(), new Date(2020,3,22).getTime(), new Date(2020,3,29).getTime(), new Date(2020,4,7).getTime(), new Date(2020,4,13).getTime()];
+var dates = [new Date(2019,8,11).getTime(), new Date(2019,8,18).getTime(), new Date(2019,8,25).getTime(), new Date(2019,9,9).getTime(), new Date(2019,9,16).getTime(), new Date(2019,9,23).getTime(), new Date(2019,11,4).getTime(), new Date(2019,11,18).getTime(), new Date(2020,0,16).getTime(), new Date(2020,0,22).getTime(), new Date(2020,0,30).getTime(), new Date(2020,1,5).getTime(), new Date(2020,1,13).getTime(), new Date(2020,1,19).getTime(), new Date(2020,2,4).getTime(), new Date(2020,2,12).getTime(), new Date(2020,2,18).getTime(), new Date(2020,2,26).getTime(), new Date(2020,3,2).getTime(), new Date(2020,3,8).getTime(), new Date(2020,3,15).getTime(), new Date(2020,3,22).getTime(), new Date(2020,3,29).getTime(), new Date(2020,4,7).getTime(), new Date(2020,4,13).getTime(), new Date(2020,4,20).getTime()];
 var ultimateFighters = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
 var ultimateFighters19 = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
 var ultimateFighters20 = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
@@ -2456,9 +2540,9 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    micahCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    micahCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                 }else{
-                    micahCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    micahCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                 }
             }else{
                 var a = micahCharacters.findIndex(x => x.character === gameData[i][j].character);
@@ -2543,9 +2627,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        micahCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        micahCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        micahCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        micahCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = micahCharacters19.findIndex(x => x.character === gameData[i][j].character);
@@ -2554,9 +2638,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = micahCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -2641,9 +2725,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        micahCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        micahCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        micahCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        micahCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = micahCharacters20.findIndex(x => x.character === gameData[i][j].character);
@@ -2652,9 +2736,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        micahCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = micahCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -2674,9 +2758,9 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    timCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    timCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                 }else{
-                    timCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    timCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                 }
             }else{
                 var a = timCharacters.findIndex(x => x.character === gameData[i][j].character);
@@ -2761,9 +2845,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        timCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        timCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        timCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        timCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = timCharacters19.findIndex(x => x.character === gameData[i][j].character);
@@ -2772,9 +2856,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = timCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -2859,9 +2943,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        timCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        timCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        timCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        timCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = timCharacters20.findIndex(x => x.character === gameData[i][j].character);
@@ -2870,9 +2954,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        timCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = timCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -2892,9 +2976,9 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    dougCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    dougCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                 }else{
-                    dougCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    dougCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                 }
             }else{
                 var a = dougCharacters.findIndex(x => x.character === gameData[i][j].character);
@@ -2979,9 +3063,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        dougCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        dougCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        dougCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        dougCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = dougCharacters19.findIndex(x => x.character === gameData[i][j].character);
@@ -2990,9 +3074,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = dougCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -3077,9 +3161,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        dougCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        dougCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        dougCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        dougCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = dougCharacters20.findIndex(x => x.character === gameData[i][j].character);
@@ -3088,9 +3172,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        dougCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = dougCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -3110,9 +3194,9 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    zackCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    zackCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                 }else{
-                    zackCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    zackCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                 }
             }else{
                 var a = zackCharacters.findIndex(x => x.character === gameData[i][j].character);
@@ -3197,9 +3281,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        zackCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        zackCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        zackCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        zackCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = zackCharacters19.findIndex(x => x.character === gameData[i][j].character);
@@ -3208,9 +3292,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = zackCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -3295,9 +3379,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        zackCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        zackCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        zackCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        zackCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = zackCharacters20.findIndex(x => x.character === gameData[i][j].character);
@@ -3306,9 +3390,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        zackCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = zackCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -3328,9 +3412,9 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    betsyCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    betsyCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                 }else{
-                    betsyCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    betsyCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                 }
             }else{
                 var a = betsyCharacters.findIndex(x => x.character === gameData[i][j].character);
@@ -3415,9 +3499,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        betsyCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        betsyCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        betsyCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        betsyCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = betsyCharacters19.findIndex(x => x.character === gameData[i][j].character);
@@ -3426,9 +3510,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = betsyCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -3513,9 +3597,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        betsyCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        betsyCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        betsyCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        betsyCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = betsyCharacters20.findIndex(x => x.character === gameData[i][j].character);
@@ -3524,9 +3608,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        betsyCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = betsyCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -3546,9 +3630,9 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    jamesCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    jamesCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                 }else{
-                    jamesCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    jamesCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                 }
             }else{
                 var a = jamesCharacters.findIndex(x => x.character === gameData[i][j].character);
@@ -3633,9 +3717,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        jamesCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        jamesCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        jamesCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        jamesCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = jamesCharacters19.findIndex(x => x.character === gameData[i][j].character);
@@ -3644,9 +3728,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = jamesCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -3731,9 +3815,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        jamesCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        jamesCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        jamesCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        jamesCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = jamesCharacters20.findIndex(x => x.character === gameData[i][j].character);
@@ -3742,9 +3826,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        jamesCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = jamesCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -3764,9 +3848,9 @@ class App extends React.Component {
             }
             if(existingCharacter === false){
                 if(gameData[i][j].character === gameData[i][0].character){
-                    craigCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                    craigCharacters.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                 }else{
-                    craigCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                    craigCharacters.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                 }
             }else{
                 var a = craigCharacters.findIndex(x => x.character === gameData[i][j].character);
@@ -3860,9 +3944,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter19 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        craigCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        craigCharacters19.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        craigCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        craigCharacters19.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = craigCharacters19.findIndex(x => x.character === gameData[i][j].character);
@@ -3871,9 +3955,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = craigCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -3958,9 +4042,9 @@ class App extends React.Component {
                 }
                 if(existingCharacter20 === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        craigCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        craigCharacters20.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        craigCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        craigCharacters20.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = craigCharacters20.findIndex(x => x.character === gameData[i][j].character);
@@ -3969,9 +4053,9 @@ class App extends React.Component {
                 }
                 if(existingCharacterSeason === false){
                     if(gameData[i][j].character === gameData[i][0].character){
-                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos});
+                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 1, kos: gameData[i][j].kos, points: 0});
                     }else{
-                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos});
+                        craigCharactersSeason.push({character: gameData[i][j].character, number: 1, wins: 0, kos: gameData[i][j].kos, points: 0});
                     }
                 }else{
                     var a = craigCharactersSeason.findIndex(x => x.character === gameData[i][j].character);
@@ -4882,6 +4966,7 @@ class Stats extends React.Component {
       averagePlace: 0,
       mostWins: [],
       totalKos: [],
+      winPercent: [],
       highKoGames: 0,
       year: "Overall",
       gamesPlayed: 0
@@ -4889,18 +4974,20 @@ class Stats extends React.Component {
   this.nextName = this.nextName.bind(this);
   this.previousName = this.previousName.bind(this);
   this.listMostPlayed = this.listMostPlayed.bind(this);
+  this.listWinPercent = this.listWinPercent.bind(this);
   this.changeStatsYear = this.changeStatsYear.bind(this);
   }
   componentDidMount() {
     mostPlayed = [];
     mostWins = [];
     totalKos = [];
+    var winPercentArray = [];
     micahCharacters.sort(function(a, b){
         if(a.number < b.number) { return 1; }
         if(a.number > b.number) { return -1; }
         return 0;
     });
-    for(var i=0; i<5; i++){
+    for(var i=0; i<micahCharacters.length; i++){
         mostPlayed.push(micahCharacters[i]);
     }
     micahCharacters.sort(function(a, b){
@@ -4908,9 +4995,24 @@ class Stats extends React.Component {
         if(a.wins > b.wins) { return -1; }
         return 0;
     });
-    for(var i=0; i<5; i++){
+    for(var i=0; i<micahCharacters.length; i++){
         mostWins.push(micahCharacters[i]);
     }
+    for(var i=0; i<micahCharacters.length; i++){
+        if(micahCharacters[i].number > 2){
+            var winPercent = ((micahCharacters[i].wins/micahCharacters[i].number).toFixed(2));
+            var rightPercent = winPercent.split(".");
+            if(rightPercent[1] === "00"){
+                rightPercent[1] = "0";
+            }else{}
+            winPercentArray.push({character: micahCharacters[i].character, percent: rightPercent[1] + "%"});
+        }else{}
+    }
+    winPercentArray.sort(function(a, b){
+        if(a.percent < b.percent) { return 1; }
+        if(a.percent > b.percent) { return -1; }
+        return 0;
+    });
     micahCharacters.sort(function(a, b){
         if(a.kos < b.kos) { return 1; }
         if(a.kos > b.kos) { return -1; }
@@ -4922,9 +5024,6 @@ class Stats extends React.Component {
         }else{
             totalKos.push(micahCharacters[i]);
         }
-        if(totalKos.length === 5){
-            break;
-        }else{}
     }
     averagePlace = ((gamePlace19[0] + gamePlace20[0])/(gamesPlayed19[0] + gamesPlayed20[0])).toFixed(2);
     highKoGames = highKoGames19[0] + highKoGames20[0];
@@ -4935,7 +5034,8 @@ class Stats extends React.Component {
       mostWins: mostWins,
       totalKos: totalKos,
       highKoGames: highKoGames,
-      gamesPlayed: gamesPlayed
+      gamesPlayed: gamesPlayed,
+      winPercent: winPercentArray
     });
   }
   listMostPlayed() {
@@ -4944,16 +5044,18 @@ class Stats extends React.Component {
       return <MostPlayed key={index} id={index} character={character.character} number={character.number} />
     });
     return (
-      <div className="col-xs-4">{listMostPlayed}</div>
+      <div className="col-xs-12 playerStatsCol">{listMostPlayed}</div>
     )
   }
   listMostWins() {
     const numberOfMostWins = this.state.mostWins;
     const listMostWins = numberOfMostWins.map((character, index) => {
-      return <MostPlayed key={index} id={index} character={character.character} number={character.wins} />
+        if(character.wins > 0) {
+            return <MostPlayed key={index} id={index} character={character.character} number={character.wins} />
+        }
     });
     return (
-      <div className="col-xs-4">{listMostWins}</div>
+      <div className="col-xs-12 playerStatsCol">{listMostWins}</div>
     )
   }
   listMostKos() {
@@ -4962,7 +5064,16 @@ class Stats extends React.Component {
       return <MostPlayed key={index} id={index} character={character.character} number={character.kos} />
     });
     return (
-      <div className="col-xs-4">{listMostKos}</div>
+      <div className="col-xs-12 playerStatsCol">{listMostKos}</div>
+    )
+  }
+  listWinPercent() {
+    const numberOfMostKos = this.state.winPercent;
+    const listWinPercent = numberOfMostKos.map((character, index) => {
+      return <MostPlayed key={index} id={index} character={character.character} number={character.percent} />
+    });
+    return (
+      <div className="col-xs-12 playerStatsCol">{listWinPercent}</div>
     )
   }
   changeStatsYear() {
@@ -4970,6 +5081,7 @@ class Stats extends React.Component {
     mostPlayed = [];
     mostWins = [];
     totalKos = [];
+    var winPercentArray = [];
     var playerCharacters = eval(this.state.name + "Characters");
     var playerCharacters19 = eval(this.state.name + "Characters19");
     var playerCharacters20 = eval(this.state.name + "Characters20");
@@ -4996,7 +5108,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerCharacters19.length; i++){
             if(playerCharacters19[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5008,13 +5120,28 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
                 return 0;
             });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerCharacters19.length; i++){
             if(playerCharacters19[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
                 mostWins.push(playerCharacters19[i]);
             }
         }
+        for(var i=0; i<playerCharacters19.length; i++){
+            if(playerCharacters19[i].number > 2){
+                var winPercent = ((playerCharacters19[i].wins/playerCharacters19[i].number).toFixed(2));
+                var rightPercent = winPercent.split(".");
+                if(rightPercent[1] === "00"){
+                    rightPercent[1] = "0";
+                }else{}
+                winPercentArray.push({character: playerCharacters19[i].character, percent: rightPercent[1] + "%"});
+            }else{}
+        }
+        winPercentArray.sort(function(a, b){
+            if(a.percent < b.percent) { return 1; }
+            if(a.percent > b.percent) { return -1; }
+            return 0;
+        });
         playerCharacters19.sort(function(a, b){
             if(a.kos < b.kos) { return 1; }
             if(a.kos > b.kos) { return -1; }
@@ -5029,9 +5156,6 @@ class Stats extends React.Component {
                     totalKos.push(playerCharacters19[i]);
                 }
             }
-            if(totalKos.length === 5){
-                break;
-            }else{}
         }
         averagePlace = (gamePlace19[playerNumber]/gamesPlayed19[playerNumber]).toFixed(2);
         highKoGames = highKoGames19[playerNumber];
@@ -5043,7 +5167,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerCharacters20.length; i++){
             if(playerCharacters20[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5055,13 +5179,28 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
                 return 0;
             });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerCharacters20.length; i++){
             if(playerCharacters20[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
                 mostWins.push(playerCharacters20[i]);
             }
         }
+        for(var i=0; i<playerCharacters20.length; i++){
+            if(playerCharacters20[i].number > 2){
+                var winPercent = ((playerCharacters20[i].wins/playerCharacters20[i].number).toFixed(2));
+                var rightPercent = winPercent.split(".");
+                if(rightPercent[1] === "00"){
+                    rightPercent[1] = "0";
+                }else{}
+                winPercentArray.push({character: playerCharacters20[i].character, percent: rightPercent[1] + "%"});
+            }else{}
+        }
+        winPercentArray.sort(function(a, b){
+            if(a.percent < b.percent) { return 1; }
+            if(a.percent > b.percent) { return -1; }
+            return 0;
+        });
         playerCharacters20.sort(function(a, b){
             if(a.kos < b.kos) { return 1; }
             if(a.kos > b.kos) { return -1; }
@@ -5077,9 +5216,6 @@ class Stats extends React.Component {
                     totalKos.push(playerCharacters20[i]);
                 }
             }
-            if(totalKos.length === 5){
-                break;
-            }else{}
         }
         averagePlace = (gamePlace20[playerNumber]/gamesPlayed20[playerNumber]).toFixed(2);
         highKoGames = highKoGames20[playerNumber];
@@ -5091,7 +5227,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerCharacters.length; i++){
             if(playerCharacters[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5103,13 +5239,28 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
                 return 0;
             });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerCharacters.length; i++){
             if(playerCharacters[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
                 mostWins.push(playerCharacters[i]);
             }
         }
+        for(var i=0; i<playerCharacters.length; i++){
+            if(playerCharacters[i].number > 2){
+                var winPercent = ((playerCharacters[i].wins/playerCharacters[i].number).toFixed(2));
+                var rightPercent = winPercent.split(".");
+                if(rightPercent[1] === "00"){
+                    rightPercent[1] = "0";
+                }else{}
+                winPercentArray.push({character: playerCharacters[i].character, percent: rightPercent[1] + "%"});
+            }else{}
+        }
+        winPercentArray.sort(function(a, b){
+            if(a.percent < b.percent) { return 1; }
+            if(a.percent > b.percent) { return -1; }
+            return 0;
+        });
         playerCharacters.sort(function(a, b){
             if(a.kos < b.kos) { return 1; }
             if(a.kos > b.kos) { return -1; }
@@ -5125,9 +5276,6 @@ class Stats extends React.Component {
                     totalKos.push(playerCharacters[i]);
                 }
             }
-            if(totalKos.length === 5){
-                break;
-            }else{}
         }
         averagePlace = ((gamePlace19[playerNumber] + gamePlace20[playerNumber])/(gamesPlayed19[playerNumber] + gamesPlayed20[playerNumber])).toFixed(2);
         highKoGames = highKoGames19[playerNumber] + highKoGames20[playerNumber];
@@ -5140,7 +5288,8 @@ class Stats extends React.Component {
         averagePlace: averagePlace,
         highKoGames: highKoGames,
         totalKos: totalKos,
-        gamesPlayed: gamesPlayed
+        gamesPlayed: gamesPlayed,
+        winPercent: winPercentArray
     });
   }
   nextName() {
@@ -5152,13 +5301,14 @@ class Stats extends React.Component {
     mostPlayed = [];
     mostWins = [];
     totalKos = [];
+    var winPercentArray = [];
     if(this.state.year === "Overall"){
         playerArray.sort(function(a, b){
             if(a.number < b.number) { return 1; }
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray.length; i++){
             if(playerArray[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5170,13 +5320,28 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray.length; i++){
             if(playerArray[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
                 mostWins.push(playerArray[i]);
             }
         }
+        for(var i=0; i<playerArray.length; i++){
+            if(playerArray[i].number > 2){
+                var winPercent = ((playerArray[i].wins/playerArray[i].number).toFixed(2));
+                var rightPercent = winPercent.split(".");
+                if(rightPercent[1] === "00"){
+                    rightPercent[1] = "0";
+                }else{}
+                winPercentArray.push({character: playerArray[i].character, percent: rightPercent[1] + "%"});
+            }else{}
+        }
+        winPercentArray.sort(function(a, b){
+            if(a.percent < b.percent) { return 1; }
+            if(a.percent > b.percent) { return -1; }
+            return 0;
+        });
         playerArray.sort(function(a, b){
             if(a.kos < b.kos) { return 1; }
             if(a.kos > b.kos) { return -1; }
@@ -5192,9 +5357,6 @@ class Stats extends React.Component {
                     totalKos.push(playerArray[i]);
                 }
             }
-            if(totalKos.length === 5){
-                break;
-            }else{}
         }
         averagePlace = ((gamePlace19[nameIndex + 1] + gamePlace20[nameIndex + 1])/(gamesPlayed19[nameIndex + 1] + gamesPlayed20[nameIndex + 1])).toFixed(2);
         highKoGames = highKoGames19[nameIndex + 1] + highKoGames20[nameIndex + 1];
@@ -5205,7 +5367,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray19.length; i++){
             if(playerArray19[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5217,13 +5379,28 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray19.length; i++){
             if(playerArray19[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
                 mostWins.push(playerArray19[i]);
             }
         }
+        for(var i=0; i<playerArray19.length; i++){
+            if(playerArray19[i].number > 2){
+                var winPercent = ((playerArray19[i].wins/playerArray19[i].number).toFixed(2));
+                var rightPercent = winPercent.split(".");
+                if(rightPercent[1] === "00"){
+                    rightPercent[1] = "0";
+                }else{}
+                winPercentArray.push({character: playerArray19[i].character, percent: rightPercent[1] + "%"});
+            }else{}
+        }
+        winPercentArray.sort(function(a, b){
+            if(a.percent < b.percent) { return 1; }
+            if(a.percent > b.percent) { return -1; }
+            return 0;
+        });
         playerArray19.sort(function(a, b){
             if(a.kos < b.kos) { return 1; }
             if(a.kos > b.kos) { return -1; }
@@ -5239,9 +5416,6 @@ class Stats extends React.Component {
                     totalKos.push(playerArray19[i]);
                 }
             }
-            if(totalKos.length === 5){
-                break;
-            }else{}
         }
         averagePlace = (gamePlace19[nameIndex + 1]/gamesPlayed19[nameIndex + 1]).toFixed(2);
         highKoGames = highKoGames19[nameIndex + 1];
@@ -5252,7 +5426,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray20.length; i++){
             if(playerArray20[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5264,13 +5438,28 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray20.length; i++){
             if(playerArray20[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
                 mostWins.push(playerArray20[i]);
             }
         }
+        for(var i=0; i<playerArray20.length; i++){
+            if(playerArray20[i].number > 2){
+                var winPercent = ((playerArray20[i].wins/playerArray20[i].number).toFixed(2));
+                var rightPercent = winPercent.split(".");
+                if(rightPercent[1] === "00"){
+                    rightPercent[1] = "0";
+                }else{}
+                winPercentArray.push({character: playerArray20[i].character, percent: rightPercent[1] + "%"});
+            }else{}
+        }
+        winPercentArray.sort(function(a, b){
+            if(a.percent < b.percent) { return 1; }
+            if(a.percent > b.percent) { return -1; }
+            return 0;
+        });
         playerArray20.sort(function(a, b){
             if(a.kos < b.kos) { return 1; }
             if(a.kos > b.kos) { return -1; }
@@ -5286,9 +5475,6 @@ class Stats extends React.Component {
                     totalKos.push(playerArray20[i]);
                 }
             }
-            if(totalKos.length === 5){
-                break;
-            }else{}
         }
         averagePlace = (gamePlace20[nameIndex + 1]/gamesPlayed20[nameIndex + 1]).toFixed(2);
         highKoGames = highKoGames20[nameIndex + 1];
@@ -5303,7 +5489,8 @@ class Stats extends React.Component {
         mostWins: mostWins,
         totalKos: totalKos,
         highKoGames: highKoGames,
-        gamesPlayed: gamesPlayed
+        gamesPlayed: gamesPlayed,
+        winPercent: winPercentArray
       });
     }
   }
@@ -5316,13 +5503,14 @@ class Stats extends React.Component {
     mostPlayed = [];
     mostWins = [];
     totalKos = [];
+    var winPercentArray = [];
     if(this.state.year === "Overall"){
         playerArray.sort(function(a, b){
             if(a.number < b.number) { return 1; }
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray.length; i++){
             if(playerArray[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5334,13 +5522,28 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray.length; i++){
             if(playerArray[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
                 mostWins.push(playerArray[i]);
             }
         }
+        for(var i=0; i<playerArray.length; i++){
+            if(playerArray[i].number > 2){
+                var winPercent = ((playerArray[i].wins/playerArray[i].number).toFixed(2));
+                var rightPercent = winPercent.split(".");
+                if(rightPercent[1] === "00"){
+                    rightPercent[1] = "0";
+                }else{}
+                winPercentArray.push({character: playerArray[i].character, percent: rightPercent[1] + "%"});
+            }else{}
+        }
+        winPercentArray.sort(function(a, b){
+            if(a.percent < b.percent) { return 1; }
+            if(a.percent > b.percent) { return -1; }
+            return 0;
+        });
         playerArray.sort(function(a, b){
             if(a.kos < b.kos) { return 1; }
             if(a.kos > b.kos) { return -1; }
@@ -5356,9 +5559,6 @@ class Stats extends React.Component {
                     totalKos.push(playerArray[i]);
                 }
             }
-            if(totalKos.length === 5){
-                break;
-            }else{}
         }
         averagePlace = ((gamePlace19[nameIndex - 1] + gamePlace20[nameIndex - 1])/(gamesPlayed19[nameIndex - 1] + gamesPlayed20[nameIndex - 1])).toFixed(2);
         highKoGames = highKoGames19[nameIndex - 1] + highKoGames20[nameIndex - 1];
@@ -5369,7 +5569,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray19.length; i++){
             if(playerArray19[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5381,13 +5581,28 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray19.length; i++){
             if(playerArray19[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
                 mostWins.push(playerArray19[i]);
             }
         }
+        for(var i=0; i<playerArray19.length; i++){
+            if(playerArray19[i].number > 2){
+                var winPercent = ((playerArray19[i].wins/playerArray19[i].number).toFixed(2));
+                var rightPercent = winPercent.split(".");
+                if(rightPercent[1] === "00"){
+                    rightPercent[1] = "0";
+                }else{}
+                winPercentArray.push({character: playerArray19[i].character, percent: rightPercent[1] + "%"});
+            }else{}
+        }
+        winPercentArray.sort(function(a, b){
+            if(a.percent < b.percent) { return 1; }
+            if(a.percent > b.percent) { return -1; }
+            return 0;
+        });
         playerArray19.sort(function(a, b){
             if(a.kos < b.kos) { return 1; }
             if(a.kos > b.kos) { return -1; }
@@ -5403,9 +5618,6 @@ class Stats extends React.Component {
                     totalKos.push(playerArray19[i]);
                 }
             }
-            if(totalKos.length === 5){
-                break;
-            }else{}
         }
         averagePlace = (gamePlace19[nameIndex - 1]/gamesPlayed19[nameIndex - 1]).toFixed(2);
         highKoGames = highKoGames19[nameIndex - 1];
@@ -5416,7 +5628,7 @@ class Stats extends React.Component {
             if(a.number > b.number) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray20.length; i++){
             if(playerArray20[i] === undefined){
                 mostPlayed.push({character: empty, number: null});
             }else{
@@ -5428,13 +5640,28 @@ class Stats extends React.Component {
             if(a.wins > b.wins) { return -1; }
             return 0;
         });
-        for(var i=0; i<5; i++){
+        for(var i=0; i<playerArray20.length; i++){
             if(playerArray20[i] === undefined){
                 mostWins.push({character: empty, number: null});
             }else{
                 mostWins.push(playerArray20[i]);
             }
         }
+        for(var i=0; i<playerArray20.length; i++){
+            if(playerArray20[i].number > 2){
+                var winPercent = ((playerArray20[i].wins/playerArray20[i].number).toFixed(2));
+                var rightPercent = winPercent.split(".");
+                if(rightPercent[1] === "00"){
+                    rightPercent[1] = "0";
+                }else{}
+                winPercentArray.push({character: playerArray20[i].character, percent: rightPercent[1] + "%"});
+            }else{}
+        }
+        winPercentArray.sort(function(a, b){
+            if(a.percent < b.percent) { return 1; }
+            if(a.percent > b.percent) { return -1; }
+            return 0;
+        });
         playerArray20.sort(function(a, b){
             if(a.kos < b.kos) { return 1; }
             if(a.kos > b.kos) { return -1; }
@@ -5450,9 +5677,6 @@ class Stats extends React.Component {
                     totalKos.push(playerArray20[i]);
                 }
             }
-            if(totalKos.length === 5){
-                break;
-            }else{}
         }
         averagePlace = (gamePlace20[nameIndex - 1]/gamesPlayed20[nameIndex - 1]).toFixed(2);
         highKoGames = highKoGames20[nameIndex - 1];
@@ -5467,7 +5691,8 @@ class Stats extends React.Component {
         mostWins: mostWins,
         totalKos: totalKos,
         highKoGames: highKoGames,
-        gamesPlayed: gamesPlayed
+        gamesPlayed: gamesPlayed,
+        winPercent: winPercentArray
       });
     }
   }
@@ -5488,14 +5713,32 @@ class Stats extends React.Component {
             <div className="col-xs-2">{this.state.averagePlace}</div>
           </div>
           <div className="row">
-            <div className="col-xs-4 statsTitle">Most Played Fighters</div>
-            <div className="col-xs-4 statsTitle">Average Kos</div>
-            <div className="col-xs-4 statsTitle">Most Wins</div>
+            <div className="col-xs-3 statsList">
+                <div className="row statsTitle">Most Played</div>
+                <div className="row">
+                    {this.listMostPlayed()}
+                </div>
+            </div>
+            <div className="col-xs-3 statsList">
+                <div className="row statsTitle">Average Kos</div>
+                <div className="row">
+                    {this.listMostKos()}
+                </div>
+            </div>
+            <div className="col-xs-3 statsList">
+                <div className="row statsTitle">Most Wins</div>
+                <div className="row">
+                    {this.listMostWins()}
+                </div>
+            </div>
           </div>
-          <div className="row">
-            {this.listMostPlayed()}
-            {this.listMostKos()}
-            {this.listMostWins()}
+          <div className="row" id="statsSecondRow">
+            <div className="col-xs-3 statsList">
+                <div className="row statsTitle">Win %</div>
+                <div className="row">
+                    {this.listWinPercent()}
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -5532,7 +5775,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date(2020,4,13),
+      date: new Date(2020,4,20),
       weeklyWins: [0,0,0,0,0,0,0],
       weeklyKos: [0,0,0,0,0,0,0],
       weeklyAvg: [0,0,0,0,0,0,0],

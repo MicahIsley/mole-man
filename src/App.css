@@ -12,6 +12,10 @@ html {
   background: linear-gradient(to bottom right, red, yellow);
 }
 
+#statsSecondRow {
+  margin-top: 10px;
+}
+
 #averagePlaceTitle {
   font-family: 'Carter One', cursive;
   font-size: 24px;
@@ -88,6 +92,11 @@ html {
 
 .topPlayedCol {
   height: 500px;
+  overflow: auto;
+}
+
+.playerStatsCol {
+  height: 250px;
   overflow: auto;
 }
 
@@ -268,16 +277,26 @@ html {
 }
 
 .statsFighterIcon {
-  height: 150px;
+  height: 75px;
   border-radius: 75px;
   box-shadow: 0px 5px 5px black;
   margin-bottom: 10px;
 }
 
+.statsList {
+  border-color: #1baddc;
+  border-width: 8px;
+  border-style: solid;
+  border-radius: 25px;
+  background: #002579;
+  margin-left: 6%;
+}
+
 .mostPlayedNum {
-  font-size: 50px;
+  font-size: 32px;
   color: white;
   font-family: 'Carter One', cursive;
+  margin-top: 15px;
 }
 
 .gameNumber {
