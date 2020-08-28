@@ -2283,9 +2283,86 @@ const gameData = [
     {name: "", character: empty, kos: 0},
     {stage: "Tortimer Island"},
     {date: new Date(2020,7,19)}
+  ],[
+    {name: "Tim", character: ridley, kos: 1},
+    {name: "Zack", character: lucas, kos: 3},
+    {name: "Micah", character: littlemac, kos: 4},
+    {name: "", character: empty, kos: 0},
+    {stage: "Hyrule Castle"},
+    {date: new Date(2020,7,27)}
+  ],[
+    {name: "Zack", character: kirby, kos: 5},
+    {name: "Doug", character: gameandwatch, kos: 3},
+    {name: "Tim", character: pacman, kos: 1},
+    {name: "Micah", character: inkling, kos: 2},
+    {stage: "Battlefield"},
+    {date: new Date(2020,7,27)}
+  ],[
+    {name: "Micah", character: bowserjr, kos: 7},
+    {name: "Doug", character: gameandwatch, kos: 1},
+    {name: "Zack", character: banjo, kos: 3},
+    {name: "Tim", character: ness, kos: 0},
+    {stage: "Skyloft"},
+    {date: new Date(2020,7,27)}
+  ],[
+    {name: "Micah", character: darkpit, kos: 8},
+    {name: "Tim", character: pikachu, kos: 1},
+    {name: "Zack", character: pichu, kos: 1},
+    {name: "Doug", character: gameandwatch, kos: 1},
+    {stage: "Living Room"},
+    {date: new Date(2020,7,27)}
+  ],[
+    {name: "Zack", character: corrin, kos: 5},
+    {name: "Micah", character: wario, kos: 4},
+    {name: "Tim", character: pikachu, kos: 1},
+    {name: "Doug", character: pokemontrainer, kos: 1},
+    {stage: "Saffron City"},
+    {date: new Date(2020,7,27)}
+  ],[
+    {name: "Zack", character: drmario, kos: 4},
+    {name: "Tim", character: ness, kos: 1},
+    {name: "Micah", character: minmin, kos: 5},
+    {name: "Doug", character: younglink, kos: 1},
+    {stage: "Balloon Fight"},
+    {date: new Date(2020,7,27)}
+  ],[
+    {name: "Tim", character: darksamus, kos: 4},
+    {name: "Zack", character: yoshi, kos: 2},
+    {name: "Micah", character: incineroar, kos: 4},
+    {name: "Doug", character: joker, kos: 1},
+    {stage: "Umbra Clock Tower"},
+    {date: new Date(2020,7,27)}
+  ],[
+    {name: "Zack", character: hero, kos: 6},
+    {name: "Tim", character: miigunner, kos: 0},
+    {name: "Micah", character: wiifittrainer, kos: 3},
+    {name: "Doug", character: samus, kos: 1},
+    {stage: "Yggdrasil's Altar"},
+    {date: new Date(2020,7,27)}
+  ],[
+    {name: "Zack", character: pirahnaplant, kos: 5},
+    {name: "Tim", character: samus, kos: 4},
+    {name: "Micah", character: iceclimbers, kos: 2},
+    {name: "Doug", character: isabell, kos: 0},
+    {stage: "Mushroomy Kingdom"},
+    {date: new Date(2020,7,27)}
+  ],[
+    {name: "Tim", character: ness, kos: 1},
+    {name: "Doug", character: byleth, kos: 6},
+    {name: "Micah", character: terry, kos: 3},
+    {name: "Zack", character: pokemontrainer, kos: 1},
+    {stage: "Custom"},
+    {date: new Date(2020,7,27)}
+  ],[
+    {name: "Micah", character: simon, kos: 5},
+    {name: "Tim", character: samus, kos: 2},
+    {name: "Zack", character: pokemontrainer, kos: 2},
+    {name: "Doug", character: fox, kos: 2},
+    {stage: "Custom"},
+    {date: new Date(2020,7,27)}
   ]
 ];
-var dates = [new Date(2019,8,11).getTime(), new Date(2019,8,18).getTime(), new Date(2019,8,25).getTime(), new Date(2019,9,9).getTime(), new Date(2019,9,16).getTime(), new Date(2019,9,23).getTime(), new Date(2019,11,4).getTime(), new Date(2019,11,18).getTime(), new Date(2020,0,16).getTime(), new Date(2020,0,22).getTime(), new Date(2020,0,30).getTime(), new Date(2020,1,5).getTime(), new Date(2020,1,13).getTime(), new Date(2020,1,19).getTime(), new Date(2020,2,4).getTime(), new Date(2020,2,12).getTime(), new Date(2020,2,18).getTime(), new Date(2020,2,26).getTime(), new Date(2020,3,2).getTime(), new Date(2020,3,8).getTime(), new Date(2020,3,15).getTime(), new Date(2020,3,22).getTime(), new Date(2020,3,29).getTime(), new Date(2020,4,7).getTime(), new Date(2020,4,13).getTime(), new Date(2020,4,20).getTime(), new Date(2020,6,15).getTime(), new Date(2020,6,21).getTime(), new Date(2020,7,6).getTime(), new Date(2020,7,13).getTime(), new Date(2020,7,19).getTime()];
+var dates = [new Date(2019,8,11).getTime(), new Date(2019,8,18).getTime(), new Date(2019,8,25).getTime(), new Date(2019,9,9).getTime(), new Date(2019,9,16).getTime(), new Date(2019,9,23).getTime(), new Date(2019,11,4).getTime(), new Date(2019,11,18).getTime(), new Date(2020,0,16).getTime(), new Date(2020,0,22).getTime(), new Date(2020,0,30).getTime(), new Date(2020,1,5).getTime(), new Date(2020,1,13).getTime(), new Date(2020,1,19).getTime(), new Date(2020,2,4).getTime(), new Date(2020,2,12).getTime(), new Date(2020,2,18).getTime(), new Date(2020,2,26).getTime(), new Date(2020,3,2).getTime(), new Date(2020,3,8).getTime(), new Date(2020,3,15).getTime(), new Date(2020,3,22).getTime(), new Date(2020,3,29).getTime(), new Date(2020,4,7).getTime(), new Date(2020,4,13).getTime(), new Date(2020,4,20).getTime(), new Date(2020,6,15).getTime(), new Date(2020,6,21).getTime(), new Date(2020,7,6).getTime(), new Date(2020,7,13).getTime(), new Date(2020,7,19).getTime(), new Date(2020,7,27).getTime()];
 var ultimateFighters = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name:minmin, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
 var ultimateFighters19 = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name:minmin, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
 var ultimateFighters20 = [{name: banjo, number: 0},{name: bayonetta, number: 0},{name: bowser, number: 0},{name: bowserjr, number: 0},{name: byleth, number: 0},{name: captainfalcon, number: 0},{name: chrom, number: 0},{name: cloud, number: 0},{name: corrin, number: 0},{name: daisy, number: 0},{name: darkpit, number: 0},{name: darksamus, number: 0},{name: diddykong, number: 0},{name: donkeykong, number: 0},{name: drmario, number: 0},{name: duckhunt, number: 0},{name: falco, number: 0},{name: fox, number: 0},{name: gameandwatch, number: 0},{name: ganondorf, number: 0},{name: greninja, number: 0},{name: hero, number: 0},{name: iceclimbers, number: 0},{name: ike, number: 0},{name: incineroar, number: 0},{name: inkling, number: 0},{name: isabell, number: 0},{name: jigglypuff, number: 0},{name: joker, number: 0},{name: ken, number: 0},{name: kingdedede, number: 0},{name: kingkrool, number: 0},{name: kirby, number: 0},{name: link, number: 0},{name: littlemac, number: 0},{name: lucario, number: 0},{name: lucas, number: 0},{name: lucina, number: 0},{name: luigi, number: 0},{name: mario, number: 0},{name: marth, number: 0},{name: megaman, number: 0},{name: metaknight, number: 0},{name: mewtwo, number: 0},{name: miibrawler, number: 0},{name: miigunner, number: 0},{name: miiswordfighter, number: 0},{name:minmin, number: 0},{name: ness, number: 0},{name: olimar, number: 0},{name: pacman, number: 0},{name: palutena, number: 0},{name: peach, number: 0},{name: pichu, number: 0},{name: pikachu, number: 0},{name: pirahnaplant, number: 0},{name: pit, number: 0},{name: pokemontrainer, number: 0},{name: richter, number: 0},{name: ridley, number: 0},{name: rob, number: 0},{name: robin, number: 0},{name: rosalina, number: 0},{name: roy, number: 0},{name: ryu, number: 0},{name: samus, number: 0},{name: sheik, number: 0},{name: shulk, number: 0},{name: simon, number: 0},{name: snake, number: 0},{name: sonic, number: 0},{name: terry, number: 0},{name: toonlink, number: 0},{name: villager, number: 0},{name: wario, number: 0},{name: wiifittrainer, number: 0},{name: wolf, number: 0},{name: yoshi, number: 0},{name: younglink, number: 0},{name: zelda, number: 0},{name: zerosuitsamus, number: 0}];
@@ -6110,7 +6187,7 @@ class Weekly extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date(2020,7,19),
+      date: new Date(2020,7,27),
       weeklyWins: [0,0,0,0,0,0,0],
       weeklyKos: [0,0,0,0,0,0,0],
       weeklyAvg: [0,0,0,0,0,0,0],
